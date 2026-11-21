@@ -1,0 +1,61 @@
+{
+  "title": "Harjutus: müntide saatmine",
+  "hook": "Sõber palub sul saata 50 harjutusmünti oma rahakotti. Ta kleebib vestlusesse oma [[address|aadressi]].",
+  "card1": "[[address|Aadress]] on nagu [[wallet|rahakoti]] kontonumber. Igaüks saab sinna münte saata, aga välja saab neid liigutada ainult see, kellel on [[private-key|privaatvõti]].",
+  "card2": "Aadressid on pikad ja raskesti loetavad. Petturid kasutavad seda ära: nad muudavad ühe märgi või vahetavad sinu kopeeritud aadressi enda omaga.",
+  "card3": "Müntide saatmine loob [[transaction|tehingu]]. Lisaks maksad võrgule selle töötlemise eest väikese [[fee|tasu]].",
+  "card4": "Kui tehing on kinnitatud, on see [[irreversible|pöördumatu]]. Ükski pank ei saa seda tühistada ega münte tagasi anda.",
+  "sim": {
+    "paste": {
+      "prompt": "Sõbra aadress on vestlusesse jõudnud. Mida teed enne, kui vajutad „Saada“?",
+      "type": {
+        "label": "Trükin aadressi käsitsi",
+        "before": "Trükid aadressi ise ümber, märk-märgilt.",
+        "what": "Sa trükkisid ühe märgi valesti. Sinu 50 harjutusmünti läksid teisele aadressile ja on jäädavalt kadunud.",
+        "why": "Peaaegu iga õige pikkusega märgijada võib olla kehtiv aadress, nii et võrk võttis selle vastu ja toimetas mündid kohale.",
+        "how": "Vahepeal pole panka, mis kontrolliks nimesid või peataks vead. Võrk kontrollib ainult seda, et aadressi vorming oleks kehtiv.",
+        "realLife": "Ära kunagi trüki aadressi käsitsi. Kopeeri ja kleebi see, siis võrdle esimest ja viimast 4 märki originaaliga.",
+        "more": "Vale aadress võib kuuluda kellelegi või mitte kellelegi. Igal juhul ei saa keegi ilma selle aadressi [[private-key|privaatvõtmeta]] münte sulle tagasi liigutada."
+      },
+      "send": {
+        "label": "Kleebin aadressi ja saadan kohe",
+        "before": "Kleebid aadressi ja saadad seda kontrollimata.",
+        "what": "Seekord jõudsid mündid kohale. Aga sa jätsid vahele kontrolli, mis kaitseb aadressi vahetava pahavara eest.",
+        "why": "Mõni pahavara jälgib, mida sa kopeerid, ja asendab rahakoti aadressi ründaja aadressiga.",
+        "how": "Vahetatud aadress näeb esmapilgul sarnane välja, nii et ainult märkide võrdlemine paljastab selle.",
+        "realLife": "Pärast kleepimist võrdle alati esimest ja viimast 4 märki sõbra saadetud aadressiga."
+      },
+      "check": {
+        "label": "Kleebin aadressi ja kontrollin esimest ja viimast 4 märki",
+        "before": "Kleebid aadressi ja võrdled selle algust ja lõppu originaaliga.",
+        "what": "Märgid klapivad. Sinu 50 harjutusmünti jõuavad turvaliselt sõbra rahakotti.",
+        "why": "Kopeerimine väldib trükivigu ja kontroll tabab vahetatud aadressi.",
+        "how": "Vale aadressi esimesed ja viimased 4 märki ei lange õigega juhuslikult peaaegu kunagi kokku.",
+        "realLife": "Suure summa puhul saada enne väike testsumma ja palu sõbral kinnitada, et see jõudis kohale."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Saatsid mündid valele aadressile. Mida saad teha?",
+    "a": "Palun börsil või pangal tehingu tagasi pöörata",
+    "b": "Mitte midagi, kui selle aadressi omanik neid ise tagasi ei saada",
+    "c": "Ootan 24 tundi ja mündid tulevad automaatselt tagasi",
+    "explanation": "Kinnitatud tehing on pöördumatu. Münte saaks tagasi saata ainult vastuvõtva aadressi omanik ja ainult siis, kui ta seda ise tahab."
+  },
+  "q2": {
+    "prompt": "Mis on kõige turvalisem viis aadressi sisestada?",
+    "a": "Trükin selle väga hoolikalt",
+    "b": "Kleebin selle ja kontrollin esimest ja viimast 4 märki",
+    "c": "Kasutan aadressi, mille abivalmis võõras mulle sõnumiga saadab",
+    "explanation": "Kopeerimine väldib trükivigu ja alguse ning lõpu kontroll tabab vahetatud aadressi."
+  },
+  "misc": {
+    "refund": "Paljud usuvad, et keegi saab makse tagasi pöörata. Plokiahelas ei saa seda keegi: kinnitatud tehing on lõplik.",
+    "autoReturn": "Tehingud ei aegu ega põrka tagasi. Kui aadress on kehtiv, jäävad mündid sinna.",
+    "carefulTyping": "Ka hoolikas trükkimine läheb vahel valesti ja ühest valest märgist piisab, et kõik kaotada.",
+    "trustDm": "Võõra aadress on koht, kuhu sinu mündid läheksid. Abivalmid võõrad sõnumites on klassikaline pettus."
+  },
+  "t1": "Ära kunagi trüki aadressi käsitsi.",
+  "t2": "Pärast kleepimist võrdle esimest ja viimast 4 märki.",
+  "t3": "Kinnitatud tehingut ei saa tagasi võtta."
+}

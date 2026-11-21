@@ -1,0 +1,125 @@
+{
+  "app": {
+    "name": "Blockbright",
+    "tagline": "Opi, miten krypto toimii ja miten pysyt turvassa, ennen kuin sillä on oikeasti väliä.",
+    "footer": "Tehty 12-vuotiaille ja vanhemmille. Ei tiliä. Mitään ei lähde laitteeltasi.",
+    "betaTranslation": "Beta-käännös",
+    "skipToContent": "Siirry sisältöön"
+  },
+  "nav": {
+    "home": "Oppitunnit",
+    "glossary": "Sanasto",
+    "settings": "Asetukset",
+    "about": "Tietoa"
+  },
+  "home": {
+    "title": "Oppitunnit",
+    "intro": "Seitsemän moduulia siitä, mitä raha on, aina huijauksilta suojautumiseen. Kaikkialla käytetään harjoituskolikoita, ei koskaan oikeaa rahaa.",
+    "module": "Moduuli {number}",
+    "start": "Aloita",
+    "again": "Tee uudelleen",
+    "comingSoon": "Tulossa pian",
+    "done": "Tehty: {score}/{total} oikein"
+  },
+  "modules": {
+    "m1": "Mitä raha on?",
+    "m2": "Lohkoketju",
+    "m3": "Lompakot ja avaimet",
+    "m4": "Lähettäminen ja vastaanottaminen",
+    "m5": "Huijaukset",
+    "m6": "Riski ja hype",
+    "m7": "Säännöt ja ikä"
+  },
+  "lesson": {
+    "practiceCoins": "Vain harjoituskolikoita. Mikään täällä ei ole oikeaa rahaa.",
+    "steps": {
+      "hook": "Tilanne",
+      "learn": "Opi",
+      "try": "Kokeile",
+      "check": "Tarkista",
+      "remember": "Muista"
+    },
+    "stepOf": "Vaihe {current}/{total}",
+    "next": "Seuraava",
+    "back": "Takaisin",
+    "finish": "Valmis",
+    "backToLessons": "Takaisin oppitunteihin"
+  },
+  "sim": {
+    "why": "Miksi?",
+    "whyTitle": "Mitä tämä tekee",
+    "whatHappened": "Mitä tapahtui",
+    "whyItHappened": "Miksi",
+    "howItWorks": "Miten se toimii",
+    "inRealLife": "Oikeassa elämässä",
+    "tellMeMore": "Kerro lisää",
+    "showLess": "Näytä vähemmän",
+    "rewind": "Kokeile toista valintaa",
+    "whatIf": "Mitä olisi tapahtunut, jos olisin valinnut toisin?",
+    "youChose": "Valitsit: {choice}",
+    "tone": {
+      "good": "Turvallinen valinta",
+      "warn": "Riskialtis valinta",
+      "bad": "Kallis virhe"
+    },
+    "continue": "Jatka"
+  },
+  "quiz": {
+    "question": "Kysymys {current}/{total}",
+    "howSure": "Kuinka varma olet?",
+    "confidence": {
+      "unsure": "En ole varma",
+      "fairly": "Melko varma",
+      "certain": "Täysin varma"
+    },
+    "check": "Tarkista vastaus",
+    "pickAnswer": "Valitse ensin vastaus.",
+    "pickConfidence": "Kerro sitten, kuinka varma olet.",
+    "correct": "Oikein.",
+    "notQuite": "Ei aivan.",
+    "commonBelief": "Yleinen käsitys",
+    "next": "Seuraava kysymys",
+    "resultsTitle": "Tuloksesi",
+    "score": "{score}/{total} oikein",
+    "sureButWrong": "{count, plural, =0 {Yksikään vastaus ei ollut varma mutta väärä. Hyvin arvioitu.} one {1 vastaus oli varma mutta väärä. Se kannattaa katsoa uudelleen.} other {# vastausta oli varmoja mutta vääriä. Ne kannattaa katsoa uudelleen.}}"
+  },
+  "remember": {
+    "title": "Muista",
+    "newTerms": "Uudet käsitteet tällä oppitunnilla"
+  },
+  "term": {
+    "english": "Englanninkielinen termi",
+    "close": "Sulje"
+  },
+  "glossary": {
+    "title": "Sanasto",
+    "intro": "Kaikki käsitteet ja englanninkielinen sana, jonka näet oikeilla alustoilla.",
+    "search": "Hae millä tahansa kielellä",
+    "empty": "Hakuasi vastaavia käsitteitä ei löytynyt."
+  },
+  "settings": {
+    "title": "Asetukset",
+    "language": "Kieli",
+    "explainLevel": "Selitykset",
+    "simple": "Yksinkertainen",
+    "simpleHint": "Lyhyt ja helppo. Sopii 12–13-vuotiaille.",
+    "detailed": "Syvällinen",
+    "detailedHint": "Enemmän syvyyttä. Avaa \"Kerro lisää\" automaattisesti.",
+    "progress": "Edistymisesi",
+    "progressNote": "Edistymisesi tallennetaan vain tähän selaimeen tällä laitteella.",
+    "reset": "Poista edistymiseni",
+    "resetConfirm": "Kyllä, poista",
+    "resetCancel": "Peruuta",
+    "resetDone": "Edistymisesi on poistettu."
+  },
+  "about": {
+    "title": "Tietoa Blockbrightista",
+    "what": "Blockbright on ilmainen oppimissovellus, joka opettaa nuorille, miten krypto toimii ja miten pysyä turvassa. Se käyttää vain simulaatioita: ei oikeaa rahaa, oikeita lompakoita eikä oikeita tokeneita.",
+    "notAdvice": "Blockbright on opetusta, ei sijoitusneuvontaa. Se ei koskaan kehota ostamaan, myymään tai pitämään mitään. Oikeat kryptoalustat vaativat, että olet vähintään 18-vuotias.",
+    "privacyTitle": "Tietosuoja",
+    "privacy": "Blockbrightissa ei ole tilejä, eikä se kerää henkilötietoja. Edistymisesi ja asetuksesi tallennetaan vain omaan selaimeesi, eikä mitään lähetetä minnekään. Selaimen tietojen tyhjentäminen tai Poista edistymiseni -painike poistaa ne.",
+    "publisherTitle": "Julkaisija",
+    "publisher": "Julkaisija on yksityishenkilö Suomessa. Yhteystiedot lisätään ennen julkaisua.",
+    "noAds": "Ei mainoksia, ei seurantaa, ei tokeneita. Aina ilmainen."
+  }
+}

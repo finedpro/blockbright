@@ -1,0 +1,10 @@
+{
+  "address": { "term": "osoite", "definition": "Julkinen koodi, joka yksilöi lompakon. Muut tarvitsevat sen lähettääkseen sinulle kolikoita." },
+  "wallet": { "term": "lompakko", "definition": "Sovellus tai laite, joka säilyttää kolikoidesi avaimet ja jolla voit lähettää ja vastaanottaa niitä." },
+  "private-key": { "term": "yksityinen avain", "definition": "Salainen koodi, joka todistaa, että osoitteen kolikot ovat sinun. Kenellä se on, se voi siirtää niitä." },
+  "seed-phrase": { "term": "palautuslause", "definition": "12 tai 24 sanaa, joilla lompakko ja kaikki sen avaimet voidaan palauttaa. Älä koskaan jaa sitä kenenkään kanssa." },
+  "transaction": { "term": "transaktio", "definition": "Kolikoiden siirto osoitteesta toiseen, joka tallennetaan lohkoketjuun." },
+  "fee": { "term": "maksu", "definition": "Pieni maksu verkolle transaktion käsittelystä." },
+  "irreversible": { "term": "peruuttamaton", "definition": "Ei voi perua. Vahvistettua kryptotransaktiota ei voi perua eikä hyvittää." },
+  "blockchain": { "term": "lohkoketju", "definition": "Monen tietokoneen ylläpitämä yhteinen transaktiorekisteri, jota ei voi muuttaa salaa." }
+}

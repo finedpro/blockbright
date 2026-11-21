@@ -1,0 +1,10 @@
+{
+  "address": { "term": "address", "definition": "A public code that identifies a wallet. Others need it to send you coins." },
+  "wallet": { "term": "wallet", "definition": "An app or device that holds the keys to your coins and lets you send and receive them." },
+  "private-key": { "term": "private key", "definition": "A secret code that proves you own the coins at an address. Whoever has it can move them." },
+  "seed-phrase": { "term": "seed phrase", "definition": "12 or 24 words that can restore a wallet and all its keys. Never share it with anyone." },
+  "transaction": { "term": "transaction", "definition": "A transfer of coins from one address to another, recorded on the blockchain." },
+  "fee": { "term": "fee", "definition": "A small payment to the network for processing a transaction." },
+  "irreversible": { "term": "irreversible", "definition": "Cannot be undone. A confirmed crypto transaction cannot be cancelled or refunded." },
+  "blockchain": { "term": "blockchain", "definition": "A shared record of transactions, kept by many computers, that cannot be changed quietly." }
+}

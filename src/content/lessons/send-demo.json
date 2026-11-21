@@ -1,0 +1,43 @@
+{
+  "id": "send-demo",
+  "module": 4,
+  "title": "title",
+  "hook": "hook",
+  "cards": ["card1", "card2", "card3", "card4"],
+  "simulation": {
+    "start": "paste",
+    "nodes": {
+      "paste": {
+        "prompt": "sim.paste.prompt",
+        "choices": [
+          { "id": "type", "label": "sim.paste.type.label", "before": "sim.paste.type.before", "explain": "sim.paste.type", "tone": "bad" },
+          { "id": "send", "label": "sim.paste.send.label", "before": "sim.paste.send.before", "explain": "sim.paste.send", "tone": "warn" },
+          { "id": "check", "label": "sim.paste.check.label", "before": "sim.paste.check.before", "explain": "sim.paste.check", "tone": "good" }
+        ]
+      }
+    }
+  },
+  "quiz": [
+    {
+      "id": "q1",
+      "prompt": "q1.prompt",
+      "options": [
+        { "id": "a", "correct": false, "misconception": "misc.refund" },
+        { "id": "b", "correct": true },
+        { "id": "c", "correct": false, "misconception": "misc.autoReturn" }
+      ],
+      "explanation": "q1.explanation"
+    },
+    {
+      "id": "q2",
+      "prompt": "q2.prompt",
+      "options": [
+        { "id": "a", "correct": false, "misconception": "misc.carefulTyping" },
+        { "id": "b", "correct": true },
+        { "id": "c", "correct": false, "misconception": "misc.trustDm" }
+      ],
+      "explanation": "q2.explanation"
+    }
+  ],
+  "takeaways": ["t1", "t2", "t3"]
+}

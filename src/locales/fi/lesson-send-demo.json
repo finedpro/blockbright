@@ -1,0 +1,61 @@
+{
+  "title": "Harjoitus: kolikoiden lähettäminen",
+  "hook": "Kaverisi pyytää sinua lähettämään 50 harjoituskolikkoa lompakkoonsa. Hän liittää [[address|osoitteensa]] keskusteluun.",
+  "card1": "[[address|Osoite]] on kuin [[wallet|lompakon]] tilinumero. Kuka tahansa voi lähettää siihen kolikoita, mutta vain [[private-key|yksityisen avaimen]] haltija voi siirtää niitä pois.",
+  "card2": "Osoitteet ovat pitkiä ja vaikeita lukea. Huijarit käyttävät tätä hyväkseen: he vaihtavat yhden merkin tai korvaavat kopioimasi osoitteen omallaan.",
+  "card3": "Kolikoiden lähettäminen luo [[transaction|transaktion]]. Maksat lisäksi verkolle pienen [[fee|maksun]] sen käsittelystä.",
+  "card4": "Kun transaktio on vahvistettu, se on [[irreversible|peruuttamaton]]. Mikään pankki ei voi perua sitä tai palauttaa kolikoita.",
+  "sim": {
+    "paste": {
+      "prompt": "Kaverisi osoite on tullut keskusteluun. Mitä teet ennen kuin painat Lähetä?",
+      "type": {
+        "label": "Kirjoitan osoitteen käsin",
+        "before": "Kirjoitat osoitteen itse uudelleen merkki kerrallaan.",
+        "what": "Kirjoitit yhden merkin väärin. 50 harjoituskolikkoasi menivät toiseen osoitteeseen ja ovat lopullisesti poissa.",
+        "why": "Lähes mikä tahansa oikean mittainen merkkijono voi olla kelvollinen osoite, joten verkko hyväksyi sen ja toimitti kolikot.",
+        "how": "Välissä ei ole pankkia, joka tarkistaisi nimiä tai pysäyttäisi virheitä. Verkko tarkistaa vain, että osoitteen muoto on kelvollinen.",
+        "realLife": "Älä koskaan kirjoita osoitetta käsin. Kopioi ja liitä se, ja vertaa sitten ensimmäistä ja viimeistä 4 merkkiä alkuperäiseen.",
+        "more": "Väärä osoite voi kuulua jollekulle tai ei kenellekään. Kummassakin tapauksessa kukaan ei voi siirtää kolikoita takaisin sinulle ilman sen osoitteen [[private-key|yksityistä avainta]]."
+      },
+      "send": {
+        "label": "Liitän osoitteen ja lähetän heti",
+        "before": "Liität osoitteen ja lähetät tarkistamatta sitä.",
+        "what": "Kolikot menivät tällä kertaa perille. Mutta ohitit tarkistuksen, joka suojaa osoitteita vaihtavalta haittaohjelmalta.",
+        "why": "Jotkin haittaohjelmat seuraavat, mitä kopioit, ja korvaavat lompakon osoitteen hyökkääjän osoitteella.",
+        "how": "Vaihdettu osoite näyttää nopealla vilkaisulla samanlaiselta, joten vain merkkien vertaaminen paljastaa sen.",
+        "realLife": "Vertaa liittämisen jälkeen aina ensimmäistä ja viimeistä 4 merkkiä kaverisi lähettämään osoitteeseen."
+      },
+      "check": {
+        "label": "Liitän osoitteen ja tarkistan ensimmäiset ja viimeiset 4 merkkiä",
+        "before": "Liität osoitteen ja vertaat sen alkua ja loppua alkuperäiseen.",
+        "what": "Merkit täsmäävät. 50 harjoituskolikkoasi saapuvat turvallisesti kaverisi lompakkoon.",
+        "why": "Kopioiminen estää kirjoitusvirheet, ja tarkistus paljastaa vaihdetun osoitteen.",
+        "how": "Väärän osoitteen ensimmäiset ja viimeiset 4 merkkiä osuvat sattumalta samoiksi kuin oikean lähes koskaan.",
+        "realLife": "Isossa summassa lähetä ensin pieni testisumma ja pyydä kaveria vahvistamaan, että se tuli perille."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Lähetit kolikot väärään osoitteeseen. Mitä voit tehdä?",
+    "a": "Pyydän pörssiä tai pankkia perumaan sen",
+    "b": "En mitään, ellei sen osoitteen omistaja lähetä niitä takaisin",
+    "c": "Odotan 24 tuntia, niin kolikot palaavat automaattisesti",
+    "explanation": "Vahvistettu transaktio on peruuttamaton. Vain vastaanottavan osoitteen omistaja voisi lähettää kolikot takaisin, ja vain jos hän itse haluaa."
+  },
+  "q2": {
+    "prompt": "Mikä on turvallisin tapa syöttää osoite?",
+    "a": "Kirjoitan sen todella huolellisesti",
+    "b": "Liitän sen ja tarkistan ensimmäiset ja viimeiset 4 merkkiä",
+    "c": "Käytän osoitetta, jonka avulias tuntematon lähettää minulle viestillä",
+    "explanation": "Kopioiminen estää kirjoitusvirheet, ja alun ja lopun tarkistus paljastaa vaihdetun osoitteen."
+  },
+  "misc": {
+    "refund": "Moni uskoo, että joku voi perua maksun. Lohkoketjussa kukaan ei voi: vahvistettu transaktio on lopullinen.",
+    "autoReturn": "Transaktiot eivät vanhene eivätkä palaudu. Jos osoite on kelvollinen, kolikot jäävät sinne.",
+    "carefulTyping": "Huolellinenkin kirjoittaminen menee joskus pieleen, ja yksi väärä merkki riittää menettämään kaiken.",
+    "trustDm": "Tuntemattoman osoite on paikka, johon kolikkosi menisivät. Avuliaat tuntemattomat viesteissä ovat klassinen huijaus."
+  },
+  "t1": "Älä koskaan kirjoita osoitetta käsin.",
+  "t2": "Vertaa liittämisen jälkeen ensimmäistä ja viimeistä 4 merkkiä.",
+  "t3": "Vahvistettua transaktiota ei voi perua."
+}

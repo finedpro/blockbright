@@ -1,0 +1,125 @@
+{
+  "app": {
+    "name": "Blockbright",
+    "tagline": "Learn how crypto works and how to stay safe, before it is ever real.",
+    "footer": "Made for ages 12 and up. No accounts. Nothing leaves your device.",
+    "betaTranslation": "Beta translation",
+    "skipToContent": "Skip to content"
+  },
+  "nav": {
+    "home": "Lessons",
+    "glossary": "Glossary",
+    "settings": "Settings",
+    "about": "About"
+  },
+  "home": {
+    "title": "Lessons",
+    "intro": "Seven modules, from what money is to staying safe from scams. Everything uses practice coins, never real money.",
+    "module": "Module {number}",
+    "start": "Start",
+    "again": "Do it again",
+    "comingSoon": "Coming soon",
+    "done": "Done: {score} of {total} correct"
+  },
+  "modules": {
+    "m1": "What is money?",
+    "m2": "The blockchain",
+    "m3": "Wallets and keys",
+    "m4": "Sending and receiving",
+    "m5": "Scams",
+    "m6": "Risk and hype",
+    "m7": "Rules and age"
+  },
+  "lesson": {
+    "practiceCoins": "Practice coins only. Nothing here is real money.",
+    "steps": {
+      "hook": "Situation",
+      "learn": "Learn",
+      "try": "Try it",
+      "check": "Check",
+      "remember": "Remember"
+    },
+    "stepOf": "Step {current} of {total}",
+    "next": "Next",
+    "back": "Back",
+    "finish": "Finish",
+    "backToLessons": "Back to lessons"
+  },
+  "sim": {
+    "why": "Why?",
+    "whyTitle": "What this does",
+    "whatHappened": "What happened",
+    "whyItHappened": "Why",
+    "howItWorks": "How it works",
+    "inRealLife": "In real life",
+    "tellMeMore": "Tell me more",
+    "showLess": "Show less",
+    "rewind": "Try another choice",
+    "whatIf": "What if I had chosen differently?",
+    "youChose": "You chose: {choice}",
+    "tone": {
+      "good": "Safe choice",
+      "warn": "Risky choice",
+      "bad": "Costly mistake"
+    },
+    "continue": "Continue"
+  },
+  "quiz": {
+    "question": "Question {current} of {total}",
+    "howSure": "How sure are you?",
+    "confidence": {
+      "unsure": "Unsure",
+      "fairly": "Fairly sure",
+      "certain": "Certain"
+    },
+    "check": "Check answer",
+    "pickAnswer": "Pick an answer first.",
+    "pickConfidence": "Then tell us how sure you are.",
+    "correct": "Correct.",
+    "notQuite": "Not quite.",
+    "commonBelief": "Common belief",
+    "next": "Next question",
+    "resultsTitle": "Your results",
+    "score": "{score} of {total} correct",
+    "sureButWrong": "{count, plural, =0 {No answers were sure but wrong. Well judged.} one {1 answer was sure but wrong. That is the one to look at again.} other {# answers were sure but wrong. Those are the ones to look at again.}}"
+  },
+  "remember": {
+    "title": "Remember",
+    "newTerms": "New terms in this lesson"
+  },
+  "term": {
+    "english": "English term",
+    "close": "Close"
+  },
+  "glossary": {
+    "title": "Glossary",
+    "intro": "Every term, with the English word you will meet on real platforms.",
+    "search": "Search in any language",
+    "empty": "No terms match your search."
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "explainLevel": "Explanations",
+    "simple": "Simple",
+    "simpleHint": "Short and easy. Good for ages 12 to 13.",
+    "detailed": "Detailed",
+    "detailedHint": "More depth. Opens \"Tell me more\" automatically.",
+    "progress": "Your progress",
+    "progressNote": "Your progress is stored only in this browser on this device.",
+    "reset": "Reset my progress",
+    "resetConfirm": "Yes, delete my progress",
+    "resetCancel": "Cancel",
+    "resetDone": "Your progress has been deleted."
+  },
+  "about": {
+    "title": "About Blockbright",
+    "what": "Blockbright is a free learning app that teaches young people how crypto works and how to stay safe. It uses simulations only: no real money, no real wallets, no real tokens.",
+    "notAdvice": "Blockbright is education, not financial advice. It never tells you to buy, sell or hold anything. Real crypto platforms require you to be 18 or older.",
+    "privacyTitle": "Privacy",
+    "privacy": "Blockbright has no accounts and collects no personal data. Your progress and settings are saved only in your own browser, and nothing is sent anywhere. Clearing your browser data or pressing \"Reset my progress\" deletes it.",
+    "publisherTitle": "Publisher",
+    "publisher": "Published by a private individual in Finland. Contact details will be added before launch.",
+    "noAds": "No ads, no trackers, no tokens. Free forever."
+  }
+}

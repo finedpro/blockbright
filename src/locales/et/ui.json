@@ -1,0 +1,125 @@
+{
+  "app": {
+    "name": "Blockbright",
+    "tagline": "Õpi, kuidas krüpto töötab ja kuidas end kaitsta, enne kui see päriselt loeb.",
+    "footer": "Mõeldud 12-aastastele ja vanematele. Kontot pole vaja. Midagi ei lahku sinu seadmest.",
+    "betaTranslation": "Beta-tõlge",
+    "skipToContent": "Mine sisu juurde"
+  },
+  "nav": {
+    "home": "Õppetunnid",
+    "glossary": "Sõnastik",
+    "settings": "Seaded",
+    "about": "Info"
+  },
+  "home": {
+    "title": "Õppetunnid",
+    "intro": "Seitse moodulit alates sellest, mis on raha, kuni pettuste eest kaitsmiseni. Kõikjal kasutatakse harjutusmünte, mitte päris raha.",
+    "module": "Moodul {number}",
+    "start": "Alusta",
+    "again": "Tee uuesti",
+    "comingSoon": "Varsti tulekul",
+    "done": "Tehtud: {score}/{total} õigesti"
+  },
+  "modules": {
+    "m1": "Mis on raha?",
+    "m2": "Plokiahel",
+    "m3": "Rahakotid ja võtmed",
+    "m4": "Saatmine ja vastuvõtmine",
+    "m5": "Pettused",
+    "m6": "Risk ja hype",
+    "m7": "Reeglid ja vanus"
+  },
+  "lesson": {
+    "practiceCoins": "Ainult harjutusmündid. Siin pole midagi päris raha.",
+    "steps": {
+      "hook": "Olukord",
+      "learn": "Õpi",
+      "try": "Proovi",
+      "check": "Kontrolli",
+      "remember": "Pea meeles"
+    },
+    "stepOf": "Samm {current}/{total}",
+    "next": "Edasi",
+    "back": "Tagasi",
+    "finish": "Lõpeta",
+    "backToLessons": "Tagasi õppetundide juurde"
+  },
+  "sim": {
+    "why": "Miks?",
+    "whyTitle": "Mida see teeb",
+    "whatHappened": "Mis juhtus",
+    "whyItHappened": "Miks",
+    "howItWorks": "Kuidas see töötab",
+    "inRealLife": "Päris elus",
+    "tellMeMore": "Räägi rohkem",
+    "showLess": "Näita vähem",
+    "rewind": "Proovi teist valikut",
+    "whatIf": "Mis oleks juhtunud, kui oleksin teisiti valinud?",
+    "youChose": "Sinu valik: {choice}",
+    "tone": {
+      "good": "Turvaline valik",
+      "warn": "Riskantne valik",
+      "bad": "Kulukas viga"
+    },
+    "continue": "Jätka"
+  },
+  "quiz": {
+    "question": "Küsimus {current}/{total}",
+    "howSure": "Kui kindel sa oled?",
+    "confidence": {
+      "unsure": "Pole kindel",
+      "fairly": "Üsna kindel",
+      "certain": "Täiesti kindel"
+    },
+    "check": "Kontrolli vastust",
+    "pickAnswer": "Vali kõigepealt vastus.",
+    "pickConfidence": "Siis ütle, kui kindel sa oled.",
+    "correct": "Õige.",
+    "notQuite": "Mitte päris.",
+    "commonBelief": "Levinud arusaam",
+    "next": "Järgmine küsimus",
+    "resultsTitle": "Sinu tulemus",
+    "score": "{score}/{total} õigesti",
+    "sureButWrong": "{count, plural, =0 {Ükski vastus ei olnud kindel, aga vale. Hästi hinnatud.} one {1 vastus oli kindel, aga vale. Seda tasub uuesti vaadata.} other {# vastust olid kindlad, aga valed. Neid tasub uuesti vaadata.}}"
+  },
+  "remember": {
+    "title": "Pea meeles",
+    "newTerms": "Uued mõisted selles õppetunnis"
+  },
+  "term": {
+    "english": "Ingliskeelne termin",
+    "close": "Sulge"
+  },
+  "glossary": {
+    "title": "Sõnastik",
+    "intro": "Kõik mõisted koos ingliskeelse sõnaga, mida päris platvormidel näed.",
+    "search": "Otsi mis tahes keeles",
+    "empty": "Otsingule vastavaid mõisteid ei leitud."
+  },
+  "settings": {
+    "title": "Seaded",
+    "language": "Keel",
+    "explainLevel": "Selgitused",
+    "simple": "Lihtne",
+    "simpleHint": "Lühike ja lihtne. Sobib 12–13-aastastele.",
+    "detailed": "Põhjalik",
+    "detailedHint": "Rohkem sügavust. Avab „Räägi rohkem“ automaatselt.",
+    "progress": "Sinu edenemine",
+    "progressNote": "Sinu edenemine on salvestatud ainult selles brauseris ja selles seadmes.",
+    "reset": "Kustuta minu edenemine",
+    "resetConfirm": "Jah, kustuta",
+    "resetCancel": "Tühista",
+    "resetDone": "Sinu edenemine on kustutatud."
+  },
+  "about": {
+    "title": "Blockbrightist",
+    "what": "Blockbright on tasuta õppeäpp, mis õpetab noortele, kuidas krüpto töötab ja kuidas end kaitsta. Kasutatakse ainult simulatsioone: pole päris raha, päris rahakotte ega päris tokeneid.",
+    "notAdvice": "Blockbright on haridus, mitte finantsnõu. See ei soovita kunagi midagi osta, müüa ega hoida. Päris krüptoplatvormid lubavad kasutajaks ainult 18-aastaseid ja vanemaid.",
+    "privacyTitle": "Privaatsus",
+    "privacy": "Blockbrightis pole kontosid ja see ei kogu isikuandmeid. Sinu edenemine ja seaded salvestatakse ainult sinu brauserisse ning midagi ei saadeta kuhugi. Brauseri andmete kustutamine või nupp „Kustuta minu edenemine“ kustutab need.",
+    "publisherTitle": "Väljaandja",
+    "publisher": "Väljaandja on eraisik Soomes. Kontaktandmed lisatakse enne avaldamist.",
+    "noAds": "Reklaamideta, jälgijateta, tokeniteta. Igavesti tasuta."
+  }
+}

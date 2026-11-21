@@ -1,0 +1,61 @@
+{
+  "title": "Practice: sending coins",
+  "hook": "Your friend asks you to send 50 practice coins to their wallet. They paste their [[address]] into a chat.",
+  "card1": "An [[address]] is like an account number for a [[wallet]]. Anyone can send coins to it, but only the person with the [[private-key]] can move them out.",
+  "card2": "Addresses are long and hard to read. Scammers use that: they change one character, or swap the address you copied for their own.",
+  "card3": "Sending coins creates a [[transaction]]. You also pay a small [[fee]] to the network for processing it.",
+  "card4": "Once a transaction is confirmed, it is [[irreversible]]. No bank can cancel it or give the coins back.",
+  "sim": {
+    "paste": {
+      "prompt": "Your friend's address has arrived in the chat. What do you do before you press Send?",
+      "type": {
+        "label": "Type the address by hand",
+        "before": "You will retype the address yourself, one character at a time.",
+        "what": "You typed one character wrong. Your 50 practice coins went to a different address and are gone for good.",
+        "why": "Almost any string of the right length can be a valid address, so the network accepted it and delivered the coins.",
+        "how": "No bank sits in the middle to check names or stop mistakes. The network only checks that the address has a valid format.",
+        "realLife": "Never type an address by hand. Copy and paste it, then compare the first and last 4 characters with the original.",
+        "more": "The wrong address may belong to someone, or to no one at all. Either way, without that address's [[private-key]] nobody can move the coins back to you."
+      },
+      "send": {
+        "label": "Copy-paste it and send right away",
+        "before": "You will paste the address and send without checking it.",
+        "what": "The coins arrived this time. But you skipped the check that protects you from address-swapping malware.",
+        "why": "Some malware watches what you copy and replaces a wallet address with the attacker's address.",
+        "how": "A swapped address looks similar at a glance, so only comparing the characters reveals it.",
+        "realLife": "After pasting, always compare the first and last 4 characters with the address your friend sent."
+      },
+      "check": {
+        "label": "Copy-paste it, then check the first and last 4 characters",
+        "before": "You will paste the address and compare its start and end with the original.",
+        "what": "The characters match. Your 50 practice coins arrive safely in your friend's wallet.",
+        "why": "Copy-paste avoids typing mistakes, and the check catches a swapped address.",
+        "how": "A wrong address almost never shares both the first and the last 4 characters with the right one by chance.",
+        "realLife": "For a large amount, send a small test amount first and ask your friend to confirm it arrived."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "You sent coins to the wrong address. What can you do?",
+    "a": "Ask an exchange or a bank to reverse it",
+    "b": "Nothing, unless the owner of that address sends them back",
+    "c": "Wait 24 hours and the coins return automatically",
+    "explanation": "A confirmed transaction is irreversible. Only the owner of the receiving address could send the coins back, and only if they choose to."
+  },
+  "q2": {
+    "prompt": "What is the safest way to enter an address?",
+    "a": "Type it very carefully",
+    "b": "Copy-paste it and check the first and last 4 characters",
+    "c": "Use the address a helpful stranger sends you in a DM",
+    "explanation": "Copy-paste avoids typing mistakes, and checking the start and end catches an address that was swapped."
+  },
+  "misc": {
+    "refund": "Many people believe someone can reverse a payment. On a blockchain no one can: a confirmed transaction is final.",
+    "autoReturn": "Transactions do not expire or bounce back. If the address is valid, the coins stay there.",
+    "carefulTyping": "Even careful typing goes wrong sometimes, and one wrong character is enough to lose everything.",
+    "trustDm": "A stranger's address is where your coins would go. Helpful strangers in DMs are a classic scam."
+  },
+  "t1": "Never type an address by hand.",
+  "t2": "After pasting, compare the first and last 4 characters.",
+  "t3": "A confirmed transaction cannot be undone."
+}
