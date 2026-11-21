@@ -1,0 +1,78 @@
+{
+  "title": "Kuidas plokiahel arvet peab",
+  "hook": "Sina ja su sõbrad peate ühist vihikut, kes kellele maiustusi võlgneb. Ühel päeval kustutab keegi salaja ühe rea. Kuidas sa seda üldse teada saaksid?",
+  "card1": "[[blockchain|Plokiahel]] on ühine register kõigist [[transaction|tehingutest]]. Tuhanded arvutid hoiavad sama koopiat, nii et ükski inimene ei saa seda vaikselt muuta.",
+  "analogy1": "Kujuta ette klassivihikut, millest igal õpilasel on täpne koopia. Kui keegi muudab oma koopiat, ei klapi see enam teiste omadega ja klass ei arvesta seda.",
+  "card2": "Tehingud kogutakse [[block|plokki]]. Iga uus plokk on seotud eelmisega nagu ahela lülid. Vana ploki muutmine lõhuks kõik järgmised lülid.",
+  "walk": {
+    "title": "Mis juhtub, kui saadad mündi",
+    "f1": "Vajutad „Saada“. Su rahakott allkirjastab tehingu sinu [[private-key|privaatvõtmega]], et tõestada, et mündid on sinu omad.",
+    "f2": "Tehing läheb võrku. Arvutid kontrollivad, et allkiri on õige ja et sul on need mündid päriselt olemas.",
+    "f3": "Kontrollitud tehingud pakitakse uude plokki, mis lisatakse ahela lõppu.",
+    "f4": "Iga arvuti uuendab oma koopiat. Tehing on nüüd jäädavalt kirjas ja igaüks saab seda vaadata."
+  },
+  "card3": "Enamik plokiahelaid on avalikud. Igaüks näeb, millised [[address|aadressid]] millistele münte saatsid ja millal. Sinu nime seal pole, aga jälg jääb igaveseks.",
+  "sim": {
+    "record": {
+      "prompt": "Sõber ütleb, et saatis sulle 30 münti. Ta näitab ekraanipilti, kus on kirjas „Saadetud!“.",
+      "trust": {
+        "label": "Usalda ekraanipilti",
+        "before": "Pead ekraanipilti tõendiks, et mündid on saadetud.",
+        "what": "Münte ei tulnud kunagi. Ekraanipilt oli töödeldud.",
+        "why": "Ekraanipilt on lihtsalt pilt ja pilti saab igaüks muuta.",
+        "how": "Tõend on plokiahel ise, mitte pilt sellest. Iga päris tehingut saab vaadata plokiahela uurija (block explorer) veebilehel.",
+        "realLife": "Ära kunagi võta ekraanipilti makse tõendina. Kontrolli oma rahakotti või plokiahela uurijat."
+      },
+      "wait": {
+        "label": "Oota natuke ja loota",
+        "before": "Ootad ja vaatad, kas midagi juhtub.",
+        "what": "Midagi ei muutunud. Sa ikka ei tea, kas ta midagi saatis.",
+        "why": "Ootamine ei anna fakte. Kui tehing oleks päris, oleks kanne juba olemas.",
+        "how": "Enamik plokiahelaid kinnitab tehingu sekundite või minutitega ja selle olekut saab kohe kontrollida.",
+        "realLife": "Ära oota ja arva. Kontrolli."
+      },
+      "check": {
+        "label": "Kontrolli tehingut oma rahakotist",
+        "before": "Avad oma rahakoti ja otsid sissetulevat tehingut.",
+        "what": "Sissetulevat tehingut pole. Said selle kohe teada, ilma vaidlemata.",
+        "why": "Su rahakott loeb ühist registrit. Kui seda pole plokiahelas, siis seda ei juhtunud.",
+        "how": "Rahakotid ja plokiahela uurijad näitavad iga sinu aadressile tulnud tehingut koos aja ja summaga.",
+        "realLife": "Tõde näitab su rahakott või plokiahela uurija. Ekraanipildid ja lubadused ei näita."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Miks on plokiahelas vana tehingut nii raske muuta?",
+    "a": "Tuhanded arvutid hoiavad sama koopiat ja plokid on omavahel seotud",
+    "b": "Seda kaitseb tugev parool",
+    "c": "Ei olegi: administraator saab vead kustutada",
+    "explanation": "Iga plokk on seotud eelmisega ja koopiaid hoiavad tuhanded arvutid. Mineviku muutmiseks tuleks muuta peaaegu kõiki neid korraga."
+  },
+  "q2": {
+    "prompt": "Mida näeb igaüks avalikus plokiahelas?",
+    "a": "Mitte midagi, krüpto on täiesti privaatne",
+    "b": "Sinu nime ja kodust aadressi",
+    "c": "Millised aadressid millistele kui palju saatsid ja millal",
+    "explanation": "Enamik plokiahelaid on avalikud registrid. Need näitavad aadresse, summasid ja aegu, nii et mõtle enne, kui oma aadressi jagad."
+  },
+  "q3": {
+    "prompt": "Sõber näitab ekraanipilti, et ta maksis sulle. Mis on päris tõend?",
+    "a": "Ekraanipilt",
+    "b": "Tehing, mis paistab su rahakotis või plokiahela uurijas",
+    "c": "Sõbra sõna",
+    "explanation": "Plokiahel on ühine register. Kui tehing on seal, siis see toimus. Kui ei ole, siis ei toimunud."
+  },
+  "misc": {
+    "passwordProtected": "„Plokiahelat kaitseb tugev parool.“ See pole parool: see on tuhanded ühesugused koopiad ja omavahel seotud plokid.",
+    "adminDeletes": "„Administraator saab vead kustutada.“ Administraatorit pole. Kui tehing on kinnitatud, ei saa keegi seda kustutada.",
+    "fullyPrivate": "„Krüpto on täiesti privaatne.“ Enamikus plokiahelates on tehingud avalikud ja jälg jääb igaveseks.",
+    "namesVisible": "„Mu nimi ja aadress on plokiahelas.“ Nimesid seal pole, aga aadressid ja summad on ning neid saab mõnikord inimestega seostada.",
+    "screenshotProof": "„Ekraanipilt tõestab.“ Pilte on lihtne töödelda. Tõend on plokiahelas.",
+    "friendWord": "„Kui sõber ütleb, siis on tõsi.“ Ka ausad sõbrad eksivad. Register näitab, mis päriselt juhtus."
+  },
+  "t1": "[[blockchain|Plokiahel]] on ühine register, mida hoiavad tuhanded arvutid.",
+  "t2": "Plokid on seotud, nii et minevikku ei saa vaikselt muuta.",
+  "t3": "Kontrolli oma rahakotti või plokiahela uurijat. Ekraanipilt pole tõend.",
+  "talk1": "Kus veel peavad inimesed ühist registrit, mida kõik usaldavad, näiteks e-kool või spordi tablool?",
+  "talk2": "Kas on hea või halb, et igaüks näeb plokiahela tehinguid? Miks?"
+}

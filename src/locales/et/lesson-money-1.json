@@ -1,0 +1,77 @@
+{
+  "title": "Mis teeb rahast raha?",
+  "hook": "Teie klass otsustab kooli laadal kasutada rahana pudelikorke. Äkki saab ühe korgiga küpsise. Aga miks peaks keegi pudelikorki vastu võtma?",
+  "card1": "Raha toimib, sest inimesed usaldavad seda ja lepivad kokku seda kasutada. Hea raha on lihtne kaasas kanda ja jagada, raske võltsida ning inimesed usuvad, et see on ka homme midagi väärt.",
+  "analogy1": "Raha on nagu punktid mängus. Punktidel on tähtsus ainult seni, kuni kõik mängivad samade reeglite järgi. Kui mängijad lakkavad punkte uskumast, pole need enam midagi väärt.",
+  "card2": "[[cryptocurrency|Krüptoraha]] on digitaalne raha, mida ei halda ükski pank ega valitsus. Selle asemel peab arvutite võrk [[blockchain|plokiahelas]] arvet, kellele mis kuulub.",
+  "card3": "Krüpto hind on lihtsalt see, mida inimesed on valmis selle eest praegu maksma. See muutub kogu aeg, mõnikord ühe päevaga väga palju. Seda nimetatakse [[volatility|volatiilsuseks]].",
+  "story": {
+    "title": "Krüptomaailma kaks kuulsaimat pitsat",
+    "body": "22. mail 2010 maksis Floridas elav programmeerija Laszlo Hanyecz kahe pitsa eest 10 000 bitcoini. See oli esimene teadaolev kord, kui keegi ostis bitcoini eest päris asja. Toona olid need mündid väärt umbes 41 USA dollarit. Aastaid hiljem olid samad 10 000 bitcoini väärt sadu miljoneid dollareid ja vahel üle miljardi.",
+    "question": "Kas see oli halb tehing?",
+    "answer": "Tol hetkel mitte. Keegi ei teadnud, mis juhtub, ja tehing aitas näidata, et bitcoin võib toimida rahana. Päris õppetund: krüpto hinnad võivad liikuda tohutult mõlemas suunas ja keegi ei tea ette, kummas."
+  },
+  "sim": {
+    "fair": {
+      "prompt": "Kooli laadal pakub klassivend sulle su telefonilaadija eest 20 oma uut „KlassiMünti“. Ta ütleb, et järgmisel nädalal on KlassiMündid palju väärt.",
+      "accept": {
+        "label": "Vaheta laadija 20 KlassiMündi vastu",
+        "before": "Annad oma laadija ja saad 20 KlassiMünti.",
+        "what": "Järgmisel nädalal ei taha KlassiMünte peaaegu keegi. Nende eest ei saa midagi osta ja su laadija on läinud.",
+        "why": "Asi on väärt ainult nii palju, kui teised selle eest annavad. Lubadus, et see „on palju väärt“, ei ole väärtus.",
+        "how": "Raha vajab inimesi, kes seda vastu võtavad. Kui keegi teine KlassiMünte ei kasuta, pole kellegagi vahetada.",
+        "realLife": "Igal aastal tekib tuhandeid uusi münte ja paljud jäävad peaaegu väärtusetuks. Enne usaldamist küsi, kes münti päriselt kasutab."
+      },
+      "ask": {
+        "label": "Küsi, kes veel KlassiMünte vastu võtab",
+        "before": "Küsid, kus neid kasutada saaks.",
+        "what": "Ta vastab: „Varsti kõik.“ Praegu kasutab neid ainult kaks sõpra. Sa pole midagi kaotanud, aga päris vastust ka ei saanud.",
+        "why": "Hea küsimus! Aga „varsti“ on oletus. Raha väärtus sõltub sellest, kes seda täna vastu võtab.",
+        "how": "Vähe kasutatud raha on raske kulutada ja selle hind võib metsikult kõikuda.",
+        "realLife": "Küsimine on tark. Kui vastus on lubadus, mitte faktid, ole ettevaatlik."
+      },
+      "keep": {
+        "label": "Jäta laadija endale või küsi tavalist raha",
+        "before": "Ütled ei või palud maksta eurodes.",
+        "what": "Jääd millegi kasulikuga või saad raha, mida laadal päriselt kulutada saab.",
+        "why": "Eurosid võetakse laadal igal pool vastu. KlassiMünte ei võeta veel kuskil.",
+        "how": "Usaldus ja laialdane kasutus panevad raha toimima. Sa valisid raha, mida inimesed juba usaldavad.",
+        "realLife": "Enne kui vahetad päris asja uue mündi vastu, küsi: kes seda vastu võtab ja kas saaksin homme oma väärtuse tagasi?"
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Mis annab rahale väärtuse?",
+    "a": "Inimesed usaldavad seda ja lepivad kokku seda kasutada",
+    "b": "See on tehtud millestki haruldasest, näiteks kullast",
+    "c": "Selle looja ütleb, et see on väärtuslik",
+    "explanation": "Raha toimib, kui paljud inimesed seda usaldavad ja vastu võtavad. Eurod, pudelikorgid ja bitcoin sõltuvad kõik sellest."
+  },
+  "q2": {
+    "prompt": "Kes haldab krüptoraha nagu bitcoin?",
+    "a": "Üks pank Šveitsis",
+    "b": "Arvutite võrk, kus kõigil on sama register",
+    "c": "Mitte keegi, nii et igaüks saab registrit muuta",
+    "explanation": "Krüptoraha haldab arvutite võrk. Kõigil on sama registri ehk plokiahela koopia ja kõik järgivad samu reegleid."
+  },
+  "q3": {
+    "prompt": "Mündi hind tõusis eile 40%. Mida sa homse kohta tead?",
+    "a": "See tõuseb edasi",
+    "b": "Midagi kindlat. See võib palju tõusta või langeda",
+    "c": "Nüüd ei saa see enam palju langeda",
+    "explanation": "Krüpto hinnad on volatiilsed: need võivad kiiresti palju tõusta või langeda. Keegi ei tea homset hinda."
+  },
+  "misc": {
+    "goldOnly": "„Raha peab olema kullaga tagatud.“ Enamik tänapäeva raha ei ole. See toimib, sest inimesed usaldavad seda ja võtavad vastu.",
+    "creatorSays": "„Kui looja ütleb, et see on väärtuslik, siis ongi.“ Väärtus tuleb sellest, mida teised selle eest annavad, mitte looja lubadustest.",
+    "bankRuns": "„Bitcoini haldab pank.“ Seda ei halda ükski pank ega valitsus. Registrit peab arvutite võrk üle maailma.",
+    "anyoneChanges": "„Kui ülemust pole, saab igaüks registrit muuta.“ Võrk järgib rangeid reegleid ja vanade kannete muutmine on äärmiselt raske.",
+    "trendContinues": "„Kui hind tõuseb, siis tõuseb see edasi.“ Varasemad liikumised ei luba midagi tuleviku kohta. Hind võib mõne minutiga pöörduda.",
+    "safeAfterRise": "„Pärast suurt tõusu on turvaline.“ Suurele tõusule järgneb sageli suur langus. Just seda volatiilsus tähendabki."
+  },
+  "t1": "Raha toimib, sest inimesed usaldavad seda ja võtavad vastu.",
+  "t2": "[[cryptocurrency|Krüptoraha]] on digitaalne raha, mida hoiab arvutite võrk, mitte pank.",
+  "t3": "Krüpto hinnad võivad kiiresti palju muutuda. Keegi ei tea homset hinda.",
+  "talk1": "Mida kasutasid meie pere inimesed noorena rahana? Kuidas on maksmine muutunud?",
+  "talk2": "Kas usaldaksid münti, mida kasutavad vaid mõned inimesed? Miks või miks mitte?"
+}

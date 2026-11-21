@@ -8,5 +8,11 @@
   "irreversible": {"term": "pöördumatu", "definition": "Ei saa tagasi võtta. Kinnitatud krüptotehingut ei saa tühistada ega raha tagastada."},
   "blockchain": {"term": "plokiahel", "definition": "Paljude arvutite hoitav ühine tehingute register, mida ei saa vaikselt muuta."},
   "airdrop": {"term": "tasuta jagamine", "definition": "Müntide või tokenite tasuta jagamine paljudele rahakottidele. Päris jagamisi on olemas, aga võltsjagamised on levinud nipp, et saada sind oma rahakotti ühendama."},
-  "phishing": {"term": "õngitsus", "definition": "Nipp, kus petis teeskleb kedagi, keda sa usaldad, sageli võltssõnumi või -veebilehega, et varastada su paroole või taastefraasi."}
+  "phishing": {"term": "õngitsus", "definition": "Nipp, kus petis teeskleb kedagi, keda sa usaldad, sageli võltssõnumi või -veebilehega, et varastada su paroole või taastefraasi."},
+  "cryptocurrency": {"term": "krüptoraha", "definition": "Digitaalne raha, mida haldab arvutite võrk, mitte pank. Esimene oli bitcoin."},
+  "block": {"term": "plokk", "definition": "Tehingute kogum, mis lisatakse plokiahelasse koos. Iga plokk on seotud eelmisega."},
+  "exchange": {"term": "krüptobörs", "definition": "Platvorm, kus inimesed ostavad ja müüvad krüptoraha, sageli eurode või dollarite eest. Enamik on ainult täiskasvanutele."},
+  "volatility": {"term": "volatiilsus", "definition": "Kui palju ja kui kiiresti hind tõuseb ja langeb. Krüpto hinnad on väga volatiilsed."},
+  "rug-pull": {"term": "väljumispettus", "definition": "Pettus, kus mündi loojad koguvad ostjate raha ja kaovad, nii et münt jääb peaaegu väärtusetuks."},
+  "kyc": {"term": "kliendi tuvastamine", "definition": "Isikusamasuse kontroll, mille litsentsiga platvorm teeb enne, kui saad seda kasutada, tavaliselt isikut tõendava dokumendiga."}
 }

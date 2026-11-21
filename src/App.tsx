@@ -125,7 +125,7 @@ export default function App() {
       {language.status === 'beta' && inApp && <p className="beta-banner wrap">{t('app.betaTranslation')}</p>}
 
       <main id="main" tabIndex={-1}>
-        {route.page === 'landing' && <LandingPage onStart={() => navigate('/lesson/send-demo')} />}
+        {route.page === 'landing' && <LandingPage onStart={() => navigate('/lesson/money-1')} />}
         {inApp && (
           <div className="wrap app-main">
             {route.page === 'learn' && <HomePage onOpenLesson={(id) => navigate(`/lesson/${id}`)} onNavigate={navigate} />}

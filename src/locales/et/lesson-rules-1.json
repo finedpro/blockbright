@@ -1,0 +1,71 @@
+{
+  "title": "Vanus, reeglid ja päris platvormid",
+  "hook": "Oled 14 ja tahad proovida päris krüptoäppi. See küsib su sünnikuupäeva ja pilti isikut tõendavast dokumendist. Sõber ütleb: „Kasuta lihtsalt ema kontot.“",
+  "card1": "Enamik päris krüptoplatvorme ehk [[exchange|krüptobörse]] võtab vastu ainult täiskasvanuid (18+). Enne kui saad midagi osta, kontrollivad nad, kes sa oled. Seda nimetatakse [[kyc|kliendi tuvastamiseks]].",
+  "analogy1": "Isikusamasuse kontroll on nagu dokumendi näitamine pangas või telefonilepingut sõlmides. See on veidi tüütu, aga muudab kurjategijatel varastatud raha peitmise raskemaks.",
+  "card2": "Kellegi teise konto kasutamine rikub platvormi reegleid. Konto võidakse koos rahaga külmutada ja omanik vastutab kõige eest, mida sellega tehakse.",
+  "card3": "Paljudes riikides, ka Eestis ja Soomes, võib krüptost saadud kasu olla maksustatav. See on veel üks põhjus teha seda avalikult, koos täiskasvanuga, kes reegleid teab.",
+  "sim": {
+    "account": {
+      "prompt": "Sõber ütleb: „Pole veel 18? Ava lihtsalt konto oma ema dokumendiga. Ta ei pane tähelegi.“",
+      "borrow": {
+        "label": "Kasuta ema dokumenti ilma küsimata",
+        "before": "Registreerud oma ema andmetega.",
+        "what": "Platvorm märkas ebatavalist tegevust ja külmutas konto. Su ema sai selle kohta e-kirja ja raha jäi kinni.",
+        "why": "Konto kuulub inimesele, kelle dokumenti kasutati. Kellegi dokumendi kasutamine ilma loata rikub reegleid ja tema usaldust.",
+        "how": "Platvormid jälgivad märke, et kontot ei kasuta selle omanik, ja võivad konto külmutada.",
+        "realLife": "Ära kunagi kasuta kellegi teise isikut, isegi mitte pereliikme oma. See võib teile mõlemale päris pahandusi tekitada."
+      },
+      "noCheck": {
+        "label": "Leia äpp, mis vanust ei küsi",
+        "before": "Otsid platvormi, kus kontrolli pole.",
+        "what": "Leidsid ühe, aga sel polnud litsentsi ega klienditoge ning arvustused olid kohutavad. Sisse pandud harjutusmünte ei saanud välja võtta.",
+        "why": "Platvormid, mis jätavad kontrolli vahele, jätavad sageli vahele ka muud reeglid, näiteks su raha turvalise hoidmise.",
+        "how": "Litsentsiga platvormid ELis peavad järgima reegleid, sealhulgas isikut kontrollima. Need, kes seda ei tee, on riskantsed.",
+        "realLife": "Isikukontrolli puudumine on ohumärk, mitte eelis."
+      },
+      "talk": {
+        "label": "Räägi vanemaga ja harjuta siin edasi",
+        "before": "Räägid vanemale, mida tahad proovida.",
+        "what": "Su vanem oli rõõmus, et küsisid. Leppisite kokku, et õpid harjutusmüntidega edasi ja vaatate seda koos, kui oled vanem.",
+        "why": "Täiskasvanu aitab sul reegleid mõista ja sa ei riku neid.",
+        "how": "Kui õpid enne harjutusmüntidega, tead lõkse juba siis, kui päriselt alustad.",
+        "realLife": "Kui aeg on käes, alusta koos täiskasvanuga, litsentsiga platvormil ja ainult väikese summaga."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Miks küsivad päris krüptobörsid su isikut tõendavat dokumenti?",
+    "a": "Et kontrollida, kes sa oled, ja muuta kuritegevus raskemaks",
+    "b": "Ainult selleks, et su andmeid müüa",
+    "c": "Nad ei pea: see on vabatahtlik, kui viisakalt paluda",
+    "explanation": "Paljudes riikides, ka ELis, peavad litsentsiga platvormid isikut kontrollima, et võidelda rahapesu ja pettustega."
+  },
+  "q2": {
+    "prompt": "Oled alla 18 ja tahad kasutada päris krüptobörsi. Mis on õige samm?",
+    "a": "Kasuta vanema dokumenti ja ole ettevaatlik",
+    "b": "Räägi vanemaga, õpi harjutusmüntidega ja oota, kuni see on lubatud",
+    "c": "Leia äpp, mis vanust ei kontrolli",
+    "explanation": "Enamik krüptobörse on täiskasvanutele. Turvaline tee on õppida enne harjutusmüntidega ja koos täiskasvanuga, keda usaldad."
+  },
+  "q3": {
+    "prompt": "Kas krüptost saadud kasu võib olla maksustatav?",
+    "a": "Ei, krüpto on maksuvaba",
+    "b": "Ainult siis, kui vahetad mündid tagasi eurodeks",
+    "c": "Jah, paljudes riikides, ka Eestis ja Soomes",
+    "explanation": "Maksureeglid on riigiti erinevad, aga krüptost saadud kasu on sageli maksustatav. See on veel üks põhjus teha seda avalikult koos täiskasvanuga."
+  },
+  "misc": {
+    "sellData": "„Nad tahavad ainult mu andmeid müüa.“ Paljudes riikides nõuab seadus isikukontrolli, et võidelda kuritegevuse ja pettustega.",
+    "optional": "„Isikukontroll on vabatahtlik.“ Litsentsiga platvormid peavad isikut kontrollima. Need, kes seda ei tee, on ohumärk.",
+    "parentId": "„Vanema dokumendi kasutamine on okei, kui olen ettevaatlik.“ See rikub reegleid ning konto võidakse külmutada ja omanik vastutusele võtta.",
+    "noCheckApp": "„Äpp ilma vanusekontrollita on hea valik.“ Kontrolli puudumine tähendab tavaliselt, et ka sind ei kaitsta.",
+    "taxFree": "„Krüpto on maksuvaba.“ Paljudes riikides, ka Eestis ja Soomes, võib krüptost saadud kasu olla maksustatav.",
+    "onlyCash": "„Maks loeb ainult siis, kui vahetan eurodeks.“ Reeglid on riigiti erinevad ja ka ühe mündi vahetamine teise vastu võib arvesse minna."
+  },
+  "t1": "Enamik päris krüptobörse on täiskasvanutele (18+) ja kontrollib su isikut.",
+  "t2": "Ära kunagi kasuta kellegi teise kontot ega dokumenti, isegi mitte pereliikme oma.",
+  "t3": "Krüptost saadud kasu võib olla maksustatav. Kui aeg on käes, alusta koos täiskasvanuga ja litsentsiga platvormil.",
+  "talk1": "Milliseid reegleid tahab meie pere rahaäppide ja internetimaksete jaoks?",
+  "talk2": "Kui oled piisavalt vana, kuidas tahaksid teha esimese sammu ja kellelt küsiksid?"
+}

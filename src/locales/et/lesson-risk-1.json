@@ -1,0 +1,100 @@
+{
+  "title": "Hype, FOMO ja väljumispettused",
+  "hook": "Kõik koolis räägivad uuest mündist. Üks video ütleb, et see tõusis sel nädalal 500% ja „veel pole hilja“. Sul on tunne, et jääd millestki ilma.",
+  "card1": "Sellel tundel on nimi: FOMO ehk hirm ilma jääda. Hype on tehtud selleks, et sa seda tunneksid, sest kiirustatud inimesed ei peatu kontrollima.",
+  "analogy1": "Hype on nagu rahvamass, mis jookseb poe poole. Hakkad ka jooksma, teadmata miks. Vahel on seal allahindlus. Vahel on ees jooksjad need, kes müüvad.",
+  "card2": "Krüpto hindade [[volatility|volatiilsus]] on suur. Münt võib nädalaga kahekordistuda ja järgmisel kaotada 90%. Sageli müüvad esimesena need, kes seda reklaamisid.",
+  "card3": "[[rug-pull|Väljumispettuses]] puhuvad mündi loojad selle ümber hype’i, koguvad ostjate raha ja kaovad sellega. Hind kukub peaaegu nulli, sageli mõne minutiga.",
+  "story": {
+    "title": "Münt, mis sai nime telesarja järgi",
+    "body": "2021. aasta oktoobri lõpus tuli välja uus münt SQUID, mis sai nime menusarja Squid Game järgi, kuigi sarja tegijatel polnud sellega mingit pistmist. Selle hind tõusis umbes ühelt sendilt ligi 2800 USA dollarini 1. novembriks. Aga ostjad avastasid, et nad ei saa müüa. Siis kadusid anonüümsed loojad umbes 3,38 miljoni dollariga ja hind kukkus mõne minutiga peaaegu nulli.",
+    "question": "Milliseid ohumärke oleksid ostjad märgata võinud?",
+    "answer": "Loojad olid anonüümsed, münt kasutas kuulsat nime ilma õiguseta, hind tõusis võimatult kiiresti ja ostjad teatasid, et ei saa müüa. Kui sa ei pääse välja, pole see investeering. See on lõks."
+  },
+  "adviceIntro": "Uue mündi videot vaadatakse miljoneid kordi. Milliseid ridu sa ei järgiks?",
+  "advice": {
+    "l1": {
+      "text": "Pane sisse kõik oma säästud. Elad ainult korra!",
+      "why": "Ära kunagi pane rohkem, kui suudad täielikult kaotada. Hind võib langeda nulli."
+    },
+    "l2": {
+      "text": "Laena sõpradelt raha, et kohe rohkem osta.",
+      "why": "Kui hind langeb, kaotad mündid ja võlgned ikka raha."
+    },
+    "l3": {
+      "text": "Kasuta ainult raha, mille kaotus ei teeks haiget.",
+      "why": "Krüpto hinnad võivad kokku kukkuda. Ainult kaotada lubatava raha kasutamine hoiab sind turvaliselt."
+    },
+    "l4": {
+      "text": "Ära kunagi müü, isegi kui hind kukub. Teemantkäed!",
+      "why": "Sellised loosungid hoiavad ostjaid sees, kuni reklaamijad müüvad. Tee oma plaan."
+    },
+    "l5": {
+      "text": "Kontrolli, kes mündi tegi ja kas seda päriselt müüa saab.",
+      "why": "Anonüümsed loojad ja mündid, mida ei saa müüa, on väljumispettuse klassikalised märgid."
+    }
+  },
+  "sim": {
+    "hype": {
+      "prompt": "Sõber ütleb: „See münt tõuseb 50% päevas! Pane oma sünnipäevaraha kohe sisse, enne kui on hilja!“",
+      "all": {
+        "label": "Pane kogu sünnipäevaraha sisse",
+        "before": "Kulutad kogu oma sünnipäevaraha sellele mündile.",
+        "what": "Kaks päeva hiljem müüsid loojad oma mündid ja hind langes 95%. Su sünnipäevaraha on peaaegu kõik läinud.",
+        "why": "Kui hind tõuseb nii kiiresti, on see sageli hype ja selle alustajad müüvad hilinejatele.",
+        "how": "Hind tõuseb ainult seni, kuni tuleb uusi ostjaid. Kui nad lõpevad, võib hind kokku kukkuda.",
+        "realLife": "Ära kunagi pane sisse raha, mille kaotust sa ei kannata, ega tee seda sellepärast, et keegi ütleb „nüüd või mitte kunagi“."
+      },
+      "little": {
+        "label": "Pane natuke, lihtsalt proovimiseks",
+        "before": "Paned väikese osa oma rahast sisse.",
+        "what": "Hind kukkus ja su väike summa on peaaegu kadunud. Valus oli vähem, aga kadunud on ikka.",
+        "why": "Väiksem summa piirab kahju, aga ei tee halba münti heaks.",
+        "how": "Ka väikesed ostud lisavad raha, mille varased müüjad välja võtavad.",
+        "realLife": "Väikesed summad on targad. Mündi eelnev kontrollimine on veel targem."
+      },
+      "research": {
+        "label": "Oota ja kontrolli münt enne üle",
+        "before": "Uurid, kes mündi tegi ja kas inimesed saavad seda müüa.",
+        "what": "Leidsid anonüümsed loojad ja teated, et inimesed ei saa müüa. Su raha jäi alles.",
+        "why": "Päris võimalused ei kao ühe päevaga. Aeg kontrollimiseks kaitseb sind hype’i eest.",
+        "how": "Hype toimib inimesi kiirustades. Hoo mahavõtmine murrab nipi.",
+        "realLife": "Küsi: kes selle tegi, kas ma saan seda müüa ja mis juhtub, kui hind läheb nulli?"
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Münt on sel nädalal 500% tõusnud ja kõik räägivad sellest. Mis on tark samm?",
+    "a": "Osta kohe, et mitte ilma jääda",
+    "b": "Võta hoog maha ja kontrolli, kes selle tegi ja kas seda saaks müüa",
+    "c": "Osta, sest kui kõik sellest räägivad, peab see olema turvaline",
+    "explanation": "FOMO ja hype tõukavad sind kiiresti tegutsema. Hoo mahavõtmine ja kontrollimine kaitsevad sind."
+  },
+  "q2": {
+    "prompt": "Mis on väljumispettus (rug pull)?",
+    "a": "Loojad puhuvad mündi ümber hype’i, võtavad ostjate raha ja kaovad",
+    "b": "Tavaline väike hinnalangus",
+    "c": "Midagi, mis juhtub ainult tundmatute pisimüntidega",
+    "explanation": "Väljumispettuses võtavad mündi taga olevad inimesed raha välja ja kaovad, jättes ostjatele peaaegu väärtusetud mündid."
+  },
+  "q3": {
+    "prompt": "Kui palju peaksid riskantsesse münti panema?",
+    "a": "Kõik, suurima võidu nimel",
+    "b": "Laena natuke juurde, sest hind ju tõuseb",
+    "c": "Ainult nii palju, mille täielik kaotus ei teeks haiget",
+    "explanation": "Krüpto hind võib langeda nulli. Kasuta ainult raha, mida võid kaotada, ja ära kunagi laena ostmiseks."
+  },
+  "misc": {
+    "fomoBuy": "„Kui ma praegu ei osta, jään igaveseks ilma.“ Hype on tehtud just selle tunde tekitamiseks. Päris võimalus annab sulle aega kontrollida.",
+    "popularSafe": "„Kui kõik sellest räägivad, on see turvaline.“ Populaarne pole sama mis turvaline. Väljumispettused vajavad rahvamassi.",
+    "normalDip": "„Väljumispettus on lihtsalt tavaline langus.“ See on pettus: loojad võtavad raha ja kaovad.",
+    "onlyBigCoins": "„Ainult tundmatud pisimündid lähevad nii.“ SQUID oli enne kokkukukkumist kõigis uudistes.",
+    "allIn": "„Pane kõik sisse suurima võidu nimel.“ Mida suurem panus, seda rohkem võid kaotada.",
+    "borrow": "„Laenamine on okei, kui hind tõuseb.“ Keegi ei tea seda. Kui hind langeb, võlgned ikka raha."
+  },
+  "t1": "Hype ja FOMO on tehtud sind kiirustama. Võta hoog maha ja kontrolli.",
+  "t2": "Kasuta ainult raha, mida võid täielikult kaotada. Ära kunagi laena ostmiseks.",
+  "t3": "Anonüümsed loojad ja mündid, mida ei saa müüa, on [[rug-pull|väljumispettuse]] märgid.",
+  "talk1": "Kas oled kunagi ostnud midagi sellepärast, et kõigil teistel oli? Kuidas see läks?",
+  "talk2": "Kui sul oleks 50 eurot, kui palju sellest oleksid valmis täielikult kaotama?"
+}

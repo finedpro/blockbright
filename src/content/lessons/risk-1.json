@@ -1,0 +1,166 @@
+{
+  "id": "risk-1",
+  "module": 6,
+  "title": "title",
+  "hook": "hook",
+  "before": [
+    "q1",
+    "q2"
+  ],
+  "cards": [
+    "card1",
+    {
+      "kind": "analogy",
+      "key": "analogy1"
+    },
+    "card2",
+    "card3"
+  ],
+  "story": {
+    "title": "story.title",
+    "body": "story.body",
+    "question": "story.question",
+    "answer": "story.answer",
+    "sources": [
+      {
+        "title": "Cointelegraph (2021): Squid Game-inspired crypto scam collapses",
+        "url": "https://cointelegraph.com/markets/game-over-squid-game-inspired-crypto-scam-collapses-as-price-crashes-from-2-8k-to-zero"
+      },
+      {
+        "title": "HKCERT: Squid Game cryptocurrency creators pull the rug",
+        "url": "https://www.hkcert.org/security-news/squid-game-cryptocurrency-creators-pull-the-rug-from-under-investors-steal-millions"
+      }
+    ]
+  },
+  "simulation": {
+    "start": "hype",
+    "nodes": {
+      "hype": {
+        "prompt": "sim.hype.prompt",
+        "choices": [
+          {
+            "id": "all",
+            "label": "sim.hype.all.label",
+            "before": "sim.hype.all.before",
+            "explain": "sim.hype.all",
+            "tone": "bad"
+          },
+          {
+            "id": "little",
+            "label": "sim.hype.little.label",
+            "before": "sim.hype.little.before",
+            "explain": "sim.hype.little",
+            "tone": "warn"
+          },
+          {
+            "id": "research",
+            "label": "sim.hype.research.label",
+            "before": "sim.hype.research.before",
+            "explain": "sim.hype.research",
+            "tone": "good"
+          }
+        ]
+      }
+    }
+  },
+  "badAdvice": {
+    "intro": "adviceIntro",
+    "author": "@MoonShotMax",
+    "lines": [
+      {
+        "id": "l1",
+        "bad": true
+      },
+      {
+        "id": "l2",
+        "bad": true
+      },
+      {
+        "id": "l3",
+        "bad": false
+      },
+      {
+        "id": "l4",
+        "bad": true
+      },
+      {
+        "id": "l5",
+        "bad": false
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "id": "q1",
+      "prompt": "q1.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": false,
+          "misconception": "misc.fomoBuy"
+        },
+        {
+          "id": "b",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "correct": false,
+          "misconception": "misc.popularSafe"
+        }
+      ],
+      "explanation": "q1.explanation"
+    },
+    {
+      "id": "q2",
+      "prompt": "q2.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "correct": false,
+          "misconception": "misc.normalDip"
+        },
+        {
+          "id": "c",
+          "correct": false,
+          "misconception": "misc.onlyBigCoins"
+        }
+      ],
+      "explanation": "q2.explanation"
+    },
+    {
+      "id": "q3",
+      "prompt": "q3.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": false,
+          "misconception": "misc.allIn"
+        },
+        {
+          "id": "b",
+          "correct": false,
+          "misconception": "misc.borrow"
+        },
+        {
+          "id": "c",
+          "correct": true
+        }
+      ],
+      "explanation": "q3.explanation"
+    }
+  ],
+  "takeaways": [
+    "t1",
+    "t2",
+    "t3"
+  ],
+  "talk": [
+    "talk1",
+    "talk2"
+  ]
+}

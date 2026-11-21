@@ -1,0 +1,78 @@
+{
+  "title": "How a blockchain keeps score",
+  "hook": "You and your friends keep a shared notebook of who owes whom snacks. One day someone secretly rubs out a line. How would you ever know?",
+  "card1": "A [[blockchain]] is a shared record of every [[transaction]]. Thousands of computers keep the same copy, so no single person can quietly change it.",
+  "analogy1": "Imagine a class notebook where every student has an exact copy. If one person changes their copy, it no longer matches everyone else's, and the class ignores it.",
+  "card2": "Transactions are collected into a [[block]]. Each new block is linked to the one before it, like links in a chain. Changing an old block would break every link after it.",
+  "walk": {
+    "title": "What happens when you send a coin",
+    "f1": "You press Send. Your wallet signs the transaction with your [[private-key]] to prove the coins are yours.",
+    "f2": "The transaction goes out to the network. Computers check that the signature is right and that you really have the coins.",
+    "f3": "Checked transactions are packed into a new block, which is added to the end of the chain.",
+    "f4": "Every computer updates its copy. The transaction is now on record for good, and anyone can look it up."
+  },
+  "card3": "Most blockchains are public. Anyone can see which [[address|addresses]] sent coins to which, and when. Your name isn't written there, but the trail stays forever.",
+  "sim": {
+    "record": {
+      "prompt": "A friend says they have sent you 30 coins. They show you a screenshot that says \"Sent!\"",
+      "trust": {
+        "label": "Trust the screenshot",
+        "before": "You will treat the screenshot as proof that the coins were sent.",
+        "what": "No coins ever arrived. The screenshot was edited.",
+        "why": "A screenshot is just a picture, and anyone can change a picture.",
+        "how": "The proof is the blockchain itself, not a picture of it. Every real transaction can be looked up with a block explorer website.",
+        "realLife": "Never accept a screenshot as proof of payment. Check your own wallet or a block explorer."
+      },
+      "wait": {
+        "label": "Wait a while and hope",
+        "before": "You will wait and see if anything happens.",
+        "what": "Nothing changed. You still don't know if they sent anything.",
+        "why": "Waiting doesn't give you facts. If the transaction were real, the record would already exist.",
+        "how": "Most blockchains confirm a transaction within seconds or minutes, and you can check its status right away.",
+        "realLife": "Don't wait and guess. Check."
+      },
+      "check": {
+        "label": "Check your own wallet for the transaction",
+        "before": "You will open your wallet and look for the incoming transaction.",
+        "what": "There is no incoming transaction. You found out right away, without an argument.",
+        "why": "Your wallet reads the shared record. If it isn't on the blockchain, it didn't happen.",
+        "how": "Wallets and block explorers show every transaction to your address, with the time and amount.",
+        "realLife": "Your wallet or a block explorer shows the truth. Screenshots and promises don't."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Why is it so hard to change an old transaction on a blockchain?",
+    "a": "Thousands of computers keep the same copy, and the blocks are linked together",
+    "b": "A strong password protects it",
+    "c": "It isn't: an admin can delete mistakes",
+    "explanation": "Every block links to the one before it, and thousands of computers hold copies. Changing the past would mean changing almost all of them at once."
+  },
+  "q2": {
+    "prompt": "What can anyone see on a public blockchain?",
+    "a": "Nothing, crypto is completely private",
+    "b": "Your name and home address",
+    "c": "Which addresses sent how much to which, and when",
+    "explanation": "Most blockchains are public records. They show addresses, amounts and times, so think before you share your address."
+  },
+  "q3": {
+    "prompt": "A friend shows a screenshot saying they paid you. What is the real proof?",
+    "a": "The screenshot",
+    "b": "The transaction showing up in your wallet or on a block explorer",
+    "c": "Your friend's word",
+    "explanation": "The blockchain is the shared record. If the transaction is there, it happened. If not, it didn't."
+  },
+  "misc": {
+    "passwordProtected": "\"A strong password protects the blockchain.\" It isn't a password: it's thousands of matching copies and linked blocks.",
+    "adminDeletes": "\"An admin can delete mistakes.\" There is no admin. Once a transaction is confirmed, nobody can delete it.",
+    "fullyPrivate": "\"Crypto is completely private.\" Transactions on most blockchains are public, and the trail stays forever.",
+    "namesVisible": "\"My name and address are on the blockchain.\" Names aren't stored there, but addresses and amounts are, and they can sometimes be linked to people.",
+    "screenshotProof": "\"A screenshot proves it.\" Pictures are easy to edit. The proof is on the blockchain.",
+    "friendWord": "\"If a friend says so, it's true.\" Even honest friends make mistakes. The record shows what really happened."
+  },
+  "t1": "A [[blockchain]] is a shared record kept by thousands of computers.",
+  "t2": "Blocks are linked, so the past can't be quietly changed.",
+  "t3": "Check your wallet or a block explorer. Screenshots are not proof.",
+  "talk1": "Where else do people keep a shared record that everyone trusts, like a school register or a sports scoreboard?",
+  "talk2": "Is it good or bad that anyone can see blockchain transactions? Why?"
+}

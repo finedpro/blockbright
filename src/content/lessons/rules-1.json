@@ -1,0 +1,124 @@
+{
+  "id": "rules-1",
+  "module": 7,
+  "title": "title",
+  "hook": "hook",
+  "before": [
+    "q1",
+    "q2"
+  ],
+  "cards": [
+    "card1",
+    {
+      "kind": "analogy",
+      "key": "analogy1"
+    },
+    "card2",
+    "card3"
+  ],
+  "simulation": {
+    "start": "account",
+    "nodes": {
+      "account": {
+        "prompt": "sim.account.prompt",
+        "choices": [
+          {
+            "id": "borrow",
+            "label": "sim.account.borrow.label",
+            "before": "sim.account.borrow.before",
+            "explain": "sim.account.borrow",
+            "tone": "bad"
+          },
+          {
+            "id": "noCheck",
+            "label": "sim.account.noCheck.label",
+            "before": "sim.account.noCheck.before",
+            "explain": "sim.account.noCheck",
+            "tone": "warn"
+          },
+          {
+            "id": "talk",
+            "label": "sim.account.talk.label",
+            "before": "sim.account.talk.before",
+            "explain": "sim.account.talk",
+            "tone": "good"
+          }
+        ]
+      }
+    }
+  },
+  "quiz": [
+    {
+      "id": "q1",
+      "prompt": "q1.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "correct": false,
+          "misconception": "misc.sellData"
+        },
+        {
+          "id": "c",
+          "correct": false,
+          "misconception": "misc.optional"
+        }
+      ],
+      "explanation": "q1.explanation"
+    },
+    {
+      "id": "q2",
+      "prompt": "q2.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": false,
+          "misconception": "misc.parentId"
+        },
+        {
+          "id": "b",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "correct": false,
+          "misconception": "misc.noCheckApp"
+        }
+      ],
+      "explanation": "q2.explanation"
+    },
+    {
+      "id": "q3",
+      "prompt": "q3.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": false,
+          "misconception": "misc.taxFree"
+        },
+        {
+          "id": "b",
+          "correct": false,
+          "misconception": "misc.onlyCash"
+        },
+        {
+          "id": "c",
+          "correct": true
+        }
+      ],
+      "explanation": "q3.explanation"
+    }
+  ],
+  "takeaways": [
+    "t1",
+    "t2",
+    "t3"
+  ],
+  "talk": [
+    "talk1",
+    "talk2"
+  ]
+}

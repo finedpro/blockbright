@@ -1,0 +1,100 @@
+{
+  "title": "Hype, FOMO ja katoamishuijaukset",
+  "hook": "Kaikki koulussa puhuvat uudesta kolikosta. Eräässä videossa sanotaan, että se nousi tällä viikolla 500 % ja ”vielä ei ole myöhäistä”. Tuntuu, että jäät jostain paitsi.",
+  "card1": "Sillä tunteella on nimi: FOMO eli pelko paitsi jäämisestä. Hype on rakennettu herättämään se, koska kiirehditetyt ihmiset eivät pysähdy tarkistamaan.",
+  "analogy1": "Hype on kuin väkijoukko, joka juoksee kohti kauppaa. Alat juosta mukana tietämättä miksi. Joskus siellä on ale. Joskus edellä juoksevat ovat niitä, jotka myyvät.",
+  "card2": "Kryptojen hinnoilla on suuri [[volatility|volatiliteetti]]. Kolikko voi tuplaantua viikossa ja menettää seuraavalla 90 %. Usein sen mainostajat myyvät ensimmäisinä.",
+  "card3": "[[rug-pull|Katoamishuijauksessa]] kolikon tekijät lietsovat hypeä, keräävät ostajien rahat ja katoavat niiden kanssa. Hinta putoaa lähes nollaan, usein minuuteissa.",
+  "story": {
+    "title": "Kolikko, joka nimettiin tv-sarjan mukaan",
+    "body": "Lokakuun 2021 lopussa julkaistiin uusi kolikko nimeltä SQUID, joka nimettiin hittisarja Squid Gamen mukaan, vaikka sarjan tekijöillä ei ollut sen kanssa mitään tekemistä. Sen hinta nousi noin sentistä noin 2 800 Yhdysvaltain dollariin 1. marraskuuta mennessä. Mutta ostajat huomasivat, etteivät he voineet myydä. Sitten nimettömät tekijät katosivat noin 3,38 miljoonan dollarin kanssa, ja hinta romahti lähes nollaan minuuteissa.",
+    "question": "Mitä varoitusmerkkejä ostajat olisivat voineet huomata?",
+    "answer": "Tekijät olivat nimettömiä, kolikko käytti kuuluisaa nimeä ilman oikeutta, hinta nousi mahdottoman nopeasti, ja ostajat kertoivat, etteivät voineet myydä. Jos et pääse ulos, kyse ei ole sijoituksesta. Se on ansa."
+  },
+  "adviceIntro": "Uudesta kolikosta kertovaa videota katsotaan miljoonia kertoja. Mitä rivejä et noudattaisi?",
+  "advice": {
+    "l1": {
+      "text": "Laita kaikki säästösi. Elät vain kerran!",
+      "why": "Älä koskaan laita enempää kuin voit menettää kokonaan. Hinta voi pudota nollaan."
+    },
+    "l2": {
+      "text": "Lainaa kavereilta rahaa ja osta lisää heti.",
+      "why": "Jos hinta laskee, menetät kolikot ja olet silti velkaa rahat."
+    },
+    "l3": {
+      "text": "Käytä vain rahaa, jonka menettäminen ei sattuisi.",
+      "why": "Kryptojen hinnat voivat romahtaa. Kun käytät vain sitä, minkä voit menettää, pysyt turvassa."
+    },
+    "l4": {
+      "text": "Älä koskaan myy, vaikka hinta romahtaisi. Timanttikädet!",
+      "why": "Tällaiset iskulauseet pitävät ostajat mukana, kun mainostajat myyvät. Tee oma suunnitelmasi."
+    },
+    "l5": {
+      "text": "Tarkista, kuka kolikon teki ja voiko sitä oikeasti myydä.",
+      "why": "Nimettömät tekijät ja kolikot, joita ei voi myydä, ovat katoamishuijauksen klassisia merkkejä."
+    }
+  },
+  "sim": {
+    "hype": {
+      "prompt": "Kaveri sanoo: ”Tämä kolikko nousee 50 % päivässä! Laita syntymäpäivärahasi nyt, ennen kuin on myöhäistä!”",
+      "all": {
+        "label": "Laita kaikki syntymäpäivärahat",
+        "before": "Käytät kaikki syntymäpäivärahasi kolikkoon.",
+        "what": "Kaksi päivää myöhemmin tekijät myivät kolikkonsa ja hinta putosi 95 %. Syntymäpäivärahasi ovat melkein kaikki poissa.",
+        "why": "Kun hinta nousee noin nopeasti, kyse on usein hypestä, ja sen aloittajat myyvät myöhästyneille.",
+        "how": "Hinta nousee vain niin kauan kuin uusia ostajia tulee. Kun he loppuvat, hinta voi romahtaa.",
+        "realLife": "Älä koskaan laita rahaa, jonka menettämiseen sinulla ei ole varaa, äläkä siksi, että joku sanoo ”nyt tai ei koskaan”."
+      },
+      "little": {
+        "label": "Laita vähän, ihan kokeeksi",
+        "before": "Laitat pienen osan rahoistasi.",
+        "what": "Hinta romahti, ja pieni summasi on melkein poissa. Sattui vähemmän, mutta poissa se silti on.",
+        "why": "Pienempi summa rajoittaa vahinkoa, mutta ei tee huonosta kolikosta hyvää.",
+        "how": "Pienetkin ostot kasvattavat rahaa, jonka varhaiset myyjät vievät.",
+        "realLife": "Pienet summat ovat fiksuja. Kolikon tarkistaminen ensin on vielä fiksumpaa."
+      },
+      "research": {
+        "label": "Odota ja tarkista kolikko ensin",
+        "before": "Selvität, kuka kolikon teki ja voivatko ihmiset myydä sitä.",
+        "what": "Löysit nimettömät tekijät ja raportteja siitä, etteivät ihmiset voi myydä. Rahasi säilyivät.",
+        "why": "Oikeat tilaisuudet eivät katoa päivässä. Aika tarkistaa suojaa sinua hypeltä.",
+        "how": "Hype toimii kiirehtimällä ihmisiä. Hidastaminen rikkoo tempun.",
+        "realLife": "Kysy: kuka sen teki, voinko myydä sen, ja mitä tapahtuu, jos hinta menee nollaan?"
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Kolikko on noussut tällä viikolla 500 %, ja kaikki puhuvat siitä. Mikä on fiksu liike?",
+    "a": "Osta heti, ettet jää paitsi",
+    "b": "Hidasta ja tarkista, kuka sen teki ja voisitko myydä sen",
+    "c": "Osta, koska jos kaikki puhuvat siitä, sen täytyy olla turvallinen",
+    "explanation": "FOMO ja hype ajavat sinua toimimaan nopeasti. Hidastaminen ja tarkistaminen suojaavat sinua."
+  },
+  "q2": {
+    "prompt": "Mikä on katoamishuijaus (rug pull)?",
+    "a": "Tekijät lietsovat kolikolle hypeä, vievät ostajien rahat ja katoavat",
+    "b": "Tavallinen pieni hinnanlasku",
+    "c": "Jotain, mitä tapahtuu vain tuntemattomille pikkukolikoille",
+    "explanation": "Katoamishuijauksessa kolikon takana olevat ihmiset nostavat rahat ja katoavat, ja ostajille jää lähes arvottomia kolikoita."
+  },
+  "q3": {
+    "prompt": "Kuinka paljon riskialttiiseen kolikkoon kannattaa laittaa?",
+    "a": "Kaikki, suurimman voiton toivossa",
+    "b": "Lainaa vähän lisää, koska hinta kuitenkin nousee",
+    "c": "Vain sen verran, minkä menettäminen kokonaan ei sattuisi",
+    "explanation": "Kryptojen hinta voi pudota nollaan. Käytä vain rahaa, jonka voit menettää, äläkä koskaan lainaa ostaaksesi."
+  },
+  "misc": {
+    "fomoBuy": "”Jos en osta nyt, jään ikuisesti paitsi.” Hype on rakennettu herättämään juuri tuo tunne. Oikea tilaisuus antaa aikaa tarkistaa.",
+    "popularSafe": "”Jos kaikki puhuvat siitä, se on turvallinen.” Suosittu ei ole sama kuin turvallinen. Katoamishuijaukset tarvitsevat väkijoukkoja.",
+    "normalDip": "”Katoamishuijaus on vain tavallinen lasku.” Se on huijaus: tekijät vievät rahat ja katoavat.",
+    "onlyBigCoins": "”Vain tuntemattomat pikkukolikot huijataan näin.” SQUID oli kaikissa uutisissa ennen romahdustaan.",
+    "allIn": "”Laita kaikki suurimman voiton toivossa.” Mitä isompi panos, sitä enemmän voit menettää.",
+    "borrow": "”Lainaaminen on ok, jos hinta nousee.” Kukaan ei tiedä sitä. Jos hinta laskee, olet silti velkaa."
+  },
+  "t1": "Hype ja FOMO on rakennettu kiirehtimään sinua. Hidasta ja tarkista.",
+  "t2": "Käytä vain rahaa, jonka voisit menettää kokonaan. Älä koskaan lainaa ostaaksesi.",
+  "t3": "Nimettömät tekijät ja kolikot, joita ei voi myydä, ovat [[rug-pull|katoamishuijauksen]] merkkejä.",
+  "talk1": "Oletko koskaan ostanut jotain siksi, että kaikilla muilla oli se? Miten kävi?",
+  "talk2": "Jos sinulla olisi 50 euroa, kuinka paljon siitä olisit valmis menettämään kokonaan?"
+}

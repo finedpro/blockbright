@@ -1,0 +1,77 @@
+{
+  "title": "What makes money money?",
+  "hook": "Your class decides to use bottle caps as money at the school fair. Suddenly one cap buys a cookie. But why would anyone accept a bottle cap?",
+  "card1": "Money works because people trust it and agree to use it. Good money is easy to carry, easy to split, hard to fake, and people believe it will still be worth something tomorrow.",
+  "analogy1": "Money is like points in a game. Points only matter while everyone plays by the same rules. If the players stop believing in the points, the points stop being worth anything.",
+  "card2": "A [[cryptocurrency]] is digital money that no bank or government runs. Instead, a network of computers keeps track of who owns what on a [[blockchain]].",
+  "card3": "A crypto price is simply what people are willing to pay for it right now. That changes all the time, sometimes a lot in one day. This is called [[volatility]].",
+  "story": {
+    "title": "The two most famous pizzas in crypto",
+    "body": "On 22 May 2010, a programmer in Florida named Laszlo Hanyecz paid 10,000 bitcoins for two pizzas. It was the first known time someone bought a real thing with bitcoin. Back then, those coins were worth about 41 US dollars. Years later, the same 10,000 bitcoins were worth hundreds of millions of dollars, and at times more than a billion.",
+    "question": "Was it a bad deal?",
+    "answer": "Not at the time. Nobody knew what would happen, and the trade helped show that bitcoin could work as money. The real lesson: crypto prices can move enormously in both directions, and no one can know which way in advance."
+  },
+  "sim": {
+    "fair": {
+      "prompt": "At the school fair, a classmate offers you 20 of their new \"ClassCoins\" for your phone charger. They say ClassCoins will be worth a lot next week.",
+      "accept": {
+        "label": "Trade the charger for 20 ClassCoins",
+        "before": "You will give your charger and get 20 ClassCoins.",
+        "what": "Next week almost no one wants ClassCoins. You can't buy anything with them, and your charger is gone.",
+        "why": "Something is only worth what others will give you for it. A promise that it \"will be worth a lot\" is not value.",
+        "how": "Money needs people who accept it. If no one else uses ClassCoins, there is no one to trade them with.",
+        "realLife": "Thousands of new coins appear every year, and many end up worth almost nothing. Ask who actually uses a coin before you trust it."
+      },
+      "ask": {
+        "label": "Ask who else accepts ClassCoins",
+        "before": "You will ask where you could spend them.",
+        "what": "They say \"everyone will, soon\". Right now only two friends use them. You haven't lost anything, but you got no real answer.",
+        "why": "Good question! But \"soon\" is a guess. What money is worth depends on who accepts it today.",
+        "how": "Money with few users is hard to spend, and its price can swing wildly.",
+        "realLife": "Asking questions is smart. When the answer is a promise instead of facts, be careful."
+      },
+      "keep": {
+        "label": "Keep the charger, or ask for normal money",
+        "before": "You will say no, or ask to be paid in euros.",
+        "what": "You keep something useful, or get money you can actually spend at the fair.",
+        "why": "Euros are accepted everywhere at the fair. ClassCoins aren't accepted anywhere yet.",
+        "how": "Trust and wide use are what make money work. You chose the money people already trust.",
+        "realLife": "Before you trade something real for a new coin, ask: who accepts it, and could I get my value back tomorrow?"
+      }
+    }
+  },
+  "q1": {
+    "prompt": "What gives money its value?",
+    "a": "People trust it and agree to use it",
+    "b": "It is made of something rare, like gold",
+    "c": "The person who made it says it is valuable",
+    "explanation": "Money works when many people trust it and accept it. Euros, bottle caps and bitcoin all depend on that."
+  },
+  "q2": {
+    "prompt": "Who runs a cryptocurrency like bitcoin?",
+    "a": "A bank in Switzerland",
+    "b": "A network of computers that all keep the same record",
+    "c": "Nobody, so anyone can change the record",
+    "explanation": "A cryptocurrency is run by a network of computers. They all keep a copy of the same record, the blockchain, and follow the same rules."
+  },
+  "q3": {
+    "prompt": "A coin's price rose 40% yesterday. What do you know about tomorrow?",
+    "a": "It will keep rising",
+    "b": "Nothing for sure. It can rise or fall a lot",
+    "c": "It can't fall much now",
+    "explanation": "Crypto prices are volatile: they can rise or fall a lot, fast. No one knows tomorrow's price."
+  },
+  "misc": {
+    "goldOnly": "\"Money must be backed by gold.\" Most money today isn't. It works because people trust it and accept it.",
+    "creatorSays": "\"If the creator says it's valuable, it is.\" Value comes from what others will give for it, not from what the creator promises.",
+    "bankRuns": "\"A bank runs bitcoin.\" No bank or government runs it. A network of computers around the world keeps the record.",
+    "anyoneChanges": "\"No boss means anyone can change the record.\" The network follows strict rules, and changing old records is extremely hard.",
+    "trendContinues": "\"If it's going up, it will keep going up.\" Past moves don't promise future ones. Prices can turn around in minutes.",
+    "safeAfterRise": "\"After a big rise it's safe.\" Big rises are often followed by big falls. That is what volatility means."
+  },
+  "t1": "Money works because people trust it and accept it.",
+  "t2": "A [[cryptocurrency]] is digital money kept by a network of computers, not a bank.",
+  "t3": "Crypto prices can change a lot, fast. No one knows tomorrow's price.",
+  "talk1": "What did people in our family use as money when they were young? How has paying changed?",
+  "talk2": "Would you trust a coin that only a few people use? Why or why not?"
+}

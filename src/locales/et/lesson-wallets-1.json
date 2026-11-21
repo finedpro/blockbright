@@ -1,0 +1,94 @@
+{
+  "title": "Võtmed, mitte mündid",
+  "hook": "Laadid alla rahakotiäpi. See näitab 12 juhuslikku sõna ja ütleb: „Kirjuta need üles. Igaüks, kellel need sõnad on, saab su mündid ära võtta.“ Oot, mis?",
+  "card1": "[[wallet|Rahakott]] ei hoia tegelikult münte. Mündid on kirjas [[blockchain|plokiahelas]]. Rahakott hoiab võtmeid, millega saad neid liigutada.",
+  "analogy1": "Su privaatvõti on nagu klaasist postkasti võti rahvarohkel tänaval. Kõik näevad postkasti ja saavad sinna münte poetada, aga ainult võti avab selle.",
+  "card2": "Su [[seed-phrase|taastefraas]] on kõigi su võtmete varukoopia. Kui kaotad telefoni, toovad need 12 või 24 sõna su rahakoti tagasi. Kui keegi teine need saab, saab ta su mündid.",
+  "card3": "Mõnes äpis hoiab võtmeid sinu eest firma, natuke nagu pank. See on lihtsam, aga pead firmat usaldama. Oma rahakotiga hoiad võtmeid ise ja keegi ei saa aidata, kui need kaotad.",
+  "adviceIntro": "Keegi jagab foorumis nõuandeid taastefraasi hoidmiseks. Millised nõuanded on halvad?",
+  "advice": {
+    "l1": {
+      "text": "Tee sellest pilt, et see kaduma ei läheks.",
+      "why": "Pildid varundatakse pilve ning neid saab häkkida või leida. Kasuta paberit, mis on internetist eemal."
+    },
+    "l2": {
+      "text": "Kirjuta see paberile ja hoia kodus turvalises kohas.",
+      "why": "Paberit ei saa häkkida. Mõni hoiab teist koopiat teises turvalises kohas."
+    },
+    "l3": {
+      "text": "Saada see endale e-kirjaga, siis on see alati olemas.",
+      "why": "E-posti kontosid häkitakse. Kõik, mis on internetis, võib lekkida."
+    },
+    "l4": {
+      "text": "Ära kunagi sisesta seda veebilehele, isegi kui leht paistab ametlik.",
+      "why": "Sisestad seda ainult rahakotiäppi ennast, kui rahakotti taastad."
+    },
+    "l5": {
+      "text": "Jaga see sõbraga pooleks, et kumbki hoiaks poolt.",
+      "why": "Poolt fraasi on palju lihtsam ära arvata ja nüüd sõltud kellestki teisest."
+    }
+  },
+  "sim": {
+    "setup": {
+      "prompt": "Uus rahakotiäpp näitab su 12-sõnalist taastefraasi ja palub selle salvestada.",
+      "screenshot": {
+        "label": "Tee ekraanipilt",
+        "before": "Salvestad sõnad pildina oma telefoni.",
+        "what": "Kuid hiljem oli üks paigaldatud mäng kahjuliku koodiga, mis luges su pilte. Su harjutusmündid võeti ära.",
+        "why": "Ekraanipildid satuvad pildikogusse ja pilvevarundusse, kuhu teised äpid ja häkkerid ligi pääsevad.",
+        "how": "Mõni kahjulik äpp otsib piltidest taastefraase. Ühest pildist piisab.",
+        "realLife": "Ära kunagi hoia taastefraasi pildi, ekraanipildi, märkme ega sõnumina."
+      },
+      "later": {
+        "label": "Jäta vahele ja tee hiljem",
+        "before": "Jätad varundamise praegu vahele.",
+        "what": "Nädal hiljem läks telefon katki. Ilma sõnadeta ei saa rahakotti taastada ja harjutusmündid on kadunud.",
+        "why": "Taastefraas on ainus varukoopia. Ükski firma ei saa seda sinu eest lähtestada.",
+        "how": "Oma rahakotil pole nuppu „unustasin parooli“. Võtmed on olemas ainult su seadmes ja taastefraasis.",
+        "realLife": "Kirjuta taastefraas kohe üles, enne kui münte sisse paned."
+      },
+      "paper": {
+        "label": "Kirjuta paberile ja hoia kodus turvaliselt",
+        "before": "Kirjutad 12 sõna õiges järjekorras paberile.",
+        "what": "Nädal hiljem läks telefon katki. Sisestasid 12 sõna uude telefoni ja rahakott tuli tagasi.",
+        "why": "Paber on internetist eemal, nii et seda ei saa häkkida, ja sellega saad rahakoti taastada.",
+        "how": "Samad sõnad loovad alati samad võtmed igas ühilduvas rahakotis.",
+        "realLife": "Hoia paberit turvalises ja privaatses kohas ning kontrolli, et kirjutasid iga sõna õigesti."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Kus su mündid tegelikult on?",
+    "a": "Sinu telefonis",
+    "b": "Plokiahelas. Rahakott hoiab võtmeid nende liigutamiseks",
+    "c": "Rahakotifirma käes",
+    "explanation": "Mündid on plokiahelas. Rahakott hoiab privaatvõtmeid, millega saad neid liigutada."
+  },
+  "q2": {
+    "prompt": "Kaotad telefoni, kus on su oma rahakott. Mis toob mündid tagasi?",
+    "a": "Äpi klienditugi saab selle lähtestada",
+    "b": "Su taastefraas, sisestatuna rahakotti uues seadmes",
+    "c": "Su telefoni parool",
+    "explanation": "Taastefraas on kõigi su võtmete varukoopia. Hoia seda turvaliselt ja internetist eemal ning sisesta see ainult rahakotiäppi, kui rahakotti taastad."
+  },
+  "q3": {
+    "prompt": "Mis on parim viis taastefraasi hoida?",
+    "a": "Pildina, kui telefonil on lukk",
+    "b": "Märkmeäpis või pilvefailis",
+    "c": "Paberile kirjutatuna, turvalises ja privaatses kohas",
+    "explanation": "Internetist eemal hoitud paberit ei saa häkkida. Ära kunagi hoia fraasi pildi, märkme ega sõnumina."
+  },
+  "misc": {
+    "coinsInPhone": "„Mündid on mu telefonis.“ Telefon hoiab ainult võtmeid. Mündid on kirjas plokiahelas.",
+    "coinsAtCompany": "„Rahakotifirma hoiab mu münte.“ Oma rahakoti puhul ei hoia neid ükski firma. Kanne on plokiahelas.",
+    "supportReset": "„Klienditugi saab mu rahakoti lähtestada.“ Sinu oma rahakotti ei saa keegi lähtestada. Ainult taastefraas taastab selle.",
+    "passwordRestores": "„Telefoni parool toob selle tagasi.“ See parool avab ainult selle telefoni. Rahakoti taastab taastefraas.",
+    "photoSafe": "„Pilt on turvaline, kui telefon on lukus.“ Pilte varundatakse ja jagatakse äppidega. Internetist eemal paber on turvalisem.",
+    "cloudNote": "„Märkmeäpp või pilvefail sobib.“ Kõik, mis on internetis, võib lekkida või häkitud saada."
+  },
+  "t1": "[[wallet|Rahakott]] hoiab võtmeid. Mündid on [[blockchain|plokiahelas]].",
+  "t2": "Su [[seed-phrase|taastefraas]] on kõige varukoopia. Kirjuta see paberile ja hoia internetist eemal.",
+  "t3": "Sinu oma rahakotti ei saa keegi su eest lähtestada. Kui võtmeid hoiab firma, pead seda firmat usaldama.",
+  "talk1": "Kus oleks kodus turvaline ja privaatne koht, et hoida midagi olulist paberil?",
+  "talk2": "Kas hoiaksid võtmeid pigem ise või laseksid firmal neid hoida? Mis on plussid ja miinused?"
+}

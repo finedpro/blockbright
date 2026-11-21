@@ -1,0 +1,100 @@
+{
+  "title": "Hype, FOMO and rug pulls",
+  "hook": "Everyone at school is talking about a new coin. A video says it went up 500% this week and \"it's not too late\". You feel like you're missing out.",
+  "card1": "That feeling has a name: FOMO, the fear of missing out. Hype is built to make you feel it, because people who feel rushed don't stop to check.",
+  "analogy1": "Hype is like a crowd running towards a shop. You start running too without knowing why. Sometimes there's a sale. Sometimes the people at the front are the ones selling.",
+  "card2": "Crypto prices have high [[volatility]]. A coin can double in a week and lose 90% the next. Often the people who promoted it sell first.",
+  "card3": "In a [[rug-pull]], the creators of a coin hype it up, collect buyers' money and then disappear with it. The price falls to almost zero, often within minutes.",
+  "story": {
+    "title": "The coin named after a TV show",
+    "body": "In late October 2021, a new coin called SQUID was launched, named after the hit series Squid Game, although the show's makers had nothing to do with it. Its price shot up from about a cent to around 2,800 US dollars by 1 November. But buyers found they could not sell. Then the anonymous creators vanished with about 3.38 million dollars, and the price crashed to almost zero within minutes.",
+    "question": "Which warning signs could buyers have spotted?",
+    "answer": "The creators were anonymous, the coin used a famous name it had no right to, the price rose impossibly fast, and buyers reported that they couldn't sell. If you can't get out, it isn't an investment. It's a trap."
+  },
+  "adviceIntro": "A video about a new coin gets millions of views. Which lines would you not follow?",
+  "advice": {
+    "l1": {
+      "text": "Put in all your savings. You only live once!",
+      "why": "Never put in more than you can afford to lose completely. Prices can fall to zero."
+    },
+    "l2": {
+      "text": "Borrow money from friends to buy more now.",
+      "why": "If the price falls, you lose the coins and still owe the money."
+    },
+    "l3": {
+      "text": "Only use money you could lose without it hurting.",
+      "why": "Crypto prices can crash. Using only what you can afford to lose keeps you safe."
+    },
+    "l4": {
+      "text": "Never sell, even if it crashes. Diamond hands!",
+      "why": "Slogans like this keep buyers in while the promoters sell. Make your own plan."
+    },
+    "l5": {
+      "text": "Check who made the coin and whether you can actually sell it.",
+      "why": "Anonymous creators and coins you can't sell are classic signs of a rug pull."
+    }
+  },
+  "sim": {
+    "hype": {
+      "prompt": "A friend says: \"This coin is going up 50% a day! Put your birthday money in now, before it's too late!\"",
+      "all": {
+        "label": "Put all your birthday money in",
+        "before": "You will spend all your birthday money on the coin.",
+        "what": "Two days later the creators sold their coins and the price dropped 95%. Your birthday money is almost all gone.",
+        "why": "When a price rises that fast, it's often hype, and the people who started it sell to latecomers.",
+        "how": "The price only goes up while new buyers keep coming. When they stop, it can collapse.",
+        "realLife": "Never put in money you can't afford to lose, and never because someone says \"now or never\"."
+      },
+      "little": {
+        "label": "Put in a little, just to try",
+        "before": "You will put a small part of your money in.",
+        "what": "The price crashed and your small amount is almost gone. It hurt less, but it's still lost.",
+        "why": "Spending less limits the damage, but it doesn't make a bad coin good.",
+        "how": "Even small buys add to the money that early sellers take out.",
+        "realLife": "Keeping amounts small is wise. Checking the coin first is wiser."
+      },
+      "research": {
+        "label": "Wait and check the coin first",
+        "before": "You will look up who made the coin and whether people can sell it.",
+        "what": "You found anonymous creators and reports that people can't sell. You kept your money.",
+        "why": "Real chances don't disappear in a day. Taking time to check protects you from hype.",
+        "how": "Hype works by rushing people. Slowing down breaks the trick.",
+        "realLife": "Ask: who made it, can I sell it, and what happens if it goes to zero?"
+      }
+    }
+  },
+  "q1": {
+    "prompt": "A coin is up 500% this week and everyone is talking about it. What is the smart move?",
+    "a": "Buy now before you miss out",
+    "b": "Slow down and check who made it and whether you could sell it",
+    "c": "Buy, because if everyone talks about it, it must be safe",
+    "explanation": "FOMO and hype push you to act fast. Slowing down to check is what protects you."
+  },
+  "q2": {
+    "prompt": "What is a rug pull?",
+    "a": "Creators hype a coin, take buyers' money and disappear",
+    "b": "A normal small dip in price",
+    "c": "Something that only happens to tiny coins nobody has heard of",
+    "explanation": "In a rug pull, the people behind a coin cash out and vanish, leaving buyers with coins that are worth almost nothing."
+  },
+  "q3": {
+    "prompt": "How much should you put into a risky coin?",
+    "a": "Everything, for the biggest win",
+    "b": "Borrow some extra, since the price will go up",
+    "c": "Only what you could lose completely without it hurting",
+    "explanation": "Crypto prices can fall to zero. Only use money you can afford to lose, and never borrow to buy."
+  },
+  "misc": {
+    "fomoBuy": "\"If I don't buy now, I'll miss out forever.\" Hype is built to make you feel that. Real chances give you time to check.",
+    "popularSafe": "\"If everyone talks about it, it must be safe.\" Popular isn't the same as safe. Rug pulls depend on crowds.",
+    "normalDip": "\"A rug pull is just a normal dip.\" It's a scam: the creators take the money and vanish.",
+    "onlyBigCoins": "\"Only tiny coins nobody knows get rug-pulled.\" SQUID was all over the news before it collapsed.",
+    "allIn": "\"Go all in for the biggest win.\" The bigger the bet, the more you can lose.",
+    "borrow": "\"Borrowing is fine if the price will go up.\" No one knows that. If it falls, you still owe the money."
+  },
+  "t1": "Hype and FOMO are built to rush you. Slow down and check.",
+  "t2": "Only use money you could lose completely. Never borrow to buy.",
+  "t3": "Anonymous creators and coins you can't sell are signs of a [[rug-pull]].",
+  "talk1": "Have you ever bought something because everyone else had it? How did it turn out?",
+  "talk2": "If you had 50 euros, how much would you feel OK losing completely?"
+}

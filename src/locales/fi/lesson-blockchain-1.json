@@ -1,0 +1,78 @@
+{
+  "title": "Miten lohkoketju pitää kirjaa",
+  "hook": "Sinä ja kaverisi pidätte yhteistä vihkoa siitä, kuka on velkaa kenellekin herkkuja. Eräänä päivänä joku pyyhkii salaa yhden rivin. Miten ikinä huomaisit sen?",
+  "card1": "[[blockchain|Lohkoketju]] on yhteinen kirjanpito jokaisesta [[transaction|siirrosta]]. Tuhannet tietokoneet pitävät samaa kopiota, joten kukaan yksittäinen ihminen ei voi muuttaa sitä salaa.",
+  "analogy1": "Kuvittele luokan vihko, josta jokaisella oppilaalla on tarkka kopio. Jos joku muuttaa omaa kopiotaan, se ei enää täsmää muiden kanssa, eikä luokka välitä siitä.",
+  "card2": "Siirrot kootaan [[block|lohkoon]]. Jokainen uusi lohko on sidottu edelliseen kuin ketjun lenkit. Vanhan lohkon muuttaminen rikkoisi kaikki sen jälkeiset lenkit.",
+  "walk": {
+    "title": "Mitä tapahtuu, kun lähetät kolikon",
+    "f1": "Painat ”Lähetä”. Lompakkosi allekirjoittaa siirron [[private-key|yksityisellä avaimellasi]] todistaakseen, että kolikot ovat sinun.",
+    "f2": "Siirto lähtee verkkoon. Tietokoneet tarkistavat, että allekirjoitus on oikea ja että sinulla todella on kolikot.",
+    "f3": "Tarkistetut siirrot pakataan uuteen lohkoon, joka lisätään ketjun loppuun.",
+    "f4": "Jokainen tietokone päivittää kopionsa. Siirto on nyt kirjattu pysyvästi, ja kuka tahansa voi katsoa sen."
+  },
+  "card3": "Useimmat lohkoketjut ovat julkisia. Kuka tahansa näkee, mitkä [[address|osoitteet]] lähettivät kolikoita mihinkin ja milloin. Nimeäsi siellä ei ole, mutta jälki säilyy ikuisesti.",
+  "sim": {
+    "record": {
+      "prompt": "Kaveri sanoo lähettäneensä sinulle 30 kolikkoa. Hän näyttää kuvakaappauksen, jossa lukee ”Lähetetty!”.",
+      "trust": {
+        "label": "Luota kuvakaappaukseen",
+        "before": "Pidät kuvakaappausta todisteena siitä, että kolikot on lähetetty.",
+        "what": "Kolikoita ei koskaan tullut. Kuvakaappausta oli muokattu.",
+        "why": "Kuvakaappaus on vain kuva, ja kuvaa voi kuka tahansa muuttaa.",
+        "how": "Todiste on itse lohkoketju, ei kuva siitä. Jokaisen oikean siirron voi tarkistaa lohkoketjuselaimesta (block explorer).",
+        "realLife": "Älä koskaan hyväksy kuvakaappausta maksun todisteeksi. Tarkista oma lompakkosi tai lohkoketjuselain."
+      },
+      "wait": {
+        "label": "Odota hetki ja toivo",
+        "before": "Odotat ja katsot, tapahtuuko jotain.",
+        "what": "Mikään ei muuttunut. Et vieläkään tiedä, lähettikö hän mitään.",
+        "why": "Odottaminen ei anna faktoja. Jos siirto olisi oikea, merkintä olisi jo olemassa.",
+        "how": "Useimmat lohkoketjut vahvistavat siirron sekunneissa tai minuuteissa, ja sen tilan voi tarkistaa heti.",
+        "realLife": "Älä odota ja arvaa. Tarkista."
+      },
+      "check": {
+        "label": "Tarkista siirto omasta lompakostasi",
+        "before": "Avaat lompakkosi ja etsit saapuvaa siirtoa.",
+        "what": "Saapuvaa siirtoa ei ole. Sait tietää heti, ilman riitaa.",
+        "why": "Lompakkosi lukee yhteistä kirjanpitoa. Jos siirtoa ei ole lohkoketjussa, sitä ei tapahtunut.",
+        "how": "Lompakot ja lohkoketjuselaimet näyttävät jokaisen osoitteeseesi tulleen siirron ajan ja summan kanssa.",
+        "realLife": "Totuuden näyttää lompakkosi tai lohkoketjuselain. Kuvakaappaukset ja lupaukset eivät."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Miksi lohkoketjussa on niin vaikea muuttaa vanhaa siirtoa?",
+    "a": "Tuhannet tietokoneet pitävät samaa kopiota, ja lohkot on sidottu toisiinsa",
+    "b": "Sitä suojaa vahva salasana",
+    "c": "Ei olekaan: ylläpitäjä voi poistaa virheet",
+    "explanation": "Jokainen lohko on sidottu edelliseen, ja kopioita pitävät tuhannet tietokoneet. Menneisyyden muuttaminen vaatisi lähes kaikkien muuttamista kerralla."
+  },
+  "q2": {
+    "prompt": "Mitä kuka tahansa näkee julkisessa lohkoketjussa?",
+    "a": "Ei mitään, krypto on täysin yksityistä",
+    "b": "Nimesi ja kotiosoitteesi",
+    "c": "Mitkä osoitteet lähettivät kuinka paljon mihinkin ja milloin",
+    "explanation": "Useimmat lohkoketjut ovat julkisia kirjanpitoja. Ne näyttävät osoitteet, summat ja ajat, joten mieti ennen kuin jaat osoitteesi."
+  },
+  "q3": {
+    "prompt": "Kaveri näyttää kuvakaappauksen siitä, että hän maksoi sinulle. Mikä on oikea todiste?",
+    "a": "Kuvakaappaus",
+    "b": "Siirto, joka näkyy lompakossasi tai lohkoketjuselaimessa",
+    "c": "Kaverin sana",
+    "explanation": "Lohkoketju on yhteinen kirjanpito. Jos siirto on siellä, se tapahtui. Jos ei, se ei tapahtunut."
+  },
+  "misc": {
+    "passwordProtected": "”Lohkoketjua suojaa vahva salasana.” Kyse ei ole salasanasta, vaan tuhansista samanlaisista kopioista ja toisiinsa sidotuista lohkoista.",
+    "adminDeletes": "”Ylläpitäjä voi poistaa virheet.” Ylläpitäjää ei ole. Kun siirto on vahvistettu, kukaan ei voi poistaa sitä.",
+    "fullyPrivate": "”Krypto on täysin yksityistä.” Useimmissa lohkoketjuissa siirrot ovat julkisia, ja jälki säilyy ikuisesti.",
+    "namesVisible": "”Nimeni ja osoitteeni ovat lohkoketjussa.” Nimiä siellä ei ole, mutta osoitteet ja summat ovat, ja ne voidaan joskus yhdistää ihmisiin.",
+    "screenshotProof": "”Kuvakaappaus todistaa sen.” Kuvia on helppo muokata. Todiste on lohkoketjussa.",
+    "friendWord": "”Jos kaveri sanoo niin, se on totta.” Rehellisetkin kaverit erehtyvät. Kirjanpito näyttää, mitä oikeasti tapahtui."
+  },
+  "t1": "[[blockchain|Lohkoketju]] on yhteinen kirjanpito, jota tuhannet tietokoneet ylläpitävät.",
+  "t2": "Lohkot on sidottu toisiinsa, joten menneisyyttä ei voi muuttaa salaa.",
+  "t3": "Tarkista lompakkosi tai lohkoketjuselain. Kuvakaappaus ei ole todiste.",
+  "talk1": "Missä muualla ihmiset pitävät yhteistä kirjanpitoa, johon kaikki luottavat, kuten Wilma tai urheilun tulostaulu?",
+  "talk2": "Onko hyvä vai huono asia, että kuka tahansa näkee lohkoketjun siirrot? Miksi?"
+}

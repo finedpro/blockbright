@@ -1,0 +1,77 @@
+{
+  "title": "Mikä tekee rahasta rahaa?",
+  "hook": "Luokkasi päättää käyttää koulun myyjäisissä pullonkorkkeja rahana. Yhtäkkiä yhdellä korkilla saa keksin. Mutta miksi kukaan ottaisi pullonkorkin vastaan?",
+  "card1": "Raha toimii, koska ihmiset luottavat siihen ja sopivat käyttävänsä sitä. Hyvää rahaa on helppo kantaa ja jakaa, vaikea väärentää, ja ihmiset uskovat, että se on huomennakin jonkin arvoista.",
+  "analogy1": "Raha on kuin pisteet pelissä. Pisteillä on merkitystä vain niin kauan kuin kaikki pelaavat samoilla säännöillä. Jos pelaajat lakkaavat uskomasta pisteisiin, ne menettävät arvonsa.",
+  "card2": "[[cryptocurrency|Kryptovaluutta]] on digitaalista rahaa, jota ei ylläpidä mikään pankki tai valtio. Sen sijaan tietokoneiden verkko pitää [[blockchain|lohkoketjussa]] kirjaa siitä, kenelle mikin kuuluu.",
+  "card3": "Kryptojen hinta on yksinkertaisesti se, mitä ihmiset ovat valmiita maksamaan juuri nyt. Se muuttuu koko ajan, joskus paljon yhdessä päivässä. Tätä kutsutaan [[volatility|volatiliteetiksi]].",
+  "story": {
+    "title": "Kryptomaailman kaksi kuuluisinta pizzaa",
+    "body": "22. toukokuuta 2010 floridalainen ohjelmoija Laszlo Hanyecz maksoi kahdesta pizzasta 10 000 bitcoinia. Se oli ensimmäinen tunnettu kerta, kun joku osti bitcoinilla oikean tavaran. Silloin kolikot olivat noin 41 Yhdysvaltain dollarin arvoisia. Vuosia myöhemmin samat 10 000 bitcoinia olivat satojen miljoonien dollarien arvoisia, ja välillä yli miljardin.",
+    "question": "Oliko se huono kauppa?",
+    "answer": "Ei sillä hetkellä. Kukaan ei tiennyt, mitä tapahtuisi, ja kauppa auttoi osoittamaan, että bitcoin voi toimia rahana. Oikea opetus: kryptojen hinnat voivat liikkua valtavasti kumpaankin suuntaan, eikä kukaan tiedä etukäteen, kumpaan."
+  },
+  "sim": {
+    "fair": {
+      "prompt": "Koulun myyjäisissä luokkakaverisi tarjoaa puhelimesi laturista 20 uutta ”LuokkaKolikkoaan”. Hän sanoo, että LuokkaKolikot ovat ensi viikolla paljon arvoisia.",
+      "accept": {
+        "label": "Vaihda laturi 20 LuokkaKolikkoon",
+        "before": "Annat laturisi ja saat 20 LuokkaKolikkoa.",
+        "what": "Ensi viikolla tuskin kukaan haluaa LuokkaKolikoita. Niillä ei voi ostaa mitään, ja laturisi on poissa.",
+        "why": "Jokin on arvokas vain sen verran kuin muut antavat siitä. Lupaus, että se ”on paljon arvoinen”, ei ole arvoa.",
+        "how": "Raha tarvitsee ihmisiä, jotka ottavat sen vastaan. Jos kukaan muu ei käytä LuokkaKolikoita, ei ole ketään, jonka kanssa vaihtaa.",
+        "realLife": "Joka vuosi syntyy tuhansia uusia kolikoita, ja monet päätyvät lähes arvottomiksi. Kysy ennen luottamista, kuka kolikkoa oikeasti käyttää."
+      },
+      "ask": {
+        "label": "Kysy, kuka muu ottaa LuokkaKolikoita vastaan",
+        "before": "Kysyt, missä niitä voisi käyttää.",
+        "what": "Hän vastaa: ”Pian kaikki.” Juuri nyt niitä käyttää vain kaksi kaveria. Et ole menettänyt mitään, mutta et saanut oikeaa vastausta.",
+        "why": "Hyvä kysymys! Mutta ”pian” on arvaus. Rahan arvo riippuu siitä, kuka sen ottaa vastaan tänään.",
+        "how": "Rahaa, jolla on vähän käyttäjiä, on vaikea käyttää, ja sen hinta voi heilua rajusti.",
+        "realLife": "Kysyminen on fiksua. Kun vastaus on lupaus eikä faktoja, ole varovainen."
+      },
+      "keep": {
+        "label": "Pidä laturi tai pyydä tavallista rahaa",
+        "before": "Sanot ei tai pyydät maksua euroina.",
+        "what": "Pidät jotain hyödyllistä tai saat rahaa, jota voit oikeasti käyttää myyjäisissä.",
+        "why": "Euroja otetaan myyjäisissä vastaan kaikkialla. LuokkaKolikoita ei vielä missään.",
+        "how": "Luottamus ja laaja käyttö saavat rahan toimimaan. Valitsit rahan, johon ihmiset jo luottavat.",
+        "realLife": "Ennen kuin vaihdat jotain oikeaa uuteen kolikkoon, kysy: kuka ottaa sen vastaan, ja saisinko arvoni takaisin huomenna?"
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Mikä antaa rahalle arvon?",
+    "a": "Ihmiset luottavat siihen ja sopivat käyttävänsä sitä",
+    "b": "Se on tehty jostain harvinaisesta, kuten kullasta",
+    "c": "Sen tekijä sanoo, että se on arvokas",
+    "explanation": "Raha toimii, kun monet ihmiset luottavat siihen ja ottavat sen vastaan. Eurot, pullonkorkit ja bitcoin ovat kaikki siitä riippuvaisia."
+  },
+  "q2": {
+    "prompt": "Kuka ylläpitää bitcoinin kaltaista kryptovaluuttaa?",
+    "a": "Pankki Sveitsissä",
+    "b": "Tietokoneiden verkko, jossa kaikilla on sama kirjanpito",
+    "c": "Ei kukaan, joten kuka tahansa voi muuttaa kirjanpitoa",
+    "explanation": "Kryptovaluuttaa ylläpitää tietokoneiden verkko. Kaikilla on kopio samasta kirjanpidosta eli lohkoketjusta, ja kaikki noudattavat samoja sääntöjä."
+  },
+  "q3": {
+    "prompt": "Kolikon hinta nousi eilen 40 %. Mitä tiedät huomisesta?",
+    "a": "Se jatkaa nousuaan",
+    "b": "Ei mitään varmaa. Se voi nousta tai laskea paljon",
+    "c": "Se ei voi enää laskea paljon",
+    "explanation": "Kryptojen hinnat ovat volatiileja: ne voivat nousta tai laskea paljon ja nopeasti. Kukaan ei tiedä huomisen hintaa."
+  },
+  "misc": {
+    "goldOnly": "”Rahan takana pitää olla kultaa.” Useimman nykyrahan takana ei ole. Se toimii, koska ihmiset luottavat siihen ja ottavat sen vastaan.",
+    "creatorSays": "”Jos tekijä sanoo sen olevan arvokas, se on.” Arvo tulee siitä, mitä muut siitä antavat, ei tekijän lupauksista.",
+    "bankRuns": "”Bitcoinia ylläpitää pankki.” Sitä ei ylläpidä mikään pankki tai valtio. Kirjanpitoa ylläpitää tietokoneiden verkko ympäri maailmaa.",
+    "anyoneChanges": "”Kun pomoa ei ole, kuka tahansa voi muuttaa kirjanpitoa.” Verkko noudattaa tiukkoja sääntöjä, ja vanhojen merkintöjen muuttaminen on äärimmäisen vaikeaa.",
+    "trendContinues": "”Jos hinta nousee, se jatkaa nousuaan.” Aiemmat liikkeet eivät lupaa mitään tulevasta. Hinta voi kääntyä minuuteissa.",
+    "safeAfterRise": "”Ison nousun jälkeen on turvallista.” Isoa nousua seuraa usein iso lasku. Juuri sitä volatiliteetti tarkoittaa."
+  },
+  "t1": "Raha toimii, koska ihmiset luottavat siihen ja ottavat sen vastaan.",
+  "t2": "[[cryptocurrency|Kryptovaluutta]] on digitaalista rahaa, jota ylläpitää tietokoneiden verkko eikä pankki.",
+  "t3": "Kryptojen hinnat voivat muuttua paljon ja nopeasti. Kukaan ei tiedä huomisen hintaa.",
+  "talk1": "Mitä perheemme ihmiset käyttivät rahana nuorina? Miten maksaminen on muuttunut?",
+  "talk2": "Luottaisitko kolikkoon, jota käyttää vain muutama ihminen? Miksi tai miksi et?"
+}

@@ -1,0 +1,71 @@
+{
+  "title": "Ikä, säännöt ja oikeat palvelut",
+  "hook": "Olet 14 ja haluat kokeilla oikeaa kryptosovellusta. Se kysyy syntymäaikaasi ja kuvaa henkilöllisyystodistuksestasi. Kaveri sanoo: ”Käytä vaan äitisi tiliä.”",
+  "card1": "Useimmat oikeat kryptopalvelut eli [[exchange|kryptopörssit]] hyväksyvät vain aikuisia (18+). Ennen kuin voit ostaa mitään, ne tarkistavat, kuka olet. Tätä kutsutaan [[kyc|asiakkaan tunnistamiseksi]].",
+  "analogy1": "Henkilöllisyyden tarkistus on kuin henkilöllisyystodistuksen näyttäminen pankissa tai puhelinliittymää tehdessä. Se on vähän ärsyttävää, mutta vaikeuttaa rikollisten mahdollisuuksia piilottaa varastettua rahaa.",
+  "card2": "Jonkun toisen tilin käyttäminen rikkoo palvelun sääntöjä. Tili voidaan jäädyttää rahoineen, ja omistaja on vastuussa kaikesta, mitä tilillä tehdään.",
+  "card3": "Monissa maissa, myös Virossa ja Suomessa, kryptoista saatu voitto voi olla verotettavaa. Se on yksi syy lisää tehdä asiat avoimesti, yhdessä aikuisen kanssa, joka tuntee säännöt.",
+  "sim": {
+    "account": {
+      "prompt": "Kaveri sanoo: ”Etkö ole vielä 18? Avaa tili äitisi henkkareilla. Ei hän huomaa.”",
+      "borrow": {
+        "label": "Käytä äitisi henkilöllisyystodistusta kysymättä",
+        "before": "Rekisteröidyt äitisi tiedoilla.",
+        "what": "Palvelu huomasi epätavallista toimintaa ja jäädytti tilin. Äitisi sai siitä sähköpostia, ja rahat jäivät jumiin.",
+        "why": "Tili kuuluu sille, jonka henkilöllisyystodistusta käytettiin. Jonkun henkilöllisyyden käyttäminen ilman lupaa rikkoo sääntöjä ja hänen luottamustaan.",
+        "how": "Palvelut tarkkailevat merkkejä siitä, ettei tiliä käytä sen omistaja, ja voivat jäädyttää sen.",
+        "realLife": "Älä koskaan käytä jonkun toisen henkilöllisyyttä, et edes perheenjäsenen. Siitä voi tulla oikeita ongelmia teille molemmille."
+      },
+      "noCheck": {
+        "label": "Etsi sovellus, joka ei kysy ikää",
+        "before": "Etsit palvelun, jossa ei ole tarkistuksia.",
+        "what": "Löysit yhden, mutta sillä ei ollut toimilupaa eikä asiakastukea, ja arviot olivat kamalia. Sinne laittamiasi harjoituskolikoita ei saanut pois.",
+        "why": "Palvelut, jotka ohittavat tarkistukset, ohittavat usein muitakin sääntöjä, kuten rahojesi turvallisen säilyttämisen.",
+        "how": "EU:ssa luvallisten palvelujen on noudatettava sääntöjä, kuten henkilöllisyyden tarkistamista. Ne, jotka eivät tee sitä, ovat riskialttiita.",
+        "realLife": "Henkilöllisyyden tarkistuksen puuttuminen on varoitusmerkki, ei etu."
+      },
+      "talk": {
+        "label": "Puhu vanhemman kanssa ja harjoittele täällä lisää",
+        "before": "Kerrot vanhemmalle, mitä haluat kokeilla.",
+        "what": "Vanhempasi ilahtui, että kysyit. Sovitte, että jatkat harjoituskolikoilla ja katsotte asiaa yhdessä, kun olet vanhempi.",
+        "why": "Aikuinen auttaa sinua ymmärtämään säännöt, etkä riko niitä.",
+        "how": "Kun opettelet ensin harjoituskolikoilla, tunnet ansat jo, kun aloitat oikeasti.",
+        "realLife": "Kun aika koittaa, aloita aikuisen kanssa, luvallisessa palvelussa ja vain pienellä summalla."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Miksi oikeat kryptopörssit kysyvät henkilöllisyystodistustasi?",
+    "a": "Tarkistaakseen, kuka olet, ja vaikeuttaakseen rikollisuutta",
+    "b": "Vain myydäkseen tietojasi",
+    "c": "Niiden ei tarvitse: se on vapaaehtoista, jos pyytää kohteliaasti",
+    "explanation": "Monissa maissa, myös EU:ssa, luvallisten palvelujen on tarkistettava henkilöllisyys rahanpesun ja petosten torjumiseksi."
+  },
+  "q2": {
+    "prompt": "Olet alle 18-vuotias ja haluat käyttää oikeaa kryptopörssiä. Mikä on oikea liike?",
+    "a": "Käytä vanhemman henkilöllisyystodistusta ja ole varovainen",
+    "b": "Puhu vanhemman kanssa, opettele harjoituskolikoilla ja odota, kunnes se on sallittua",
+    "c": "Etsi sovellus, joka ei tarkista ikää",
+    "explanation": "Useimmat kryptopörssit ovat aikuisille. Turvallinen tapa on opetella ensin harjoituskolikoilla ja luotettavan aikuisen kanssa."
+  },
+  "q3": {
+    "prompt": "Voiko kryptoista saatu voitto olla verotettavaa?",
+    "a": "Ei, krypto on verovapaata",
+    "b": "Vain kun vaihdat kolikot takaisin euroiksi",
+    "c": "Kyllä, monissa maissa, myös Virossa ja Suomessa",
+    "explanation": "Verosäännöt vaihtelevat maittain, mutta kryptoista saatu voitto on usein verotettavaa. Se on yksi syy lisää tehdä asiat avoimesti aikuisen kanssa."
+  },
+  "misc": {
+    "sellData": "”He haluavat vain myydä tietojani.” Monissa maissa laki vaatii henkilöllisyyden tarkistusta rikollisuuden ja petosten torjumiseksi.",
+    "optional": "”Henkilöllisyyden tarkistus on vapaaehtoinen.” Luvallisten palvelujen on tarkistettava henkilöllisyys. Ne, jotka eivät tee sitä, ovat varoitusmerkki.",
+    "parentId": "”Vanhemman henkkareiden käyttö on ok, kun olen varovainen.” Se rikkoo sääntöjä, ja tili voidaan jäädyttää ja omistaja asettaa vastuuseen.",
+    "noCheckApp": "”Sovellus ilman ikätarkistusta on hyvä vaihtoehto.” Tarkistusten puute tarkoittaa yleensä, ettei sinuakaan suojata.",
+    "taxFree": "”Krypto on verovapaata.” Monissa maissa, myös Virossa ja Suomessa, kryptoista saatu voitto voi olla verotettavaa.",
+    "onlyCash": "”Verolla on väliä vain, kun vaihdan euroiksi.” Säännöt vaihtelevat maittain, ja myös kolikon vaihtaminen toiseen voi olla verotettava tapahtuma."
+  },
+  "t1": "Useimmat oikeat kryptopörssit ovat aikuisille (18+) ja tarkistavat henkilöllisyytesi.",
+  "t2": "Älä koskaan käytä jonkun toisen tiliä tai henkilöllisyystodistusta, et edes perheenjäsenen.",
+  "t3": "Kryptoista saatu voitto voi olla verotettavaa. Kun aika koittaa, aloita aikuisen kanssa ja luvallisessa palvelussa.",
+  "talk1": "Mitä sääntöjä perheemme haluaa rahasovelluksille ja verkkomaksuille?",
+  "talk2": "Kun olet tarpeeksi vanha, miten haluaisit ottaa ensimmäisen askeleen, ja keneltä kysyisit?"
+}

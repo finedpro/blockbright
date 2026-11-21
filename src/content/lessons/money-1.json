@@ -1,0 +1,140 @@
+{
+  "id": "money-1",
+  "module": 1,
+  "title": "title",
+  "hook": "hook",
+  "before": [
+    "q1",
+    "q2"
+  ],
+  "cards": [
+    "card1",
+    {
+      "kind": "analogy",
+      "key": "analogy1"
+    },
+    "card2",
+    "card3"
+  ],
+  "story": {
+    "title": "story.title",
+    "body": "story.body",
+    "question": "story.question",
+    "answer": "story.answer",
+    "sources": [
+      {
+        "title": "Guinness World Records: First commercial Bitcoin transaction",
+        "url": "https://guinnessworldrecords.com/world-records/696240-first-commercial-bitcoin-transaction"
+      },
+      {
+        "title": "CoinDesk: What Is Bitcoin Pizza Day?",
+        "url": "https://www.coindesk.com/learn/what-is-bitcoin-pizza-day/"
+      }
+    ]
+  },
+  "simulation": {
+    "start": "fair",
+    "nodes": {
+      "fair": {
+        "prompt": "sim.fair.prompt",
+        "choices": [
+          {
+            "id": "accept",
+            "label": "sim.fair.accept.label",
+            "before": "sim.fair.accept.before",
+            "explain": "sim.fair.accept",
+            "tone": "bad"
+          },
+          {
+            "id": "ask",
+            "label": "sim.fair.ask.label",
+            "before": "sim.fair.ask.before",
+            "explain": "sim.fair.ask",
+            "tone": "warn"
+          },
+          {
+            "id": "keep",
+            "label": "sim.fair.keep.label",
+            "before": "sim.fair.keep.before",
+            "explain": "sim.fair.keep",
+            "tone": "good"
+          }
+        ]
+      }
+    }
+  },
+  "quiz": [
+    {
+      "id": "q1",
+      "prompt": "q1.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "correct": false,
+          "misconception": "misc.goldOnly"
+        },
+        {
+          "id": "c",
+          "correct": false,
+          "misconception": "misc.creatorSays"
+        }
+      ],
+      "explanation": "q1.explanation"
+    },
+    {
+      "id": "q2",
+      "prompt": "q2.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": false,
+          "misconception": "misc.bankRuns"
+        },
+        {
+          "id": "b",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "correct": false,
+          "misconception": "misc.anyoneChanges"
+        }
+      ],
+      "explanation": "q2.explanation"
+    },
+    {
+      "id": "q3",
+      "prompt": "q3.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": false,
+          "misconception": "misc.trendContinues"
+        },
+        {
+          "id": "b",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "correct": false,
+          "misconception": "misc.safeAfterRise"
+        }
+      ],
+      "explanation": "q3.explanation"
+    }
+  ],
+  "takeaways": [
+    "t1",
+    "t2",
+    "t3"
+  ],
+  "talk": [
+    "talk1",
+    "talk2"
+  ]
+}

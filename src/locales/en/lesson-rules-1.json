@@ -1,0 +1,71 @@
+{
+  "title": "Age, rules and real platforms",
+  "hook": "You are 14 and want to try a real crypto app. It asks for your date of birth and a photo of your ID. A friend says: \"Just use your mum's account.\"",
+  "card1": "Most real crypto platforms, called an [[exchange]], only accept adults (18+). Before you can buy anything, they check who you are. This is called [[kyc]].",
+  "analogy1": "An identity check is like showing ID at a bank or for a phone contract. It's a bit annoying, but it makes it harder for criminals to hide stolen money.",
+  "card2": "Using someone else's account breaks the platform's rules. The account can be frozen with the money inside, and the owner is responsible for everything done with it.",
+  "card3": "In many countries, including Estonia and Finland, profits from crypto can be taxed. That's one more reason to do it openly, with an adult who knows the rules.",
+  "sim": {
+    "account": {
+      "prompt": "A friend says: \"Not 18 yet? Just open an account with your mum's ID. She won't notice.\"",
+      "borrow": {
+        "label": "Use your mum's ID without asking",
+        "before": "You will sign up with your mum's details.",
+        "what": "The platform noticed unusual activity and froze the account. Your mum got an email about it, and the money was stuck.",
+        "why": "An account belongs to the person whose ID was used. Using someone's ID without permission breaks the rules and their trust.",
+        "how": "Platforms watch for signs that the owner isn't the one using the account, and can freeze it.",
+        "realLife": "Never use someone else's identity, not even family. It can cause real trouble for both of you."
+      },
+      "noCheck": {
+        "label": "Find an app that doesn't ask your age",
+        "before": "You will look for a platform with no checks.",
+        "what": "You found one, but it had no licence, no support and terrible reviews. The practice coins you put in couldn't be taken out.",
+        "why": "Platforms that skip checks often skip other rules too, like keeping your money safe.",
+        "how": "Licensed platforms in the EU must follow rules, including checking identity. Ones that don't are risky.",
+        "realLife": "No ID check is a warning sign, not a feature."
+      },
+      "talk": {
+        "label": "Talk to a parent and keep practising here",
+        "before": "You will tell a parent what you want to try.",
+        "what": "Your parent was glad you asked. You agreed to keep learning with practice coins and look at it together when you're older.",
+        "why": "An adult can help you understand the rules, and you avoid breaking them.",
+        "how": "Learning with practice coins first means you already know the traps when you start for real.",
+        "realLife": "When the time comes, start with an adult, a licensed platform and only a small amount."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Why do real exchanges ask for your ID?",
+    "a": "To check who you are and make crime harder",
+    "b": "Only to sell your data",
+    "c": "They don't have to: it's optional if you ask nicely",
+    "explanation": "Licensed platforms in many countries, including the EU, must check identity to fight money laundering and fraud."
+  },
+  "q2": {
+    "prompt": "You are under 18 and want to use a real exchange. What is the right move?",
+    "a": "Use a parent's ID and be careful",
+    "b": "Talk to a parent, learn with practice coins and wait until you're allowed",
+    "c": "Find an app with no age check",
+    "explanation": "Most exchanges are for adults. Learning first with practice coins and an adult you trust is the safe way."
+  },
+  "q3": {
+    "prompt": "Can crypto profits be taxed?",
+    "a": "No, crypto is tax-free",
+    "b": "Only when you change coins back into euros",
+    "c": "Yes, in many countries, including Estonia and Finland",
+    "explanation": "Tax rules differ by country, but crypto profits are often taxed. That's one more reason to do it openly with an adult."
+  },
+  "misc": {
+    "sellData": "\"They only want to sell my data.\" Identity checks are required by law in many countries, to fight crime and fraud.",
+    "optional": "\"ID checks are optional.\" Licensed platforms must check identity. Ones that don't are a warning sign.",
+    "parentId": "\"Using a parent's ID is fine if I'm careful.\" It breaks the rules, and the account can be frozen and the owner held responsible.",
+    "noCheckApp": "\"An app with no age check is a good option.\" No checks usually means no protection for you either.",
+    "taxFree": "\"Crypto is tax-free.\" In many countries, including Estonia and Finland, crypto profits can be taxed.",
+    "onlyCash": "\"Tax only matters when I cash out to euros.\" Rules differ by country, and swapping one coin for another can count too."
+  },
+  "t1": "Most real exchanges are for adults (18+) and check your ID.",
+  "t2": "Never use someone else's account or ID, not even family.",
+  "t3": "Crypto profits can be taxed. When the time comes, start with an adult and a licensed platform.",
+  "talk1": "What rules does our family want for money apps and online payments?",
+  "talk2": "When you are old enough, how would you like to take the first step, and who would you ask?"
+}

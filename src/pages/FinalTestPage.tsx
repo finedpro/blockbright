@@ -60,7 +60,7 @@ export function FinalTestPage({ onExit }: { onExit(): void }) {
             <p>{passed ? t('final.passed') : t('final.retry', { need: Math.ceil(total * PASS_SHARE) })}</p>
             <button type="button" className="btn btn-outline" onClick={() => { setResult(null); setPhase('test'); }}>{t('final.again')}</button>
           </div>
-          <GoldenRules />
+          {passed && <GoldenRules />}
         </>
       )}
     </section>

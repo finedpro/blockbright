@@ -8,5 +8,11 @@
   "irreversible": {"term": "peruuttamaton", "definition": "Ei voi perua. Vahvistettua kryptotransaktiota ei voi perua eikä hyvittää."},
   "blockchain": {"term": "lohkoketju", "definition": "Monen tietokoneen ylläpitämä yhteinen transaktiorekisteri, jota ei voi muuttaa salaa."},
   "airdrop": {"term": "ilmaisjako", "definition": "Kolikoiden tai tokenien ilmainen jakaminen moniin lompakoihin. Oikeitakin jakoja on, mutta väärennetyt jaot ovat yleinen keino saada sinut yhdistämään lompakkosi."},
-  "phishing": {"term": "tietojenkalastelu", "definition": "Huijaus, jossa huijari esittää jotakuta, johon luotat, usein väärennetyn viestin tai sivuston avulla, ja yrittää varastaa salasanasi tai palautuslauseesi."}
+  "phishing": {"term": "tietojenkalastelu", "definition": "Huijaus, jossa huijari esittää jotakuta, johon luotat, usein väärennetyn viestin tai sivuston avulla, ja yrittää varastaa salasanasi tai palautuslauseesi."},
+  "cryptocurrency": {"term": "kryptovaluutta", "definition": "Digitaalista rahaa, jota ylläpitää tietokoneiden verkko eikä pankki. Ensimmäinen oli bitcoin."},
+  "block": {"term": "lohko", "definition": "Joukko siirtoja, jotka lisätään lohkoketjuun yhdessä. Jokainen lohko on sidottu edelliseen."},
+  "exchange": {"term": "kryptopörssi", "definition": "Palvelu, jossa ihmiset ostavat ja myyvät kryptovaluuttoja, usein euroilla tai dollareilla. Useimmat ovat vain aikuisille."},
+  "volatility": {"term": "volatiliteetti", "definition": "Kuinka paljon ja kuinka nopeasti hinta nousee ja laskee. Kryptojen hinnat heiluvat paljon."},
+  "rug-pull": {"term": "katoamishuijaus", "definition": "Huijaus, jossa kolikon tekijät keräävät ostajien rahat ja katoavat, jolloin kolikosta tulee lähes arvoton."},
+  "kyc": {"term": "asiakkaan tunnistaminen", "definition": "Henkilöllisyyden tarkistus, jonka luvallinen palvelu tekee ennen kuin voit käyttää sitä, yleensä henkilöllisyystodistuksella."}
 }

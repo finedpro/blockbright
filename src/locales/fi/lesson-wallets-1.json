@@ -1,0 +1,94 @@
+{
+  "title": "Avaimia, ei kolikoita",
+  "hook": "Lataat lompakkosovelluksen. Se näyttää 12 satunnaista sanaa ja sanoo: ”Kirjoita nämä ylös. Kuka tahansa, jolla on nämä sanat, voi viedä kolikkosi.” Hetkinen, mitä?",
+  "card1": "[[wallet|Lompakko]] ei oikeasti säilytä kolikoita. Kolikot on kirjattu [[blockchain|lohkoketjuun]]. Lompakko säilyttää avaimia, joilla voit siirtää niitä.",
+  "analogy1": "Yksityinen avaimesi on kuin vilkkaan kadun lasisen postilaatikon avain. Kaikki näkevät laatikon ja voivat pudottaa sinne kolikoita, mutta vain avain avaa sen.",
+  "card2": "[[seed-phrase|Palautuslauseesi]] on varmuuskopio kaikista avaimistasi. Jos hukkaat puhelimesi, 12 tai 24 sanaa tuovat lompakkosi takaisin. Jos joku muu saa ne, hän saa kolikkosi.",
+  "card3": "Joissain sovelluksissa yritys säilyttää avaimia puolestasi, vähän kuin pankki. Se on helpompaa, mutta sinun on luotettava yritykseen. Omassa lompakossa säilytät avaimet itse, eikä kukaan voi auttaa, jos hukkaat ne.",
+  "adviceIntro": "Joku jakaa foorumilla vinkkejä palautuslauseen säilyttämiseen. Mitkä vinkit ovat huonoja?",
+  "advice": {
+    "l1": {
+      "text": "Ota siitä kuva, ettei se huku.",
+      "why": "Kuvat varmuuskopioituvat pilveen, ja ne voidaan hakkeroida tai löytää. Käytä paperia, joka on poissa netistä."
+    },
+    "l2": {
+      "text": "Kirjoita se paperille ja säilytä kotona turvallisessa paikassa.",
+      "why": "Paperia ei voi hakkeroida. Jotkut pitävät toista kopiota toisessa turvallisessa paikassa."
+    },
+    "l3": {
+      "text": "Lähetä se itsellesi sähköpostilla, niin se on aina tallessa.",
+      "why": "Sähköpostitilejä hakkeroidaan. Kaikki, mikä on netissä, voi vuotaa."
+    },
+    "l4": {
+      "text": "Älä koskaan kirjoita sitä verkkosivulle, vaikka sivu näyttäisi viralliselta.",
+      "why": "Kirjoitat sen vain itse lompakkosovellukseen, kun palautat lompakon."
+    },
+    "l5": {
+      "text": "Jaa se kaverin kanssa puoliksi, niin kumpikin säilyttää puolta.",
+      "why": "Puolikas lause on paljon helpompi arvata, ja nyt olet riippuvainen jostakusta toisesta."
+    }
+  },
+  "sim": {
+    "setup": {
+      "prompt": "Uusi lompakkosovellus näyttää 12 sanan palautuslauseesi ja pyytää tallentamaan sen.",
+      "screenshot": {
+        "label": "Ota kuvakaappaus",
+        "before": "Tallennat sanat kuvana puhelimeesi.",
+        "what": "Kuukausia myöhemmin asentamassasi pelissä oli haitallista koodia, joka luki kuviasi. Harjoituskolikkosi vietiin.",
+        "why": "Kuvakaappaukset päätyvät kuvakirjastoon ja pilvivarmuuskopioihin, joihin muut sovellukset ja hakkerit pääsevät.",
+        "how": "Jotkut haitalliset sovellukset etsivät kuvista palautuslauseita. Yksi kuva riittää.",
+        "realLife": "Älä koskaan säilytä palautuslausetta kuvana, kuvakaappauksena, muistiinpanona tai viestinä."
+      },
+      "later": {
+        "label": "Ohita ja tee myöhemmin",
+        "before": "Ohitat varmuuskopioinnin toistaiseksi.",
+        "what": "Viikkoa myöhemmin puhelimesi hajosi. Ilman sanoja lompakkoa ei voi palauttaa, ja harjoituskolikot ovat menetetty.",
+        "why": "Palautuslause on ainoa varmuuskopio. Mikään yritys ei voi nollata sitä puolestasi.",
+        "how": "Omassa lompakossa ei ole ”unohdin salasanan” -painiketta. Avaimet ovat vain laitteessasi ja palautuslauseessa.",
+        "realLife": "Kirjoita palautuslause ylös heti, ennen kuin laitat kolikoita lompakkoon."
+      },
+      "paper": {
+        "label": "Kirjoita paperille ja säilytä kotona turvassa",
+        "before": "Kopioit 12 sanaa paperille oikeassa järjestyksessä.",
+        "what": "Viikkoa myöhemmin puhelimesi hajosi. Kirjoitit 12 sanaa uuteen puhelimeen, ja lompakkosi palasi.",
+        "why": "Paperi on poissa netistä, joten sitä ei voi hakkeroida, ja sillä voit palauttaa lompakkosi.",
+        "how": "Samat sanat luovat aina samat avaimet missä tahansa yhteensopivassa lompakossa.",
+        "realLife": "Säilytä paperia turvallisessa ja yksityisessä paikassa ja tarkista, että kopioit jokaisen sanan oikein."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Missä kolikkosi oikeasti ovat?",
+    "a": "Puhelimesi sisällä",
+    "b": "Lohkoketjussa. Lompakko säilyttää avaimia niiden siirtämiseen",
+    "c": "Lompakkoyrityksellä",
+    "explanation": "Kolikot ovat lohkoketjussa. Lompakkosi säilyttää yksityisiä avaimia, joilla voit siirtää niitä."
+  },
+  "q2": {
+    "prompt": "Hukkaat puhelimen, jossa on oma lompakkosi. Mikä tuo kolikot takaisin?",
+    "a": "Sovelluksen tuki voi nollata sen",
+    "b": "Palautuslauseesi, kirjoitettuna lompakkoon uudessa laitteessa",
+    "c": "Puhelimesi salasana",
+    "explanation": "Palautuslause on varmuuskopio kaikista avaimistasi. Säilytä se turvassa ja poissa netistä, ja kirjoita se vain lompakkosovellukseen, kun palautat lompakon."
+  },
+  "q3": {
+    "prompt": "Mikä on paras tapa säilyttää palautuslause?",
+    "a": "Kuvana, kunhan puhelimessa on lukitus",
+    "b": "Muistiinpanosovelluksessa tai pilvitiedostossa",
+    "c": "Paperille kirjoitettuna, turvallisessa ja yksityisessä paikassa",
+    "explanation": "Netin ulkopuolella säilytettyä paperia ei voi hakkeroida. Älä koskaan säilytä lausetta kuvana, muistiinpanona tai viestinä."
+  },
+  "misc": {
+    "coinsInPhone": "”Kolikot ovat puhelimessani.” Puhelin säilyttää vain avaimia. Kolikot on kirjattu lohkoketjuun.",
+    "coinsAtCompany": "”Lompakkoyritys säilyttää kolikkojani.” Omassa lompakossa mikään yritys ei säilytä niitä. Merkintä on lohkoketjussa.",
+    "supportReset": "”Tuki voi nollata lompakkoni.” Kukaan ei voi nollata omaa lompakkoasi. Vain palautuslause palauttaa sen.",
+    "passwordRestores": "”Puhelimen salasana tuo sen takaisin.” Se salasana avaa vain sen puhelimen. Lompakon palauttaa palautuslause.",
+    "photoSafe": "”Kuva on turvassa, jos puhelin on lukittu.” Kuvat varmuuskopioituvat ja jakautuvat sovelluksille. Netin ulkopuolinen paperi on turvallisempi.",
+    "cloudNote": "”Muistiinpanosovellus tai pilvitiedosto kelpaa.” Kaikki, mikä on netissä, voi vuotaa tai tulla hakkeroiduksi."
+  },
+  "t1": "[[wallet|Lompakko]] säilyttää avaimia. Kolikot ovat [[blockchain|lohkoketjussa]].",
+  "t2": "[[seed-phrase|Palautuslauseesi]] on kaiken varmuuskopio. Kirjoita se paperille ja pidä se poissa netistä.",
+  "t3": "Kukaan ei voi nollata omaa lompakkoasi puolestasi. Jos yritys säilyttää avaimia, sinun on luotettava siihen yritykseen.",
+  "talk1": "Missä kotona olisi turvallinen ja yksityinen paikka säilyttää jotain tärkeää paperilla?",
+  "talk2": "Säilyttäisitkö avaimet mieluummin itse vai antaisitko yrityksen säilyttää ne? Mitkä ovat hyvät ja huonot puolet?"
+}

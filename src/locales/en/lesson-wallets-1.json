@@ -1,0 +1,94 @@
+{
+  "title": "Keys, not coins",
+  "hook": "You download a wallet app. It shows you 12 random words and says: \"Write these down. Anyone with these words can take your coins.\" Wait, what?",
+  "card1": "A [[wallet]] doesn't really hold coins. The coins are recorded on the [[blockchain]]. The wallet holds the keys that let you move them.",
+  "analogy1": "Your private key is like the key to a glass mailbox on a busy street. Everyone can see the mailbox and drop coins in, but only the key opens it.",
+  "card2": "Your [[seed-phrase]] is a backup of all your keys. If you lose your phone, the 12 or 24 words bring your wallet back. If someone else gets them, they get your coins.",
+  "card3": "With some apps, a company holds the keys for you, a bit like a bank. That's easier, but you have to trust the company. With your own wallet you hold the keys, and nobody can help if you lose them.",
+  "adviceIntro": "Someone in a forum shares tips for keeping a seed phrase safe. Which tips are bad?",
+  "advice": {
+    "l1": {
+      "text": "Take a photo of it so you don't lose it.",
+      "why": "Photos get backed up to the cloud and can be hacked or found. Use paper, kept offline."
+    },
+    "l2": {
+      "text": "Write it on paper and keep it somewhere safe at home.",
+      "why": "Paper can't be hacked. Some people keep a second copy in another safe place."
+    },
+    "l3": {
+      "text": "Email it to yourself so you always have it.",
+      "why": "Email accounts get hacked. Anything online can leak."
+    },
+    "l4": {
+      "text": "Never type it into a website, even if it looks official.",
+      "why": "You only ever type it into your wallet app itself, when you restore the wallet."
+    },
+    "l5": {
+      "text": "Split it with a friend so each of you keeps half.",
+      "why": "Half a phrase is much easier to guess, and now you depend on someone else."
+    }
+  },
+  "sim": {
+    "setup": {
+      "prompt": "Your new wallet app shows your 12-word seed phrase and asks you to save it.",
+      "screenshot": {
+        "label": "Take a screenshot",
+        "before": "You will save the words as a picture on your phone.",
+        "what": "Months later, a game you installed had harmful code that read your photos. Your practice coins were taken.",
+        "why": "Screenshots end up in photo libraries and cloud backups that other apps and hackers can reach.",
+        "how": "Some harmful apps search photos for seed phrases. One picture is enough.",
+        "realLife": "Never keep your seed phrase as a photo, a screenshot, a note or a message."
+      },
+      "later": {
+        "label": "Skip it and do it later",
+        "before": "You will skip the backup for now.",
+        "what": "Your phone broke a week later. Without the words the wallet can't be restored, and the practice coins are lost.",
+        "why": "The seed phrase is the only backup. No company can reset it for you.",
+        "how": "Your own wallet has no \"forgot password\" button. The keys exist only on your device and in the seed phrase.",
+        "realLife": "Write the seed phrase down right away, before you put any coins in."
+      },
+      "paper": {
+        "label": "Write it on paper and keep it safe at home",
+        "before": "You will copy the 12 words onto paper, in order.",
+        "what": "Your phone broke a week later. You typed the 12 words into a new phone, and your wallet came back.",
+        "why": "Paper stays offline, so it can't be hacked, and it lets you restore your wallet.",
+        "how": "The same words always rebuild the same keys, in any compatible wallet.",
+        "realLife": "Keep the paper somewhere safe and private, and check that you copied every word correctly."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Where are your coins actually kept?",
+    "a": "Inside your phone",
+    "b": "On the blockchain. The wallet holds the keys to move them",
+    "c": "At the wallet company",
+    "explanation": "Coins live on the blockchain. Your wallet holds the private keys that let you move them."
+  },
+  "q2": {
+    "prompt": "You lose your phone with your own wallet on it. What gets your coins back?",
+    "a": "The app's support team can reset it",
+    "b": "Your seed phrase, typed into a wallet on a new device",
+    "c": "Your phone's password",
+    "explanation": "The seed phrase is the backup of all your keys. Keep it safe and offline, and only type it into your wallet app when you restore it."
+  },
+  "q3": {
+    "prompt": "What is the best way to keep a seed phrase?",
+    "a": "A photo, as long as the phone has a lock",
+    "b": "In a notes app or a cloud file",
+    "c": "Written on paper, kept somewhere safe and private",
+    "explanation": "Paper kept offline can't be hacked. Never store the phrase as a photo, a note or a message."
+  },
+  "misc": {
+    "coinsInPhone": "\"The coins are inside my phone.\" The phone only holds keys. The coins are recorded on the blockchain.",
+    "coinsAtCompany": "\"The wallet company keeps my coins.\" With your own wallet, no company holds them. The record is on the blockchain.",
+    "supportReset": "\"Support can reset my wallet.\" Nobody can reset your own wallet. Only the seed phrase restores it.",
+    "passwordRestores": "\"My phone password brings it back.\" That password only unlocks that phone. The seed phrase restores the wallet.",
+    "photoSafe": "\"A photo is safe if my phone is locked.\" Photos get backed up and shared with apps. Paper kept offline is safer.",
+    "cloudNote": "\"A notes app or cloud file is fine.\" Anything online can leak or be hacked."
+  },
+  "t1": "A [[wallet]] holds keys. The coins are on the [[blockchain]].",
+  "t2": "Your [[seed-phrase]] is the backup of everything. Write it on paper and keep it offline.",
+  "t3": "Nobody can reset your own wallet for you. If a company holds the keys, you have to trust that company.",
+  "talk1": "Where at home would be a safe and private place to keep something important on paper?",
+  "talk2": "Would you rather hold your own keys or let a company hold them? What are the pros and cons?"
+}

@@ -1,0 +1,150 @@
+{
+  "id": "wallets-1",
+  "module": 3,
+  "title": "title",
+  "hook": "hook",
+  "before": [
+    "q1",
+    "q2"
+  ],
+  "cards": [
+    "card1",
+    {
+      "kind": "analogy",
+      "key": "analogy1"
+    },
+    "card2",
+    "card3"
+  ],
+  "simulation": {
+    "start": "setup",
+    "nodes": {
+      "setup": {
+        "prompt": "sim.setup.prompt",
+        "choices": [
+          {
+            "id": "screenshot",
+            "label": "sim.setup.screenshot.label",
+            "before": "sim.setup.screenshot.before",
+            "explain": "sim.setup.screenshot",
+            "tone": "bad"
+          },
+          {
+            "id": "later",
+            "label": "sim.setup.later.label",
+            "before": "sim.setup.later.before",
+            "explain": "sim.setup.later",
+            "tone": "warn"
+          },
+          {
+            "id": "paper",
+            "label": "sim.setup.paper.label",
+            "before": "sim.setup.paper.before",
+            "explain": "sim.setup.paper",
+            "tone": "good"
+          }
+        ]
+      }
+    }
+  },
+  "badAdvice": {
+    "intro": "adviceIntro",
+    "author": "@SafeHodler99",
+    "lines": [
+      {
+        "id": "l1",
+        "bad": true
+      },
+      {
+        "id": "l2",
+        "bad": false
+      },
+      {
+        "id": "l3",
+        "bad": true
+      },
+      {
+        "id": "l4",
+        "bad": false
+      },
+      {
+        "id": "l5",
+        "bad": true
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "id": "q1",
+      "prompt": "q1.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": false,
+          "misconception": "misc.coinsInPhone"
+        },
+        {
+          "id": "b",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "correct": false,
+          "misconception": "misc.coinsAtCompany"
+        }
+      ],
+      "explanation": "q1.explanation"
+    },
+    {
+      "id": "q2",
+      "prompt": "q2.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": false,
+          "misconception": "misc.supportReset"
+        },
+        {
+          "id": "b",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "correct": false,
+          "misconception": "misc.passwordRestores"
+        }
+      ],
+      "explanation": "q2.explanation"
+    },
+    {
+      "id": "q3",
+      "prompt": "q3.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": false,
+          "misconception": "misc.photoSafe"
+        },
+        {
+          "id": "b",
+          "correct": false,
+          "misconception": "misc.cloudNote"
+        },
+        {
+          "id": "c",
+          "correct": true
+        }
+      ],
+      "explanation": "q3.explanation"
+    }
+  ],
+  "takeaways": [
+    "t1",
+    "t2",
+    "t3"
+  ],
+  "talk": [
+    "talk1",
+    "talk2"
+  ]
+}

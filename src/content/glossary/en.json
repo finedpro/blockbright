@@ -8,5 +8,11 @@
   "irreversible": {"term": "irreversible", "definition": "Cannot be undone. A confirmed crypto transaction cannot be cancelled or refunded."},
   "blockchain": {"term": "blockchain", "definition": "A shared record of transactions, kept by many computers, that cannot be changed quietly."},
   "airdrop": {"term": "airdrop", "definition": "A free handout of coins or tokens to many wallets. Real ones exist, but fake airdrops are a common trick to make you connect your wallet."},
-  "phishing": {"term": "phishing", "definition": "A trick where scammers pretend to be someone you trust, often with a fake message or website, to steal your passwords or seed phrase."}
+  "phishing": {"term": "phishing", "definition": "A trick where scammers pretend to be someone you trust, often with a fake message or website, to steal your passwords or seed phrase."},
+  "cryptocurrency": {"term": "cryptocurrency", "definition": "Digital money that runs on a network of computers instead of a bank. Bitcoin was the first."},
+  "block": {"term": "block", "definition": "A batch of transactions added to a blockchain together. Each block is linked to the one before it."},
+  "exchange": {"term": "exchange", "definition": "A platform where people buy and sell cryptocurrencies, often for euros or dollars. Most are for adults only."},
+  "volatility": {"term": "volatility", "definition": "How much and how fast a price goes up and down. Crypto prices are very volatile."},
+  "rug-pull": {"term": "rug pull", "definition": "A scam where the creators of a coin collect buyers' money and then disappear, leaving the coin almost worthless."},
+  "kyc": {"term": "KYC", "definition": "Short for \"know your customer\": the identity check a licensed platform does before you can use it, usually with an ID document."}
 }

@@ -1,0 +1,134 @@
+{
+  "id": "blockchain-1",
+  "module": 2,
+  "title": "title",
+  "hook": "hook",
+  "before": [
+    "q1",
+    "q2"
+  ],
+  "cards": [
+    "card1",
+    {
+      "kind": "analogy",
+      "key": "analogy1"
+    },
+    "card2",
+    {
+      "kind": "walkthrough",
+      "title": "walk.title",
+      "frames": [
+        "walk.f1",
+        "walk.f2",
+        "walk.f3",
+        "walk.f4"
+      ]
+    },
+    "card3"
+  ],
+  "simulation": {
+    "start": "record",
+    "nodes": {
+      "record": {
+        "prompt": "sim.record.prompt",
+        "choices": [
+          {
+            "id": "trust",
+            "label": "sim.record.trust.label",
+            "before": "sim.record.trust.before",
+            "explain": "sim.record.trust",
+            "tone": "bad"
+          },
+          {
+            "id": "wait",
+            "label": "sim.record.wait.label",
+            "before": "sim.record.wait.before",
+            "explain": "sim.record.wait",
+            "tone": "warn"
+          },
+          {
+            "id": "check",
+            "label": "sim.record.check.label",
+            "before": "sim.record.check.before",
+            "explain": "sim.record.check",
+            "tone": "good"
+          }
+        ]
+      }
+    }
+  },
+  "quiz": [
+    {
+      "id": "q1",
+      "prompt": "q1.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "correct": false,
+          "misconception": "misc.passwordProtected"
+        },
+        {
+          "id": "c",
+          "correct": false,
+          "misconception": "misc.adminDeletes"
+        }
+      ],
+      "explanation": "q1.explanation"
+    },
+    {
+      "id": "q2",
+      "prompt": "q2.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": false,
+          "misconception": "misc.fullyPrivate"
+        },
+        {
+          "id": "b",
+          "correct": false,
+          "misconception": "misc.namesVisible"
+        },
+        {
+          "id": "c",
+          "correct": true
+        }
+      ],
+      "explanation": "q2.explanation"
+    },
+    {
+      "id": "q3",
+      "prompt": "q3.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": false,
+          "misconception": "misc.screenshotProof"
+        },
+        {
+          "id": "b",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "correct": false,
+          "misconception": "misc.friendWord"
+        }
+      ],
+      "explanation": "q3.explanation"
+    }
+  ],
+  "takeaways": [
+    "t1",
+    "t2",
+    "t3"
+  ],
+  "talk": [
+    "talk1",
+    "talk2"
+  ]
+}
