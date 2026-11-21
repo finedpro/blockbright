@@ -183,7 +183,8 @@
     "parents1": "No accounts and no personal data",
     "parents2": "No ads, no tracking, no tokens",
     "parents3": "Works on any phone, also offline",
-    "finalTitle": "Start your first block now."
+    "finalTitle": "Start your first block now.",
+    "tryWallet": "Try the practice wallet"
   },
   "modulesDesc": {
     "m1": "Barter, trust, scarcity and inflation",

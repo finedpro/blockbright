@@ -183,7 +183,8 @@
     "parents1": "Pole kontosid ega isikuandmeid",
     "parents2": "Pole reklaame, jälgimist ega tokeneid",
     "parents3": "Töötab igas telefonis, ka ilma internetita",
-    "finalTitle": "Alusta oma esimest plokki kohe."
+    "finalTitle": "Alusta oma esimest plokki kohe.",
+    "tryWallet": "Proovi harjutusrahakotti"
   },
   "modulesDesc": {
     "m1": "Vahetuskaubandus, usaldus, nappus ja inflatsioon",

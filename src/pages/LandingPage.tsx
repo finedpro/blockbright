@@ -40,7 +40,7 @@ export function LandingPage({ onStart }: { onStart(): void }) {
           <p className="hero-note">{t('landing.heroNote')}</p>
         </div>
         <div className="hero-visual">
-          <HeroArt label={t('landing.heroArtLabel')} badge={t('landing.practiceBadge')} />
+          <HeroArt label={t('landing.heroArtLabel')} badge={t('landing.practiceBadge')} badgeHref="#/wallet" />
         </div>
       </section>
 
@@ -53,6 +53,9 @@ export function LandingPage({ onStart }: { onStart(): void }) {
               </span>
               <h3>{t(`landing.promises.${p.key}.title`)}</h3>
               <p>{t(`landing.promises.${p.key}.text`)}</p>
+              {p.key === 'coin' && (
+                <a className="promise-link" href="#/wallet">{t('landing.tryWallet')} →</a>
+              )}
             </div>
           ))}
         </div>

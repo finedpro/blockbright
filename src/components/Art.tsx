@@ -64,9 +64,9 @@ export function LogoMark({ size = 28 }: { size?: number }) {
 }
 
 /** Hero: four linked blocks with practice coins travelling along the chain. */
-export function HeroArt({ label, badge }: { label: string; badge: string }) {
+export function HeroArt({ label, badge, badgeHref }: { label: string; badge: string; badgeHref?: string }) {
   return (
-    <svg viewBox="0 0 560 480" className="hero-art" role="img" aria-label={label}>
+    <svg viewBox="0 0 560 480" className="hero-art" role="group" aria-label={label}>
       <path className="anim-dash" d="M96 352 L200 300 L304 248 L408 196 L470 165" fill="none" stroke="currentColor" strokeWidth={3} strokeLinecap="round" />
       <Cube cx={110} cy={330} w={62} color={BRAND.blue} className="anim-float" />
       <Cube cx={222} cy={274} w={62} color={BRAND.orange} className="anim-float delay-1" />
@@ -78,12 +78,14 @@ export function HeroArt({ label, badge }: { label: string; badge: string }) {
       </g>
       <Coin cx={110} cy={300} r={15} className="anim-coin" />
       <Coin cx={110} cy={300} r={15} className="anim-coin delay-coin" />
-      <g transform="translate(40 410)">
-        <rect width={170} height={44} rx={22} fill="#FFFFFF" stroke={BRAND.ink} strokeWidth={2.5} />
-        <text x={85} y={28} textAnchor="middle" fontFamily="Inter Variable, Inter, sans-serif" fontSize={15} fontWeight={700} fill={BRAND.ink}>
-          {badge}
-        </text>
-      </g>
+      <a href={badgeHref} className="hero-badge-link">
+        <g transform="translate(30 404)">
+          <rect width={210} height={52} rx={26} fill={BRAND.yellow} stroke={BRAND.ink} strokeWidth={2.5} />
+          <text x={105} y={32} textAnchor="middle" fontFamily="Inter Variable, Inter, sans-serif" fontSize={17} fontWeight={800} fill={BRAND.ink}>
+            {badge} →
+          </text>
+        </g>
+      </a>
     </svg>
   );
 }

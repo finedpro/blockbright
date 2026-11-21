@@ -183,7 +183,8 @@
     "parents1": "Ei tilejä eikä henkilötietoja",
     "parents2": "Ei mainoksia, seurantaa eikä tokeneita",
     "parents3": "Toimii kaikissa puhelimissa, myös ilman verkkoa",
-    "finalTitle": "Aloita ensimmäinen lohkosi nyt."
+    "finalTitle": "Aloita ensimmäinen lohkosi nyt.",
+    "tryWallet": "Kokeile harjoituslompakkoa"
   },
   "modulesDesc": {
     "m1": "Vaihtokauppa, luottamus, niukkuus ja inflaatio",

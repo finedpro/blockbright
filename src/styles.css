@@ -576,3 +576,8 @@ legend { font-family: var(--font-head); font-weight: 700; font-size: 1.25rem; li
 .path-lesson-title { flex: 1; font-weight: 700; font-size: 0.92rem; line-height: 1.3; }
 .path-lesson-status { flex: none; font-size: 0.75rem; font-weight: 700; color: var(--accent); }
 .path-lesson.is-done .path-lesson-status { color: var(--good-ink); }
+.hero-badge-link { cursor: pointer; }
+.hero-badge-link rect { transition: transform .12s ease; }
+.hero-badge-link:hover rect, .hero-badge-link:focus-visible rect { fill: #FFD666; }
+.hero-badge-link:focus-visible { outline: 3px solid var(--accent); }
+.promise-link { align-self: flex-start; display: inline-flex; align-items: center; min-block-size: 2.75rem; color: var(--accent); font-weight: 800; text-decoration: underline; text-underline-offset: 3px; }
