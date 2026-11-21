@@ -560,3 +560,7 @@ legend { font-family: var(--font-head); font-weight: 700; font-size: 1.25rem; li
 .spot-safe { background: var(--good-bg); color: var(--good-ink); }
 .finish-row { grid-template-columns: 1fr; }
 @media (min-width: 700px) { .finish-row { grid-template-columns: 1fr 1fr 1fr; } }
+.read-aloud { margin-inline-start: 0; color: var(--accent); }
+.read-aloud.is-on { background: var(--yellow); color: var(--brand-ink); }
+.spot-head { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+.spot-body { display: grid; gap: 0.8rem; }

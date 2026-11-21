@@ -1,10 +1,11 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BRAND } from '../components/Art';
 import { Icon } from '../components/Icon';
 import { RichText, TermOwnersContext } from '../components/RichText';
 import { BadAdvice, BeforeCheck, Story, Walkthrough } from '../components/Activities';
 import { Quiz, type QuizResult } from '../components/Quiz';
+import { ReadAloud } from '../components/ReadAloud';
 import { Simulation } from '../components/Simulation';
 import { ENGLISH_GLOSSARY, showsEnglishTerm, termEntry } from '../content/glossary';
 import { getLesson, lessonNamespace } from '../content/lessons';
@@ -42,6 +43,7 @@ export function LessonPage({ id, onExit }: { id: string; onExit(): void }) {
   const [stepIndex, setStepIndex] = useState(0);
   const [result, setResult] = useState<QuizResult | null>(null);
   const [beforeCorrect, setBeforeCorrect] = useState<number | null>(null);
+  const bodyRef = useRef<HTMLDivElement>(null);
 
   const steps = useMemo<Step[]>(() => {
     if (!lesson) return [];
@@ -99,6 +101,7 @@ export function LessonPage({ id, onExit }: { id: string; onExit(): void }) {
               <p className="muted">{t('home.module', { number: lesson.module })} · {t(`modules.m${lesson.module}`)}</p>
               <h1><RichText text={lt(lesson.title)} textKey={lesson.title} /></h1>
             </div>
+            <ReadAloud target={bodyRef} resetKey={`${lesson.id}-${stepIndex}-${language}`} />
             <span className="step-count">{stepIndex + 1}/{steps.length}</span>
           </div>
           <div className="progress" style={{ gridTemplateColumns: `repeat(${steps.length}, minmax(0, 1fr))` }} role="progressbar" aria-valuemin={1} aria-valuemax={steps.length} aria-valuenow={stepIndex + 1}>
@@ -109,6 +112,7 @@ export function LessonPage({ id, onExit }: { id: string; onExit(): void }) {
           <p className="muted step-label">{stepLabel(step)}</p>
         </header>
 
+        <div className="step-body" ref={bodyRef}>
         {step.kind === 'before' && (
           <BeforeCheck
             key={language}
@@ -193,6 +197,8 @@ export function LessonPage({ id, onExit }: { id: string; onExit(): void }) {
             </details>
           </section>
         )}
+
+        </div>
 
         <nav className={`lesson-nav ${['hook', 'card', 'story', 'remember'].includes(step.kind) ? 'is-sticky' : ''}`} aria-label={t('lesson.stepOf', { current: stepIndex + 1, total: steps.length })}>
           {stepIndex > 0 && step.kind !== 'remember' && steps[stepIndex - 1].kind !== 'before' && (

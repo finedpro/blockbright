@@ -337,5 +337,9 @@
     "resetConfirm": "Start over? Your balance goes back to 100 practice coins.",
     "resetYes": "Yes, start over",
     "cancel": "Cancel"
+  },
+  "read": {
+    "start": "Read aloud",
+    "stop": "Stop reading"
   }
 }

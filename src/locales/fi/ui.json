@@ -337,5 +337,9 @@
     "resetConfirm": "Aloitetaanko alusta? Saldosi palaa 100 harjoituskolikkoon.",
     "resetYes": "Kyllä, aloita alusta",
     "cancel": "Peruuta"
+  },
+  "read": {
+    "start": "Lue ääneen",
+    "stop": "Lopeta lukeminen"
   }
 }

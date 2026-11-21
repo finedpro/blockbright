@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Icon, type IconName } from '../components/Icon';
+import { ReadAloud } from '../components/ReadAloud';
 import { spotRound, type Channel, type SpotMessage } from '../content/spot';
 import { useAppState } from '../state/AppState';
 
@@ -16,6 +17,7 @@ export function SpotPage({ onExit }: { onExit(): void }) {
   const [answer, setAnswer] = useState<boolean | null>(null);
   const [score, setScore] = useState(0);
   const [done, setDone] = useState(false);
+  const bodyRef = useRef<HTMLDivElement>(null);
 
   const start = () => {
     setRound(spotRound());
@@ -44,7 +46,11 @@ export function SpotPage({ onExit }: { onExit(): void }) {
   return (
     <section className="spot-page">
       <button type="button" className="back-button" onClick={onExit}><Icon name="back" size={20} />{tu('lesson.backToLessons')}</button>
-      <h1>{t('title')}</h1>
+      <div className="spot-head">
+        <h1>{t('title')}</h1>
+        <ReadAloud target={bodyRef} resetKey={`${index}-${answer}-${done}`} />
+      </div>
+      <div ref={bodyRef} className="spot-body">
 
       {!round && (
         <div className="spot-intro">
@@ -94,6 +100,7 @@ export function SpotPage({ onExit }: { onExit(): void }) {
           <button type="button" className="btn btn-primary" onClick={start}>{t('again')}</button>
         </div>
       )}
+      </div>
     </section>
   );
 }
