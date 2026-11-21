@@ -91,17 +91,22 @@ export function LessonPage({ id, onExit }: { id: string; onExit(): void }) {
     <TermOwnersContext.Provider value={owners}>
       <article className="lesson">
         <header className="lesson-header">
-          <button type="button" className="back-button" onClick={onExit}><Icon name="back" size={20} />{t('lesson.backToLessons')}</button>
-          <p className="muted">{t('home.module', { number: lesson.module })} · {t(`modules.m${lesson.module}`)}</p>
-          <h1><RichText text={lt(lesson.title)} textKey={lesson.title} /></h1>
+          <div className="lesson-top">
+            <button type="button" className="icon-button" onClick={onExit} aria-label={t('lesson.backToLessons')} title={t('lesson.backToLessons')}>
+              <Icon name="back" size={20} />
+            </button>
+            <div className="lesson-title">
+              <p className="muted">{t('home.module', { number: lesson.module })} · {t(`modules.m${lesson.module}`)}</p>
+              <h1><RichText text={lt(lesson.title)} textKey={lesson.title} /></h1>
+            </div>
+            <span className="step-count">{stepIndex + 1}/{steps.length}</span>
+          </div>
           <div className="progress" style={{ gridTemplateColumns: `repeat(${steps.length}, minmax(0, 1fr))` }} role="progressbar" aria-valuemin={1} aria-valuemax={steps.length} aria-valuenow={stepIndex + 1}>
             {steps.map((_, i) => (
               <span key={i} className={i <= stepIndex ? 'seg is-done' : 'seg'} />
             ))}
           </div>
-          <p className="muted step-label">
-            {stepLabel(step)} · {t('lesson.stepOf', { current: stepIndex + 1, total: steps.length })}
-          </p>
+          <p className="muted step-label">{stepLabel(step)}</p>
         </header>
 
         {step.kind === 'before' && (
@@ -172,7 +177,8 @@ export function LessonPage({ id, onExit }: { id: string; onExit(): void }) {
                 </ul>
               </div>
             )}
-            <h2>{t('remember.newTerms')}</h2>
+            <details className="term-details">
+            <summary>{t('remember.newTerms')} ({lessonTerms.length})</summary>
             <dl className="term-list">
               {lessonTerms.map((termId) => (
                 <div key={termId}>
@@ -184,10 +190,11 @@ export function LessonPage({ id, onExit }: { id: string; onExit(): void }) {
                 </div>
               ))}
             </dl>
+            </details>
           </section>
         )}
 
-        <nav className="lesson-nav" aria-label={t('lesson.stepOf', { current: stepIndex + 1, total: steps.length })}>
+        <nav className={`lesson-nav ${['hook', 'card', 'story', 'remember'].includes(step.kind) ? 'is-sticky' : ''}`} aria-label={t('lesson.stepOf', { current: stepIndex + 1, total: steps.length })}>
           {stepIndex > 0 && step.kind !== 'remember' && steps[stepIndex - 1].kind !== 'before' && (
             <button type="button" className="btn btn-outline" onClick={() => go(-1)}>{t('lesson.back')}</button>
           )}

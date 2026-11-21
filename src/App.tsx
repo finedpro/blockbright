@@ -88,7 +88,7 @@ export default function App() {
   ];
 
   return (
-    <div className={`app ${inApp ? 'in-app' : 'on-landing'}`}>
+    <div className={`app ${inApp ? 'in-app' : 'on-landing'} ${['lesson', 'review', 'final'].includes(route.page) ? 'is-focus' : ''}`}>
       <a className="skip-link" href="#main">{t('app.skipToContent')}</a>
       <header className="site-header">
         <div className="wrap header-inner">

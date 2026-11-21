@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { plainText } from '../content/richText';
 import type { Lesson, SimChoice } from '../content/schema';
@@ -29,6 +29,11 @@ export function Simulation({ lesson, ns, onDone }: SimulationProps) {
   const detailed = state.explainLevel === 'detailed';
   const [moreOpen, setMoreOpen] = useState(detailed);
 
+  const topRef = useRef<HTMLElement>(null);
+  useEffect(() => {
+    if (chosen) topRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, [chosen]);
+
   const node = lesson.simulation.nodes[nodeId];
 
   const choose = (choice: SimChoice) => {
@@ -57,8 +62,8 @@ export function Simulation({ lesson, ns, onDone }: SimulationProps) {
 
   return (
     <div className="sim">
-      <p className="practice-badge"><Icon name="coin" size={14} />{t('lesson.practiceCoins')}</p>
-      <RichText as="p" className="sim-prompt" text={lt(node.prompt)} textKey={node.prompt} />
+      {!chosen && <p className="practice-badge"><Icon name="coin" size={14} />{t('lesson.practiceCoins')}</p>}
+      {!chosen && <RichText as="p" className="sim-prompt" text={lt(node.prompt)} textKey={node.prompt} />}
 
       {!chosen && (
         <ul className="choice-list">
@@ -87,7 +92,7 @@ export function Simulation({ lesson, ns, onDone }: SimulationProps) {
       )}
 
       {chosen && (
-        <section className={`consequence tone-${chosen.tone}`} aria-live="polite">
+        <section ref={topRef} className={`consequence tone-${chosen.tone}`} aria-live="polite">
           <div className="consequence-head">
             <p className="tone-badge">
               <Icon name={chosen.tone === 'good' ? 'check' : 'alert'} size={16} strokeWidth={2.2} />
@@ -101,19 +106,23 @@ export function Simulation({ lesson, ns, onDone }: SimulationProps) {
             <dd><RichText text={lt(`${chosen.explain}.what`)} textKey={`${chosen.explain}.what`} /></dd>
             <dt>{t('sim.whyItHappened')}</dt>
             <dd><RichText text={lt(`${chosen.explain}.why`)} textKey={`${chosen.explain}.why`} /></dd>
-            <dt>{t('sim.howItWorks')}</dt>
-            <dd><RichText text={lt(`${chosen.explain}.how`)} textKey={`${chosen.explain}.how`} /></dd>
             <dt>{t('sim.inRealLife')}</dt>
             <dd className="real-life"><RichText text={lt(`${chosen.explain}.realLife`)} textKey={`${chosen.explain}.realLife`} /></dd>
           </dl>
-          {has(`${chosen.explain}.more`) && (
-            <div className="more">
-              <button type="button" className="link-button" aria-expanded={moreOpen} onClick={() => setMoreOpen((v) => !v)}>
-                {moreOpen ? t('sim.showLess') : t('sim.tellMeMore')}
-              </button>
-              {moreOpen && <RichText as="p" text={lt(`${chosen.explain}.more`)} textKey={`${chosen.explain}.more`} />}
-            </div>
-          )}
+          <div className="more">
+            <button type="button" className="link-button" aria-expanded={moreOpen} onClick={() => setMoreOpen((v) => !v)}>
+              {moreOpen ? t('sim.showLess') : t('sim.tellMeMore')}
+            </button>
+            {moreOpen && (
+              <dl className="explain">
+                <dt>{t('sim.howItWorks')}</dt>
+                <dd><RichText text={lt(`${chosen.explain}.how`)} textKey={`${chosen.explain}.how`} /></dd>
+                {has(`${chosen.explain}.more`) && (
+                  <dd><RichText text={lt(`${chosen.explain}.more`)} textKey={`${chosen.explain}.more`} /></dd>
+                )}
+              </dl>
+            )}
+          </div>
 
           {showWhatIf && (
             <ul className="what-if">
@@ -130,11 +139,13 @@ export function Simulation({ lesson, ns, onDone }: SimulationProps) {
           )}
 
           <div className="actions">
-            <button type="button" className="btn btn-outline" onClick={rewind}>{t('sim.rewind')}</button>
-            {!showWhatIf && (
-              <button type="button" className="btn btn-outline" onClick={() => setShowWhatIf(true)}>{t('sim.whatIf')}</button>
-            )}
-            <button type="button" className="btn btn-primary" onClick={proceed}>{t('sim.continue')}</button>
+            <button type="button" className="btn btn-primary btn-block" onClick={proceed}>{t('sim.continue')}</button>
+            <div className="sim-links">
+              <button type="button" className="link-button" onClick={rewind}>{t('sim.rewind')}</button>
+              {!showWhatIf && (
+                <button type="button" className="link-button" onClick={() => setShowWhatIf(true)}>{t('sim.whatIf')}</button>
+              )}
+            </div>
           </div>
         </section>
       )}

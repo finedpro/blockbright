@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { QuizQuestion } from '../content/schema';
 import type { Confidence } from '../state/storage';
@@ -45,6 +45,11 @@ export function Quiz({ items, onDone, before }: QuizProps) {
   const [answers, setAnswers] = useState<QuestionResult[]>([]);
   const [sureButWrong, setSureButWrong] = useState(0);
   const [finished, setFinished] = useState(false);
+
+  const feedbackRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (checked) feedbackRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }, [checked]);
 
   const item = items[index];
   const q = item.question;
@@ -111,7 +116,7 @@ export function Quiz({ items, onDone, before }: QuizProps) {
       <p className="muted">{t('quiz.question', { current: index + 1, total: items.length })}</p>
       <fieldset disabled={checked}>
         <legend><RichText text={lt(q.prompt)} textKey={q.prompt} /></legend>
-        {q.options.map((o) => {
+        {q.options.filter((o) => !checked || o.correct || o.id === answer).map((o) => {
           const state = checked ? (o.correct ? 'is-correct' : o.id === answer ? 'is-wrong' : '') : '';
           return (
             <label key={o.id} className={`option ${state}`}>
@@ -122,7 +127,7 @@ export function Quiz({ items, onDone, before }: QuizProps) {
         })}
       </fieldset>
 
-      <fieldset disabled={checked} className="confidence">
+      <fieldset disabled={checked} className="confidence" hidden={checked}>
         <legend>{t('quiz.howSure')}</legend>
         <div className="segmented">
           {CONFIDENCE.map((c) => (
@@ -144,7 +149,7 @@ export function Quiz({ items, onDone, before }: QuizProps) {
       )}
 
       {checked && picked && (
-        <div className={`feedback ${picked.correct ? 'tone-good' : 'tone-bad'}`} aria-live="polite">
+        <div ref={feedbackRef} className={`feedback ${picked.correct ? 'tone-good' : 'tone-bad'}`} aria-live="polite">
           <p className="feedback-verdict">{picked.correct ? t('quiz.correct') : t('quiz.notQuite')}</p>
           {!picked.correct && picked.misconception && (
             <p>
