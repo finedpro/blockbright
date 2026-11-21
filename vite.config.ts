@@ -11,6 +11,8 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      // Registered in main.tsx so a new version reloads the page once, right after it arrives.
+      injectRegister: false,
       includeAssets: ['favicon.svg', 'icons/icon-192.png'],
       manifest: {
         name: 'Blockbright',
@@ -26,7 +28,7 @@ export default defineConfig({
           { src: '/icons/maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
         ],
       },
-      workbox: { globPatterns: ['**/*.{js,css,html,svg,png,woff2}'] },
+      workbox: { globPatterns: ['**/*.{js,css,html,svg,png,woff2}'], skipWaiting: true, clientsClaim: true, cleanupOutdatedCaches: true },
     }),
   ],
 });

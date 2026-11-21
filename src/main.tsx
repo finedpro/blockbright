@@ -9,6 +9,9 @@ import '@fontsource-variable/inter';
 import '@fontsource-variable/sora';
 import '@fontsource/jetbrains-mono/500.css';
 import './styles.css';
+import { registerSW } from 'virtual:pwa-register';
+
+registerSW({ immediate: true });
 
 const saved = loadState().language;
 const savedLanguage = saved && (import.meta.env.DEV || getLanguage(saved).status !== 'dev') ? getLanguage(saved).code : undefined;
