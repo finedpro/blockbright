@@ -4,22 +4,30 @@
     "tagline": "Learn how crypto works and how to stay safe, before it is ever real.",
     "footer": "Made for ages 12 and up. No accounts. Nothing leaves your device.",
     "betaTranslation": "Beta translation",
-    "skipToContent": "Skip to content"
+    "skipToContent": "Skip to content",
+    "publishedBy": "Published by a private individual",
+    "notAdvice": "Education, not financial advice."
   },
   "nav": {
     "home": "Lessons",
     "glossary": "Glossary",
     "settings": "Settings",
-    "about": "About"
+    "about": "About",
+    "start": "Start learning",
+    "language": "Language"
   },
   "home": {
-    "title": "Lessons",
+    "title": "Your path",
     "intro": "Seven modules, from what money is to staying safe from scams. Everything uses practice coins, never real money.",
     "module": "Module {number}",
     "start": "Start",
     "again": "Do it again",
     "comingSoon": "Coming soon",
-    "done": "Done: {score} of {total} correct"
+    "done": "Done: {score} of {total} correct",
+    "openCount": "{open} of {total} open",
+    "openNow": "Open now",
+    "continueTitle": "Your next block",
+    "startHere": "Start here"
   },
   "modules": {
     "m1": "What is money?",
@@ -62,7 +70,10 @@
       "warn": "Risky choice",
       "bad": "Costly mistake"
     },
-    "continue": "Continue"
+    "continue": "Continue",
+    "you": "You",
+    "friend": "Friend",
+    "unknown": "Unknown"
   },
   "quiz": {
     "question": "Question {current} of {total}",
@@ -121,5 +132,65 @@
     "publisherTitle": "Publisher",
     "publisher": "Published by a private individual in Finland. Contact details will be added before launch.",
     "noAds": "No ads, no trackers, no tokens. Free forever."
+  },
+  "landing": {
+    "badge": "Free crypto safety lessons for ages 12+",
+    "heroLead": "Crypto,",
+    "heroAccent": "block by block.",
+    "heroText": "Learn how crypto works and how to stay safe, with practice coins. Make a choice, see what happens, and find out exactly why.",
+    "ctaStart": "Start the first lesson",
+    "ctaHow": "How it works",
+    "heroNote": "No sign-up · No ads · Nothing leaves your device",
+    "heroArtLabel": "Coloured blocks linked in a chain, with practice coins moving along it",
+    "practiceBadge": "Practice coins",
+    "promises": {
+      "coin": {
+        "title": "Practice coins only",
+        "text": "Every wallet, coin and price is a simulation. Nothing is real money."
+      },
+      "account": {
+        "title": "No accounts",
+        "text": "No sign-up, no email, no name. Progress stays in your own browser."
+      },
+      "ads": {
+        "title": "No ads, no tokens",
+        "text": "Free forever. No tracking, no token to buy, no financial advice."
+      },
+      "language": {
+        "title": "Your language",
+        "text": "English, Estonian and Finnish. Key terms are also shown in English."
+      }
+    },
+    "explainTitle": "Every choice gets its own explanation.",
+    "explainText": "Pick the wrong option and you see what happened, why, how it works and what to do in real life. Then rewind and try another path.",
+    "stepsDesc": {
+      "hook": "A real moment, in two sentences",
+      "learn": "Short cards, one idea each",
+      "try": "A simulation with practice coins",
+      "check": "A quiz that asks how sure you are",
+      "remember": "Three takeaways and new terms"
+    },
+    "modulesTitle": "Seven blocks. One path.",
+    "modulesText": "About 20 minutes each, from what money is to spotting a scam.",
+    "parentsTitle": "Made to be handed to a 12-year-old.",
+    "parentsText": "No accounts and no personal data, so there is nothing to sign and nothing to leak. Education, never financial advice, and no links to exchanges.",
+    "parents1": "No accounts and no personal data",
+    "parents2": "No ads, no tracking, no tokens",
+    "parents3": "Works on any phone, also offline",
+    "finalTitle": "Start your first block now."
+  },
+  "modulesDesc": {
+    "m1": "Barter, trust, scarcity and inflation",
+    "m2": "Blocks, hashes and a history no one can quietly change",
+    "m3": "Addresses, private keys, seed phrases, self-custody",
+    "m4": "Addresses, fees and why a sent coin never comes back",
+    "m5": "Fake airdrops, phishing, giveaways and rug pulls",
+    "m6": "Volatility, FOMO and why no one can promise returns",
+    "m7": "Why crypto is 18+, what KYC is, and taxes"
+  },
+  "results": {
+    "complete": "Module {number} complete",
+    "correct": "correct answers",
+    "rememberTitle": "Three things to remember"
   }
 }

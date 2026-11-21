@@ -43,7 +43,7 @@ export function SettingsPage({ onLanguage }: { onLanguage(code: string): void })
         <legend>{t('settings.progress')}</legend>
         <p className="muted">{t('settings.progressNote')}</p>
         {!confirming && (
-          <button type="button" className="secondary" onClick={() => { setConfirming(true); setDone(false); }}>
+          <button type="button" className="btn btn-outline" onClick={() => { setConfirming(true); setDone(false); }}>
             {t('settings.reset')}
           </button>
         )}
@@ -51,7 +51,7 @@ export function SettingsPage({ onLanguage }: { onLanguage(code: string): void })
           <div className="actions">
             <button
               type="button"
-              className="danger"
+              className="btn btn-danger"
               onClick={() => {
                 resetProgress();
                 setConfirming(false);
@@ -60,7 +60,7 @@ export function SettingsPage({ onLanguage }: { onLanguage(code: string): void })
             >
               {t('settings.resetConfirm')}
             </button>
-            <button type="button" className="secondary" onClick={() => setConfirming(false)}>{t('settings.resetCancel')}</button>
+            <button type="button" className="btn btn-outline" onClick={() => setConfirming(false)}>{t('settings.resetCancel')}</button>
           </div>
         )}
         {done && <p role="status">{t('settings.resetDone')}</p>}

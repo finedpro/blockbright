@@ -4,22 +4,30 @@
     "tagline": "Opi, miten krypto toimii ja miten pysyt turvassa, ennen kuin sillä on oikeasti väliä.",
     "footer": "Tehty 12-vuotiaille ja vanhemmille. Ei tiliä. Mitään ei lähde laitteeltasi.",
     "betaTranslation": "Beta-käännös",
-    "skipToContent": "Siirry sisältöön"
+    "skipToContent": "Siirry sisältöön",
+    "publishedBy": "Julkaisija on yksityishenkilö",
+    "notAdvice": "Opetusta, ei sijoitusneuvontaa."
   },
   "nav": {
     "home": "Oppitunnit",
     "glossary": "Sanasto",
     "settings": "Asetukset",
-    "about": "Tietoa"
+    "about": "Tietoa",
+    "start": "Aloita oppiminen",
+    "language": "Kieli"
   },
   "home": {
-    "title": "Oppitunnit",
+    "title": "Polkusi",
     "intro": "Seitsemän moduulia siitä, mitä raha on, aina huijauksilta suojautumiseen. Kaikkialla käytetään harjoituskolikoita, ei koskaan oikeaa rahaa.",
     "module": "Moduuli {number}",
     "start": "Aloita",
     "again": "Tee uudelleen",
     "comingSoon": "Tulossa pian",
-    "done": "Tehty: {score}/{total} oikein"
+    "done": "Tehty: {score}/{total} oikein",
+    "openCount": "{open}/{total} auki",
+    "openNow": "Auki",
+    "continueTitle": "Seuraava lohkosi",
+    "startHere": "Aloita tästä"
   },
   "modules": {
     "m1": "Mitä raha on?",
@@ -62,7 +70,10 @@
       "warn": "Riskialtis valinta",
       "bad": "Kallis virhe"
     },
-    "continue": "Jatka"
+    "continue": "Jatka",
+    "you": "Sinä",
+    "friend": "Kaveri",
+    "unknown": "Tuntematon"
   },
   "quiz": {
     "question": "Kysymys {current}/{total}",
@@ -121,5 +132,65 @@
     "publisherTitle": "Julkaisija",
     "publisher": "Julkaisija on yksityishenkilö Suomessa. Yhteystiedot lisätään ennen julkaisua.",
     "noAds": "Ei mainoksia, ei seurantaa, ei tokeneita. Aina ilmainen."
+  },
+  "landing": {
+    "badge": "Ilmaisia kryptoturvallisuuden oppitunteja 12-vuotiaasta alkaen",
+    "heroLead": "Krypto,",
+    "heroAccent": "lohko kerrallaan.",
+    "heroText": "Opi harjoituskolikoilla, miten krypto toimii ja miten pysyt turvassa. Tee valinta, katso mitä tapahtuu ja ota selvää, miksi.",
+    "ctaStart": "Aloita ensimmäinen oppitunti",
+    "ctaHow": "Miten se toimii",
+    "heroNote": "Ei rekisteröitymistä · Ei mainoksia · Mitään ei lähde laitteeltasi",
+    "heroArtLabel": "Ketjuksi liitetyt värikkäät lohkot, joita pitkin harjoituskolikot liikkuvat",
+    "practiceBadge": "Harjoituskolikot",
+    "promises": {
+      "coin": {
+        "title": "Vain harjoituskolikoita",
+        "text": "Jokainen lompakko, kolikko ja hinta on simulaatio. Mikään ei ole oikeaa rahaa."
+      },
+      "account": {
+        "title": "Ei tilejä",
+        "text": "Ei rekisteröitymistä, sähköpostia eikä nimeä. Edistyminen pysyy omassa selaimessasi."
+      },
+      "ads": {
+        "title": "Ei mainoksia, ei tokeneita",
+        "text": "Aina ilmainen. Ei seurantaa, ei ostettavaa tokenia, ei sijoitusneuvontaa."
+      },
+      "language": {
+        "title": "Omalla kielelläsi",
+        "text": "Suomeksi, viroksi ja englanniksi. Tärkeät käsitteet näytetään myös englanniksi."
+      }
+    },
+    "explainTitle": "Jokainen valinta saa oman selityksensä.",
+    "explainText": "Valitse väärä vaihtoehto, niin näet mitä tapahtui, miksi, miten se toimii ja mitä tehdä oikeassa elämässä. Kelaa sitten taaksepäin ja kokeile toista polkua.",
+    "stepsDesc": {
+      "hook": "Todellinen tilanne kahdessa lauseessa",
+      "learn": "Lyhyitä kortteja, yksi ajatus kerrallaan",
+      "try": "Simulaatio harjoituskolikoilla",
+      "check": "Visa, joka kysyy, kuinka varma olet",
+      "remember": "Kolme muistettavaa ja uudet käsitteet"
+    },
+    "modulesTitle": "Seitsemän lohkoa. Yksi polku.",
+    "modulesText": "Kukin noin 20 minuuttia, siitä mitä raha on aina huijausten tunnistamiseen.",
+    "parentsTitle": "Tehty annettavaksi 12-vuotiaan käteen.",
+    "parentsText": "Ei tilejä eikä henkilötietoja, joten mitään ei tarvitse allekirjoittaa eikä mitään voi vuotaa. Opetusta, ei koskaan sijoitusneuvontaa, eikä linkkejä pörsseihin.",
+    "parents1": "Ei tilejä eikä henkilötietoja",
+    "parents2": "Ei mainoksia, seurantaa eikä tokeneita",
+    "parents3": "Toimii kaikissa puhelimissa, myös ilman verkkoa",
+    "finalTitle": "Aloita ensimmäinen lohkosi nyt."
+  },
+  "modulesDesc": {
+    "m1": "Vaihtokauppa, luottamus, niukkuus ja inflaatio",
+    "m2": "Lohkot, tiivisteet ja historia, jota kukaan ei voi salaa muuttaa",
+    "m3": "Osoitteet, yksityiset avaimet, palautuslauseet, omat avaimet",
+    "m4": "Osoitteet, maksut ja miksi lähetetty kolikko ei palaa",
+    "m5": "Valeairdropit, kalastelu, arvonnat ja rug pullit",
+    "m6": "Hintavaihtelu, FOMO ja miksi kukaan ei voi luvata tuottoa",
+    "m7": "Miksi krypto on 18+, mitä KYC on, ja verot"
+  },
+  "results": {
+    "complete": "Moduuli {number} valmis",
+    "correct": "oikeaa vastausta",
+    "rememberTitle": "Kolme muistettavaa asiaa"
   }
 }

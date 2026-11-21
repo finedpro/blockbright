@@ -4,22 +4,30 @@
     "tagline": "Õpi, kuidas krüpto töötab ja kuidas end kaitsta, enne kui see päriselt loeb.",
     "footer": "Mõeldud 12-aastastele ja vanematele. Kontot pole vaja. Midagi ei lahku sinu seadmest.",
     "betaTranslation": "Beta-tõlge",
-    "skipToContent": "Mine sisu juurde"
+    "skipToContent": "Mine sisu juurde",
+    "publishedBy": "Väljaandja on eraisik",
+    "notAdvice": "Haridus, mitte finantsnõu."
   },
   "nav": {
     "home": "Õppetunnid",
     "glossary": "Sõnastik",
     "settings": "Seaded",
-    "about": "Info"
+    "about": "Info",
+    "start": "Alusta õppimist",
+    "language": "Keel"
   },
   "home": {
-    "title": "Õppetunnid",
+    "title": "Sinu rada",
     "intro": "Seitse moodulit alates sellest, mis on raha, kuni pettuste eest kaitsmiseni. Kõikjal kasutatakse harjutusmünte, mitte päris raha.",
     "module": "Moodul {number}",
     "start": "Alusta",
     "again": "Tee uuesti",
     "comingSoon": "Varsti tulekul",
-    "done": "Tehtud: {score}/{total} õigesti"
+    "done": "Tehtud: {score}/{total} õigesti",
+    "openCount": "{open}/{total} avatud",
+    "openNow": "Avatud",
+    "continueTitle": "Sinu järgmine plokk",
+    "startHere": "Alusta siit"
   },
   "modules": {
     "m1": "Mis on raha?",
@@ -62,7 +70,10 @@
       "warn": "Riskantne valik",
       "bad": "Kulukas viga"
     },
-    "continue": "Jätka"
+    "continue": "Jätka",
+    "you": "Sina",
+    "friend": "Sõber",
+    "unknown": "Tundmatu"
   },
   "quiz": {
     "question": "Küsimus {current}/{total}",
@@ -121,5 +132,65 @@
     "publisherTitle": "Väljaandja",
     "publisher": "Väljaandja on eraisik Soomes. Kontaktandmed lisatakse enne avaldamist.",
     "noAds": "Reklaamideta, jälgijateta, tokeniteta. Igavesti tasuta."
+  },
+  "landing": {
+    "badge": "Tasuta krüptoturvalisuse tunnid alates 12. eluaastast",
+    "heroLead": "Krüpto,",
+    "heroAccent": "plokk ploki haaval.",
+    "heroText": "Õpi harjutusmüntidega, kuidas krüpto töötab ja kuidas end kaitsta. Tee valik, vaata, mis juhtub, ja saa täpselt teada, miks.",
+    "ctaStart": "Alusta esimest õppetundi",
+    "ctaHow": "Kuidas see töötab",
+    "heroNote": "Kontot pole vaja · Reklaamideta · Midagi ei lahku sinu seadmest",
+    "heroArtLabel": "Ahelaks ühendatud värvilised plokid, mida mööda liiguvad harjutusmündid",
+    "practiceBadge": "Harjutusmündid",
+    "promises": {
+      "coin": {
+        "title": "Ainult harjutusmündid",
+        "text": "Iga rahakott, münt ja hind on simulatsioon. Miski pole päris raha."
+      },
+      "account": {
+        "title": "Kontosid pole",
+        "text": "Pole registreerimist, e-posti ega nime. Edenemine jääb sinu enda brauserisse."
+      },
+      "ads": {
+        "title": "Reklaamideta, tokeniteta",
+        "text": "Igavesti tasuta. Pole jälgimist, pole tokenit, mida osta, pole finantsnõu."
+      },
+      "language": {
+        "title": "Sinu keeles",
+        "text": "Eesti, soome ja inglise keeles. Tähtsad mõisted on ka inglise keeles."
+      }
+    },
+    "explainTitle": "Iga valik saab oma seletuse.",
+    "explainText": "Vali vale variant ja näed, mis juhtus, miks, kuidas see töötab ja mida teha päris elus. Siis keri tagasi ja proovi teist teed.",
+    "stepsDesc": {
+      "hook": "Päris olukord kahes lauses",
+      "learn": "Lühikesed kaardid, igal üks mõte",
+      "try": "Simulatsioon harjutusmüntidega",
+      "check": "Test, mis küsib, kui kindel sa oled",
+      "remember": "Kolm meelespead ja uued mõisted"
+    },
+    "modulesTitle": "Seitse plokki. Üks rada.",
+    "modulesText": "Igaüks umbes 20 minutit, alates sellest, mis on raha, kuni pettuste äratundmiseni.",
+    "parentsTitle": "Tehtud selleks, et anda 12-aastase kätte.",
+    "parentsText": "Pole kontosid ega isikuandmeid, seega pole midagi allkirjastada ega midagi lekkida. Haridus, mitte kunagi finantsnõu, ja pole linke börsidele.",
+    "parents1": "Pole kontosid ega isikuandmeid",
+    "parents2": "Pole reklaame, jälgimist ega tokeneid",
+    "parents3": "Töötab igas telefonis, ka ilma internetita",
+    "finalTitle": "Alusta oma esimest plokki kohe."
+  },
+  "modulesDesc": {
+    "m1": "Vahetuskaubandus, usaldus, nappus ja inflatsioon",
+    "m2": "Plokid, hashid ja ajalugu, mida keegi vaikselt muuta ei saa",
+    "m3": "Aadressid, privaatvõtmed, taastefraasid, oma võtmete hoidmine",
+    "m4": "Aadressid, tasud ja miks saadetud münt kunagi tagasi ei tule",
+    "m5": "Võlts-airdropid, phishing, loosimised ja rug pull’id",
+    "m6": "Hinnakõikumine, FOMO ja miks keegi ei saa tulu lubada",
+    "m7": "Miks krüpto on 18+, mis on KYC ja maksud"
+  },
+  "results": {
+    "complete": "Moodul {number} tehtud",
+    "correct": "õiget vastust",
+    "rememberTitle": "Kolm asja, mida meeles pidada"
   }
 }

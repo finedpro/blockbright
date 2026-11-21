@@ -1,5 +1,7 @@
 import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { BRAND } from '../components/Art';
+import { Icon } from '../components/Icon';
 import { RichText, TermOwnersContext } from '../components/RichText';
 import { Quiz, type QuizResult } from '../components/Quiz';
 import { Simulation } from '../components/Simulation';
@@ -63,11 +65,13 @@ export function LessonPage({ id, onExit }: { id: string; onExit(): void }) {
     <TermOwnersContext.Provider value={owners}>
       <article className="lesson">
         <header className="lesson-header">
-          <button type="button" className="link-button" onClick={onExit}>← {t('lesson.backToLessons')}</button>
+          <button type="button" className="back-button" onClick={onExit}><Icon name="back" size={20} />{t('lesson.backToLessons')}</button>
           <p className="muted">{t('home.module', { number: lesson.module })} · {t(`modules.m${lesson.module}`)}</p>
           <h1><RichText text={lt(lesson.title)} textKey={lesson.title} /></h1>
-          <div className="progress" role="progressbar" aria-valuemin={1} aria-valuemax={steps.length} aria-valuenow={stepIndex + 1}>
-            <div className="progress-bar" style={{ inlineSize: `${((stepIndex + 1) / steps.length) * 100}%` }} />
+          <div className="progress" style={{ gridTemplateColumns: `repeat(${steps.length}, minmax(0, 1fr))` }} role="progressbar" aria-valuemin={1} aria-valuemax={steps.length} aria-valuenow={stepIndex + 1}>
+            {steps.map((_, i) => (
+              <span key={i} className={i <= stepIndex ? 'seg is-done' : 'seg'} />
+            ))}
           </div>
           <p className="muted step-label">
             {stepLabel(step)} · {t('lesson.stepOf', { current: stepIndex + 1, total: steps.length })}
@@ -94,11 +98,15 @@ export function LessonPage({ id, onExit }: { id: string; onExit(): void }) {
 
         {step.kind === 'remember' && (
           <section className="remember">
-            <ul className="takeaways">
-              {lesson.takeaways.map((k) => (
-                <li key={k}><RichText text={lt(k)} textKey={k} /></li>
+            <h2>{t('results.rememberTitle')}</h2>
+            <ol className="takeaways">
+              {lesson.takeaways.map((k, i) => (
+                <li key={k}>
+                  <span className="takeaway-num" style={{ background: [BRAND.orange, BRAND.yellow, BRAND.mint][i % 3] }}>{i + 1}</span>
+                  <RichText text={lt(k)} textKey={k} />
+                </li>
               ))}
-            </ul>
+            </ol>
             <h2>{t('remember.newTerms')}</h2>
             <dl className="term-list">
               {lessonTerms.map((termId) => (
@@ -116,13 +124,13 @@ export function LessonPage({ id, onExit }: { id: string; onExit(): void }) {
 
         <nav className="lesson-nav" aria-label={t('lesson.stepOf', { current: stepIndex + 1, total: steps.length })}>
           {stepIndex > 0 && step.kind !== 'remember' && (
-            <button type="button" className="secondary" onClick={() => go(-1)}>{t('lesson.back')}</button>
+            <button type="button" className="btn btn-outline" onClick={() => go(-1)}>{t('lesson.back')}</button>
           )}
           {(step.kind === 'hook' || step.kind === 'card') && (
-            <button type="button" className="primary" onClick={() => go(1)}>{t('lesson.next')}</button>
+            <button type="button" className="btn btn-primary" onClick={() => go(1)}>{t('lesson.next')}</button>
           )}
           {step.kind === 'remember' && (
-            <button type="button" className="primary" onClick={finish}>{t('lesson.finish')}</button>
+            <button type="button" className="btn btn-primary" onClick={finish}>{t('lesson.finish')}</button>
           )}
         </nav>
       </article>

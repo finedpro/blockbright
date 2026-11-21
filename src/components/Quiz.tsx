@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { QuizQuestion } from '../content/schema';
 import type { Confidence } from '../state/storage';
+import { BRAND, Cube } from './Art';
+import { Icon } from './Icon';
 import { RichText } from './RichText';
 
 export interface QuizResult {
@@ -54,10 +56,25 @@ export function Quiz({ questions, ns, onDone }: QuizProps) {
   if (finished) {
     return (
       <section className="quiz-results" aria-live="polite">
-        <h3>{t('quiz.resultsTitle')}</h3>
-        <p className="score">{t('quiz.score', { score, total: questions.length })}</p>
-        <p>{t('quiz.sureButWrong', { count: sureButWrong })}</p>
-        <button type="button" className="primary" onClick={() => onDone({ score, total: questions.length, sureButWrong })}>
+        <div className="result-card">
+          <div className="result-copy">
+            <span className="result-label">{t('quiz.resultsTitle')}</span>
+            <span className="result-score">{score} / {questions.length}</span>
+            <span className="result-sub">{t('results.correct')}</span>
+          </div>
+          <svg width="110" height="100" viewBox="0 0 110 100" aria-hidden="true">
+            <Cube cx={55} cy={34} w={38} color={BRAND.yellow} className="anim-float" />
+            <g className="anim-pop" style={{ transformOrigin: '55px 22px' }}>
+              <circle cx={55} cy={22} r={16} fill={BRAND.mint} stroke={BRAND.ink} strokeWidth={2.5} />
+              <path d="M48 22 l5 5 l10 -11" fill="none" stroke={BRAND.ink} strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+            </g>
+          </svg>
+        </div>
+        <p className={`sure-note ${sureButWrong ? 'is-warn' : 'is-good'}`}>
+          <Icon name={sureButWrong ? 'alert' : 'check'} size={18} strokeWidth={2.2} />
+          {t('quiz.sureButWrong', { count: sureButWrong })}
+        </p>
+        <button type="button" className="btn btn-primary btn-block" onClick={() => onDone({ score, total: questions.length, sureButWrong })}>
           {t('lesson.next')}
         </button>
       </section>
@@ -95,7 +112,7 @@ export function Quiz({ questions, ns, onDone }: QuizProps) {
       {!checked && (
         <>
           <p className="muted hint">{!answer ? t('quiz.pickAnswer') : !confidence ? t('quiz.pickConfidence') : ' '}</p>
-          <button type="button" className="primary" disabled={!answer || !confidence} onClick={check}>
+          <button type="button" className="btn btn-primary" disabled={!answer || !confidence} onClick={check}>
             {t('quiz.check')}
           </button>
         </>
@@ -111,7 +128,7 @@ export function Quiz({ questions, ns, onDone }: QuizProps) {
             </p>
           )}
           <RichText as="p" text={lt(q.explanation)} textKey={q.explanation} />
-          <button type="button" className="primary" onClick={next}>
+          <button type="button" className="btn btn-primary" onClick={next}>
             {index + 1 < questions.length ? t('quiz.next') : t('lesson.next')}
           </button>
         </div>

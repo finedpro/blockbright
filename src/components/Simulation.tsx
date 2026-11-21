@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { plainText } from '../content/richText';
 import type { Lesson, SimChoice } from '../content/schema';
 import { useAppState } from '../state/AppState';
+import { CoinPath } from './Art';
+import { Icon } from './Icon';
 import { RichText } from './RichText';
 
 interface SimulationProps {
@@ -55,7 +57,7 @@ export function Simulation({ lesson, ns, onDone }: SimulationProps) {
 
   return (
     <div className="sim">
-      <p className="practice-badge">{t('lesson.practiceCoins')}</p>
+      <p className="practice-badge"><Icon name="coin" size={14} />{t('lesson.practiceCoins')}</p>
       <RichText as="p" className="sim-prompt" text={lt(node.prompt)} textKey={node.prompt} />
 
       {!chosen && (
@@ -86,8 +88,14 @@ export function Simulation({ lesson, ns, onDone }: SimulationProps) {
 
       {chosen && (
         <section className={`consequence tone-${chosen.tone}`} aria-live="polite">
-          <p className="tone-badge">{t(`sim.tone.${chosen.tone}`)}</p>
-          <p className="you-chose">{t('sim.youChose', { choice: plainText(lt(chosen.label)) })}</p>
+          <div className="consequence-head">
+            <p className="tone-badge">
+              <Icon name={chosen.tone === 'good' ? 'check' : 'alert'} size={16} strokeWidth={2.2} />
+              {t(`sim.tone.${chosen.tone}`)}
+            </p>
+            <p className="you-chose">{t('sim.youChose', { choice: plainText(lt(chosen.label)) })}</p>
+          </div>
+          <CoinPath tone={chosen.tone} from={t('sim.you')} to={chosen.tone === 'bad' ? t('sim.unknown') : t('sim.friend')} />
           <dl className="explain">
             <dt>{t('sim.whatHappened')}</dt>
             <dd><RichText text={lt(`${chosen.explain}.what`)} textKey={`${chosen.explain}.what`} /></dd>
@@ -122,11 +130,11 @@ export function Simulation({ lesson, ns, onDone }: SimulationProps) {
           )}
 
           <div className="actions">
-            <button type="button" className="secondary" onClick={rewind}>{t('sim.rewind')}</button>
+            <button type="button" className="btn btn-outline" onClick={rewind}>{t('sim.rewind')}</button>
             {!showWhatIf && (
-              <button type="button" className="secondary" onClick={() => setShowWhatIf(true)}>{t('sim.whatIf')}</button>
+              <button type="button" className="btn btn-outline" onClick={() => setShowWhatIf(true)}>{t('sim.whatIf')}</button>
             )}
-            <button type="button" className="primary" onClick={proceed}>{t('sim.continue')}</button>
+            <button type="button" className="btn btn-primary" onClick={proceed}>{t('sim.continue')}</button>
           </div>
         </section>
       )}

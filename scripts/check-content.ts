@@ -49,7 +49,7 @@ for (const ns of namespaces) {
     for (const key of Object.keys(texts)) if (!(key in source)) errors.push(`${lng}/${ns}: extra key "${key}" (not in English)`);
     for (const [key, text] of Object.entries(texts)) {
       try {
-        new IntlMessageFormat(text, lng === 'rtl-test' ? 'en' : lng).format({ count: 1, number: 1, score: 1, total: 1, current: 1, choice: 'x' });
+        new IntlMessageFormat(text, lng === 'rtl-test' ? 'en' : lng).format({ count: 1, number: 1, score: 1, total: 1, current: 1, open: 1, choice: 'x' });
       } catch (e) {
         errors.push(`${lng}/${ns}: "${key}" is not valid ICU: ${(e as Error).message}`);
       }

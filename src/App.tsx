@@ -1,21 +1,32 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { LogoMark } from './components/Art';
+import { Icon } from './components/Icon';
 import { applyDocumentLanguage } from './i18n';
-import { getLanguage } from './i18n/languages';
+import { getLanguage, visibleLanguages } from './i18n/languages';
 import { AboutPage } from './pages/AboutPage';
 import { GlossaryPage } from './pages/GlossaryPage';
 import { HomePage } from './pages/HomePage';
+import { LandingPage } from './pages/LandingPage';
 import { LessonPage } from './pages/LessonPage';
 import { SettingsPage } from './pages/SettingsPage';
 import { useAppState } from './state/AppState';
 
-type Route = { page: 'home' } | { page: 'lesson'; id: string } | { page: 'glossary' } | { page: 'settings' } | { page: 'about' };
+type Route =
+  | { page: 'landing' }
+  | { page: 'learn' }
+  | { page: 'lesson'; id: string }
+  | { page: 'glossary' }
+  | { page: 'settings' }
+  | { page: 'about' };
 
 function parseHash(hash: string): Route {
   const parts = hash.replace(/^#\/?/, '').split('/');
   switch (parts[0]) {
+    case 'learn':
+      return { page: 'learn' };
     case 'lesson':
-      return parts[1] ? { page: 'lesson', id: parts[1] } : { page: 'home' };
+      return parts[1] ? { page: 'lesson', id: parts[1] } : { page: 'learn' };
     case 'glossary':
       return { page: 'glossary' };
     case 'settings':
@@ -23,7 +34,7 @@ function parseHash(hash: string): Route {
     case 'about':
       return { page: 'about' };
     default:
-      return { page: 'home' };
+      return { page: 'landing' };
   }
 }
 
@@ -38,8 +49,12 @@ export default function App() {
 
   useEffect(() => {
     const onHash = () => {
-      setRoute(parseHash(window.location.hash));
-      window.scrollTo({ top: 0 });
+      const next = parseHash(window.location.hash);
+      // In-page anchors on the landing page (e.g. #how) are not routes.
+      if (window.location.hash.startsWith('#/') || window.location.hash === '' || next.page !== 'landing') {
+        setRoute(next);
+        window.scrollTo({ top: 0 });
+      }
     };
     window.addEventListener('hashchange', onHash);
     return () => window.removeEventListener('hashchange', onHash);
@@ -52,49 +67,81 @@ export default function App() {
   };
 
   const language = getLanguage(i18n.language);
-  const navItems: { path: string; label: string; active: boolean }[] = [
-    { path: '/', label: t('nav.home'), active: route.page === 'home' || route.page === 'lesson' },
-    { path: '/glossary', label: t('nav.glossary'), active: route.page === 'glossary' },
-    { path: '/settings', label: t('nav.settings'), active: route.page === 'settings' },
-    { path: '/about', label: t('nav.about'), active: route.page === 'about' },
+  const inApp = route.page !== 'landing';
+  const navItems = [
+    { path: '/learn', icon: 'book', label: t('nav.home'), active: route.page === 'learn' || route.page === 'lesson' },
+    { path: '/glossary', icon: 'cards', label: t('nav.glossary'), active: route.page === 'glossary' },
+    { path: '/settings', icon: 'settings', label: t('nav.settings'), active: route.page === 'settings' },
+    { path: '/about', icon: 'info', label: t('nav.about'), active: route.page === 'about' },
   ];
 
   return (
-    <div className="app">
+    <div className={`app ${inApp ? 'in-app' : 'on-landing'}`}>
       <a className="skip-link" href="#main">{t('app.skipToContent')}</a>
       <header className="site-header">
-        <a className="brand" href="#/">
-          <span className="brand-mark" aria-hidden="true" />
-          {t('app.name')}
-        </a>
-        <nav aria-label="Main">
-          <ul>
-            {navItems.map((item) => (
-              <li key={item.path}>
-                <a href={`#${item.path}`} aria-current={item.active ? 'page' : undefined}>{item.label}</a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <div className="wrap header-inner">
+          <a className="brand" href="#/">
+            <LogoMark size={30} />
+            <span>{t('app.name')}</span>
+          </a>
+          <nav aria-label="Main" className="top-nav">
+            <ul>
+              {navItems.map((item) => (
+                <li key={item.path}>
+                  <a href={`#${item.path}`} aria-current={item.active ? 'page' : undefined}>{item.label}</a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className="header-actions">
+            <label className="lang-select">
+              <span className="sr-only">{t('nav.language')}</span>
+              <Icon name="globe" size={18} />
+              <select value={language.code} onChange={(e) => changeLanguage(e.target.value)}>
+                {visibleLanguages(import.meta.env.DEV).map((l) => (
+                  <option key={l.code} value={l.code}>{l.code === 'rtl-test' ? 'RTL' : l.code.toUpperCase()}</option>
+                ))}
+              </select>
+            </label>
+            {!inApp && (
+              <a className="btn btn-primary header-cta" href="#/learn">{t('nav.start')}</a>
+            )}
+          </div>
+        </div>
       </header>
-      {language.status === 'beta' && (
-        <p className="beta-banner">{t('app.betaTranslation')}</p>
-      )}
+
+      {language.status === 'beta' && inApp && <p className="beta-banner wrap">{t('app.betaTranslation')}</p>}
+
       <main id="main" tabIndex={-1}>
-        {route.page === 'home' && (
-          <>
-            <p className="tagline">{t('app.tagline')}</p>
-            <HomePage onOpenLesson={(id) => navigate(`/lesson/${id}`)} />
-          </>
+        {route.page === 'landing' && <LandingPage onStart={() => navigate('/lesson/send-demo')} />}
+        {inApp && (
+          <div className="wrap app-main">
+            {route.page === 'learn' && <HomePage onOpenLesson={(id) => navigate(`/lesson/${id}`)} />}
+            {route.page === 'lesson' && <LessonPage key={route.id} id={route.id} onExit={() => navigate('/learn')} />}
+            {route.page === 'glossary' && <GlossaryPage />}
+            {route.page === 'settings' && <SettingsPage onLanguage={changeLanguage} />}
+            {route.page === 'about' && <AboutPage />}
+          </div>
         )}
-        {route.page === 'lesson' && <LessonPage key={route.id} id={route.id} onExit={() => navigate('/')} />}
-        {route.page === 'glossary' && <GlossaryPage />}
-        {route.page === 'settings' && <SettingsPage onLanguage={changeLanguage} />}
-        {route.page === 'about' && <AboutPage />}
       </main>
+
       <footer className="site-footer">
-        <p>{t('app.footer')}</p>
+        <div className="wrap footer-inner">
+          <span>{t('app.footer')}</span>
+          <span>{t('app.notAdvice')} · {t('app.publishedBy')} · <a href="#/about">{t('nav.about')}</a></span>
+        </div>
       </footer>
+
+      {inApp && route.page !== 'lesson' && (
+        <nav aria-label="App" className="tab-bar">
+          {navItems.map((item) => (
+            <a key={item.path} href={`#${item.path}`} aria-current={item.active ? 'page' : undefined}>
+              <Icon name={item.icon} size={22} />
+              <span>{item.label}</span>
+            </a>
+          ))}
+        </nav>
+      )}
     </div>
   );
 }

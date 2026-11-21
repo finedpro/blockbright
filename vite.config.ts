@@ -12,8 +12,8 @@ export default defineConfig({
         name: 'Blockbright',
         short_name: 'Blockbright',
         description: 'Learn how crypto works and how to stay safe. Practice coins only.',
-        theme_color: '#2459d6',
-        background_color: '#ffffff',
+        theme_color: '#FFFBF4',
+        background_color: '#FFFBF4',
         display: 'standalone',
         start_url: '/',
         icons: [
@@ -22,7 +22,7 @@ export default defineConfig({
           { src: '/icons/maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
         ],
       },
-      workbox: { globPatterns: ['**/*.{js,css,html,svg,png}'] },
+      workbox: { globPatterns: ['**/*.{js,css,html,svg,png,woff2}'] },
     }),
   ],
 });

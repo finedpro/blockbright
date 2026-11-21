@@ -5,6 +5,9 @@ import { applyDocumentLanguage, initI18n } from './i18n';
 import { detectLanguage, getLanguage } from './i18n/languages';
 import { AppStateProvider } from './state/AppState';
 import { loadState } from './state/storage';
+import '@fontsource-variable/inter';
+import '@fontsource-variable/sora';
+import '@fontsource/jetbrains-mono/500.css';
 import './styles.css';
 
 const saved = loadState().language;
