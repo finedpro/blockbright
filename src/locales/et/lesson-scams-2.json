@@ -1,0 +1,78 @@
+{
+  "title": "Võltslehed ja võltsäpid",
+  "hook": "Otsid oma rahakotiäppi. Esimene tulemus ütleb „Ametlik rahakoti allalaadimine“ ja sellel on väike silt „Sponsitud“. Vajutad?",
+  "card1": "Petised maksavad reklaamide eest ning kopeerivad päris veebilehti ja äppe. Võltsing näeb õige välja, aga varastab, mida sisestad, või palub „ühendada“ ja midagi kinnitada.",
+  "analogy1": "Võltsleht on nagu võltspood päris poe sildiga. Kõik näeb samamoodi välja, kuni maksad letis.",
+  "card2": "Kui leht palub ühendada su [[wallet|rahakoti]] ja kinnitada päringu, loe see läbi. Kinnitus võib lubada lehel su münte hiljem liigutada, isegi pärast seda, kui oled lahkunud.",
+  "walk": {
+    "title": "Kuidas võlts-rahakotiäpp münte varastab",
+    "f1": "Otsid „rahakotiäpp“ ja vajutad kõige ülemist reklaami.",
+    "f2": "Avaneb päris lehe koopia suure allalaadimisnupuga.",
+    "f3": "Äpp näeb ehtne välja ja palub su rahakoti „taastada“ [[seed-phrase|taastefraasiga]].",
+    "f4": "Sõnad lähevad otse petisele, kes rahakoti tühjendab."
+  },
+  "card3": "Paigalda äppe ainult telefoni ametlikust poest ning kontrolli arendaja nime ja arvustusi. Olulised veebiaadressid kirjuta ise või kasuta salvestatud järjehoidjat.",
+  "sim": {
+    "search": {
+      "prompt": "Tahad paigaldada rahakotiäppi. Otsing näitab sponsitud tulemust „WaIIet - Official“ (kahe suure i-ga) ja selle all tavalist tulemust.",
+      "ad": {
+        "label": "Vajuta sponsitud tulemust ja paigalda",
+        "before": "Paigaldad äpi reklaamist.",
+        "what": "Äpp palus rahakoti taastefraasiga taastada. Mõne minutiga olid kõik su harjutusmündid läinud.",
+        "why": "Reklaami saab osta igaüks ja nimes olid väikeste l-ide asemel suured i-d.",
+        "how": "Sarnased tähed, nagu I ja l või 0 ja O, teevad võltsnimed ehtsa välimusega.",
+        "realLife": "Ära paigalda rahakotte reklaamidest. Mine ametlikku poodi ja kontrolli arendajat."
+      },
+      "check": {
+        "label": "Ava reklaam, aga vaata enne veebiaadressi",
+        "before": "Kontrollid aadressiriba, enne kui midagi teed.",
+        "what": "Aadress oli „wallet-official-app.co“. See tundus kummaline, nii et lahkusid. Midagi ei kadunud.",
+        "why": "Aadressi kontrollimine on hea, aga võltsaadressid võivad olla väga veenvad.",
+        "how": "Petised registreerivad ametliku kõlaga nimesid väikeste muudatustega.",
+        "realLife": "Veel turvalisem: ära kunagi alusta reklaamist."
+      },
+      "store": {
+        "label": "Ava telefoni äpipood, otsi seal ja kontrolli arendajat",
+        "before": "Otsid hoopis ametlikust poest.",
+        "what": "Leidsid päris äpi miljonite allalaadimiste ja õige arendajaga. Su mündid on turvaliselt alles.",
+        "why": "Ametlikud poed kontrollivad äppe ning arendaja nimi ja arvustused aitavad võltsinguid märgata.",
+        "how": "Vahel satuvad võltsingud ka poodidesse, sellepärast on arendaja nimi oluline.",
+        "realLife": "Kui pole kindel, võta link rahakoti enda ametlikult lehelt."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Otsingureklaam ütleb „Ametlik rahakoti allalaadimine“. Mis on tõsi?",
+    "a": "Ülemised reklaamid on alati ametlikud",
+    "b": "Reklaami saab osta igaüks, nii et mine ise ametlikku poodi",
+    "c": "Kui lehel on lukuikoon, on see turvaline",
+    "explanation": "Ka petised ostavad reklaame. Alusta ametlikust poest või salvestatud järjehoidjast."
+  },
+  "q2": {
+    "prompt": "Leht palub ühendada rahakoti ja kinnitada päringu. Mida peaksid teadma?",
+    "a": "Kinnitus võib lubada lehel su münte hiljem liigutada",
+    "b": "See on nagu sisselogimine, mitte midagi enamat",
+    "c": "Kinnitused lõpevad, kui lehe sulged",
+    "explanation": "Loe iga päring läbi. Kinnitused võivad anda lehele loa su münte liigutada ja paljud kehtivad, kuni need ise eemaldad."
+  },
+  "q3": {
+    "prompt": "Rahakotiäpp küsib kohe pärast paigaldamist su taastefraasi. Mida teed?",
+    "a": "Sisestan, äpp vajab seda",
+    "b": "Sisestan ainult poole",
+    "c": "Peatun ja kontrollin enne, kas äpp on ehtne",
+    "explanation": "Sisesta taastefraas ainult siis, kui oled kindel, et äpp on ehtne ja taastad oma rahakotti."
+  },
+  "misc": {
+    "adOfficial": "„Ülemised reklaamid on ametlikud.“ Reklaami saab osta igaüks, ka petised.",
+    "lockSafe": "„Lukuikoon tähendab turvalist.“ Lukk tähendab ainult, et ühendus on krüpteeritud. See on ka võltslehtedel.",
+    "connectHarmless": "„Ühendamine on lihtsalt sisselogimine.“ Kinnitused võivad anda lehele loa su münte liigutada.",
+    "approvalOnce": "„Kinnitused lõpevad, kui lehe sulgen.“ Paljud kehtivad, kuni need eemaldad.",
+    "restoreNeeded": "„Äpp vajab töötamiseks mu taastefraasi.“ Uus rahakott teeb endale ise fraasi. Sisesta enda oma ainult äppi, mille ehtsuses oled kindel.",
+    "halfPhrase": "„Poolt fraasi on ohutu sisestada.“ Pool teeb ülejäänu ära arvamise palju lihtsamaks."
+  },
+  "t1": "Ära paigalda äppe ega ava rahakotilehti reklaamidest.",
+  "t2": "Loe iga päring läbi, enne kui selle oma [[wallet|rahakotis]] kinnitad.",
+  "t3": "Kasuta ametlikku poodi, kontrolli arendajat ja kirjuta aadressid ise.",
+  "talk1": "Kuidas me kontrollime, et äpp on päris, enne kui selle paigaldame?",
+  "talk2": "Milliseid olulisi veebilehti peaksime järjehoidjatesse salvestama?"
+}

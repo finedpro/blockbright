@@ -1,0 +1,94 @@
+{
+  "title": "Lukud su kontodel",
+  "hook": "Telefoni hüppab su krüptoäpi 6-kohaline sisselogimiskood. Sa ei küsinud seda. Minuti pärast kirjutab sõbra konto: „Oih, saatsin oma koodi kogemata sinu numbrile. Kas saad selle mulle saata?“",
+  "card1": "Äppe, mis hoiavad münte sinu eest, kaitseb su parool ja teine samm, mida nimetatakse [[two-factor|kaheastmeliseks autentimiseks]] (2FA): kood äpist või SMS-ist.",
+  "analogy1": "2FA on nagu kahe lukuga uks. Varas, kes varastab ühe võtme, ei pääse ikkagi sisse, kui sa ise talle teist võtit ei anna.",
+  "card2": "Ühekordne kood ongi see teine võti. Igaüks, kes seda küsib, isegi sõbra konto kaudu, üritab su kontole pääseda. Ära kunagi jaga koode.",
+  "card3": "Kasuta igal kontol pikka ja erinevat parooli ning hoia neid paroolihalduris. Kui üks leht lekib, jäävad teised turvaliseks.",
+  "adviceIntro": "Üks video jagab „turvanõuandeid“. Millised on halvad?",
+  "advice": {
+    "l1": {
+      "text": "Kasuta igal pool sama tugevat parooli, siis jääb meelde.",
+      "why": "Kui üks leht lekib, on lahti kõik kontod, kus see parool on."
+    },
+    "l2": {
+      "text": "Lülita 2FA sisse autentimisäpiga.",
+      "why": "Äpi koodi on raskem varastada kui SMS-i."
+    },
+    "l3": {
+      "text": "Saada oma sisselogimiskood klienditoele, kui nad küsivad.",
+      "why": "Klienditugi ei vaja kunagi su koode. Kes küsib, üritab sinuna sisse logida."
+    },
+    "l4": {
+      "text": "Hoia pikki ja erinevaid paroole paroolihalduris.",
+      "why": "See mäletab neid, nii et sa ei pea kunagi parooli kordama."
+    },
+    "l5": {
+      "text": "Pane parool oma profiili kirjeldusse, et see ei ununeks.",
+      "why": "Kõike avalikku näevad kõik."
+    }
+  },
+  "sim": {
+    "code": {
+      "prompt": "Sõbra konto kirjutab: „Saatsin oma sisselogimiskoodi kogemata sulle, palun saada see mulle!“",
+      "send": {
+        "label": "Saada kood",
+        "before": "Saadad need 6 numbrit sellele kontole.",
+        "what": "„Sõber“ logis koodiga sinu äpikontole sisse ja saatis kõik su harjutusmündid minema.",
+        "why": "Kood oli sinu oma: keegi logis sinu kontole sisse ja vajas seda.",
+        "how": "Koodid saadetakse sinu telefoni just sellepärast, et need peaksid olema ainult sinul.",
+        "realLife": "Ära kunagi jaga sisselogimiskoodi, ükskõik kes küsib."
+      },
+      "call": {
+        "label": "Helista sõbrale ja kontrolli",
+        "before": "Helistad sõbrale, enne kui midagi teed.",
+        "what": "Sõber ütleb, et ta pole midagi saatnud: tema konto on häkitud. Kood jäi sinu teada.",
+        "why": "Teist teed pidi kontrollimine oli tark. Aga koodi pole kunagi vaja jagada, nii et võisid selle lihtsalt tähelepanuta jätta.",
+        "how": "Petised kasutavad sageli tuttavate häkitud kontosid, sest neid usaldad.",
+        "realLife": "Ütle sõbrale, et tema konto on häkitud, ja vaheta ka enda parool."
+      },
+      "change": {
+        "label": "Ära jaga ja vaheta parool",
+        "before": "Jätad palve tähelepanuta ja vahetad kohe parooli.",
+        "what": "Kellelgi oli su parool, aga ta ei pääsenud teisest lukust mööda. Nüüd on su parool uus ja ta on väljas.",
+        "why": "Ootamatu kood tähendab, et keegi sisestas su parooli ja proovis sisse logida.",
+        "how": "2FA peatas ta. Uus parool võtab ära võtme, mis tal juba oli.",
+        "realLife": "Ootamatu kood on hoiatus: vaheta kohe parool."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Mis on 2FA?",
+    "a": "Parooli kõrval teine samm, näiteks kood",
+    "b": "Ühel kontol kaks parooli",
+    "c": "Midagi, mida kasutavad ainult pangad",
+    "explanation": "2FA tähendab midagi, mida tead (parool), pluss midagi, mis sul on (telefon või äpp)."
+  },
+  "q2": {
+    "prompt": "Saad sisselogimiskoodi, mida sa ei küsinud. Mida see tähendab?",
+    "a": "See on lihtsalt tõrge",
+    "b": "Keegi võib proovida su parooliga sisse logida",
+    "c": "Sõber vajab seda",
+    "explanation": "Tavaliselt sisestas keegi su parooli. Ära jaga koodi ja vaheta parool."
+  },
+  "q3": {
+    "prompt": "Miks kasutada igal kontol erinevat parooli?",
+    "a": "Kui üks leht lekib, jäävad teised turvaliseks",
+    "b": "Pole vahet, kui see on tugev",
+    "c": "Et saaksid neid iga nädal vahetada",
+    "explanation": "Lekkinud parooli proovitakse kohe teistel lehtedel. Erinevad paroolid peatavad selle."
+  },
+  "misc": {
+    "twoPasswords": "„2FA tähendab kahte parooli.“ See on su parool pluss midagi, mis sul on, näiteks telefon.",
+    "onlyBanks": "„2FA-d kasutavad ainult pangad.“ Enamik äppe pakub seda. Lülita see sisse, kus saad.",
+    "codeGlitch": "„Juhuslikud koodid on tõrked.“ Tavaliselt proovib keegi su parooliga sisse logida.",
+    "codeShare": "„Sõber vajab mu koodi.“ Keegi ei vaja kunagi su koodi.",
+    "reuseOk": "„Üks tugev parool igale poole on piisav.“ Kui see ühe korra lekib, on lahti kõik kontod, kus seda kasutad.",
+    "pwChange": "„Mõte on paroole tihti vahetada.“ Pikad ja erinevad paroolid on olulisemad kui tihe vahetamine."
+  },
+  "t1": "Lülita sisse [[two-factor|2FA]], eelistatult autentimisäpiga.",
+  "t2": "Ära kunagi jaga sisselogimiskoodi, ükskõik kes küsib.",
+  "t3": "Kasuta pikki ja erinevaid paroole ning hoia neid paroolihalduris.",
+  "talk1": "Millistel meie pere kontodel on 2FA sisse lülitatud?",
+  "talk2": "Mida me teeksime, kui mõni meie konto häkitaks?"
+}

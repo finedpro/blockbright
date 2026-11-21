@@ -28,7 +28,8 @@
     "openCount": "{open}/{total} avatud",
     "openNow": "Avatud",
     "continueTitle": "Sinu järgmine plokk",
-    "startHere": "Alusta siit"
+    "startHere": "Alusta siit",
+    "lessonsDone": "{done}/{total} tehtud"
   },
   "modules": {
     "m1": "Mis on raha?",

@@ -1,0 +1,94 @@
+{
+  "title": "Locks on your accounts",
+  "hook": "A 6-digit login code from your crypto app pops up on your phone. You didn't ask for it. A minute later a friend's account messages: \"Oops, I sent my code to your number by mistake. Can you send it to me?\"",
+  "card1": "Apps that hold coins for you are protected by your password and a second step, called [[two-factor|two-factor authentication]] (2FA): a code from an app or a text message.",
+  "analogy1": "2FA is like a door with two locks. A thief who steals one key still can't get in, unless you hand over the second key yourself.",
+  "card2": "A one-time code is that second key. Anyone who asks for it, even from a friend's account, is trying to get into your account. Never share codes.",
+  "card3": "Use a long, different password for every account and keep them in a password manager. If one site leaks, the others stay safe.",
+  "adviceIntro": "A video shares \"security tips\". Which ones are bad?",
+  "advice": {
+    "l1": {
+      "text": "Use the same strong password everywhere, so you remember it.",
+      "why": "If one site leaks, every account with that password is open."
+    },
+    "l2": {
+      "text": "Turn on 2FA with an authenticator app.",
+      "why": "An app code is harder to steal than a text message."
+    },
+    "l3": {
+      "text": "Send your login code to support if they ask.",
+      "why": "Support never needs your codes. Anyone asking is trying to log in as you."
+    },
+    "l4": {
+      "text": "Keep long, different passwords in a password manager.",
+      "why": "It remembers them, so you never need to reuse one."
+    },
+    "l5": {
+      "text": "Put your password in your bio so you don't forget it.",
+      "why": "Anything public can be seen by anyone."
+    }
+  },
+  "sim": {
+    "code": {
+      "prompt": "Your friend's account writes: \"I sent my login code to you by mistake, please send it to me!\"",
+      "send": {
+        "label": "Send the code",
+        "before": "You will send the 6 digits to this account.",
+        "what": "The \"friend\" used the code to log in to your app account and sent away all your practice coins.",
+        "why": "The code was yours: someone was logging in to your account and needed it.",
+        "how": "Codes are sent to your phone exactly because only you should have them.",
+        "realLife": "Never share a login code, whoever asks."
+      },
+      "call": {
+        "label": "Call your friend to check",
+        "before": "You will phone your friend before doing anything.",
+        "what": "Your friend says they never sent anything: their account was hacked. You kept the code to yourself.",
+        "why": "Checking another way was smart. But you never need to share a code, so you could just ignore it.",
+        "how": "Scammers often use hacked accounts of people you know, because you trust them.",
+        "realLife": "Tell your friend their account is hacked, and change your own password."
+      },
+      "change": {
+        "label": "Don't share it, and change your password",
+        "before": "You will ignore the request and change your password right away.",
+        "what": "Someone had your password but couldn't get past the second lock. Now your password is new and they're locked out.",
+        "why": "An unexpected code means someone typed your password and tried to log in.",
+        "how": "2FA stopped them. The new password takes away the key they already had.",
+        "realLife": "An unexpected code is a warning: change your password right away."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "What is 2FA?",
+    "a": "A second step, like a code, as well as your password",
+    "b": "Having two passwords for one account",
+    "c": "Something only banks use",
+    "explanation": "2FA means something you know (your password) plus something you have (your phone or an app)."
+  },
+  "q2": {
+    "prompt": "You get a login code you didn't ask for. What does it mean?",
+    "a": "It's just a glitch",
+    "b": "Someone may be trying to log in with your password",
+    "c": "A friend needs it",
+    "explanation": "Usually someone typed your password. Don't share the code, and change your password."
+  },
+  "q3": {
+    "prompt": "Why use a different password for every account?",
+    "a": "If one site leaks, the others stay safe",
+    "b": "It doesn't matter as long as it's strong",
+    "c": "So you can change them every week",
+    "explanation": "A leaked password is tried on other sites right away. Different passwords stop that."
+  },
+  "misc": {
+    "twoPasswords": "\"2FA means two passwords.\" It's your password plus something you have, like your phone.",
+    "onlyBanks": "\"Only banks use 2FA.\" Most apps offer it. Turn it on wherever you can.",
+    "codeGlitch": "\"Random codes are glitches.\" Usually someone is trying to log in with your password.",
+    "codeShare": "\"A friend needs my code.\" No one ever needs your code.",
+    "reuseOk": "\"One strong password is enough everywhere.\" If it leaks once, every account that uses it is open.",
+    "pwChange": "\"Changing passwords often is the point.\" Long, different passwords matter more than changing them often."
+  },
+  "t1": "Turn on [[two-factor|2FA]], ideally with an authenticator app.",
+  "t2": "Never share a login code, whoever asks.",
+  "t3": "Use long, different passwords and keep them in a password manager.",
+  "talk1": "Which of our family's accounts have 2FA turned on?",
+  "talk2": "What would we do if one of our accounts got hacked?"
+}

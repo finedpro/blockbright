@@ -1,0 +1,94 @@
+{
+  "title": "Kauplemisäpid, võimendus ja hasartmängud",
+  "hook": "Äpp näitab: „Kauple 100-kordse võimendusega! Tee 10 eurost 1000 eurot!“ Erksad värvid, konfetti ja pöördloendus.",
+  "card1": "[[leverage|Finantsvõimendus]] tähendab kauplemist laenatud rahaga. 100-kordse võimenduse korral pühib 1% hinnaliikumine sinu vastu minema kõik, mis sisse panid.",
+  "analogy1": "Võimendus on nagu köiel kõndimine 100 korda kõrgemal. Väike kõikumine, mis maa lähedal ei loeks, on kukkumine katuselt.",
+  "card2": "Mõned äpid on ehitatud nagu mängud: konfetti, seeriad ja teavitused. See on tehtud sind kauplemas hoidma, sest see toob äpile raha.",
+  "card3": "Krüptokasiinodel ja kihlveolehtedel pole sageli litsentsi ega vanusekontrolli. Krüptoga hasartmängimine on ikkagi hasartmäng ja pikas plaanis võidab kasiino.",
+  "adviceIntro": "Kommentaarid kauplemisvideo all. Milliseid sa ei järgiks?",
+  "advice": {
+    "l1": {
+      "text": "Kasuta maksimaalset võimendust. Nii saavad proffid rikkaks.",
+      "why": "Suure võimendusega pühib pisike liikumine sinu vastu kõik minema."
+    },
+    "l2": {
+      "text": "Ära kunagi kauple rahaga, mida vajad.",
+      "why": "Kauplemisega võib kõik kaotada."
+    },
+    "l3": {
+      "text": "Kaotasid raha? Võida see suurema panusega tagasi.",
+      "why": "Kaotuste tagaajamine teeb väikestest kaotustest suured."
+    },
+    "l4": {
+      "text": "Lülita kauplemisäppide teavitused välja.",
+      "why": "Teavitused on tehtud sind tagasi tõmbama."
+    },
+    "l5": {
+      "text": "Krüptokasiinod on super, nad ei kontrolli vanust.",
+      "why": "Vanusekontrolli puudumine tähendab tavaliselt, et pole ka litsentsi ega kaitset."
+    }
+  },
+  "sim": {
+    "lever": {
+      "prompt": "Kauplemisäpp pakub 50-mündilist „tasuta boonust“, kui avad kohe 100-kordse võimendusega tehingu.",
+      "go": {
+        "label": "Ava 100-kordne tehing 20 mündiga",
+        "before": "Kasutad 20 harjutusmünti 100-kordse võimendusega.",
+        "what": "Hind liikus minuti jooksul 1% vales suunas. Su 20 münti pühiti minema ja boonusel olid tingimused, mida sa täita ei saanud.",
+        "why": "100-kordse võimendusega on 1% liikumine sinu vastu 100% kaotus.",
+        "how": "Äpp sulgeb su tehingu automaatselt, kui raha saab otsa. Seda nimetatakse likvideerimiseks.",
+        "realLife": "Võimendus ja boonused on tehtud sind rohkem kauplema panema. Paljud riigid piiravad neid algajatele."
+      },
+      "small": {
+        "label": "Proovi 2-kordset võimendust 5 mündiga",
+        "before": "Kasutad 5 harjutusmünti 2-kordse võimendusega.",
+        "what": "Hind kõikus alla ja üles tagasi. Jäid samale kohale, aga seda oli närvesööv vaadata.",
+        "why": "Väiksem võimendus on vähem ohtlik, aga see on ikka laenatud raha ja kõikumised on kaks korda suuremad.",
+        "how": "2-kordse võimenduse korral pühib 50% liikumine sinu vastu tehingu minema.",
+        "realLife": "Algajana ei vaja sa võimendust üldse."
+      },
+      "skip": {
+        "label": "Jäta vahele ja sulge äpp",
+        "before": "Jätad pakkumise tähelepanuta.",
+        "what": "Kõik su mündid jäid alles ja boonus ei tõmmanud sind kaasa.",
+        "why": "Tingimustega „tasuta boonused“ on olemas selleks, et sind riskima panna.",
+        "how": "Äpp teenib iga tehingu tasudelt, olgu võit või kaotus.",
+        "realLife": "Kui äpp tõukab sind kohe tegutsema, astu eemale."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Mida tähendab 100-kordne võimendus?",
+    "a": "1% liikumine sinu vastu võib kõik sisse pandu minema pühkida",
+    "b": "Võidad alati 100 korda rohkem",
+    "c": "Äpp kaitseb sind kaotuste eest",
+    "explanation": "Võimendus suurendab kaotusi sama palju kui võite. 100-kordse puhul lõpetab tehingu pisike liikumine sinu vastu."
+  },
+  "q2": {
+    "prompt": "Miks kasutavad mõned kauplemisäpid konfettit, seeriaid ja teavitusi?",
+    "a": "Et õppimine oleks lõbus",
+    "b": "Et sa kaupleksid rohkem",
+    "c": "Et premeerida tarku tehinguid",
+    "explanation": "Rohkem kauplemist tähendab äpile rohkem tasusid. Mängulaadne kujundus on tehtud sind tagasi tooma."
+  },
+  "q3": {
+    "prompt": "Kaotasid panusega münte. Mis on tark samm?",
+    "a": "Panusta rohkem, et see tagasi võita",
+    "b": "Lõpeta, lepi kaotusega ja räägi kellegagi",
+    "c": "Jätka, õnn pöördub",
+    "explanation": "Kaotuste tagaajamine teeb need tavaliselt suuremaks. Lõpetamine ja kellegagi rääkimine on tugev samm."
+  },
+  "misc": {
+    "leverageWin": "„Võimendus tähendab rohkem võitmist.“ Kaotad ka mitu korda kiiremini.",
+    "leverageSafe": "„Äpp kaitseb mind.“ Äpp lihtsalt sulgeb tehingu, kui su raha on otsas.",
+    "appCares": "„Nad tahavad, et mul oleks lõbus.“ Nad tahavad, et sa kaupleksid rohkem, sest see toob neile raha.",
+    "appReward": "„Konfetti tähendab, et kauplesin hästi.“ Äpid tähistavad tehinguid, mitte häid otsuseid.",
+    "chaseLoss": "„Võidan selle suurema panusega tagasi.“ Kaotuste tagaajamine teeb need tavaliselt suuremaks.",
+    "waitLuck": "„Õnn pöördub.“ Iga panus on eraldi. Tõenäosus ei võlgne sulle võitu."
+  },
+  "t1": "[[leverage|Finantsvõimendus]] suurendab kaotusi sama kiiresti kui võite.",
+  "t2": "Mänguna tunduvad äpid on tehtud sind kauplemas hoidma.",
+  "t3": "Krüptoga hasartmängimine on ikka hasartmäng. Ära kunagi aja kaotusi taga.",
+  "talk1": "Millised äpid meie telefonides püüavad kõige rohkem, et me tagasi tuleksime? Kuidas?",
+  "talk2": "Kellega saaksid rääkida, kui hasartmängimine või kauplemine kunagi kontrolli alt väljuma hakkaks?"
+}

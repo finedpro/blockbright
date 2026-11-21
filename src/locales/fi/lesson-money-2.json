@@ -1,0 +1,71 @@
+{
+  "title": "Kaikki kolikot eivät ole samanlaisia",
+  "hook": "Kaveri sanoo: ”Kryptovaluuttoja on tuhansia. Ne ovat periaatteessa kaikki bitcoinia, eikö?”",
+  "card1": "Bitcoin oli ensimmäinen [[cryptocurrency|kryptovaluutta]]. Sen jälkeen on syntynyt tuhansia muita. Joillakin on oma [[blockchain|lohkoketju]], toiset ovat [[token|tokeneita]], jotka on rakennettu olemassa olevan ketjun päälle.",
+  "analogy1": "Kolikot ja tokenit ovat kuin maan raha ja lahjakortit. Raha kelpaa kaikkialla maassa. Lahjakortti käyttää samaa järjestelmää, mutta se on vain yhtä hyvä kuin sen tehnyt kauppa.",
+  "card2": "[[stablecoin|Vakaa kolikko]] yrittää olla aina samanarvoinen kuin tavallinen raha, esimerkiksi 1 euro tai 1 dollari. Se on vain yhtä turvallinen kuin yritys tai säännöt, jotka pitävät sen vakaana.",
+  "card3": "Meemikolikoita tehdään huvin tai hypen vuoksi, usein minuuteissa. Useimmilla ei ole mitään käyttöä, ja niiden hinta riippuu vain siitä, kuinka paljon huomiota ne saavat.",
+  "sim": {
+    "newcoin": {
+      "prompt": "Luokkakaveri näyttää sinulle upouuden tokenin nimeltä ”SchoolCoin” ja sanoo sen olevan ”ihan kuin bitcoin, mutta ajoissa”.",
+      "buy": {
+        "label": "Osta heti 10 harjoituskolikon edestä",
+        "before": "Vaihdat 10 harjoituskolikkoa SchoolCoiniin.",
+        "what": "Seuraavana päivänä tekijä myi kaiken. SchoolCoin on nyt arvoton, ja 10 harjoituskolikkoasi ovat poissa.",
+        "why": "Kuka tahansa voi tehdä uuden tokenin minuuteissa. ”Ihan kuin bitcoin” on iskulause, ei tosiasia.",
+        "how": "Tokenin luominen olemassa olevaan lohkoketjuun vie muutaman klikkauksen. Siksi niitä on tuhansia.",
+        "realLife": "Ajoissa oleminen merkitsee vain, jos kolikko on aito. Useimmat uudet tokenit epäonnistuvat."
+      },
+      "compare": {
+        "label": "Kysy, miten se eroaa bitcoinista",
+        "before": "Kysyt, mikä tekee SchoolCoinista erityisen.",
+        "what": "Hän ei osaa selittää, paitsi että se ”nousee”. Et ole menettänyt mitään.",
+        "why": "Kolikolla pitää olla syy olla olemassa. Jos kukaan ei osaa sanoa, mihin se on, ainoa syy on hype.",
+        "how": "Bitcoinilla on oma verkkonsa, jota tuhannet tietokoneet pitävät käynnissä. Uudella tokenilla on usein yksi tekijä, joka omistaa siitä suuren osan.",
+        "realLife": "Jos kaikki vastaukset koskevat hintaa, ole varovainen."
+      },
+      "research": {
+        "label": "Tarkista, kuka sen teki, mihin se on ja kuka sitä käyttää",
+        "before": "Selvität tokenin ennen päätöstä.",
+        "what": "Selvisi, että sen teki eilen yksi nimetön tili, joka omistaa suurimman osan. Jätit sen väliin ja kolikkosi säilyivät.",
+        "why": "Muutaman minuutin tarkistus paljasti varoitusmerkit, jotka hype piilotti.",
+        "how": "Lohkoketjuselaimet näyttävät, milloin token luotiin ja kuinka moni lompakko sitä omistaa.",
+        "realLife": "Ennen kuin luotat uuteen kolikkoon, kysy: kuka sen teki, mihin se on ja kuka sitä käyttää?"
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Mikä on vakaa kolikko (stablecoin)?",
+    "a": "Kolikko, joka yrittää pysyä samanarvoisena kuin tavallinen raha",
+    "b": "Kolikko, joka ei voi koskaan menettää arvoaan",
+    "c": "Toinen nimi bitcoinille",
+    "explanation": "Vakaa kolikko yrittää pysyä esimerkiksi 1 eurossa tai 1 dollarissa. Se on vain yhtä turvallinen kuin se, joka pitää sen vakaana."
+  },
+  "q2": {
+    "prompt": "Upouusi token on ”ihan kuin bitcoin, mutta ajoissa”. Mikä pitää paikkansa?",
+    "a": "Ajoissa oleminen tarkoittaa, että rikastut",
+    "b": "Kuka tahansa voi luoda tokenin minuuteissa, joten tarkista se ensin",
+    "c": "Iso lohkoketju tekee tokenista yhtä turvallisen kuin bitcoinin",
+    "explanation": "Tokenin tekeminen on helppoa ja halpaa. Useimmat uudet tokenit epäonnistuvat, joten tarkista kuka sen teki ja miksi."
+  },
+  "q3": {
+    "prompt": "Mikä ratkaisee meemikolikon hinnan?",
+    "a": "Se, mihin sitä voi käyttää",
+    "b": "Lähinnä huomio ja hype",
+    "c": "Tekijän lupaus",
+    "explanation": "Useimmilla meemikolikoilla ei ole käyttöä. Niiden hinta nousee ja laskee huomion mukana."
+  },
+  "misc": {
+    "stableIsSafe": "”Vakaa tarkoittaa, ettei se voi koskaan pettää.” Vakaa kolikko on vain yhtä turvallinen kuin se, joka pitää sen vakaana. Jotkut ovat romahtaneet.",
+    "stableIsBitcoin": "”Vakaa kolikko on bitcoin.” Bitcoinin hinta liikkuu paljon. Vakaat kolikot yrittävät pysyä paikallaan.",
+    "earlyRich": "”Ajoissa oleminen tekee rikkaaksi.” Se kannattaa vain, jos kolikko on aito. Useimmat uudet tokenit päätyvät arvottomiksi.",
+    "sameAsBitcoin": "”Iso lohkoketju tarkoittaa turvallista.” Lohkoketju voi olla turvallinen, mutta sen päällä oleva token voi silti olla arvoton.",
+    "memeValue": "”Meemikolikoilla on käyttöä.” Useimmilla ei ole. Hinta on pelkkää huomiota.",
+    "memeGuaranteed": "”Tekijä takaa hinnan.” Kukaan ei voi taata hintaa."
+  },
+  "t1": "Kolikoita ja [[token|tokeneita]] on tuhansia. Useimmat eivät ole lainkaan bitcoinin kaltaisia.",
+  "t2": "[[stablecoin|Vakaa kolikko]] yrittää pysyä 1 eurossa tai dollarissa, mutta on vain yhtä turvallinen kuin se, joka pitää sen vakaana.",
+  "t3": "Ennen kuin luotat uuteen kolikkoon, kysy kuka sen teki, mihin se on ja kuka sitä käyttää.",
+  "talk1": "Miksi luulet, että joka päivä syntyy niin paljon uusia kolikoita?",
+  "talk2": "Mitä lahjakortteja tai kanta-asiakaspisteitä meillä on kotona käytössä? Miten ne muistuttavat tokeneita?"
+}

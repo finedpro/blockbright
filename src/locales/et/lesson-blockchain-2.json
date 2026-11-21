@@ -1,0 +1,71 @@
+{
+  "title": "Tasud ja ootamine",
+  "hook": "Saadad münte ja su rahakott näitab „Ootel“. Kümne minuti pärast on ikka ootel. Kas läks midagi valesti?",
+  "card1": "Iga [[transaction|tehing]] maksab [[fee|tasu]] arvutitele, mis lisavad selle [[block|plokki]]. Tasu läheb võrgule, mitte inimesele, kellele maksad.",
+  "analogy1": "Hõivatud plokiahel on nagu buss, kus on piiratud arv kohti. Kui sõita tahab palju inimesi, saavad esimesena peale need, kes pakuvad rohkem. Väikese tasuga tehingud ootavad järgmist bussi.",
+  "card2": "Iga uus plokk, mis lisatakse pärast sinu tehinguga plokki, on [[confirmation|kinnitus]]. Mida rohkem kinnitusi, seda raskem on tehingut muuta. Poed ootavad sageli mõne kinnituse ära, enne kui loevad makse tehtuks.",
+  "card3": "Tasud muutuvad vastavalt sellele, kui hõivatud võrk on. Vaata enne saatmist, millist tasu su rahakott näitab. Mõni võrk on odav, teine võib olla kallis.",
+  "sim": {
+    "busy": {
+      "prompt": "Tahad saata sõbrale 5 harjutusmünti, aga võrk on väga hõivatud. Su rahakott pakub kolme tasutaset.",
+      "lowest": {
+        "label": "Vali väikseim võimalik tasu",
+        "before": "Maksad kõige väiksemat tasu ja ootad.",
+        "what": "Su tehing ootas tunde, enne kui läbi läks. Ka sõber pidi ootama.",
+        "why": "Väike tasu paneb su hõivatud võrgus järjekorra lõppu.",
+        "how": "Plokke ehitavad arvutid valivad tavaliselt tehingud, mis maksavad kõige rohkem.",
+        "realLife": "Kui kiiret pole, on väike tasu okei. Kui on, maksa tavalist tasu."
+      },
+      "normal": {
+        "label": "Vali tavaline (soovitatud) tasu",
+        "before": "Maksad tasu, mida su rahakott soovitab.",
+        "what": "Su tehing kinnitati mõne minutiga ja maksid õiglast tasu.",
+        "why": "Rahakotid soovitavad tasu selle järgi, kui hõivatud võrk praegu on.",
+        "how": "Su tehing pääses ühte järgmistest plokkidest, sest tasu oli teistega samal tasemel.",
+        "realLife": "Soovitatud tasu on tavaliselt õige valik."
+      },
+      "again": {
+        "label": "See on kinni jäänud, saada uuesti suurema tasuga",
+        "before": "Saadad veel 5 münti, kuigi esimene on alles ootel.",
+        "what": "Lõpuks läksid mõlemad tehingud läbi. Sõber sai 5 asemel 10 münti ja sina maksid kaks tasu.",
+        "why": "Ootel tehing ei ole tavaliselt kadunud. Uuesti saatmine võib tähendada kaks korda maksmist.",
+        "how": "Mõned rahakotid oskavad ootel tehingut õigesti kiirendada või tühistada. Uue saatmine pole sama asi.",
+        "realLife": "Kui midagi on ootel, oota ja kontrolli seda plokiahela uurijas, enne kui midagi muud teed."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Kes saab võrgutasu?",
+    "a": "Inimene, kellele münte saadad",
+    "b": "Võrk, mis tehingu töötleb",
+    "c": "Alati rahakotiäpp",
+    "explanation": "Võrgutasud lähevad arvutitele, mis lisavad plokke. Mõni äpp lisab peale oma tasu ja peaks seda sulle näitama."
+  },
+  "q2": {
+    "prompt": "Su tehing on kaua ootel. Mis on parim esimene samm?",
+    "a": "Saada uuesti",
+    "b": "Oota ja kontrolli seda plokiahela uurijas",
+    "c": "Arva, et see kadus, ja palu sõbral see tagasi saata",
+    "explanation": "Ootel tähendab tavaliselt lihtsalt järjekorras olemist. Kontrolli, enne kui teed midagi, mis võib tähendada kaks korda maksmist."
+  },
+  "q3": {
+    "prompt": "Mis on kinnitus?",
+    "a": "Uus plokk, mis lisatakse pärast sinu tehinguga plokki",
+    "b": "E-kiri su rahakotiäpilt",
+    "c": "Sõber ütleb, et sai mündid kätte",
+    "explanation": "Iga uus plokk peal teeb su tehingu muutmise raskemaks. Sellepärast ootavad poed kinnitusi."
+  },
+  "misc": {
+    "feeToReceiver": "„Tasu läheb sellele, kellele maksan.“ See läheb võrgule, mis tehingu töötleb.",
+    "feeToApp": "„Rahakotiäpp jätab tasu endale.“ Võrgutasud lähevad plokke lisavatele arvutitele. Kui äpp lisab oma tasu, peaks ta seda näitama.",
+    "sendAgain": "„Saada lihtsalt uuesti.“ Esimene on tõenäoliselt alles tulemas. Võid maksta kaks korda.",
+    "pendingLost": "„Ootel tähendab kadunud.“ Tavaliselt ootab see lihtsalt järjekorras.",
+    "confirmEmail": "„Kinnitus on e-kiri.“ See on uus plokk ahelas.",
+    "confirmFriend": "„Sõber kinnitab.“ Tehingut kinnitab ainult võrk."
+  },
+  "t1": "Iga [[transaction|tehing]] maksab võrgule [[fee|tasu]].",
+  "t2": "Kui võrk on hõivatud, maksad rohkem või ootad kauem.",
+  "t3": "Ootel ei tähenda kadunud. Kontrolli, enne kui uuesti saadad.",
+  "talk1": "Kus veel makstakse kiiruse eest lisa, näiteks kiirkulleriga saatmisel?",
+  "talk2": "Kas maksaksid pigem rohkem või ootaksid kauem? Millal see loeb?"
+}

@@ -28,7 +28,8 @@
     "openCount": "{open} of {total} open",
     "openNow": "Open now",
     "continueTitle": "Your next block",
-    "startHere": "Start here"
+    "startHere": "Start here",
+    "lessonsDone": "{done}/{total} done"
   },
   "modules": {
     "m1": "What is money?",

@@ -1,0 +1,94 @@
+{
+  "title": "Lukot tileilläsi",
+  "hook": "Puhelimeesi ponnahtaa kryptosovelluksesi 6-numeroinen kirjautumiskoodi. Et pyytänyt sitä. Minuutin päästä kaverin tili kirjoittaa: ”Hups, lähetin koodini vahingossa sinun numeroosi. Voitko lähettää sen minulle?”",
+  "card1": "Sovelluksia, jotka säilyttävät kolikoita puolestasi, suojaa salasanasi ja toinen vaihe, jota kutsutaan [[two-factor|kaksivaiheiseksi tunnistautumiseksi]] (2FA): koodi sovelluksesta tai tekstiviestistä.",
+  "analogy1": "2FA on kuin ovi, jossa on kaksi lukkoa. Varas, joka varastaa yhden avaimen, ei silti pääse sisään, ellet itse anna hänelle toista avainta.",
+  "card2": "Kertakäyttöinen koodi on juuri se toinen avain. Jokainen, joka pyytää sitä, vaikka kaverin tililtä, yrittää päästä tilillesi. Älä koskaan jaa koodeja.",
+  "card3": "Käytä jokaisessa palvelussa pitkää ja eri salasanaa ja säilytä ne salasanojen hallintaohjelmassa. Jos yksi sivusto vuotaa, muut pysyvät turvassa.",
+  "adviceIntro": "Video jakaa ”tietoturvavinkkejä”. Mitkä ovat huonoja?",
+  "advice": {
+    "l1": {
+      "text": "Käytä samaa vahvaa salasanaa kaikkialla, niin muistat sen.",
+      "why": "Jos yksi sivusto vuotaa, jokainen tili samalla salasanalla on auki."
+    },
+    "l2": {
+      "text": "Ota 2FA käyttöön todennussovelluksella.",
+      "why": "Sovelluksen koodia on vaikeampi varastaa kuin tekstiviestiä."
+    },
+    "l3": {
+      "text": "Lähetä kirjautumiskoodisi tuelle, jos he pyytävät.",
+      "why": "Tuki ei koskaan tarvitse koodejasi. Pyytäjä yrittää kirjautua sinuna."
+    },
+    "l4": {
+      "text": "Säilytä pitkät, eri salasanat salasanojen hallintaohjelmassa.",
+      "why": "Se muistaa ne, joten sinun ei tarvitse koskaan käyttää samaa uudelleen."
+    },
+    "l5": {
+      "text": "Laita salasana profiilisi kuvaukseen, ettet unohda sitä.",
+      "why": "Kaiken julkisen näkee kuka tahansa."
+    }
+  },
+  "sim": {
+    "code": {
+      "prompt": "Kaverin tili kirjoittaa: ”Lähetin kirjautumiskoodini vahingossa sinulle, lähetä se minulle!”",
+      "send": {
+        "label": "Lähetä koodi",
+        "before": "Lähetät 6 numeroa tälle tilille.",
+        "what": "”Kaveri” kirjautui koodilla sovellustilillesi ja lähetti kaikki harjoituskolikkosi pois.",
+        "why": "Koodi oli sinun: joku kirjautui sinun tilillesi ja tarvitsi sen.",
+        "how": "Koodit lähetetään puhelimeesi juuri siksi, että vain sinulla pitäisi olla ne.",
+        "realLife": "Älä koskaan jaa kirjautumiskoodia, kuka tahansa kysyy."
+      },
+      "call": {
+        "label": "Soita kaverille ja tarkista",
+        "before": "Soitat kaverille ennen kuin teet mitään.",
+        "what": "Kaveri sanoo, ettei lähettänyt mitään: hänen tilinsä on hakkeroitu. Pidit koodin itselläsi.",
+        "why": "Tarkistaminen toista kautta oli fiksua. Koodia ei kuitenkaan koskaan tarvitse jakaa, joten olisit voinut vain jättää sen huomiotta.",
+        "how": "Huijarit käyttävät usein tuttujen hakkeroituja tilejä, koska luotat niihin.",
+        "realLife": "Kerro kaverille, että hänen tilinsä on hakkeroitu, ja vaihda myös oma salasanasi."
+      },
+      "change": {
+        "label": "Älä jaa, ja vaihda salasanasi",
+        "before": "Jätät pyynnön huomiotta ja vaihdat salasanan heti.",
+        "what": "Jollakulla oli salasanasi, mutta hän ei päässyt toisen lukon ohi. Nyt salasanasi on uusi ja hän on ulkona.",
+        "why": "Odottamaton koodi tarkoittaa, että joku kirjoitti salasanasi ja yritti kirjautua.",
+        "how": "2FA pysäytti hänet. Uusi salasana vie avaimen, joka hänellä jo oli.",
+        "realLife": "Odottamaton koodi on varoitus: vaihda salasana heti."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Mikä on 2FA?",
+    "a": "Toinen vaihe, kuten koodi, salasanan lisäksi",
+    "b": "Kaksi salasanaa samalla tilillä",
+    "c": "Jotain, mitä vain pankit käyttävät",
+    "explanation": "2FA tarkoittaa jotain, mitä tiedät (salasana), ja jotain, mitä sinulla on (puhelin tai sovellus)."
+  },
+  "q2": {
+    "prompt": "Saat kirjautumiskoodin, jota et pyytänyt. Mitä se tarkoittaa?",
+    "a": "Se on vain häiriö",
+    "b": "Joku saattaa yrittää kirjautua salasanallasi",
+    "c": "Kaveri tarvitsee sitä",
+    "explanation": "Yleensä joku kirjoitti salasanasi. Älä jaa koodia ja vaihda salasana."
+  },
+  "q3": {
+    "prompt": "Miksi käyttää jokaisessa palvelussa eri salasanaa?",
+    "a": "Jos yksi sivusto vuotaa, muut pysyvät turvassa",
+    "b": "Ei ole väliä, kunhan se on vahva",
+    "c": "Jotta voit vaihtaa ne joka viikko",
+    "explanation": "Vuotanutta salasanaa kokeillaan heti muilla sivustoilla. Eri salasanat pysäyttävät sen."
+  },
+  "misc": {
+    "twoPasswords": "”2FA tarkoittaa kahta salasanaa.” Se on salasanasi ja jotain, mitä sinulla on, kuten puhelin.",
+    "onlyBanks": "”Vain pankit käyttävät 2FA:ta.” Useimmat sovellukset tarjoavat sitä. Ota se käyttöön missä voit.",
+    "codeGlitch": "”Satunnaiset koodit ovat häiriöitä.” Yleensä joku yrittää kirjautua salasanallasi.",
+    "codeShare": "”Kaveri tarvitsee koodiani.” Kukaan ei koskaan tarvitse koodiasi.",
+    "reuseOk": "”Yksi vahva salasana riittää kaikkialle.” Jos se vuotaa kerran, jokainen sitä käyttävä tili on auki.",
+    "pwChange": "”Salasanojen tiheä vaihtaminen on pääasia.” Pitkät ja eri salasanat ovat tärkeämpiä kuin tiheä vaihtaminen."
+  },
+  "t1": "Ota [[two-factor|2FA]] käyttöön, mieluiten todennussovelluksella.",
+  "t2": "Älä koskaan jaa kirjautumiskoodia, kuka tahansa kysyy.",
+  "t3": "Käytä pitkiä, eri salasanoja ja säilytä ne salasanojen hallintaohjelmassa.",
+  "talk1": "Missä perheemme tileissä 2FA on käytössä?",
+  "talk2": "Mitä tekisimme, jos jokin tileistämme hakkeroitaisiin?"
+}

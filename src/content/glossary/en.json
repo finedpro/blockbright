@@ -14,5 +14,10 @@
   "exchange": {"term": "exchange", "definition": "A platform where people buy and sell cryptocurrencies, often for euros or dollars. Most are for adults only."},
   "volatility": {"term": "volatility", "definition": "How much and how fast a price goes up and down. Crypto prices are very volatile."},
   "rug-pull": {"term": "rug pull", "definition": "A scam where the creators of a coin collect buyers' money and then disappear, leaving the coin almost worthless."},
-  "kyc": {"term": "KYC", "definition": "Short for \"know your customer\": the identity check a licensed platform does before you can use it, usually with an ID document."}
+  "kyc": {"term": "KYC", "definition": "Short for \"know your customer\": the identity check a licensed platform does before you can use it, usually with an ID document."},
+  "token": {"term": "token", "definition": "A coin created on top of an existing blockchain instead of having its own. Anyone can create one in minutes."},
+  "stablecoin": {"term": "stablecoin", "definition": "A coin that tries to stay worth the same as normal money, such as 1 euro or 1 dollar."},
+  "confirmation": {"term": "confirmation", "definition": "Each new block added after the one with your transaction. More confirmations make it harder to change."},
+  "two-factor": {"term": "two-factor authentication (2FA)", "definition": "A second step when logging in, such as a code from an app, as well as your password."},
+  "leverage": {"term": "leverage", "definition": "Trading with borrowed money. It makes both wins and losses many times bigger."}
 }

@@ -1,0 +1,78 @@
+{
+  "title": "Valesivut ja valesovellukset",
+  "hook": "Etsit lompakkosovellustasi. Ensimmäinen tulos sanoo ”Virallinen lompakon lataus”, ja siinä on pieni ”Sponsoroitu”-merkintä. Napautatko?",
+  "card1": "Huijarit maksavat mainoksista ja kopioivat oikeita sivustoja ja sovelluksia. Väärennös näyttää oikealta, mutta se varastaa sen, mitä kirjoitat, tai pyytää ”yhdistämään” ja hyväksymään jotain.",
+  "analogy1": "Valesivu on kuin valekauppa oikean kaupan kyltillä. Kaikki näyttää samalta, kunnes maksat kassalla.",
+  "card2": "Kun sivu pyytää yhdistämään [[wallet|lompakkosi]] ja hyväksymään pyynnön, lue se. Hyväksyntä voi antaa sivulle luvan siirtää kolikkojasi myöhemmin, vaikka olisit jo poistunut.",
+  "walk": {
+    "title": "Näin valelompakkosovellus varastaa kolikot",
+    "f1": "Etsit ”lompakkosovellus” ja napautat ylintä mainosta.",
+    "f2": "Avautuu kopio oikeasta sivusta, jossa on iso latauspainike.",
+    "f3": "Sovellus näyttää aidolta ja pyytää ”palauttamaan” lompakkosi [[seed-phrase|palautuslauseella]].",
+    "f4": "Sanat menevät suoraan huijarille, joka tyhjentää lompakon."
+  },
+  "card3": "Asenna sovelluksia vain puhelimesi virallisesta kaupasta ja tarkista kehittäjän nimi ja arviot. Kirjoita tärkeät verkko-osoitteet itse tai käytä tallentamaasi kirjanmerkkiä.",
+  "sim": {
+    "search": {
+      "prompt": "Haluat asentaa lompakkosovelluksen. Haku näyttää sponsoroidun tuloksen ”WaIIet - Official” (kahdella isolla i:llä) ja sen alla tavallisen tuloksen.",
+      "ad": {
+        "label": "Napauta sponsoroitua tulosta ja asenna",
+        "before": "Asennat sovelluksen mainoksesta.",
+        "what": "Sovellus pyysi palauttamaan lompakon palautuslauseella. Muutamassa minuutissa kaikki harjoituskolikkosi olivat poissa.",
+        "why": "Kuka tahansa voi ostaa mainoksen, ja nimessä oli isot i:t pienten l:ien sijaan.",
+        "how": "Samannäköiset kirjaimet, kuten I ja l tai 0 ja O, saavat valenimet näyttämään aidoilta.",
+        "realLife": "Älä asenna lompakoita mainoksista. Mene viralliseen kauppaan ja tarkista kehittäjä."
+      },
+      "check": {
+        "label": "Avaa mainos, mutta katso ensin verkko-osoite",
+        "before": "Tarkistat osoiterivin ennen kuin teet mitään.",
+        "what": "Osoite oli ”wallet-official-app.co”. Se näytti oudolta, joten poistuit. Mitään ei menetetty.",
+        "why": "Osoitteen tarkistaminen on hyvä, mutta valeosoitteet voivat olla hyvin vakuuttavia.",
+        "how": "Huijarit rekisteröivät virallisen kuuloisia nimiä pienin muutoksin.",
+        "realLife": "Vielä turvallisempaa: älä koskaan aloita mainoksesta."
+      },
+      "store": {
+        "label": "Avaa puhelimen sovelluskauppa, etsi siellä ja tarkista kehittäjä",
+        "before": "Etsit sen sijaan virallisesta kaupasta.",
+        "what": "Löysit oikean sovelluksen, jolla on miljoonia latauksia ja oikea kehittäjä. Kolikkosi ovat turvassa.",
+        "why": "Viralliset kaupat tarkistavat sovelluksia, ja kehittäjän nimi ja arviot auttavat huomaamaan väärennökset.",
+        "how": "Joskus väärennöksiä pääsee kauppoihinkin, siksi kehittäjän nimellä on väliä.",
+        "realLife": "Jos et ole varma, ota linkki lompakon omalta viralliselta sivustolta."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Hakumainos sanoo ”Virallinen lompakon lataus”. Mikä pitää paikkansa?",
+    "a": "Ylimmät mainokset ovat aina virallisia",
+    "b": "Kuka tahansa voi ostaa mainoksen, joten mene itse viralliseen kauppaan",
+    "c": "Jos sivulla on lukkokuvake, se on turvallinen",
+    "explanation": "Myös huijarit ostavat mainoksia. Aloita virallisesta kaupasta tai tallentamastasi kirjanmerkistä."
+  },
+  "q2": {
+    "prompt": "Sivu pyytää yhdistämään lompakon ja hyväksymään pyynnön. Mitä sinun pitäisi tietää?",
+    "a": "Hyväksyntä voi antaa sivulle luvan siirtää kolikkojasi myöhemmin",
+    "b": "Se on kuin kirjautuminen, ei mitään muuta",
+    "c": "Hyväksynnät päättyvät, kun suljet sivun",
+    "explanation": "Lue jokainen pyyntö. Hyväksynnät voivat antaa sivulle luvan siirtää kolikkojasi, ja monet ovat voimassa, kunnes poistat ne."
+  },
+  "q3": {
+    "prompt": "Lompakkosovellus pyytää palautuslausettasi heti asennuksen jälkeen. Mitä teet?",
+    "a": "Kirjoitan sen, sovellus tarvitsee sitä",
+    "b": "Kirjoitan vain puolet",
+    "c": "Pysähdyn ja tarkistan ensin, onko sovellus aito",
+    "explanation": "Kirjoita palautuslauseesi vain, kun olet varma, että sovellus on aito ja palautat omaa lompakkoasi."
+  },
+  "misc": {
+    "adOfficial": "”Ylimmät mainokset ovat virallisia.” Kuka tahansa voi ostaa mainoksen, myös huijarit.",
+    "lockSafe": "”Lukkokuvake tarkoittaa turvallista.” Lukko tarkoittaa vain, että yhteys on salattu. Sellainen on myös valesivuilla.",
+    "connectHarmless": "”Yhdistäminen on vain kirjautumista.” Hyväksynnät voivat antaa sivulle luvan siirtää kolikkojasi.",
+    "approvalOnce": "”Hyväksynnät päättyvät, kun suljen sivun.” Monet ovat voimassa, kunnes poistat ne.",
+    "restoreNeeded": "”Sovellus tarvitsee palautuslauseeni toimiakseen.” Uusi lompakko luo itse oman lauseensa. Kirjoita omasi vain sovellukseen, jonka aitoudesta olet varma.",
+    "halfPhrase": "”Puolet lauseesta on turvallista kirjoittaa.” Puolet tekee loppujen arvaamisesta paljon helpompaa."
+  },
+  "t1": "Älä asenna sovelluksia tai avaa lompakkosivuja mainoksista.",
+  "t2": "Lue jokainen pyyntö ennen kuin hyväksyt sen [[wallet|lompakossasi]].",
+  "t3": "Käytä virallista kauppaa, tarkista kehittäjä ja kirjoita osoitteet itse.",
+  "talk1": "Miten tarkistamme, että sovellus on oikea, ennen kuin asennamme sen?",
+  "talk2": "Mitkä tärkeät sivustot meidän pitäisi tallentaa kirjanmerkeiksi?"
+}

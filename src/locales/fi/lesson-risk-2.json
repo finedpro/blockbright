@@ -1,0 +1,94 @@
+{
+  "title": "Kaupankäyntisovellukset, vipu ja uhkapeli",
+  "hook": "Sovellus näyttää: ”Käy kauppaa 100-kertaisella vivulla! Tee 10 eurosta 1000 euroa!” Kirkkaat värit, konfetti ja lähtölaskenta.",
+  "card1": "[[leverage|Vipu]] tarkoittaa kaupankäyntiä lainatulla rahalla. 100-kertaisella vivulla 1 %:n hintaliike sinua vastaan pyyhkii pois kaiken, minkä laitoit.",
+  "analogy1": "Vipu on kuin nuorallakävelyä 100 kertaa korkeammalla. Pieni horjahdus, jolla ei olisi maan lähellä väliä, on putoaminen katolta.",
+  "card2": "Jotkut sovellukset on rakennettu kuin pelit: konfettia, putkia ja ilmoituksia. Se on suunniteltu pitämään sinut kaupankäynnissä, koska se tuo sovellukselle rahaa.",
+  "card3": "Kryptokasinoilla ja vedonlyöntisivustoilla ei usein ole lupaa eikä ikätarkistusta. Uhkapeli kryptoilla on silti uhkapeliä, ja pitkällä aikavälillä talo voittaa.",
+  "adviceIntro": "Kommentteja kaupankäyntivideon alla. Mitä et noudattaisi?",
+  "advice": {
+    "l1": {
+      "text": "Käytä maksimivipua. Niin ammattilaiset rikastuvat.",
+      "why": "Suurella vivulla pieni liike sinua vastaan pyyhkii kaiken."
+    },
+    "l2": {
+      "text": "Älä koskaan käy kauppaa rahalla, jota tarvitset.",
+      "why": "Kaupankäynnissä voi menettää kaiken."
+    },
+    "l3": {
+      "text": "Hävisitkö rahaa? Voita se takaisin isommalla panoksella.",
+      "why": "Tappioiden jahtaaminen tekee pienistä tappioista isoja."
+    },
+    "l4": {
+      "text": "Laita kaupankäyntisovellusten ilmoitukset pois.",
+      "why": "Ilmoitukset on tehty vetämään sinut takaisin."
+    },
+    "l5": {
+      "text": "Kryptokasinot ovat hyviä, ne eivät tarkista ikää.",
+      "why": "Ikätarkistuksen puute tarkoittaa yleensä, ettei ole lupaa eikä suojaa."
+    }
+  },
+  "sim": {
+    "lever": {
+      "prompt": "Kaupankäyntisovellus tarjoaa 50 kolikon ”ilmaisen bonuksen”, jos avaat heti 100-kertaisella vivulla tehdyn kaupan.",
+      "go": {
+        "label": "Avaa 100-kertainen kauppa 20 kolikolla",
+        "before": "Käytät 20 harjoituskolikkoa 100-kertaisella vivulla.",
+        "what": "Hinta liikkui minuutissa 1 % väärään suuntaan. 20 kolikkoasi pyyhkiytyivät pois, ja bonuksella oli ehtoja, joita et voinut täyttää.",
+        "why": "100-kertaisella vivulla 1 %:n liike sinua vastaan on 100 %:n tappio.",
+        "how": "Sovellus sulkee kauppasi automaattisesti, kun rahasi loppuvat. Tätä kutsutaan likvidaatioksi.",
+        "realLife": "Vipu ja bonukset on tehty saamaan sinut käymään kauppaa enemmän. Monet maat rajoittavat niitä aloittelijoilta."
+      },
+      "small": {
+        "label": "Kokeile 2-kertaista vipua 5 kolikolla",
+        "before": "Käytät 5 harjoituskolikkoa 2-kertaisella vivulla.",
+        "what": "Hinta heilui alas ja takaisin ylös. Päädyit samaan kohtaan, mutta katsominen oli hermoja raastavaa.",
+        "why": "Pienempi vipu on vähemmän vaarallinen, mutta se on silti lainattua rahaa ja heilahdukset ovat kaksi kertaa isompia.",
+        "how": "2-kertaisella vivulla 50 %:n liike sinua vastaan pyyhkii kaupan.",
+        "realLife": "Aloittelijana et tarvitse vipua lainkaan."
+      },
+      "skip": {
+        "label": "Ohita ja sulje sovellus",
+        "before": "Jätät tarjouksen huomiotta.",
+        "what": "Pidit kaikki kolikkosi, eikä bonus vetänyt sinua mukaan.",
+        "why": "Ehdollisia ”ilmaisia bonuksia” on olemassa saadakseen sinut ottamaan riskejä.",
+        "how": "Sovellus tienaa jokaisen kaupan maksuista, voitat tai häviät.",
+        "realLife": "Jos sovellus painostaa sinua toimimaan heti, astu sivuun."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Mitä 100-kertainen vipu tarkoittaa?",
+    "a": "1 %:n liike sinua vastaan voi pyyhkiä pois kaiken, minkä laitoit",
+    "b": "Voitat aina 100 kertaa enemmän",
+    "c": "Sovellus suojaa sinua tappioilta",
+    "explanation": "Vipu kasvattaa tappioita yhtä paljon kuin voittoja. 100-kertaisella pieni liike sinua vastaan päättää kaupan."
+  },
+  "q2": {
+    "prompt": "Miksi jotkut kaupankäyntisovellukset käyttävät konfettia, putkia ja ilmoituksia?",
+    "a": "Jotta oppiminen olisi hauskaa",
+    "b": "Jotta kävisit kauppaa enemmän",
+    "c": "Palkitakseen fiksuja kauppoja",
+    "explanation": "Enemmän kaupankäyntiä tarkoittaa enemmän maksuja sovellukselle. Pelimäinen suunnittelu on tehty tuomaan sinut takaisin."
+  },
+  "q3": {
+    "prompt": "Hävisit kolikoita vedossa. Mikä on fiksu liike?",
+    "a": "Lyö isompi veto, jotta voitat ne takaisin",
+    "b": "Lopeta, hyväksy tappio ja puhu jonkun kanssa",
+    "c": "Jatka, onni kääntyy",
+    "explanation": "Tappioiden jahtaaminen yleensä kasvattaa niitä. Lopettaminen ja jonkun kanssa puhuminen on vahva liike."
+  },
+  "misc": {
+    "leverageWin": "”Vipu tarkoittaa enemmän voittoja.” Häviät myös monta kertaa nopeammin.",
+    "leverageSafe": "”Sovellus suojaa minua.” Sovellus vain sulkee kaupan, kun rahasi ovat loppu.",
+    "appCares": "”He haluavat, että minulla on hauskaa.” He haluavat, että käyt kauppaa enemmän, koska se tuo heille rahaa.",
+    "appReward": "”Konfetti tarkoittaa, että tein hyvän kaupan.” Sovellukset juhlivat kauppoja, eivät hyviä päätöksiä.",
+    "chaseLoss": "”Voitan sen takaisin isommalla panoksella.” Tappioiden jahtaaminen yleensä kasvattaa niitä.",
+    "waitLuck": "”Onni kääntyy.” Jokainen veto on erillinen. Todennäköisyydet eivät ole sinulle voittoa velkaa."
+  },
+  "t1": "[[leverage|Vipu]] kasvattaa tappioita yhtä nopeasti kuin voittoja.",
+  "t2": "Peleiltä tuntuvat sovellukset on rakennettu pitämään sinut kaupankäynnissä.",
+  "t3": "Uhkapeli kryptoilla on silti uhkapeliä. Älä koskaan jahtaa tappioita.",
+  "talk1": "Mitkä puhelimiemme sovellukset yrittävät eniten saada meidät palaamaan? Miten?",
+  "talk2": "Kenen kanssa voisit puhua, jos uhkapeli tai kaupankäynti alkaisi tuntua karkaavan käsistä?"
+}

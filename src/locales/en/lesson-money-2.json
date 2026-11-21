@@ -1,0 +1,71 @@
+{
+  "title": "Not all coins are the same",
+  "hook": "A friend says: \"There are thousands of cryptocurrencies. They're all basically bitcoin, right?\"",
+  "card1": "Bitcoin was the first [[cryptocurrency]]. Since then, thousands of others have appeared. Some run their own [[blockchain]]; others are [[token|tokens]] built on top of an existing one.",
+  "analogy1": "Coins and tokens are like a country's money and gift cards. The money works everywhere in the country. A gift card uses the same system, but it's only as good as the shop that made it.",
+  "card2": "A [[stablecoin]] tries to always be worth the same as normal money, for example 1 euro or 1 dollar. It is only as safe as the company or the rules that keep it stable.",
+  "card3": "Meme coins are made for fun or hype, often in minutes. Most have no use at all, and their price depends only on how much attention they get.",
+  "sim": {
+    "newcoin": {
+      "prompt": "A classmate shows you a brand-new token called \"SchoolCoin\" and says it's \"just like bitcoin, but early\".",
+      "buy": {
+        "label": "Buy 10 practice coins' worth right away",
+        "before": "You will swap 10 practice coins for SchoolCoin.",
+        "what": "The next day the creator sold everything. SchoolCoin is now worth nothing, and your 10 practice coins are gone.",
+        "why": "Anyone can make a new token in minutes. \"Just like bitcoin\" is a slogan, not a fact.",
+        "how": "Creating a token on an existing blockchain takes a few clicks. That's why there are thousands of them.",
+        "realLife": "Being early only matters if the coin is real. Most new tokens fail."
+      },
+      "compare": {
+        "label": "Ask how it is different from bitcoin",
+        "before": "You will ask what makes SchoolCoin special.",
+        "what": "They can't explain it, only that it \"will go up\". You haven't lost anything.",
+        "why": "A coin needs a reason to exist. If no one can say what it's for, the only reason is hype.",
+        "how": "Bitcoin has its own network, kept running by thousands of computers. A new token often has one creator who controls a lot of it.",
+        "realLife": "If every answer is about the price, be careful."
+      },
+      "research": {
+        "label": "Check who made it, what it's for and who uses it",
+        "before": "You will look up the token before deciding.",
+        "what": "You found it was made yesterday by one anonymous account that owns most of it. You skipped it and kept your coins.",
+        "why": "A few minutes of checking showed the warning signs that the hype hid.",
+        "how": "Block explorers show when a token was created and how many wallets hold it.",
+        "realLife": "Before trusting a new coin, ask: who made it, what is it for, and who uses it?"
+      }
+    }
+  },
+  "q1": {
+    "prompt": "What is a stablecoin?",
+    "a": "A coin that tries to stay worth the same as normal money",
+    "b": "A coin that can never lose value",
+    "c": "Another name for bitcoin",
+    "explanation": "A stablecoin tries to stay at, say, 1 euro or 1 dollar. It is only as safe as whoever keeps it stable."
+  },
+  "q2": {
+    "prompt": "A brand-new token is \"just like bitcoin, but early\". What is true?",
+    "a": "Being early means you will get rich",
+    "b": "Anyone can create a token in minutes, so check it first",
+    "c": "A token on a big blockchain is as safe as bitcoin",
+    "explanation": "Making a token is easy and cheap. Most new tokens fail, so check who made it and why."
+  },
+  "q3": {
+    "prompt": "What decides a meme coin's price?",
+    "a": "What it can be used for",
+    "b": "Mostly attention and hype",
+    "c": "The creator's promise",
+    "explanation": "Most meme coins have no use. Their price rises and falls with attention."
+  },
+  "misc": {
+    "stableIsSafe": "\"Stable means it can never fail.\" A stablecoin is only as safe as whoever keeps it stable. Some have collapsed.",
+    "stableIsBitcoin": "\"A stablecoin is bitcoin.\" Bitcoin's price moves a lot. Stablecoins try not to move.",
+    "earlyRich": "\"Being early means getting rich.\" Early only pays off if the coin is real. Most new tokens end up worthless.",
+    "sameAsBitcoin": "\"Built on a big blockchain means safe.\" The blockchain may be safe; the token on top can still be worthless.",
+    "memeValue": "\"Meme coins have a use.\" Most have none. The price is only attention.",
+    "memeGuaranteed": "\"The creator guarantees the price.\" No one can guarantee a price."
+  },
+  "t1": "There are thousands of coins and [[token|tokens]]. Most are nothing like bitcoin.",
+  "t2": "A [[stablecoin]] tries to stay at 1 euro or 1 dollar, but it is only as safe as whoever keeps it stable.",
+  "t3": "Before you trust a new coin, ask who made it, what it's for and who uses it.",
+  "talk1": "Why do you think so many new coins are created every day?",
+  "talk2": "Which gift cards or loyalty points do we use at home? How are they like tokens?"
+}

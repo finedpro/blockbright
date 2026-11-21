@@ -1,0 +1,78 @@
+{
+  "title": "Fake sites and fake apps",
+  "hook": "You search for your wallet app. The first result says \"Official wallet download\" and has a small \"Sponsored\" label. Tap it?",
+  "card1": "Scammers pay for ads and copy real websites and apps. The fake looks right, but it steals what you type, or asks you to \"connect\" and approve something.",
+  "analogy1": "A fake site is like a fake shop with the real shop's sign. Everything looks the same until you pay at the counter.",
+  "card2": "When a site asks you to connect your [[wallet]] and approve a request, read it. An approval can let the site move your coins later, even after you leave.",
+  "walk": {
+    "title": "How a fake wallet app steals coins",
+    "f1": "You search for \"wallet app\" and tap the top ad.",
+    "f2": "It opens a copy of the real site with a big download button.",
+    "f3": "The app looks real and asks you to \"restore\" your wallet with your [[seed-phrase]].",
+    "f4": "The words go straight to the scammer, who empties the wallet."
+  },
+  "card3": "Install apps only from your phone's official store, and check the developer name and reviews. Type important website addresses yourself, or use a bookmark you saved.",
+  "sim": {
+    "search": {
+      "prompt": "You want to install a wallet app. Your search shows a sponsored result \"WaIIet - Official\" (with two capital i's), and the normal result below it.",
+      "ad": {
+        "label": "Tap the sponsored result and install",
+        "before": "You will install the app from the ad.",
+        "what": "The app asked you to restore your wallet with your seed phrase. Within minutes, all your practice coins were gone.",
+        "why": "Anyone can buy an ad, and the name used capital i's instead of l's.",
+        "how": "Look-alike letters, like I and l or 0 and O, make fake names look real.",
+        "realLife": "Don't install wallets from ads. Go to the official store and check the developer."
+      },
+      "check": {
+        "label": "Open the ad, but look at the web address first",
+        "before": "You will check the address bar before doing anything.",
+        "what": "The address was \"wallet-official-app.co\". It looked odd, so you left. Nothing lost.",
+        "why": "Checking the address is good, but fake addresses can look very convincing.",
+        "how": "Scammers register names that sound official, with small changes.",
+        "realLife": "Safer still: never start from an ad."
+      },
+      "store": {
+        "label": "Open your phone's app store, search there and check the developer",
+        "before": "You will search in the official store instead.",
+        "what": "You found the real app, with millions of downloads and the right developer. Your coins are safe.",
+        "why": "Official stores check apps, and the developer name and reviews help you spot fakes.",
+        "how": "Fakes sometimes get into stores too, which is why the developer name matters.",
+        "realLife": "If unsure, get the link from the wallet's own official website."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "A search ad says \"Official wallet download\". What is true?",
+    "a": "Ads at the top are always official",
+    "b": "Anyone can buy an ad, so go to the official store yourself",
+    "c": "If the site has a lock icon, it's safe",
+    "explanation": "Scammers buy ads too. Start from the official store or a bookmark you saved."
+  },
+  "q2": {
+    "prompt": "A site asks you to connect your wallet and approve a request. What should you know?",
+    "a": "An approval can let the site move your coins later",
+    "b": "It's just like logging in, nothing more",
+    "c": "Approvals end when you close the site",
+    "explanation": "Read every request. Approvals can give a site permission to move your coins, and many stay until you remove them."
+  },
+  "q3": {
+    "prompt": "A wallet app asks for your seed phrase right after you install it. What do you do?",
+    "a": "Type it in, the app needs it",
+    "b": "Type in only half of it",
+    "c": "Stop and check that the app is genuine first",
+    "explanation": "Only type your seed phrase when you are sure the app is genuine and you are restoring your own wallet."
+  },
+  "misc": {
+    "adOfficial": "\"Ads at the top are official.\" Anyone can buy an ad, including scammers.",
+    "lockSafe": "\"A lock icon means it's safe.\" The lock only means the connection is encrypted. Fake sites have it too.",
+    "connectHarmless": "\"Connecting is just logging in.\" Approvals can give a site permission to move your coins.",
+    "approvalOnce": "\"Approvals end when I close the site.\" Many stay until you remove them.",
+    "restoreNeeded": "\"The app needs my seed phrase to work.\" A new wallet makes its own. Only type yours in an app you are sure is genuine.",
+    "halfPhrase": "\"Half the phrase is safe to type.\" Half makes the rest much easier to guess."
+  },
+  "t1": "Don't install apps or open wallet sites from ads.",
+  "t2": "Read every request before you approve it in your [[wallet]].",
+  "t3": "Use the official store, check the developer and type addresses yourself.",
+  "talk1": "How do we check that an app is the real one before we install it?",
+  "talk2": "Which important websites should we save as bookmarks?"
+}

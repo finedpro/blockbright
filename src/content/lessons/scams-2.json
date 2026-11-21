@@ -1,0 +1,135 @@
+{
+  "id": "scams-2",
+  "module": 5,
+  "title": "title",
+  "hook": "hook",
+  "before": [
+    "q1",
+    "q2"
+  ],
+  "cards": [
+    "card1",
+    {
+      "kind": "analogy",
+      "key": "analogy1"
+    },
+    "card2",
+    {
+      "kind": "walkthrough",
+      "title": "walk.title",
+      "frames": [
+        "walk.f1",
+        "walk.f2",
+        "walk.f3",
+        "walk.f4"
+      ]
+    },
+    "card3"
+  ],
+  "simulation": {
+    "start": "search",
+    "nodes": {
+      "search": {
+        "prompt": "sim.search.prompt",
+        "choices": [
+          {
+            "id": "ad",
+            "label": "sim.search.ad.label",
+            "before": "sim.search.ad.before",
+            "explain": "sim.search.ad",
+            "tone": "bad",
+            "coins": "all"
+          },
+          {
+            "id": "check",
+            "label": "sim.search.check.label",
+            "before": "sim.search.check.before",
+            "explain": "sim.search.check",
+            "tone": "warn"
+          },
+          {
+            "id": "store",
+            "label": "sim.search.store.label",
+            "before": "sim.search.store.before",
+            "explain": "sim.search.store",
+            "tone": "good"
+          }
+        ]
+      }
+    }
+  },
+  "quiz": [
+    {
+      "id": "q1",
+      "prompt": "q1.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": false,
+          "misconception": "misc.adOfficial"
+        },
+        {
+          "id": "b",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "correct": false,
+          "misconception": "misc.lockSafe"
+        }
+      ],
+      "explanation": "q1.explanation"
+    },
+    {
+      "id": "q2",
+      "prompt": "q2.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "correct": false,
+          "misconception": "misc.connectHarmless"
+        },
+        {
+          "id": "c",
+          "correct": false,
+          "misconception": "misc.approvalOnce"
+        }
+      ],
+      "explanation": "q2.explanation"
+    },
+    {
+      "id": "q3",
+      "prompt": "q3.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": false,
+          "misconception": "misc.restoreNeeded"
+        },
+        {
+          "id": "b",
+          "correct": false,
+          "misconception": "misc.halfPhrase"
+        },
+        {
+          "id": "c",
+          "correct": true
+        }
+      ],
+      "explanation": "q3.explanation"
+    }
+  ],
+  "takeaways": [
+    "t1",
+    "t2",
+    "t3"
+  ],
+  "talk": [
+    "talk1",
+    "talk2"
+  ]
+}

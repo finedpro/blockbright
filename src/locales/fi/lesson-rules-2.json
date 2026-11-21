@@ -1,0 +1,71 @@
+{
+  "title": "Kun jokin menee pieleen",
+  "hook": "Joku menetti kolikoita huijaukselle ja kirjoitti siitä. Muutaman minuutin päästä hän sai viestin: ”Olen palautusasiantuntija. Saan kolikkosi takaisin pientä maksua vastaan.”",
+  "card1": "Jos sinua huijataan, toimi nopeasti: lopeta lähettäminen, kerro aikuiselle, tallenna kuvakaappaukset ja osoitteet ja ilmoita palvelulle ja poliisille.",
+  "analogy1": "Palautushuijaus on kuin valelukkoseppä, joka ilmestyy heti murron jälkeen ja tarjoutuu tuomaan tavarasi takaisin, jos maksat ensin.",
+  "card2": "Kukaan ei voi perua lohkoketjun [[transaction|siirtoa]]. Ne, jotka lupaavat ”palauttaa” kolikoita maksua vastaan, ovat lähes aina huijareita, jotka iskevät uhriin toisen kerran.",
+  "card3": "Häpeä on normaalia, mutta hiljaa pysyminen auttaa huijareita. Ilmoittaminen varoittaa muita, ja poliisi kerää näitä ilmoituksia.",
+  "sim": {
+    "recovery": {
+      "prompt": "Menetit harjoituskolikoita vale-arvonnassa. Nyt ”CryptoRecoveryPro” kirjoittaa: ”Voin jäljittää ja palauttaa kolikkosi. Maksa 10 kolikkoa palautusohjelmasta.”",
+      "pay": {
+        "label": "Maksa 10 kolikkoa saadaksesi loput takaisin",
+        "before": "Lähetät ”asiantuntijalle” 10 harjoituskolikkoa.",
+        "what": "He pyysivät vielä 20 ”veroihin” ja katosivat sitten. Menetit 10 kolikkoa lisää.",
+        "why": "Palautushuijarit etsivät ihmisiä, jotka ovat juuri menettäneet rahaa.",
+        "how": "He seuraavat julkaisuja ja kommentteja, joissa ihmiset kertovat tulleensa huijatuiksi.",
+        "realLife": "Oikea poliisi ja palvelut eivät koskaan veloita tapauksen selvittämisestä."
+      },
+      "proof": {
+        "label": "Pyydä heitä todistamaan, että he ovat aitoja",
+        "before": "Pyydät todisteita ennen maksamista.",
+        "what": "He lähettivät kuvakaappauksia ”tyytyväisistä asiakkaista”. Väärennettyjä, mutta vakuuttavia. Et ole vielä maksanut.",
+        "why": "Väärennettyjä todisteita on helppo tehdä. Heidän kanssaan puhuminen antaa heille vain lisää mahdollisuuksia.",
+        "how": "Kuvakaappauksia ja arvosteluja voi keksiä minuuteissa.",
+        "realLife": "Älä ole yhteydessä. Estä ja ilmoita."
+      },
+      "report": {
+        "label": "Estä, kerro vanhemmalle ja ilmoita",
+        "before": "Lopetat keskustelun ja haet apua.",
+        "what": "Vanhempasi auttoi ilmoittamaan ensimmäisestä huijauksesta palvelulle ja poliisille. Myös ”palautus”-tilistä ilmoitettiin.",
+        "why": "Ilmoittaminen on se, mikä oikeasti auttaa, ja se suojaa muita.",
+        "how": "Poliisi kerää ilmoituksia löytääkseen kuvioita ja saadakseen huijareita kiinni.",
+        "realLife": "Suomessa rikosilmoituksen voi tehdä poliisille myös verkossa. Säilytä kuvakaappaukset ja osoitteet todisteina."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Joku tarjoutuu palauttamaan menettämäsi kolikot maksua vastaan. Mitä se todennäköisimmin on?",
+    "a": "Palautushuijaus",
+    "b": "Oikea palvelu, joka voi perua siirron",
+    "c": "Poliisi ottaa sinuun yhteyttä",
+    "explanation": "Kukaan ei voi perua lohkoketjun siirtoa, eikä poliisi koskaan veloita sinua. Se on toinen huijaus."
+  },
+  "q2": {
+    "prompt": "Sinua on huijattu. Mitä sinun pitäisi tehdä ensin?",
+    "a": "Pidän sen salassa",
+    "b": "Lopetan lähettämisen, kerron aikuiselle ja tallennan todisteet",
+    "c": "Lähetän vähän lisää saadakseni rahani vapaaksi",
+    "explanation": "Pysähdy, kerro jollekulle, johon luotat, säilytä todisteet ja ilmoita."
+  },
+  "q3": {
+    "prompt": "Miksi ilmoittaa huijauksesta, jos kolikoita ei saa takaisin?",
+    "a": "Se varoittaa muita ja auttaa poliisia löytämään huijarit",
+    "b": "Siinä ei ole mitään järkeä",
+    "c": "Jotta joutuisit vaikeuksiin",
+    "explanation": "Ilmoitukset auttavat pysäyttämään huijareita ja suojaavat muita. Uhrit eivät joudu vaikeuksiin ilmoittamisesta."
+  },
+  "misc": {
+    "recoveryReal": "”Palautusasiantuntijat voivat perua siirtoja.” Kukaan ei voi perua lohkoketjun siirtoa.",
+    "recoveryPolice": "”Se on poliisi.” Poliisi ei koskaan veloita rahaa tutkinnasta.",
+    "hideIt": "”Pidän sen salassa, ettei kukaan tiedä.” Hiljaisuus auttaa huijareita. Aikuiselle kertominen tuo sinulle apua.",
+    "sendMore": "”Lähetän lisää saadakseni loput vapaaksi.” Huijarit keksivät aina uusia maksuja.",
+    "noPoint": "”Ilmoittaminen on turhaa.” Ilmoitukset auttavat pysäyttämään huijareita ja suojaavat muita.",
+    "reportBlame": "”Joudun vaikeuksiin ilmoittamisesta.” Uhrit eivät joudu vaikeuksiin rikoksesta ilmoittamisesta."
+  },
+  "t1": "Jos sinua huijataan: pysähdy, kerro aikuiselle, tallenna todisteet, ilmoita.",
+  "t2": "Kukaan ei voi perua lohkoketjun [[transaction|siirtoa]]. ”Palautus maksua vastaan” on huijaus.",
+  "t3": "Ilmoittaminen auttaa muita, vaikka kolikot eivät palaisi.",
+  "talk1": "Jos jotakuta meistä huijattaisiin netissä, kenelle kertoisimme ensin ja mitä tekisimme?",
+  "talk2": "Miksi luulet, että ihmiset häpeävät, kun heitä on huijattu?"
+}

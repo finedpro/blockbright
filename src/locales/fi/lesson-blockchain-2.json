@@ -1,0 +1,71 @@
+{
+  "title": "Maksut ja odottaminen",
+  "hook": "Lähetät kolikoita, ja lompakkosi näyttää ”Odottaa”. Kymmenen minuutin päästä se odottaa yhä. Menikö jotain pieleen?",
+  "card1": "Jokainen [[transaction|siirto]] maksaa [[fee|maksun]] tietokoneille, jotka lisäävät sen [[block|lohkoon]]. Maksu menee verkolle, ei sille, jolle maksat.",
+  "analogy1": "Ruuhkainen lohkoketju on kuin bussi, jossa on rajallisesti paikkoja. Kun moni haluaa kyytiin, ne pääsevät ensin, jotka tarjoavat enemmän. Pienen maksun siirrot odottavat seuraavaa bussia.",
+  "card2": "Jokainen uusi lohko, joka lisätään siirtosi sisältävän lohkon jälkeen, on [[confirmation|vahvistus]]. Mitä enemmän vahvistuksia, sitä vaikeampi siirtoa on muuttaa. Kaupat odottavat usein muutaman vahvistuksen ennen kuin pitävät maksua valmiina.",
+  "card3": "Maksut muuttuvat sen mukaan, kuinka ruuhkainen verkko on. Katso ennen lähettämistä, minkä maksun lompakkosi näyttää. Jotkut verkot ovat halpoja, toiset voivat olla kalliita.",
+  "sim": {
+    "busy": {
+      "prompt": "Haluat lähettää kaverille 5 harjoituskolikkoa, mutta verkko on hyvin ruuhkainen. Lompakkosi tarjoaa kolme maksutasoa.",
+      "lowest": {
+        "label": "Valitse pienin mahdollinen maksu",
+        "before": "Maksat pienimmän maksun ja odotat.",
+        "what": "Siirtosi odotti tunteja ennen kuin meni läpi. Kaverikin joutui odottamaan.",
+        "why": "Pieni maksu laittaa sinut jonon perälle, kun verkko on ruuhkainen.",
+        "how": "Lohkoja rakentavat tietokoneet valitsevat yleensä siirrot, jotka maksavat eniten.",
+        "realLife": "Jos ei ole kiire, pieni maksu on ok. Jos on, maksa tavallinen maksu."
+      },
+      "normal": {
+        "label": "Valitse tavallinen (suositeltu) maksu",
+        "before": "Maksat maksun, jota lompakkosi suosittelee.",
+        "what": "Siirtosi vahvistettiin muutamassa minuutissa, ja maksoit kohtuullisen maksun.",
+        "why": "Lompakot suosittelevat maksua sen mukaan, kuinka ruuhkainen verkko juuri nyt on.",
+        "how": "Siirtosi pääsi yhteen seuraavista lohkoista, koska maksu oli muiden tasolla.",
+        "realLife": "Suositeltu maksu on yleensä oikea valinta."
+      },
+      "again": {
+        "label": "Se on jumissa, joten lähetä uudelleen isommalla maksulla",
+        "before": "Lähetät toiset 5 kolikkoa, vaikka ensimmäinen odottaa vielä.",
+        "what": "Lopulta molemmat siirrot menivät läpi. Kaveri sai 10 kolikkoa 5:n sijaan, ja maksoit kaksi maksua.",
+        "why": "Odottava siirto ei yleensä ole kadonnut. Uudelleen lähettäminen voi tarkoittaa maksamista kahdesti.",
+        "how": "Jotkut lompakot osaavat nopeuttaa tai perua odottavan siirron oikein. Uuden lähettäminen ei ole sama asia.",
+        "realLife": "Jos jokin odottaa, odota ja tarkista se lohkoketjuselaimesta ennen kuin teet mitään muuta."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Kuka saa verkkomaksun?",
+    "a": "Se, jolle lähetät kolikoita",
+    "b": "Verkko, joka käsittelee siirron",
+    "c": "Aina lompakkosovellus",
+    "explanation": "Verkkomaksut menevät lohkoja lisääville tietokoneille. Jotkut sovellukset lisäävät päälle oman maksunsa, ja sen pitäisi näkyä sinulle."
+  },
+  "q2": {
+    "prompt": "Siirtosi on odottanut pitkään. Mikä on paras ensimmäinen askel?",
+    "a": "Lähetä uudelleen",
+    "b": "Odota ja tarkista se lohkoketjuselaimesta",
+    "c": "Oleta, että se katosi, ja pyydä kaveria lähettämään se takaisin",
+    "explanation": "Odottaa tarkoittaa yleensä vain jonossa olemista. Tarkista ennen kuin teet jotain, mikä voi saada sinut maksamaan kahdesti."
+  },
+  "q3": {
+    "prompt": "Mikä on vahvistus?",
+    "a": "Uusi lohko, joka lisätään siirtosi sisältävän lohkon jälkeen",
+    "b": "Sähköposti lompakkosovellukselta",
+    "c": "Kaveri sanoo saaneensa kolikot",
+    "explanation": "Jokainen uusi lohko päällä tekee siirrostasi vaikeamman muuttaa. Siksi kaupat odottavat vahvistuksia."
+  },
+  "misc": {
+    "feeToReceiver": "”Maksu menee sille, jolle maksan.” Se menee verkolle, joka käsittelee siirron.",
+    "feeToApp": "”Lompakkosovellus pitää maksun.” Verkkomaksut menevät lohkoja lisääville tietokoneille. Jos sovellus lisää oman maksunsa, sen pitäisi näyttää se.",
+    "sendAgain": "”Lähetä vain uudelleen.” Ensimmäinen on todennäköisesti vielä tulossa. Voit maksaa kahdesti.",
+    "pendingLost": "”Odottaa tarkoittaa kadonnut.” Yleensä se vain odottaa jonossa.",
+    "confirmEmail": "”Vahvistus on sähköposti.” Se on uusi lohko ketjussa.",
+    "confirmFriend": "”Kaveri vahvistaa sen.” Vain verkko vahvistaa siirron."
+  },
+  "t1": "Jokainen [[transaction|siirto]] maksaa verkolle [[fee|maksun]].",
+  "t2": "Kun verkko on ruuhkainen, maksat enemmän tai odotat pidempään.",
+  "t3": "Odottava ei ole kadonnut. Tarkista ennen kuin lähetät uudelleen.",
+  "talk1": "Missä muualla maksetaan lisää nopeudesta, kuten pikalähetyksessä?",
+  "talk2": "Maksaisitko mieluummin enemmän vai odottaisitko pidempään? Milloin sillä on väliä?"
+}

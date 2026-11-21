@@ -1,0 +1,71 @@
+{
+  "title": "Fees and waiting",
+  "hook": "You send coins and your wallet says \"Pending\". Ten minutes later, it still says pending. Did something go wrong?",
+  "card1": "Every [[transaction]] pays a [[fee]] to the computers that add it to a [[block]]. The fee goes to the network, not to the person you are paying.",
+  "analogy1": "A busy blockchain is like a bus with limited seats. When lots of people want to ride, those who offer more get on first. Low fees can wait for the next bus.",
+  "card2": "Each new block added after the one with your transaction is a [[confirmation]]. The more confirmations, the harder it is to change. Shops often wait for a few before they count a payment as done.",
+  "card3": "Fees change with how busy the network is. Before you send, look at the fee your wallet shows. Some networks are cheap, others can be expensive.",
+  "sim": {
+    "busy": {
+      "prompt": "You want to send 5 practice coins to a friend, but the network is very busy. Your wallet offers three fee levels.",
+      "lowest": {
+        "label": "Pick the lowest possible fee",
+        "before": "You will pay the smallest fee and wait.",
+        "what": "Your transaction waited for hours before it went through. Your friend had to wait too.",
+        "why": "A low fee puts you at the back of the queue when the network is busy.",
+        "how": "The computers that build blocks usually pick the transactions that pay the most.",
+        "realLife": "If it isn't urgent, a low fee is fine. If it is, pay the normal fee."
+      },
+      "normal": {
+        "label": "Pick the normal (recommended) fee",
+        "before": "You will pay the fee your wallet suggests.",
+        "what": "Your transaction was confirmed within minutes, and you paid a fair fee.",
+        "why": "Wallets suggest a fee based on how busy the network is right now.",
+        "how": "Your transaction got into one of the next blocks because its fee was in line with the others.",
+        "realLife": "The recommended fee is usually the right choice."
+      },
+      "again": {
+        "label": "It's stuck, so send it again with a higher fee",
+        "before": "You will send another 5 coins while the first one is still pending.",
+        "what": "Both transactions went through in the end. Your friend got 10 coins instead of 5, and you paid two fees.",
+        "why": "A pending transaction usually isn't lost. Sending again can mean paying twice.",
+        "how": "Some wallets can properly speed up or cancel a pending transaction. Sending a new one is not the same thing.",
+        "realLife": "If something is pending, wait and check it on a block explorer before doing anything else."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Who gets the network fee?",
+    "a": "The person you send coins to",
+    "b": "The network that processes the transaction",
+    "c": "Always the wallet app",
+    "explanation": "Network fees go to the computers that add blocks. Some apps add their own fee on top, and they should show it to you."
+  },
+  "q2": {
+    "prompt": "Your transaction has been pending for a long time. What is the best first step?",
+    "a": "Send it again",
+    "b": "Wait and check it on a block explorer",
+    "c": "Assume it's lost and ask your friend to send it back",
+    "explanation": "Pending usually just means waiting in the queue. Check before you do anything that could make you pay twice."
+  },
+  "q3": {
+    "prompt": "What is a confirmation?",
+    "a": "A new block added after the one with your transaction",
+    "b": "An email from your wallet app",
+    "c": "Your friend saying they got the coins",
+    "explanation": "Each new block on top makes your transaction harder to change. That's why shops wait for confirmations."
+  },
+  "misc": {
+    "feeToReceiver": "\"The fee goes to the person I pay.\" It goes to the network that processes the transaction.",
+    "feeToApp": "\"The wallet app keeps the fee.\" Network fees go to the computers that add blocks. If an app adds its own fee, it should show it.",
+    "sendAgain": "\"Just send it again.\" The first one is probably still coming. You could pay twice.",
+    "pendingLost": "\"Pending means lost.\" Usually it's just waiting in the queue.",
+    "confirmEmail": "\"A confirmation is an email.\" It's a new block on the chain.",
+    "confirmFriend": "\"My friend confirms it.\" Only the network confirms a transaction."
+  },
+  "t1": "Every [[transaction]] pays a [[fee]] to the network.",
+  "t2": "When the network is busy, you pay more or wait longer.",
+  "t3": "Pending isn't lost. Check before you send again.",
+  "talk1": "Where else do people pay extra to go faster, like express delivery?",
+  "talk2": "Would you rather pay more or wait longer? When does it matter?"
+}

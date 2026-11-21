@@ -1,0 +1,71 @@
+{
+  "title": "When something goes wrong",
+  "hook": "Someone lost coins to a scam and posted about it. Minutes later they got a message: \"I'm a recovery expert. I can get your coins back for a small fee.\"",
+  "card1": "If you are scammed, act fast: stop sending, tell an adult, save screenshots and addresses, and report it to the platform and the police.",
+  "analogy1": "A recovery scam is like a fake locksmith who turns up right after a burglary and offers to get your things back, if you pay first.",
+  "card2": "No one can reverse a blockchain [[transaction]]. People who promise to \"recover\" coins for a fee are almost always scammers targeting victims a second time.",
+  "card3": "Feeling embarrassed is normal, but staying quiet helps scammers. Reporting warns others, and the police collect these reports.",
+  "sim": {
+    "recovery": {
+      "prompt": "You lost practice coins to a fake giveaway. Now \"CryptoRecoveryPro\" writes: \"I can trace and return your coins. Pay 10 coins for the recovery software.\"",
+      "pay": {
+        "label": "Pay 10 coins to get the rest back",
+        "before": "You will send 10 practice coins to the \"expert\".",
+        "what": "They asked for 20 more for \"taxes\", then disappeared. You lost another 10 coins.",
+        "why": "Recovery scammers look for people who have just lost money.",
+        "how": "They watch posts and comments where people talk about being scammed.",
+        "realLife": "Real police and platforms never charge you to look into a case."
+      },
+      "proof": {
+        "label": "Ask them to prove they are real",
+        "before": "You will ask for proof before paying.",
+        "what": "They sent screenshots of \"happy clients\". Fake, but convincing. You haven't paid yet.",
+        "why": "Fake proof is easy to make. Talking to them only gives them more chances.",
+        "how": "Screenshots and reviews can be made up in minutes.",
+        "realLife": "Don't engage. Block and report."
+      },
+      "report": {
+        "label": "Block them, tell a parent and report it",
+        "before": "You will stop the chat and get help.",
+        "what": "Your parent helped you report the first scam to the platform and the police. The \"recovery\" account was reported too.",
+        "why": "Reporting is what actually helps, and it protects other people.",
+        "how": "The police collect reports to find patterns and catch scammers.",
+        "realLife": "In many countries you can report a crime to the police online. Keep screenshots and addresses as evidence."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Someone offers to recover your lost coins for a fee. What is it most likely to be?",
+    "a": "A recovery scam",
+    "b": "A real service that can reverse the transaction",
+    "c": "The police contacting you",
+    "explanation": "No one can reverse a blockchain transaction, and the police never charge you. It's a second scam."
+  },
+  "q2": {
+    "prompt": "You have been scammed. What should you do first?",
+    "a": "Keep it secret",
+    "b": "Stop sending, tell an adult and save evidence",
+    "c": "Send a bit more to unlock your money",
+    "explanation": "Stop, tell someone you trust, keep the evidence and report it."
+  },
+  "q3": {
+    "prompt": "Why report a scam if the coins can't be returned?",
+    "a": "It warns others and helps the police find scammers",
+    "b": "There's no point",
+    "c": "So that you get in trouble",
+    "explanation": "Reports help stop scammers and protect other people. Victims don't get in trouble for reporting."
+  },
+  "misc": {
+    "recoveryReal": "\"Recovery experts can reverse transactions.\" No one can reverse a blockchain transaction.",
+    "recoveryPolice": "\"It's the police.\" The police never charge money to investigate.",
+    "hideIt": "\"Keep it secret so no one knows.\" Silence helps scammers. Telling an adult gets you help.",
+    "sendMore": "\"Send more to unlock the rest.\" Scammers always invent new fees.",
+    "noPoint": "\"Reporting is pointless.\" Reports help stop scammers and protect others.",
+    "reportBlame": "\"I'll get in trouble for reporting.\" Victims don't get in trouble for reporting a crime."
+  },
+  "t1": "If you are scammed: stop, tell an adult, save evidence, report it.",
+  "t2": "No one can reverse a blockchain [[transaction]]. \"Recovery for a fee\" is a scam.",
+  "t3": "Reporting helps others, even when the coins don't come back.",
+  "talk1": "If one of us were scammed online, who would we tell first and what would we do?",
+  "talk2": "Why do you think people feel embarrassed after being scammed?"
+}

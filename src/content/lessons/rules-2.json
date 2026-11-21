@@ -1,0 +1,125 @@
+{
+  "id": "rules-2",
+  "module": 7,
+  "title": "title",
+  "hook": "hook",
+  "before": [
+    "q1",
+    "q2"
+  ],
+  "cards": [
+    "card1",
+    {
+      "kind": "analogy",
+      "key": "analogy1"
+    },
+    "card2",
+    "card3"
+  ],
+  "simulation": {
+    "start": "recovery",
+    "nodes": {
+      "recovery": {
+        "prompt": "sim.recovery.prompt",
+        "choices": [
+          {
+            "id": "pay",
+            "label": "sim.recovery.pay.label",
+            "before": "sim.recovery.pay.before",
+            "explain": "sim.recovery.pay",
+            "tone": "bad",
+            "coins": -10
+          },
+          {
+            "id": "proof",
+            "label": "sim.recovery.proof.label",
+            "before": "sim.recovery.proof.before",
+            "explain": "sim.recovery.proof",
+            "tone": "warn"
+          },
+          {
+            "id": "report",
+            "label": "sim.recovery.report.label",
+            "before": "sim.recovery.report.before",
+            "explain": "sim.recovery.report",
+            "tone": "good"
+          }
+        ]
+      }
+    }
+  },
+  "quiz": [
+    {
+      "id": "q1",
+      "prompt": "q1.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "correct": false,
+          "misconception": "misc.recoveryReal"
+        },
+        {
+          "id": "c",
+          "correct": false,
+          "misconception": "misc.recoveryPolice"
+        }
+      ],
+      "explanation": "q1.explanation"
+    },
+    {
+      "id": "q2",
+      "prompt": "q2.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": false,
+          "misconception": "misc.hideIt"
+        },
+        {
+          "id": "b",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "correct": false,
+          "misconception": "misc.sendMore"
+        }
+      ],
+      "explanation": "q2.explanation"
+    },
+    {
+      "id": "q3",
+      "prompt": "q3.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "correct": false,
+          "misconception": "misc.noPoint"
+        },
+        {
+          "id": "c",
+          "correct": false,
+          "misconception": "misc.reportBlame"
+        }
+      ],
+      "explanation": "q3.explanation"
+    }
+  ],
+  "takeaways": [
+    "t1",
+    "t2",
+    "t3"
+  ],
+  "talk": [
+    "talk1",
+    "talk2"
+  ]
+}

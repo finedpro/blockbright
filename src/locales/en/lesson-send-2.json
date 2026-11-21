@@ -1,0 +1,71 @@
+{
+  "title": "Address tricks",
+  "hook": "You want to send coins to your friend again. In your wallet history there's an address that starts and ends just like theirs. Copy it?",
+  "card1": "Scammers send tiny amounts from look-alike [[address|addresses]] so that they show up in your history. This is called address poisoning. If you copy from your history, you might copy theirs.",
+  "analogy1": "It's like a fake contact saved as \"Mum\" with almost the same number. One wrong digit, and the call goes to a stranger.",
+  "card2": "Always get the address from the source: your friend's own message, their wallet's Receive screen, or a contact you saved and checked yourself.",
+  "card3": "When the amount matters, check more than the first and last four characters, because some look-alikes match both ends. Sending a small test first helps.",
+  "sim": {
+    "history": {
+      "prompt": "Your history shows two addresses: one you paid your friend last week, and one from yesterday that sent you a tiny 0.001 coin you don't remember. Both start with \"bb1qx7\" and end with \"9kd2\".",
+      "newest": {
+        "label": "Copy the newest one, it's at the top",
+        "before": "You will copy the top address and send 20 coins.",
+        "what": "You sent 20 practice coins to the scammer's look-alike address. They're gone.",
+        "why": "The tiny transaction was bait, to put the fake address at the top of your history.",
+        "how": "Scammers create addresses that match the first and last characters. The middle is different.",
+        "realLife": "Never copy an address from your history without checking where it came from."
+      },
+      "compare": {
+        "label": "Compare the first and last characters",
+        "before": "You will check both ends of each address.",
+        "what": "Both match. You still don't know which one is real.",
+        "why": "Look-alike addresses are made to pass exactly that check.",
+        "how": "Matching a few characters at each end is easy for a scammer's computer.",
+        "realLife": "When both ends match, check the middle too, or get the address fresh."
+      },
+      "ask": {
+        "label": "Ask your friend to send their address again",
+        "before": "You will ask your friend for their address directly.",
+        "what": "Your friend sent it. It matches last week's, not yesterday's. You sent the coins safely.",
+        "why": "Getting the address from the source beats any memory or history.",
+        "how": "The odd 0.001 transfer came from a stranger, not from your friend.",
+        "realLife": "Save checked contacts in your wallet and ignore tiny unexpected transfers."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "What is address poisoning?",
+    "a": "Scammers put a look-alike address into your history",
+    "b": "A virus that breaks your wallet",
+    "c": "When a blockchain gets damaged",
+    "explanation": "Tiny transfers from look-alike addresses try to trick you into copying the wrong one later."
+  },
+  "q2": {
+    "prompt": "Where is the safest place to get a friend's address?",
+    "a": "From your wallet history",
+    "b": "From your friend directly, or a contact you saved and checked",
+    "c": "From a search engine",
+    "explanation": "Get it from the source every time, or from a contact you checked yourself."
+  },
+  "q3": {
+    "prompt": "You receive 0.001 coins from an address you don't know. What should you do?",
+    "a": "Send it back",
+    "b": "Ignore it and never copy that address",
+    "c": "Thank them, it's a gift",
+    "explanation": "Tiny unexpected transfers are often bait. Ignore them and don't interact."
+  },
+  "misc": {
+    "poisonVirus": "\"It's a virus.\" Address poisoning needs no virus. It just tricks you into copying the wrong address.",
+    "poisonBlock": "\"The blockchain gets poisoned.\" The blockchain is fine. Only your history gets a fake entry.",
+    "historyCopy": "\"My history is safe to copy from.\" Scammers can put look-alike addresses there.",
+    "searchAddr": "\"I can find the address online.\" Search results can be faked. Ask your friend.",
+    "sendBack": "\"Send it back to be nice.\" That's what they want: interacting puts their address in your history again.",
+    "smallGift": "\"It's a small gift.\" Tiny unexpected transfers are usually bait."
+  },
+  "t1": "Look-alike [[address|addresses]] can match the first and last characters.",
+  "t2": "Get the address from the source, not from your history.",
+  "t3": "Ignore tiny unexpected transfers and save contacts you have checked.",
+  "talk1": "Have we ever saved a wrong phone number or email? How did we notice?",
+  "talk2": "How could you check an address with a friend in a way a scammer couldn't fake?"
+}

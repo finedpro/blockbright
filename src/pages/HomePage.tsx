@@ -55,30 +55,36 @@ export function HomePage({ onOpenLesson, onNavigate }: { onOpenLesson(id: string
       <ol className="path">
         {MODULES.map((m, i) => {
           const lessons = lessonsInModule(m);
-          const open = lessons.length > 0;
-          const progress = lessons[0] ? state.lessons[lessons[0].id] : undefined;
-          const content = (
-            <>
-              <span className="path-icon" style={open ? { background: MODULE_COLORS[i], color: MODULE_ON[i] } : undefined}>
-                <Icon name={progress?.completed ? 'check' : MODULE_ICONS[i]} size={22} strokeWidth={progress?.completed ? 2.4 : 1.9} />
-              </span>
-              <span className="path-copy">
-                <span className="path-num">{t('home.module', { number: m })}</span>
-                <span className="path-title">{t(`modules.m${m}`)}</span>
-                {progress?.completed && <span className="path-done">{t('home.done', { score: progress.score, total: progress.total })}</span>}
-              </span>
-              <span className={`path-status ${open ? 'is-open' : ''}`}>{open ? (progress?.completed ? t('home.again') : t('home.start')) : t('home.comingSoon')}</span>
-            </>
-          );
+          const doneCount = lessons.filter((l) => state.lessons[l.id]?.completed).length;
+          const allDone = lessons.length > 0 && doneCount === lessons.length;
           return (
-            <li key={m}>
-              {open ? (
-                <button type="button" className="path-item is-open" onClick={() => onOpenLesson(lessons[0].id)}>
-                  {content}
-                </button>
-              ) : (
-                <div className="path-item">{content}</div>
-              )}
+            <li key={m} className="path-module">
+              <div className="path-item">
+                <span className="path-icon" style={{ background: MODULE_COLORS[i], color: MODULE_ON[i] }}>
+                  <Icon name={allDone ? 'check' : MODULE_ICONS[i]} size={22} strokeWidth={allDone ? 2.4 : 1.9} />
+                </span>
+                <span className="path-copy">
+                  <span className="path-num">{t('home.module', { number: m })}</span>
+                  <span className="path-title">{t(`modules.m${m}`)}</span>
+                </span>
+                <span className={`path-status ${allDone ? '' : 'is-open'}`}>{t('home.lessonsDone', { done: doneCount, total: lessons.length })}</span>
+              </div>
+              <ul className="path-lessons">
+                {lessons.map((l) => {
+                  const progress = state.lessons[l.id];
+                  return (
+                    <li key={l.id}>
+                      <button type="button" className={`path-lesson ${progress?.completed ? 'is-done' : ''}`} onClick={() => onOpenLesson(l.id)}>
+                        <span className="path-lesson-dot" aria-hidden="true">{progress?.completed ? <Icon name="check" size={14} strokeWidth={2.6} /> : null}</span>
+                        <span className="path-lesson-title">{t('title', { ns: lessonNamespace(l.id) })}</span>
+                        <span className="path-lesson-status">
+                          {progress?.completed ? t('home.done', { score: progress.score, total: progress.total }) : t('home.start')}
+                        </span>
+                      </button>
+                    </li>
+                  );
+                })}
+              </ul>
             </li>
           );
         })}

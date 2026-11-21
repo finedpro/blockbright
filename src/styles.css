@@ -564,3 +564,15 @@ legend { font-family: var(--font-head); font-weight: 700; font-size: 1.25rem; li
 .read-aloud.is-on { background: var(--yellow); color: var(--brand-ink); }
 .spot-head { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
 .spot-body { display: grid; gap: 0.8rem; }
+
+/* Module path with lessons */
+.path-module { display: grid; gap: 0.35rem; }
+.path-module > .path-item { cursor: default; }
+.path-lessons { list-style: none; margin: 0 0 0.4rem; padding: 0 0 0 1.4rem; display: grid; gap: 0.35rem; border-inline-start: 3px dotted var(--line); margin-inline-start: 1.5rem; }
+.path-lesson { display: flex; align-items: center; gap: 0.6rem; inline-size: 100%; min-block-size: 2.9rem; padding: 0.45rem 0.8rem; border-radius: 14px; border: 2px solid var(--line); background: var(--card); color: var(--ink); font: inherit; text-align: start; cursor: pointer; }
+.path-lesson:hover { border-color: var(--strong); }
+.path-lesson-dot { flex: none; display: grid; place-items: center; inline-size: 1.3rem; block-size: 1.3rem; border-radius: 50%; border: 2px solid var(--strong); }
+.path-lesson.is-done .path-lesson-dot { background: var(--good-ink); border-color: var(--good-ink); color: var(--bg); }
+.path-lesson-title { flex: 1; font-weight: 700; font-size: 0.92rem; line-height: 1.3; }
+.path-lesson-status { flex: none; font-size: 0.75rem; font-weight: 700; color: var(--accent); }
+.path-lesson.is-done .path-lesson-status { color: var(--good-ink); }

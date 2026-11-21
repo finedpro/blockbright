@@ -1,0 +1,94 @@
+{
+  "title": "Trading apps, leverage and gambling",
+  "hook": "An app shows: \"Trade with 100x leverage! Turn 10 € into 1000 €!\" Bright colours, confetti and a countdown.",
+  "card1": "[[leverage|Leverage]] means trading with borrowed money. With 100x, a 1% price move against you wipes out everything you put in.",
+  "analogy1": "Leverage is like walking a tightrope 100 times higher. A small wobble that wouldn't matter close to the ground becomes a fall from the roof.",
+  "card2": "Some apps are built like games, with confetti, streaks and notifications. It's designed to keep you trading, because that earns the app money.",
+  "card3": "Crypto casinos and betting sites often have no licence and no age check. Gambling with crypto is still gambling, and the house wins in the long run.",
+  "adviceIntro": "Comments under a trading video. Which ones would you not follow?",
+  "advice": {
+    "l1": {
+      "text": "Use max leverage. That's how the pros get rich.",
+      "why": "With high leverage, a tiny move against you wipes out everything."
+    },
+    "l2": {
+      "text": "Never trade with money you need.",
+      "why": "Trading can lose all of it."
+    },
+    "l3": {
+      "text": "Lost money? Win it back with a bigger bet.",
+      "why": "Chasing losses is how small losses become big ones."
+    },
+    "l4": {
+      "text": "Turn off notifications from trading apps.",
+      "why": "Notifications are built to pull you back in."
+    },
+    "l5": {
+      "text": "Crypto casinos are great, they don't check your age.",
+      "why": "No age check usually means no licence and no protection."
+    }
+  },
+  "sim": {
+    "lever": {
+      "prompt": "A trading app offers you a 50-coin \"free bonus\" if you open a 100x leveraged trade right now.",
+      "go": {
+        "label": "Open a 100x trade with 20 coins",
+        "before": "You will use 20 practice coins at 100x leverage.",
+        "what": "The price moved 1% the wrong way within a minute. Your 20 coins were wiped out, and the bonus had conditions you couldn't meet.",
+        "why": "At 100x, a 1% move against you is a 100% loss.",
+        "how": "The app closes your trade automatically when your money is used up. This is called liquidation.",
+        "realLife": "Leverage and bonuses are built to make you trade more. Many countries limit them for beginners."
+      },
+      "small": {
+        "label": "Try 2x leverage with 5 coins",
+        "before": "You will use 5 practice coins at 2x leverage.",
+        "what": "The price swung down and back up. You ended where you started, but it was stressful to watch.",
+        "why": "Lower leverage is less dangerous, but it is still borrowed money and the swings are twice as big.",
+        "how": "With 2x, a 50% move against you wipes out the trade.",
+        "realLife": "As a beginner you don't need leverage at all."
+      },
+      "skip": {
+        "label": "Skip it and close the app",
+        "before": "You will ignore the offer.",
+        "what": "You kept all your coins and didn't get pulled in by the bonus.",
+        "why": "\"Free bonuses\" with conditions exist to make you take risks.",
+        "how": "The app earns money from fees on every trade, win or lose.",
+        "realLife": "If an app pushes you to act now, step away."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "What does 100x leverage mean?",
+    "a": "A 1% move against you can wipe out everything you put in",
+    "b": "You always win 100 times more",
+    "c": "The app protects you from losses",
+    "explanation": "Leverage multiplies losses as much as wins. At 100x, a tiny move against you ends the trade."
+  },
+  "q2": {
+    "prompt": "Why do some trading apps use confetti, streaks and notifications?",
+    "a": "To make learning fun",
+    "b": "To keep you trading more",
+    "c": "To reward smart trades",
+    "explanation": "More trading means more fees for the app. The game-like design is there to keep you coming back."
+  },
+  "q3": {
+    "prompt": "You lost coins on a bet. What is the smart move?",
+    "a": "Bet more to win it back",
+    "b": "Stop, accept the loss and talk to someone",
+    "c": "Keep going, your luck will turn",
+    "explanation": "Chasing losses usually makes them bigger. Stopping and talking to someone is the strong move."
+  },
+  "misc": {
+    "leverageWin": "\"Leverage means winning more.\" You also lose many times faster.",
+    "leverageSafe": "\"The app protects me.\" The app simply closes your trade when your money is gone.",
+    "appCares": "\"They want me to have fun.\" They want you to trade more, which earns them money.",
+    "appReward": "\"Confetti means I traded well.\" Apps celebrate trades, not good decisions.",
+    "chaseLoss": "\"Win it back with a bigger bet.\" Chasing losses usually makes them bigger.",
+    "waitLuck": "\"My luck will turn.\" Each bet is separate. The odds don't owe you a win."
+  },
+  "t1": "[[leverage|Leverage]] multiplies losses as fast as wins.",
+  "t2": "Apps that feel like games are built to keep you trading.",
+  "t3": "Gambling with crypto is still gambling. Never chase losses.",
+  "talk1": "Which apps on our phones try hardest to keep us coming back? How do they do it?",
+  "talk2": "Who could you talk to if gambling or trading ever started to feel out of control?"
+}

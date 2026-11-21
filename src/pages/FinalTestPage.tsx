@@ -6,11 +6,11 @@ import { Quiz, type QuizItem, type QuizResult } from '../components/Quiz';
 import { LESSONS, lessonNamespace } from '../content/lessons';
 import { useAppState } from '../state/AppState';
 
-/** Up to two questions from every lesson, in module order. */
+/** The first quiz question of every lesson, in module order. */
 export function finalTestItems(): QuizItem[] {
   return [...LESSONS]
     .sort((a, b) => a.module - b.module)
-    .flatMap((lesson) => lesson.quiz.slice(0, 2).map((question) => ({ question, ns: lessonNamespace(lesson.id), lessonId: lesson.id })));
+    .flatMap((lesson) => lesson.quiz.slice(0, 1).map((question) => ({ question, ns: lessonNamespace(lesson.id), lessonId: lesson.id })));
 }
 
 const PASS_SHARE = 0.8;

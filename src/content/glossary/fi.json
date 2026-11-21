@@ -14,5 +14,10 @@
   "exchange": {"term": "kryptopörssi", "definition": "Palvelu, jossa ihmiset ostavat ja myyvät kryptovaluuttoja, usein euroilla tai dollareilla. Useimmat ovat vain aikuisille."},
   "volatility": {"term": "volatiliteetti", "definition": "Kuinka paljon ja kuinka nopeasti hinta nousee ja laskee. Kryptojen hinnat heiluvat paljon."},
   "rug-pull": {"term": "katoamishuijaus", "definition": "Huijaus, jossa kolikon tekijät keräävät ostajien rahat ja katoavat, jolloin kolikosta tulee lähes arvoton."},
-  "kyc": {"term": "asiakkaan tunnistaminen", "definition": "Henkilöllisyyden tarkistus, jonka luvallinen palvelu tekee ennen kuin voit käyttää sitä, yleensä henkilöllisyystodistuksella."}
+  "kyc": {"term": "asiakkaan tunnistaminen", "definition": "Henkilöllisyyden tarkistus, jonka luvallinen palvelu tekee ennen kuin voit käyttää sitä, yleensä henkilöllisyystodistuksella."},
+  "token": {"term": "tokeni", "definition": "Kolikko, joka on luotu olemassa olevan lohkoketjun päälle ilman omaa ketjua. Kuka tahansa voi luoda sellaisen minuuteissa."},
+  "stablecoin": {"term": "vakaa kolikko", "definition": "Kolikko, joka yrittää pysyä aina samanarvoisena kuin tavallinen raha, esimerkiksi 1 euro tai 1 dollari."},
+  "confirmation": {"term": "vahvistus", "definition": "Jokainen uusi lohko, joka lisätään siirtosi sisältävän lohkon jälkeen. Mitä enemmän vahvistuksia, sitä vaikeampi siirtoa on muuttaa."},
+  "two-factor": {"term": "kaksivaiheinen tunnistautuminen (2FA)", "definition": "Toinen vaihe kirjautuessa salasanan lisäksi, esimerkiksi koodi sovelluksesta."},
+  "leverage": {"term": "vipu", "definition": "Kaupankäyntiä lainatulla rahalla. Se moninkertaistaa sekä voitot että tappiot."}
 }

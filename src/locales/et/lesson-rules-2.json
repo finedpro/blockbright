@@ -1,0 +1,71 @@
+{
+  "title": "Kui midagi läheb valesti",
+  "hook": "Keegi kaotas pettuse tõttu münte ja postitas sellest. Mõne minuti pärast sai ta sõnumi: „Olen taastamise ekspert. Saan su mündid väikese tasu eest tagasi.“",
+  "card1": "Kui sind petetakse, tegutse kiiresti: lõpeta saatmine, räägi täiskasvanule, salvesta ekraanipildid ja aadressid ning teata sellest platvormile ja politseile.",
+  "analogy1": "Taastamispettus on nagu võltslukksepp, kes ilmub kohe pärast sissemurdmist ja pakub su asjad tagasi tuua, kui enne maksad.",
+  "card2": "Keegi ei saa plokiahela [[transaction|tehingut]] tagasi pöörata. Need, kes lubavad münte tasu eest „taastada“, on peaaegu alati petised, kes ründavad ohvrit teist korda.",
+  "card3": "Häbitunne on normaalne, aga vaikimine aitab petiseid. Teatamine hoiatab teisi ja politsei kogub neid teateid.",
+  "sim": {
+    "recovery": {
+      "prompt": "Kaotasid võltsloosimisega harjutusmünte. Nüüd kirjutab „CryptoRecoveryPro“: „Saan su mündid jälile ja tagasi. Maksa taastamistarkvara eest 10 münti.“",
+      "pay": {
+        "label": "Maksa 10 münti, et ülejäänu tagasi saada",
+        "before": "Saadad „eksperdile“ 10 harjutusmünti.",
+        "what": "Nad küsisid „maksude“ jaoks veel 20 ja kadusid siis. Kaotasid veel 10 münti.",
+        "why": "Taastamispetised otsivad inimesi, kes on just raha kaotanud.",
+        "how": "Nad jälgivad postitusi ja kommentaare, kus inimesed petmisest räägivad.",
+        "realLife": "Päris politsei ja platvormid ei küsi kunagi juhtumi uurimise eest raha."
+      },
+      "proof": {
+        "label": "Palu neil tõestada, et nad on päris",
+        "before": "Küsid enne maksmist tõendit.",
+        "what": "Nad saatsid ekraanipilte „rahulolevatest klientidest“. Võltsitud, aga veenvad. Sa pole veel maksnud.",
+        "why": "Võltstõendeid on lihtne teha. Nendega rääkimine annab neile ainult rohkem võimalusi.",
+        "how": "Ekraanipilte ja arvustusi saab mõne minutiga välja mõelda.",
+        "realLife": "Ära suhtle. Blokeeri ja teata."
+      },
+      "report": {
+        "label": "Blokeeri, räägi vanemale ja teata",
+        "before": "Lõpetad vestluse ja otsid abi.",
+        "what": "Vanem aitas sul esimesest pettusest platvormile ja politseile teatada. Ka „taastamise“ kontost teatati.",
+        "why": "Teatamine on see, mis päriselt aitab, ja see kaitseb teisi.",
+        "how": "Politsei kogub teateid, et leida mustreid ja petiseid tabada.",
+        "realLife": "Eestis saab kuriteoteate teha politseile ka veebis. Hoia ekraanipildid ja aadressid tõenditeks alles."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Keegi pakub tasu eest su kaotatud münte taastada. Mis see kõige tõenäolisemalt on?",
+    "a": "Taastamispettus",
+    "b": "Päris teenus, mis saab tehingu tagasi pöörata",
+    "c": "Politsei võtab sinuga ühendust",
+    "explanation": "Keegi ei saa plokiahela tehingut tagasi pöörata ja politsei ei küsi kunagi raha. See on teine pettus."
+  },
+  "q2": {
+    "prompt": "Sind on petetud. Mida peaksid kõigepealt tegema?",
+    "a": "Hoian saladuses",
+    "b": "Lõpetan saatmise, räägin täiskasvanule ja salvestan tõendid",
+    "c": "Saadan veel natuke, et raha lahti saada",
+    "explanation": "Peatu, räägi kellelegi, keda usaldad, hoia tõendid alles ja teata."
+  },
+  "q3": {
+    "prompt": "Miks teatada pettusest, kui münte tagasi ei saa?",
+    "a": "See hoiatab teisi ja aitab politseil petiseid leida",
+    "b": "Sellel pole mõtet",
+    "c": "Et sa pahandustesse satuksid",
+    "explanation": "Teated aitavad petiseid peatada ja teisi kaitsta. Ohvrid ei satu teatamise eest pahandustesse."
+  },
+  "misc": {
+    "recoveryReal": "„Taastamiseksperdid saavad tehinguid tagasi pöörata.“ Keegi ei saa plokiahela tehingut tagasi pöörata.",
+    "recoveryPolice": "„See on politsei.“ Politsei ei küsi kunagi uurimise eest raha.",
+    "hideIt": "„Hoian saladuses, et keegi ei teaks.“ Vaikimine aitab petiseid. Täiskasvanule rääkimine toob sulle abi.",
+    "sendMore": "„Saadan veel, et ülejäänu lahti saada.“ Petised mõtlevad alati välja uusi tasusid.",
+    "noPoint": "„Teatamine on mõttetu.“ Teated aitavad petiseid peatada ja teisi kaitsta.",
+    "reportBlame": "„Teatamise eest saan pahandusi.“ Ohvrid ei satu kuriteost teatamise eest pahandustesse."
+  },
+  "t1": "Kui sind petetakse: peatu, räägi täiskasvanule, salvesta tõendid, teata.",
+  "t2": "Keegi ei saa plokiahela [[transaction|tehingut]] tagasi pöörata. „Taastamine tasu eest“ on pettus.",
+  "t3": "Teatamine aitab teisi, isegi kui mündid tagasi ei tule.",
+  "talk1": "Kui kedagi meist internetis petetaks, kellele me esimesena räägiksime ja mida teeksime?",
+  "talk2": "Miks sa arvad, et inimestel on pärast petmist häbi?"
+}

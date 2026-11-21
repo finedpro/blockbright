@@ -1,0 +1,71 @@
+{
+  "title": "Aadressinipid",
+  "hook": "Tahad sõbrale jälle münte saata. Rahakoti ajaloos on aadress, mis algab ja lõpeb täpselt nagu tema oma. Kas kopeerid?",
+  "card1": "Petised saadavad pisikesi summasid sarnase välimusega [[address|aadressidelt]], et need ilmuksid su ajalukku. Seda nimetatakse aadressimürgituseks. Kui kopeerid ajaloost, võid kopeerida nende oma.",
+  "analogy1": "See on nagu võltskontakt nimega „Ema“, mille number on peaaegu sama. Üks vale number ja kõne läheb võõrale.",
+  "card2": "Võta aadress alati allikast: sõbra enda sõnumist, tema rahakoti „Võta vastu“ vaatest või kontaktist, mille salvestasid ja kontrollisid ise.",
+  "card3": "Kui summa on oluline, kontrolli rohkem kui esimest ja viimast nelja märki, sest mõni teisik klapib mõlemast otsast. Väike proovisaatmine enne aitab.",
+  "sim": {
+    "history": {
+      "prompt": "Ajaloos on kaks aadressi: üks, millele maksid sõbrale eelmisel nädalal, ja üks eilne, mis saatis sulle pisikese 0,001 mündi, mida sa ei mäleta. Mõlemad algavad „bb1qx7“-ga ja lõpevad „9kd2“-ga.",
+      "newest": {
+        "label": "Kopeeri uusim, see on kõige peal",
+        "before": "Kopeerid ülemise aadressi ja saadad 20 münti.",
+        "what": "Saatsid 20 harjutusmünti petise teisikaadressile. Need on läinud.",
+        "why": "Pisike tehing oli sööt, et panna võltsaadress su ajaloo tippu.",
+        "how": "Petised loovad aadresse, mille esimesed ja viimased märgid klapivad. Keskosa on erinev.",
+        "realLife": "Ära kunagi kopeeri aadressi ajaloost, kontrollimata, kust see tuli."
+      },
+      "compare": {
+        "label": "Võrdle esimesi ja viimaseid märke",
+        "before": "Kontrollid mõlema aadressi mõlemat otsa.",
+        "what": "Mõlemad klapivad. Sa ikka ei tea, kumb on õige.",
+        "why": "Teisikaadressid on tehtud just selle kontrolli läbimiseks.",
+        "how": "Mõne märgi sobitamine kummaski otsas on petise arvutile lihtne.",
+        "realLife": "Kui mõlemad otsad klapivad, kontrolli ka keskosa või küsi aadress uuesti."
+      },
+      "ask": {
+        "label": "Palu sõbral aadress uuesti saata",
+        "before": "Küsid aadressi otse sõbralt.",
+        "what": "Sõber saatis selle. See klapib eelmise nädala omaga, mitte eilsega. Saatsid mündid turvaliselt.",
+        "why": "Aadress allikast on parem kui ükskõik milline mälu või ajalugu.",
+        "how": "Imelik 0,001 ülekanne tuli võõralt, mitte sõbralt.",
+        "realLife": "Salvesta kontrollitud kontaktid rahakotti ja ignoreeri pisikesi ootamatuid ülekandeid."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Mis on aadressimürgitus?",
+    "a": "Petised panevad teisikaadressi sinu ajalukku",
+    "b": "Viirus, mis rikub rahakoti",
+    "c": "Kui plokiahel saab kahjustada",
+    "explanation": "Pisikesed ülekanded teisikaadressidelt püüavad sind hiljem valet aadressi kopeerima meelitada."
+  },
+  "q2": {
+    "prompt": "Kust on kõige turvalisem sõbra aadress saada?",
+    "a": "Rahakoti ajaloost",
+    "b": "Otse sõbralt või kontaktist, mille salvestasid ja kontrollisid",
+    "c": "Otsingumootorist",
+    "explanation": "Võta see iga kord allikast või kontaktist, mille ise kontrollisid."
+  },
+  "q3": {
+    "prompt": "Saad tundmatult aadressilt 0,001 münti. Mida teed?",
+    "a": "Saadan tagasi",
+    "b": "Ignoreerin ega kopeeri seda aadressi kunagi",
+    "c": "Tänan, see on kingitus",
+    "explanation": "Pisikesed ootamatud ülekanded on sageli sööt. Ignoreeri neid ja ära suhtle."
+  },
+  "misc": {
+    "poisonVirus": "„See on viirus.“ Aadressimürgitus ei vaja viirust. See lihtsalt meelitab sind valet aadressi kopeerima.",
+    "poisonBlock": "„Plokiahel saab mürgitatud.“ Plokiahelaga on kõik korras. Ainult su ajalukku tekib võltskanne.",
+    "historyCopy": "„Ajaloost on turvaline kopeerida.“ Petised saavad sinna teisikaadresse panna.",
+    "searchAddr": "„Leian aadressi internetist.“ Otsingutulemusi saab võltsida. Küsi sõbralt.",
+    "sendBack": "„Saadan viisakusest tagasi.“ Just seda nad tahavad: suhtlemine paneb nende aadressi jälle su ajalukku.",
+    "smallGift": "„See on väike kingitus.“ Pisikesed ootamatud ülekanded on tavaliselt sööt."
+  },
+  "t1": "Teisik[[address|aadressid]] võivad klappida esimeste ja viimaste märkide poolest.",
+  "t2": "Võta aadress allikast, mitte ajaloost.",
+  "t3": "Ignoreeri pisikesi ootamatuid ülekandeid ja salvesta kontrollitud kontaktid.",
+  "talk1": "Kas oleme kunagi salvestanud vale telefoninumbri või e-posti? Kuidas me seda märkasime?",
+  "talk2": "Kuidas saaksid sõbraga aadressi kontrollida nii, et petis seda võltsida ei saaks?"
+}

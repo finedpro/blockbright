@@ -14,5 +14,10 @@
   "exchange": {"term": "krüptobörs", "definition": "Platvorm, kus inimesed ostavad ja müüvad krüptoraha, sageli eurode või dollarite eest. Enamik on ainult täiskasvanutele."},
   "volatility": {"term": "volatiilsus", "definition": "Kui palju ja kui kiiresti hind tõuseb ja langeb. Krüpto hinnad on väga volatiilsed."},
   "rug-pull": {"term": "väljumispettus", "definition": "Pettus, kus mündi loojad koguvad ostjate raha ja kaovad, nii et münt jääb peaaegu väärtusetuks."},
-  "kyc": {"term": "kliendi tuvastamine", "definition": "Isikusamasuse kontroll, mille litsentsiga platvorm teeb enne, kui saad seda kasutada, tavaliselt isikut tõendava dokumendiga."}
+  "kyc": {"term": "kliendi tuvastamine", "definition": "Isikusamasuse kontroll, mille litsentsiga platvorm teeb enne, kui saad seda kasutada, tavaliselt isikut tõendava dokumendiga."},
+  "token": {"term": "token", "definition": "Münt, mis on loodud olemasoleva plokiahela peale, mitte oma ahelaga. Igaüks saab selle mõne minutiga luua."},
+  "stablecoin": {"term": "stabiilne münt", "definition": "Münt, mis püüab olla alati sama väärt kui tavaline raha, näiteks 1 euro või 1 dollar."},
+  "confirmation": {"term": "kinnitus", "definition": "Iga uus plokk, mis lisatakse pärast sinu tehinguga plokki. Mida rohkem kinnitusi, seda raskem on tehingut muuta."},
+  "two-factor": {"term": "kaheastmeline autentimine (2FA)", "definition": "Sisselogimisel parooli kõrval teine samm, näiteks kood äpist."},
+  "leverage": {"term": "finantsvõimendus", "definition": "Kauplemine laenatud rahaga. See muudab nii võidud kui ka kaotused mitu korda suuremaks."}
 }

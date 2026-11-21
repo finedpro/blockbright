@@ -1,0 +1,71 @@
+{
+  "title": "Kõik mündid pole ühesugused",
+  "hook": "Sõber ütleb: „Krüptorahasid on tuhandeid. Need on ju põhimõtteliselt kõik bitcoin, eks?“",
+  "card1": "Bitcoin oli esimene [[cryptocurrency|krüptoraha]]. Sellest ajast on tekkinud tuhandeid teisi. Mõnel on oma [[blockchain|plokiahel]], teised on [[token|tokenid]], mis on ehitatud olemasoleva ahela peale.",
+  "analogy1": "Mündid ja tokenid on nagu riigi raha ja kinkekaardid. Raha kehtib kõikjal riigis. Kinkekaart kasutab sama süsteemi, aga on ainult nii hea kui pood, mis selle tegi.",
+  "card2": "[[stablecoin|Stabiilne münt]] püüab olla alati sama väärt kui tavaline raha, näiteks 1 euro või 1 dollar. See on ainult nii turvaline kui firma või reeglid, mis seda stabiilsena hoiavad.",
+  "card3": "Meemimündid tehakse lõbu või hype’i pärast, sageli mõne minutiga. Enamikul pole mingit kasutust ja nende hind sõltub ainult sellest, kui palju tähelepanu nad saavad.",
+  "sim": {
+    "newcoin": {
+      "prompt": "Klassikaaslane näitab sulle päris uut tokenit nimega „SchoolCoin“ ja ütleb, et see on „täpselt nagu bitcoin, aga varakult“.",
+      "buy": {
+        "label": "Osta kohe 10 harjutusmündi eest",
+        "before": "Vahetad 10 harjutusmünti SchoolCoini vastu.",
+        "what": "Järgmisel päeval müüs looja kõik maha. SchoolCoin pole nüüd midagi väärt ja su 10 harjutusmünti on läinud.",
+        "why": "Igaüks saab uue tokeni mõne minutiga teha. „Täpselt nagu bitcoin“ on loosung, mitte fakt.",
+        "how": "Tokeni loomine olemasolevas plokiahelas võtab paar klõpsu. Sellepärast on neid tuhandeid.",
+        "realLife": "Varakult olemine loeb ainult siis, kui münt on päris. Enamik uusi tokeneid kukub läbi."
+      },
+      "compare": {
+        "label": "Küsi, mille poolest see bitcoinist erineb",
+        "before": "Küsid, mis teeb SchoolCoini eriliseks.",
+        "what": "Ta ei oska seletada, ainult et see „tõuseb“. Sa pole midagi kaotanud.",
+        "why": "Mündil peab olema põhjus olemas olla. Kui keegi ei oska öelda, milleks see on, on ainus põhjus hype.",
+        "how": "Bitcoinil on oma võrk, mida hoiavad käigus tuhanded arvutid. Uuel tokenil on sageli üks looja, kellele kuulub suur osa sellest.",
+        "realLife": "Kui kõik vastused räägivad ainult hinnast, ole ettevaatlik."
+      },
+      "research": {
+        "label": "Kontrolli, kes selle tegi, milleks see on ja kes seda kasutab",
+        "before": "Uurid tokeni enne otsustamist järele.",
+        "what": "Selgus, et selle tegi eile üks anonüümne konto, kellele kuulub suurem osa. Jätsid selle vahele ja su mündid jäid alles.",
+        "why": "Mõneminutiline kontroll näitas ohumärke, mida hype varjas.",
+        "how": "Plokiahela uurijad näitavad, millal token loodi ja mitu rahakotti seda hoiab.",
+        "realLife": "Enne uue mündi usaldamist küsi: kes selle tegi, milleks see on ja kes seda kasutab?"
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Mis on stabiilne münt (stablecoin)?",
+    "a": "Münt, mis püüab olla sama väärt kui tavaline raha",
+    "b": "Münt, mis ei saa kunagi väärtust kaotada",
+    "c": "Teine nimi bitcoinile",
+    "explanation": "Stabiilne münt püüab püsida näiteks 1 euro või 1 dollari juures. See on ainult nii turvaline kui see, kes teda stabiilsena hoiab."
+  },
+  "q2": {
+    "prompt": "Päris uus token on „täpselt nagu bitcoin, aga varakult“. Mis on tõsi?",
+    "a": "Varakult olemine tähendab, et saad rikkaks",
+    "b": "Igaüks saab tokeni mõne minutiga luua, nii et kontrolli enne",
+    "c": "Token suures plokiahelas on sama turvaline kui bitcoin",
+    "explanation": "Tokeni tegemine on lihtne ja odav. Enamik uusi tokeneid kukub läbi, nii et kontrolli, kes selle tegi ja miks."
+  },
+  "q3": {
+    "prompt": "Mis määrab meemimündi hinna?",
+    "a": "See, milleks seda kasutada saab",
+    "b": "Peamiselt tähelepanu ja hype",
+    "c": "Looja lubadus",
+    "explanation": "Enamikul meemimüntidel pole kasutust. Nende hind tõuseb ja langeb koos tähelepanuga."
+  },
+  "misc": {
+    "stableIsSafe": "„Stabiilne tähendab, et see ei saa kunagi ebaõnnestuda.“ Stabiilne münt on ainult nii turvaline kui see, kes teda stabiilsena hoiab. Mõni on kokku kukkunud.",
+    "stableIsBitcoin": "„Stabiilne münt on bitcoin.“ Bitcoini hind liigub palju. Stabiilsed mündid püüavad mitte liikuda.",
+    "earlyRich": "„Varakult olemine teeb rikkaks.“ Varakult olemine tasub ära ainult siis, kui münt on päris. Enamik uusi tokeneid jääb väärtusetuks.",
+    "sameAsBitcoin": "„Suures plokiahelas tähendab turvalist.“ Plokiahel võib olla turvaline, aga selle peal olev token võib ikka väärtusetu olla.",
+    "memeValue": "„Meemimüntidel on kasutus.“ Enamikul pole. Hind on ainult tähelepanu.",
+    "memeGuaranteed": "„Looja garanteerib hinna.“ Keegi ei saa hinda garanteerida."
+  },
+  "t1": "Münte ja [[token|tokeneid]] on tuhandeid. Enamik pole bitcoini moodi.",
+  "t2": "[[stablecoin|Stabiilne münt]] püüab püsida 1 euro või dollari juures, aga on ainult nii turvaline kui see, kes teda stabiilsena hoiab.",
+  "t3": "Enne uue mündi usaldamist küsi, kes selle tegi, milleks see on ja kes seda kasutab.",
+  "talk1": "Miks sa arvad, et iga päev luuakse nii palju uusi münte?",
+  "talk2": "Milliseid kinkekaarte või boonuspunkte me kodus kasutame? Mille poolest on need tokenite moodi?"
+}

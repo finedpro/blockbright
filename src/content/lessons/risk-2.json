@@ -1,0 +1,151 @@
+{
+  "id": "risk-2",
+  "module": 6,
+  "title": "title",
+  "hook": "hook",
+  "before": [
+    "q1",
+    "q2"
+  ],
+  "cards": [
+    "card1",
+    {
+      "kind": "analogy",
+      "key": "analogy1"
+    },
+    "card2",
+    "card3"
+  ],
+  "simulation": {
+    "start": "lever",
+    "nodes": {
+      "lever": {
+        "prompt": "sim.lever.prompt",
+        "choices": [
+          {
+            "id": "go",
+            "label": "sim.lever.go.label",
+            "before": "sim.lever.go.before",
+            "explain": "sim.lever.go",
+            "tone": "bad",
+            "coins": -20
+          },
+          {
+            "id": "small",
+            "label": "sim.lever.small.label",
+            "before": "sim.lever.small.before",
+            "explain": "sim.lever.small",
+            "tone": "warn"
+          },
+          {
+            "id": "skip",
+            "label": "sim.lever.skip.label",
+            "before": "sim.lever.skip.before",
+            "explain": "sim.lever.skip",
+            "tone": "good"
+          }
+        ]
+      }
+    }
+  },
+  "badAdvice": {
+    "intro": "adviceIntro",
+    "author": "@LamboBy25",
+    "lines": [
+      {
+        "id": "l1",
+        "bad": true
+      },
+      {
+        "id": "l2",
+        "bad": false
+      },
+      {
+        "id": "l3",
+        "bad": true
+      },
+      {
+        "id": "l4",
+        "bad": false
+      },
+      {
+        "id": "l5",
+        "bad": true
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "id": "q1",
+      "prompt": "q1.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "correct": false,
+          "misconception": "misc.leverageWin"
+        },
+        {
+          "id": "c",
+          "correct": false,
+          "misconception": "misc.leverageSafe"
+        }
+      ],
+      "explanation": "q1.explanation"
+    },
+    {
+      "id": "q2",
+      "prompt": "q2.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": false,
+          "misconception": "misc.appCares"
+        },
+        {
+          "id": "b",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "correct": false,
+          "misconception": "misc.appReward"
+        }
+      ],
+      "explanation": "q2.explanation"
+    },
+    {
+      "id": "q3",
+      "prompt": "q3.prompt",
+      "options": [
+        {
+          "id": "a",
+          "correct": false,
+          "misconception": "misc.chaseLoss"
+        },
+        {
+          "id": "b",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "correct": false,
+          "misconception": "misc.waitLuck"
+        }
+      ],
+      "explanation": "q3.explanation"
+    }
+  ],
+  "takeaways": [
+    "t1",
+    "t2",
+    "t3"
+  ],
+  "talk": [
+    "talk1",
+    "talk2"
+  ]
+}

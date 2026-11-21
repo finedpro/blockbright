@@ -28,7 +28,8 @@
     "openCount": "{open}/{total} auki",
     "openNow": "Auki",
     "continueTitle": "Seuraava lohkosi",
-    "startHere": "Aloita tästä"
+    "startHere": "Aloita tästä",
+    "lessonsDone": "{done}/{total} tehty"
   },
   "modules": {
     "m1": "Mitä raha on?",

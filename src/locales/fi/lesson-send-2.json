@@ -1,0 +1,71 @@
+{
+  "title": "Osoitetemput",
+  "hook": "Haluat lähettää kaverillesi taas kolikoita. Lompakon historiassa on osoite, joka alkaa ja loppuu ihan kuin hänen osoitteensa. Kopioitko sen?",
+  "card1": "Huijarit lähettävät pikkusummia samannäköisistä [[address|osoitteista]], jotta ne näkyisivät historiassasi. Tätä kutsutaan osoitemyrkytykseksi. Jos kopioit historiasta, saatat kopioida heidän osoitteensa.",
+  "analogy1": "Se on kuin valekontakti nimellä ”Äiti”, jonka numero on melkein sama. Yksi väärä numero, ja puhelu menee vieraalle.",
+  "card2": "Ota osoite aina lähteestä: kaverin omasta viestistä, hänen lompakkonsa Vastaanota-näkymästä tai kontaktista, jonka tallensit ja tarkistit itse.",
+  "card3": "Kun summa on tärkeä, tarkista muutakin kuin ensimmäiset ja viimeiset neljä merkkiä, koska jotkut kopiot täsmäävät molemmista päistä. Pieni testisiirto ensin auttaa.",
+  "sim": {
+    "history": {
+      "prompt": "Historiassasi on kaksi osoitetta: yksi, johon maksoit kaverillesi viime viikolla, ja eilinen, joka lähetti sinulle pikkuruisen 0,001 kolikon, jota et muista. Molemmat alkavat ”bb1qx7” ja loppuvat ”9kd2”.",
+      "newest": {
+        "label": "Kopioi uusin, se on ylimpänä",
+        "before": "Kopioit ylimmän osoitteen ja lähetät 20 kolikkoa.",
+        "what": "Lähetit 20 harjoituskolikkoa huijarin kopio-osoitteeseen. Ne ovat poissa.",
+        "why": "Pikkusiirto oli syötti, jolla väärä osoite saatiin historiasi kärkeen.",
+        "how": "Huijarit luovat osoitteita, joiden ensimmäiset ja viimeiset merkit täsmäävät. Keskiosa on erilainen.",
+        "realLife": "Älä koskaan kopioi osoitetta historiasta tarkistamatta, mistä se tuli."
+      },
+      "compare": {
+        "label": "Vertaa ensimmäisiä ja viimeisiä merkkejä",
+        "before": "Tarkistat kummankin osoitteen molemmat päät.",
+        "what": "Molemmat täsmäävät. Et vieläkään tiedä, kumpi on oikea.",
+        "why": "Kopio-osoitteet on tehty läpäisemään juuri tuo tarkistus.",
+        "how": "Muutaman merkin täsmäyttäminen kummastakin päästä on huijarin tietokoneelle helppoa.",
+        "realLife": "Kun molemmat päät täsmäävät, tarkista myös keskiosa tai pyydä osoite uudelleen."
+      },
+      "ask": {
+        "label": "Pyydä kaveria lähettämään osoitteensa uudelleen",
+        "before": "Kysyt osoitetta suoraan kaverilta.",
+        "what": "Kaveri lähetti sen. Se täsmää viime viikon osoitteeseen, ei eiliseen. Lähetit kolikot turvallisesti.",
+        "why": "Osoite lähteestä on parempi kuin mikään muisti tai historia.",
+        "how": "Outo 0,001 siirto tuli vieraalta, ei kaveriltasi.",
+        "realLife": "Tallenna tarkistetut kontaktit lompakkoosi ja jätä pienet odottamattomat siirrot huomiotta."
+      }
+    }
+  },
+  "q1": {
+    "prompt": "Mikä on osoitemyrkytys?",
+    "a": "Huijarit lisäävät samannäköisen osoitteen historiaasi",
+    "b": "Virus, joka rikkoo lompakon",
+    "c": "Kun lohkoketju vaurioituu",
+    "explanation": "Pikkusiirrot samannäköisistä osoitteista yrittävät saada sinut myöhemmin kopioimaan väärän osoitteen."
+  },
+  "q2": {
+    "prompt": "Mistä kaverin osoite on turvallisinta saada?",
+    "a": "Lompakon historiasta",
+    "b": "Suoraan kaverilta tai kontaktista, jonka tallensit ja tarkistit",
+    "c": "Hakukoneesta",
+    "explanation": "Ota se joka kerta lähteestä tai kontaktista, jonka tarkistit itse."
+  },
+  "q3": {
+    "prompt": "Saat 0,001 kolikkoa tuntemattomasta osoitteesta. Mitä teet?",
+    "a": "Lähetän sen takaisin",
+    "b": "Jätän huomiotta enkä koskaan kopioi sitä osoitetta",
+    "c": "Kiitän, se on lahja",
+    "explanation": "Pienet odottamattomat siirrot ovat usein syöttejä. Jätä ne huomiotta äläkä ole yhteydessä."
+  },
+  "misc": {
+    "poisonVirus": "”Se on virus.” Osoitemyrkytys ei tarvitse virusta. Se vain huijaa sinut kopioimaan väärän osoitteen.",
+    "poisonBlock": "”Lohkoketju myrkytetään.” Lohkoketjussa ei ole vikaa. Vain historiaasi tulee väärä merkintä.",
+    "historyCopy": "”Historiasta on turvallista kopioida.” Huijarit voivat lisätä sinne samannäköisiä osoitteita.",
+    "searchAddr": "”Löydän osoitteen netistä.” Hakutuloksia voi väärentää. Kysy kaverilta.",
+    "sendBack": "”Lähetän sen kohteliaisuudesta takaisin.” Juuri sitä he haluavat: yhteydenpito tuo heidän osoitteensa taas historiaasi.",
+    "smallGift": "”Se on pieni lahja.” Pienet odottamattomat siirrot ovat yleensä syöttejä."
+  },
+  "t1": "Samannäköiset [[address|osoitteet]] voivat täsmätä ensimmäisistä ja viimeisistä merkeistä.",
+  "t2": "Ota osoite lähteestä, älä historiasta.",
+  "t3": "Jätä pienet odottamattomat siirrot huomiotta ja tallenna tarkistetut kontaktit.",
+  "talk1": "Olemmeko joskus tallentaneet väärän puhelinnumeron tai sähköpostin? Miten huomasimme sen?",
+  "talk2": "Miten voisit tarkistaa osoitteen kaverin kanssa niin, ettei huijari voisi väärentää sitä?"
+}
