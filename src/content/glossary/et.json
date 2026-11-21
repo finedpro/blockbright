@@ -1,10 +1,12 @@
 {
-  "address": { "term": "aadress", "definition": "Avalik kood, mis tähistab rahakotti. Teised vajavad seda, et sulle münte saata." },
-  "wallet": { "term": "rahakott", "definition": "Äpp või seade, mis hoiab sinu müntide võtmeid ning laseb neid saata ja vastu võtta." },
-  "private-key": { "term": "privaatvõti", "definition": "Salajane kood, mis tõestab, et aadressil olevad mündid on sinu omad. Kellel see on, see saab neid liigutada." },
-  "seed-phrase": { "term": "taastefraas", "definition": "12 või 24 sõna, millega saab taastada rahakoti ja kõik selle võtmed. Ära jaga seda mitte kellegagi." },
-  "transaction": { "term": "tehing", "definition": "Müntide ülekanne ühelt aadressilt teisele, mis salvestatakse plokiahelasse." },
-  "fee": { "term": "tasu", "definition": "Väike makse võrgule tehingu töötlemise eest." },
-  "irreversible": { "term": "pöördumatu", "definition": "Ei saa tagasi võtta. Kinnitatud krüptotehingut ei saa tühistada ega raha tagastada." },
-  "blockchain": { "term": "plokiahel", "definition": "Paljude arvutite hoitav ühine tehingute register, mida ei saa vaikselt muuta." }
+  "address": {"term": "aadress", "definition": "Avalik kood, mis tähistab rahakotti. Teised vajavad seda, et sulle münte saata."},
+  "wallet": {"term": "rahakott", "definition": "Äpp või seade, mis hoiab sinu müntide võtmeid ning laseb neid saata ja vastu võtta."},
+  "private-key": {"term": "privaatvõti", "definition": "Salajane kood, mis tõestab, et aadressil olevad mündid on sinu omad. Kellel see on, see saab neid liigutada."},
+  "seed-phrase": {"term": "taastefraas", "definition": "12 või 24 sõna, millega saab taastada rahakoti ja kõik selle võtmed. Ära jaga seda mitte kellegagi."},
+  "transaction": {"term": "tehing", "definition": "Müntide ülekanne ühelt aadressilt teisele, mis salvestatakse plokiahelasse."},
+  "fee": {"term": "tasu", "definition": "Väike makse võrgule tehingu töötlemise eest."},
+  "irreversible": {"term": "pöördumatu", "definition": "Ei saa tagasi võtta. Kinnitatud krüptotehingut ei saa tühistada ega raha tagastada."},
+  "blockchain": {"term": "plokiahel", "definition": "Paljude arvutite hoitav ühine tehingute register, mida ei saa vaikselt muuta."},
+  "airdrop": {"term": "tasuta jagamine", "definition": "Müntide või tokenite tasuta jagamine paljudele rahakottidele. Päris jagamisi on olemas, aga võltsjagamised on levinud nipp, et saada sind oma rahakotti ühendama."},
+  "phishing": {"term": "õngitsus", "definition": "Nipp, kus petis teeskleb kedagi, keda sa usaldad, sageli võltssõnumi või -veebilehega, et varastada su paroole või taastefraasi."}
 }

@@ -18,14 +18,65 @@ export interface LessonProgress {
   completedAt?: string;
 }
 
+/** Spaced review: one entry per quiz question, keyed "lessonId:questionId". */
+export interface ReviewItem {
+  /** When the question is due again (ms since epoch). */
+  due: number;
+  /** Days until the next review after a correct answer. */
+  interval: number;
+}
+
 export interface StoredState {
   version: 1;
   language?: string;
   explainLevel: ExplainLevel;
   lessons: Record<string, LessonProgress>;
+  review?: Record<string, ReviewItem>;
+  /** Best score in the final test, if taken. */
+  finalTest?: { score: number; total: number; completedAt: string };
 }
 
-export const EMPTY_STATE: StoredState = { version: 1, explainLevel: 'simple', lessons: {} };
+export const EMPTY_STATE: StoredState = { version: 1, explainLevel: 'simple', lessons: {}, review: {} };
+
+const DAY = 24 * 60 * 60 * 1000;
+const FIRST_INTERVAL = 3;
+const MAX_INTERVAL = 60;
+
+export function reviewKey(lessonId: string, questionId: string): string {
+  return `${lessonId}:${questionId}`;
+}
+
+/**
+ * Updates the review queue after answers. A wrong answer is due again right away
+ * and starts over; a right one waits 3 days, then twice as long each time.
+ */
+export function updateReview(
+  review: Record<string, ReviewItem> | undefined,
+  answers: { lessonId: string; questionId: string; correct: boolean }[],
+  now: number,
+): Record<string, ReviewItem> {
+  const next = { ...(review ?? {}) };
+  for (const a of answers) {
+    const key = reviewKey(a.lessonId, a.questionId);
+    const prev = next[key];
+    if (!a.correct) {
+      next[key] = { due: now, interval: FIRST_INTERVAL };
+    } else {
+      const interval = prev ? Math.min(prev.interval * 2, MAX_INTERVAL) : FIRST_INTERVAL;
+      next[key] = { due: now + (prev ? prev.interval : FIRST_INTERVAL) * DAY, interval };
+    }
+  }
+  return next;
+}
+
+/** Keys of review items that are due, oldest first. */
+export function dueReviews(review: Record<string, ReviewItem> | undefined, now: number, limit = 3): string[] {
+  return Object.entries(review ?? {})
+    .filter(([, item]) => item.due <= now)
+    .sort((a, b) => a[1].due - b[1].due)
+    .slice(0, limit)
+    .map(([key]) => key);
+}
 
 let memoryCopy: StoredState = structuredClone(EMPTY_STATE);
 

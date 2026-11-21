@@ -1,0 +1,121 @@
+{
+  "title": "Tunnista huijaus",
+  "hook": "Ruudulle ponnahtaa viesti: ”Onnea! Voitit 500 kolikkoa ilmaisessa [[airdrop|ilmaisjaossa]]. Yhdistä [[wallet|lompakkosi]] seuraavan 10 minuutin aikana, niin saat ne.” Sydän lyö nopeammin. Ilmaisia kolikoita!",
+  "card1": "Lähes jokainen kryptohuijaus haluaa jommankumman: [[seed-phrase|palautuslauseesi]] tai sen, että lähetät itse kolikoita. Kun huijari saa jommankumman, kolikot ovat poissa, koska [[transaction|siirto]] on [[irreversible|peruuttamaton]].",
+  "analogy1": "Palautuslause on kuin kotisi yleisavain, joka avaa myös jokaisen lukon sisällä. Oikea lukkoseppä, pankki tai ystävä ei koskaan pyytäisi sinua lähettämään siitä kopiota. Joka sitä pyytää, haluaa kävellä sisään ja viedä kaiken.",
+  "card2": "Varo varoitusmerkkejä: kiire (”vain 10 minuuttia jäljellä”), salailu (”älä kerro kenellekään”), liian hyvä palkkio (”tuplaa kolikkosi”) ja jokainen pyyntö lähettää ensin tai ”vahvistaa” lompakkosi.",
+  "card3": "Yleisiä keinoja: valeasiakastuki, joka ottaa ensin yhteyttä sinuun, yllättävät ilmaisjaot, jotka pyytävät yhdistämään lompakon, ja ”julkkisten” arvonnat, jotka lupaavat lähettää tuplasti takaisin.",
+  "walk": {
+    "title": "Näin [[phishing|tietojenkalastelu]] toimii",
+    "f1": "Saat viestin: ”Lompakkosi on lukittu. Korjaa se tästä.” Linkki näyttää tavalliselta.",
+    "f2": "Sivu näyttää täsmälleen lompakkosi oikealta sivulta. Vain osoiterivillä yksi kirjain on eri.",
+    "f3": "Se pyytää kirjoittamaan palautuslauseen, jotta lompakko ”avautuisi”. Oikeat lompakot eivät koskaan pyydä sitä verkkosivulla.",
+    "f4": "Huijarilla on nyt avaimesi. Muutamassa minuutissa jokainen kolikko siirretään pois, eikä kukaan voi perua sitä."
+  },
+  "story": {
+    "title": "Kun kuuluisat tilit pyysivät bitcoinia",
+    "body": "15. heinäkuuta 2020 hyökkääjät kaappasivat 130 Twitter-tiliä, muun muassa Barack Obaman, Joe Bidenin, Bill Gatesin ja Elon Muskin tilit. 45 tililtä he julkaisivat saman tarjouksen: lähetä bitcoinia tähän osoitteeseen ja saat tuplasti takaisin. Muutamassa tunnissa ihmiset lähettivät noin 110 000 Yhdysvaltain dollarin arvosta. Sadat ihmiset menettivät kolikkonsa, eivätkä ne koskaan palanneet. Myöhemmin rikoksesta syytettiin kolmea nuorta miestä.",
+    "question": "Mikä olisi suojannut niitä, jotka lähettivät kolikoita?",
+    "answer": "Yksi sääntö: kukaan ei tuplaa rahojasi. Ei julkkis, ei yritys, ei ystävä. Kuuluisat nimet saivat sen tuntumaan aidolta, mutta itse tarjous oli varoitusmerkki. Oikea arvonta ei koskaan pyydä sinua lähettämään ensin."
+  },
+  "sim": {
+    "dm": {
+      "prompt": "Kysyit ryhmächatissa lompakostasi. Sekunteja myöhemmin ”WalletSupport_Help” lähettää sinulle yksityisviestin: ”Voin korjata ongelmasi. Jaa 12 sanan palautuslauseesi, niin voin tarkistaa lompakkosi.”",
+      "share": {
+        "label": "Jaa palautuslause, jotta he voivat auttaa",
+        "before": "Lähetät 12 sanaasi tälle henkilölle.",
+        "what": "Minuutissa kaikki harjoituskolikkosi siirrettiin tuntemattomaan osoitteeseen. ”Tuki” lakkasi vastaamasta.",
+        "why": "Jolla on [[seed-phrase|palautuslauseesi]], se hallitsee lompakkoasi. Hän voi palauttaa sen omaan puhelimeensa ja siirtää kaiken.",
+        "how": "Palautuslauseesta voidaan luoda uudelleen jokainen lompakkosi [[private-key|yksityinen avain]]. Verkko ei erota sinua siitä, jolla on kopio.",
+        "realLife": "Oikea tuki ei koskaan kysy palautuslausettasi. Jokainen, joka kysyy, on huijari, vaikka vaikuttaisi kuinka avuliaalta.",
+        "more": "Palautuslause ei ole salasana, jonka voi vaihtaa vuodon jälkeen. Ainoa korjaus on uusi lompakko, ja huijari tyhjentää vanhan yleensä minuuteissa."
+      },
+      "proof": {
+        "label": "Pyydä todistamaan, että he työskentelevät lompakkoyrityksessä",
+        "before": "Kysyt nimeä, työntekijätunnusta tai linkkiä ennen kuin päätät.",
+        "what": "He lähettivät ”henkilöstökortin” ja linkin virallisen näköiselle sivulle. Mitään ei ole vielä menetetty, mutta puhut yhä huijarin kanssa.",
+        "why": "Merkkejä, kuvakaappauksia ja sivustoja on helppo väärentää. Todisteiden pyytäminen pitää keskustelun käynnissä, ja juuri sitä huijari haluaa.",
+        "how": "Huijarit kopioivat oikeiden yritysten logoja ja nimiä. ”Support”-nimisen profiilin luominen ei maksa mitään.",
+        "realLife": "Älä yritä tarkistaa henkilöä. Poistu keskustelusta ja ota itse yhteyttä tukeen virallisen sovelluksen tai sivuston kautta."
+      },
+      "block": {
+        "label": "Jätä huomiotta, estä ja ilmoita tilistä",
+        "before": "Lopetat vastaamisen, estät tilin ja ilmoitat siitä ryhmässä.",
+        "what": "Huijari menetti uhrin, ja ilmoituksesi varoittaa muita ryhmässä. Kolikkosi ovat turvassa.",
+        "why": "Oikea tuki ei ota sinuun yhteyttä ensin eikä koskaan tarvitse palautuslausettasi. Kun lopetat heti, huijari ei saa mitään.",
+        "how": "Useimmissa palveluissa tileistä voi ilmoittaa, ja moderaattorit voivat poistaa ne ennen kuin ne tavoittavat muita.",
+        "realLife": "Jos tarvitset apua, avaa virallinen sovellus tai kirjoita sivuston osoite itse ja käytä sen ohjesivua."
+      }
+    },
+    "giveaway": {
+      "prompt": "Myöhemmin näet julkaisun tililtä, joka näyttää vahvistetulta: ”Arvonta! Lähetä 1 kolikko tähän osoitteeseen ja saat 2 takaisin. Vain 10 minuuttia jäljellä!”",
+      "test": {
+        "label": "Lähetä 1 kolikko kokeeksi",
+        "before": "Lähetät 1 harjoituskolikon julkaisussa olevaan osoitteeseen.",
+        "what": "Mitään ei tullut takaisin, ja kolikkosi on poissa. Julkaisun alla lukee ”Toimii!”, mutta ne ovat valetilejä.",
+        "why": "”Pieni kokeilu” on juuri sitä, mitä huijari haluaa. Jokainen hänelle lähetetty kolikko on voittoa, eikä [[transaction|siirtoa]] voi perua.",
+        "how": "Osoite kuuluu huijarille. Mikään [[blockchain|lohkoketjussa]] ei pakota häntä lähettämään mitään takaisin.",
+        "realLife": "Vähänkin lähettämällä menetät vähän. Oikea arvonta ei koskaan pyydä sinua lähettämään ensin.",
+        "more": "Huijarit lähettävät usein omaan osoitteeseensa kolikoita muista lompakoista, jotta osoite näyttäisi vilkkaalta ja ”todistetulta”. Se ei todista mitään."
+      },
+      "verify": {
+        "label": "Tarkista, onko tili oikeasti vahvistettu",
+        "before": "Katsot tilin merkkiä ja seuraajien määrää.",
+        "what": "Merkki näyttää aidolta, ja tilillä on paljon seuraajia. Se ei silti tee tarjouksesta turvallista.",
+        "why": "Oikeita tilejä hakkeroidaan, ja valetilit ostavat merkkejä ja seuraajia. Ongelma on tarjouksessa, ei vain tilissä.",
+        "how": "Vuoden 2020 Twitter-hyökkäyksessä kuuluisien ihmisten oikeat tilit julkaisivat juuri tällaisen tarjouksen.",
+        "realLife": "Arvioi tarjousta, älä nimeä. ”Lähetä 1, saat 2” on aina huijaus, kuka sen sitten julkaiseekin."
+      },
+      "ignore": {
+        "label": "Jätä huomiotta ja selaa eteenpäin",
+        "before": "Et lähetä mitään ja jatkat eteenpäin.",
+        "what": "Kolikkosi säilyivät. Lähtölaskenta päättyi eikä mitään tapahtunut, koska oikeaa tarjousta ei koskaan ollut.",
+        "why": "Kukaan ei tuplaa kolikoita. Ajastin oli siellä hoputtamassa sinua ennen kuin ehdit ajatella.",
+        "how": "Huijarit käyttävät painostusta, koska ne, jotka hidastavat ja tarkistavat, eivät mene lankaan.",
+        "realLife": "Kun tunnet, että sinua hoputetaan, hidasta. Se tunne itsessään on varoitusmerkki."
+      }
+    }
+  },
+  "adviceIntro": "Tämä julkaisu kiertää netissä. Mitä rivejä et noudattaisi?",
+  "advice": {
+    "l1": { "text": "Tämä kolikko satakertaistuu perjantaihin mennessä. Osta nyt ennen kuin on myöhäistä!", "why": "Kukaan ei voi luvata hintoja. Määräaika ja valtava lupaus yhdessä ovat klassista painostusta." },
+    "l2": { "text": "Kirjoita palautuslause paperille ja säilytä sitä turvallisessa paikassa, poissa netistä.", "why": "Netin ulkopuolella säilytettyä paperia ei voi hakkeroida. Älä koskaan säilytä sitä kuvana tai chatissa." },
+    "l3": { "text": "Lähetä minulle palautuslauseesi, niin lisään sinut VIP-ryhmääni.", "why": "Älä koskaan jaa palautuslausettasi. Jolla se on, sen on myös lompakkosi." },
+    "l4": { "text": "Tarkista aina sivuston osoite ennen kuin yhdistät lompakkosi.", "why": "[[phishing|Kalastelusivut]] kopioivat oikeita sivuja ja vaihtavat osoitteesta yhden kirjaimen." },
+    "l5": { "text": "Kytke virustorjunta pois, jotta bonussovellus asentuu.", "why": "Oikeat sovellukset eivät tarvitse sitä. Näin haittaohjelma voi varastaa laitteesi tietoja." }
+  },
+  "q1": {
+    "prompt": "Joku ”tuesta” ottaa sinuun ensin yhteyttä ja pyytää palautuslausettasi ongelman korjaamiseksi. Mitä teet?",
+    "a": "Annan sen, koska tuki tarvitsee sitä auttaakseen",
+    "b": "En jaa sitä. Estän hänet ja otan itse yhteyttä tukeen virallisen sovelluksen kautta",
+    "c": "Jaan sen vain, jos hänen profiilissaan on vahvistusmerkki",
+    "explanation": "Palautuslause hallitsee lompakkoasi. Oikea tuki ei koskaan pyydä sitä eikä ota sinuun ensin yhteyttä. Jos tarvitset apua, mene itse viralliseen sovellukseen tai sivustolle."
+  },
+  "q2": {
+    "prompt": "Kuuluisan ihmisen tili julkaisee: ”Lähetä 1 kolikko, saat 2 takaisin!” Mikä pitää paikkansa?",
+    "a": "Julkkikset antavat joskus oikeasti tuplasti takaisin",
+    "b": "Kannattaa kokeilla vähän, koska kolikon saa takaisin, jos se on huijaus",
+    "c": "Se on huijaus, kuka sen sitten julkaiseekin",
+    "explanation": "”Lähetä ensin, saat tuplasti takaisin” on aina huijaus. Vuonna 2020 hakkerit julkaisivat sitä kuuluisien ihmisten oikeilta tileiltä, eivätkä lähetetyt kolikot koskaan palanneet."
+  },
+  "q3": {
+    "prompt": "Viestin mukaan voitit ilmaisjaon, mutta sinun on yhdistettävä lompakkosi 10 minuutin kuluessa. Mikä on suurin varoitusmerkki?",
+    "a": "Kiire: lyhyt määräaika, joka saa sinut toimimaan ajattelematta",
+    "b": "Ei mikään, palkinnoilla on yleensä lyhyet määräajat",
+    "c": "Ei mikään, kunhan vain klikkaan enkä kirjoita mitään",
+    "explanation": "Kiire, salailu ja liian hyvät palkkiot ovat kolme suurta varoitusmerkkiä. Kun näet yhden niistä, pysähdy ja tarkista lähde itse."
+  },
+  "misc": {
+    "supportCheck": "”Tuki tarvitsee palautuslauseeni tarkistaakseen lompakkoni.” Oikea tuki ei koskaan tarvitse sitä. Vain huijarit pyytävät sitä.",
+    "verifiedBadge": "”Vahvistusmerkki tarkoittaa, että kaikki on turvallista.” Merkkejä voi väärentää tai ostaa, ja oikeita tilejä hakkeroidaan. Kukaan ei tarvitse palautuslausettasi.",
+    "doubleBack": "”Julkkikset antavat joskus tuplasti takaisin.” Kukaan ei anna. Vaikka viesti tulisi oikealta tililtä, tili on hakkeroitu.",
+    "refund": "”Jos se on huijaus, saan kolikot takaisin.” Kryptosiirto on lopullinen. Ei ole pankkia, joka voisi perua sen.",
+    "urgency": "”Oikeillakin palkinnoilla on lyhyet määräajat.” Painostus on huijarin lempityökalu. Oikea tilaisuus antaa sinulle aikaa tarkistaa.",
+    "justClick": "”Pelkkä klikkaus tai yhdistäminen on harmitonta.” Kun yhdistät lompakon valesivustoon, se voi pyytää lupaa siirtää kolikoitasi."
+  },
+  "t1": "Älä koskaan jaa [[seed-phrase|palautuslausettasi]]: et tuelle, ystäville etkä kenellekään muulle.",
+  "t2": "Kukaan ei tuplaa kolikoitasi. ”Lähetä ensin, saat enemmän takaisin” on aina huijaus.",
+  "t3": "Kiire, salailu ja liian hyvät palkkiot ovat varoitusmerkkejä. Hidasta ja mene itse lähteelle.",
+  "talk1": "Onko joku kotona joskus saanut huijausviestin tekstiviestinä, sähköpostina tai pelichatissa? Mikä sen paljasti?",
+  "talk2": "Keneltä kysyisit ensimmäisenä, jos rahaan liittyvä viesti tuntuisi kiireelliseltä tai oudolta?"
+}

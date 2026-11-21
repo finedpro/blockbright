@@ -9,6 +9,9 @@ import { GlossaryPage } from './pages/GlossaryPage';
 import { HomePage } from './pages/HomePage';
 import { LandingPage } from './pages/LandingPage';
 import { LessonPage } from './pages/LessonPage';
+import { FinalTestPage } from './pages/FinalTestPage';
+import { ReviewPage } from './pages/ReviewPage';
+import { RulesPage } from './pages/RulesPage';
 import { SettingsPage } from './pages/SettingsPage';
 import { useAppState } from './state/AppState';
 
@@ -16,6 +19,9 @@ type Route =
   | { page: 'landing' }
   | { page: 'learn' }
   | { page: 'lesson'; id: string }
+  | { page: 'review' }
+  | { page: 'final' }
+  | { page: 'rules' }
   | { page: 'glossary' }
   | { page: 'settings' }
   | { page: 'about' };
@@ -27,6 +33,12 @@ function parseHash(hash: string): Route {
       return { page: 'learn' };
     case 'lesson':
       return parts[1] ? { page: 'lesson', id: parts[1] } : { page: 'learn' };
+    case 'review':
+      return { page: 'review' };
+    case 'final':
+      return { page: 'final' };
+    case 'rules':
+      return { page: 'rules' };
     case 'glossary':
       return { page: 'glossary' };
     case 'settings':
@@ -69,7 +81,7 @@ export default function App() {
   const language = getLanguage(i18n.language);
   const inApp = route.page !== 'landing';
   const navItems = [
-    { path: '/learn', icon: 'book', label: t('nav.home'), active: route.page === 'learn' || route.page === 'lesson' },
+    { path: '/learn', icon: 'book', label: t('nav.home'), active: ['learn', 'lesson', 'review', 'final', 'rules'].includes(route.page) },
     { path: '/glossary', icon: 'cards', label: t('nav.glossary'), active: route.page === 'glossary' },
     { path: '/settings', icon: 'settings', label: t('nav.settings'), active: route.page === 'settings' },
     { path: '/about', icon: 'info', label: t('nav.about'), active: route.page === 'about' },
@@ -116,7 +128,10 @@ export default function App() {
         {route.page === 'landing' && <LandingPage onStart={() => navigate('/lesson/send-demo')} />}
         {inApp && (
           <div className="wrap app-main">
-            {route.page === 'learn' && <HomePage onOpenLesson={(id) => navigate(`/lesson/${id}`)} />}
+            {route.page === 'learn' && <HomePage onOpenLesson={(id) => navigate(`/lesson/${id}`)} onNavigate={navigate} />}
+            {route.page === 'review' && <ReviewPage onExit={() => navigate('/learn')} />}
+            {route.page === 'final' && <FinalTestPage onExit={() => navigate('/learn')} />}
+            {route.page === 'rules' && <RulesPage onExit={() => navigate('/learn')} />}
             {route.page === 'lesson' && <LessonPage key={route.id} id={route.id} onExit={() => navigate('/learn')} />}
             {route.page === 'glossary' && <GlossaryPage />}
             {route.page === 'settings' && <SettingsPage onLanguage={changeLanguage} />}
@@ -132,7 +147,7 @@ export default function App() {
         </div>
       </footer>
 
-      {inApp && route.page !== 'lesson' && (
+      {inApp && !['lesson', 'review', 'final'].includes(route.page) && (
         <nav aria-label="App" className="tab-bar">
           {navItems.map((item) => (
             <a key={item.path} href={`#${item.path}`} aria-current={item.active ? 'page' : undefined}>

@@ -1,8 +1,9 @@
 import { lessonSchema, type Lesson } from './schema';
+import scams1 from './lessons/scams-1.json';
 import sendDemo from './lessons/send-demo.json';
 
 /** All lessons, validated against the schema when the app starts (and by `npm run check`). */
-export const LESSONS: Lesson[] = [lessonSchema.parse(sendDemo)];
+export const LESSONS: Lesson[] = [sendDemo, scams1].map((l) => lessonSchema.parse(l));
 
 export const MODULES = [1, 2, 3, 4, 5, 6, 7] as const;
 

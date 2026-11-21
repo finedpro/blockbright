@@ -1,0 +1,121 @@
+{
+  "title": "Spot the scam",
+  "hook": "A message pops up: \"Congrats! You won a free [[airdrop]] of 500 coins. Connect your [[wallet]] in the next 10 minutes to claim it.\" Your heart beats faster. Free coins!",
+  "card1": "Almost every crypto scam wants one of two things: your [[seed-phrase]], or for you to send coins yourself. Once they get either, your coins are gone, because a [[transaction]] is [[irreversible]].",
+  "analogy1": "Your seed phrase is like the master key to your home and every lock inside it. A real locksmith, bank or friend would never ask you to post them a copy. Anyone who asks for it wants to walk in and take everything.",
+  "card2": "Watch for red flags: a rush (\"only 10 minutes left\"), secrecy (\"don't tell anyone\"), a reward that is too good (\"double your coins\"), and any request to send first or to \"verify\" your wallet.",
+  "card3": "Common tricks: fake support agents who message you first, surprise airdrops that ask you to connect your wallet, and giveaways from \"famous people\" who promise to send back double.",
+  "walk": {
+    "title": "How a [[phishing]] attack works",
+    "f1": "You get a message: \"Your wallet is locked. Fix it here.\" The link looks normal.",
+    "f2": "The site looks exactly like your wallet's real site. Only the address bar is off by one letter.",
+    "f3": "It asks you to type your seed phrase \"to unlock\" the wallet. Real wallets never ask for it on a website.",
+    "f4": "The scammer now has your keys. Within minutes every coin is moved out, and no one can reverse it."
+  },
+  "story": {
+    "title": "When famous accounts asked for Bitcoin",
+    "body": "On 15 July 2020, attackers took over 130 Twitter accounts, including those of Barack Obama, Joe Biden, Bill Gates and Elon Musk. From 45 of them they posted the same offer: send Bitcoin to this address and get double back. Within hours, people sent about 110,000 US dollars. Hundreds of people lost their coins, and the coins never came back. Three young men were later charged with the crime.",
+    "question": "What would have protected the people who sent coins?",
+    "answer": "One rule: no one doubles your money. Not a celebrity, not a company, not a friend. The famous names made it feel real, but the offer itself was the red flag. A real giveaway never asks you to send first."
+  },
+  "sim": {
+    "dm": {
+      "prompt": "You asked a question about your wallet in a group chat. Seconds later \"WalletSupport_Help\" sends you a private message: \"I can fix your issue. Please share your 12-word seed phrase so I can verify your wallet.\"",
+      "share": {
+        "label": "Share the seed phrase so they can help",
+        "before": "You will send your 12 words to this person.",
+        "what": "Within a minute, all your practice coins were moved to an unknown address. \"Support\" stopped answering.",
+        "why": "Whoever has your [[seed-phrase]] controls your wallet. They can restore it on their own phone and move everything.",
+        "how": "The seed phrase rebuilds every [[private-key]] in your wallet. The network cannot tell you apart from someone holding a copy.",
+        "realLife": "Real support never asks for your seed phrase, ever. Anyone who asks is a scammer, however helpful they seem.",
+        "more": "A seed phrase is not a password you can change after it leaks. The only fix is a new wallet, and a scammer usually empties the old one within minutes."
+      },
+      "proof": {
+        "label": "Ask them to prove they work for the wallet company",
+        "before": "You will ask for a name, badge or link before you decide.",
+        "what": "They sent a \"staff ID\" and a link to an official-looking site. Nothing is lost yet, but you are still talking to a scammer.",
+        "why": "Badges, screenshots and websites are easy to fake. Asking for proof keeps the conversation going, which is what they want.",
+        "how": "Scammers copy logos and names from real companies. A profile called \"Support\" costs nothing to make.",
+        "realLife": "Don't try to check the person. Leave the chat and contact support yourself through the official app or website."
+      },
+      "block": {
+        "label": "Ignore, block and report the account",
+        "before": "You will stop replying, block the account and report it in the group.",
+        "what": "The scammer lost a target, and your report warns others in the group. Your coins are safe.",
+        "why": "Real support doesn't message you first and never needs your seed phrase. Stopping right away gives the scammer nothing.",
+        "how": "Most platforms let you report accounts, and moderators can remove them before they reach others.",
+        "realLife": "If you need help, open the official app or type the website address yourself and use its help page."
+      }
+    },
+    "giveaway": {
+      "prompt": "Later you see a post from an account that looks verified: \"Giveaway! Send 1 coin to this address and get 2 back. Only 10 minutes left!\"",
+      "test": {
+        "label": "Send 1 coin to test it",
+        "before": "You will send 1 practice coin to the address in the post.",
+        "what": "Nothing came back, and your coin is gone. The comments under the post say \"It works!\", but they come from fake accounts.",
+        "why": "A \"small test\" is exactly what the scammer wants. Every coin sent to them is profit, and the [[transaction]] cannot be undone.",
+        "how": "The address belongs to the scammer. Nothing on the [[blockchain]] forces them to send anything back.",
+        "realLife": "Sending a little still means losing a little. No real giveaway asks you to send first.",
+        "more": "Scammers often send coins to their own address from other wallets, so the address seems busy and \"proven\". That proves nothing."
+      },
+      "verify": {
+        "label": "Check if the account is really verified",
+        "before": "You will look at the account's badge and number of followers.",
+        "what": "The badge looks real and the account has many followers. That still doesn't make the offer safe.",
+        "why": "Real accounts get hacked, and fake ones buy badges and followers. The offer is the problem, not only the account.",
+        "how": "In the 2020 Twitter hack, the real accounts of famous people posted exactly this kind of offer.",
+        "realLife": "Judge the offer, not the name. \"Send 1, get 2\" is always a scam, whoever posts it."
+      },
+      "ignore": {
+        "label": "Ignore it and scroll on",
+        "before": "You will not send anything and move on.",
+        "what": "You kept your coins. The countdown ended and nothing happened, because there was never a real offer.",
+        "why": "No one doubles coins. The timer was there to rush you before you had time to think.",
+        "how": "Scammers use pressure because people who slow down and check don't fall for the trick.",
+        "realLife": "When you feel rushed, slow down. That feeling itself is a warning sign."
+      }
+    }
+  },
+  "adviceIntro": "This post is going around. Which lines would you not follow?",
+  "advice": {
+    "l1": { "text": "This coin will 100x by Friday. Buy now before it's too late!", "why": "No one can promise prices. A deadline plus a huge promise is classic pressure." },
+    "l2": { "text": "Write your seed phrase on paper and keep it somewhere safe, offline.", "why": "Paper kept offline can't be hacked. Never keep it as a photo or in a chat." },
+    "l3": { "text": "DM me your seed phrase and I'll add you to my VIP group.", "why": "Never share your seed phrase. Whoever has it owns your wallet." },
+    "l4": { "text": "Always check the website address before you connect your wallet.", "why": "[[phishing|Phishing]] sites copy real ones and change one letter in the address." },
+    "l5": { "text": "Turn off your antivirus so the bonus app can install.", "why": "Real apps don't need that. It lets harmful software steal what's on your device." }
+  },
+  "q1": {
+    "prompt": "Someone from \"support\" messages you first and asks for your seed phrase to fix a problem. What do you do?",
+    "a": "Give it, because support needs it to help",
+    "b": "Don't share it. Block them and contact support yourself through the official app",
+    "c": "Share it only if their profile has a verified badge",
+    "explanation": "Your seed phrase controls your wallet. Real support never asks for it and never messages you first. If you need help, go to the official app or site yourself."
+  },
+  "q2": {
+    "prompt": "A famous person's account posts: \"Send 1 coin, get 2 back!\" What is true?",
+    "a": "Famous people sometimes really give back double",
+    "b": "It's worth a small try, because you can get the coin back if it's fake",
+    "c": "It's a scam, whoever posts it",
+    "explanation": "\"Send first, get double back\" is always a scam. In 2020, hackers posted it from the real accounts of famous people, and the coins people sent never came back."
+  },
+  "q3": {
+    "prompt": "A message says you won an airdrop, but you must connect your wallet within 10 minutes. What is the biggest warning sign?",
+    "a": "The rush: a short deadline that makes you act without thinking",
+    "b": "Nothing, short deadlines are normal for prizes",
+    "c": "Nothing, as long as you only click and don't type anything",
+    "explanation": "Rush, secrecy and rewards that are too good are the three big red flags. When you see one, stop and check the source yourself."
+  },
+  "misc": {
+    "supportCheck": "\"Support needs my seed phrase to check my wallet.\" Real support never needs it. Only scammers ask for it.",
+    "verifiedBadge": "\"A verified badge means it's safe.\" Badges can be faked or bought, and real accounts get hacked. No one needs your seed phrase.",
+    "doubleBack": "\"Famous people sometimes give back double.\" No one does. Even when it comes from a real account, that account has been hacked.",
+    "refund": "\"If it's fake, I can get my coins back.\" A crypto transaction is final. There is no bank that can reverse it.",
+    "urgency": "\"Real prizes have short deadlines too.\" Pressure is a scammer's favourite tool. A real chance gives you time to check.",
+    "justClick": "\"Just clicking or connecting is harmless.\" Connecting your wallet to a fake site can let it ask for permission to move your coins."
+  },
+  "t1": "Never share your [[seed-phrase]]: not with support, friends or anyone else.",
+  "t2": "No one doubles your coins. \"Send first, get more back\" is always a scam.",
+  "t3": "Rush, secrecy and rewards that are too good are red flags. Slow down and go to the source yourself.",
+  "talk1": "Has anyone at home ever got a scam message, by text, email or in a game chat? What gave it away?",
+  "talk2": "Who would you ask first if a message about money felt urgent or strange?"
+}

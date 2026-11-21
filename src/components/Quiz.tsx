@@ -6,44 +6,61 @@ import { BRAND, Cube } from './Art';
 import { Icon } from './Icon';
 import { RichText } from './RichText';
 
+export interface QuizItem {
+  question: QuizQuestion;
+  /** i18n namespace of the lesson the question belongs to. */
+  ns: string;
+  lessonId: string;
+}
+
+export interface QuestionResult {
+  lessonId: string;
+  questionId: string;
+  correct: boolean;
+}
+
 export interface QuizResult {
   score: number;
   total: number;
   sureButWrong: number;
+  answers: QuestionResult[];
 }
 
 interface QuizProps {
-  questions: QuizQuestion[];
-  ns: string;
+  items: QuizItem[];
   onDone(result: QuizResult): void;
+  /** Before/after: ids of the questions asked before the lesson, and how many were right then. */
+  before?: { ids: string[]; correct: number };
 }
 
 const CONFIDENCE: Confidence[] = ['unsure', 'fairly', 'certain'];
 
 /** Quiz with a confidence check and feedback aimed at the belief behind each wrong answer. */
-export function Quiz({ questions, ns, onDone }: QuizProps) {
+export function Quiz({ items, onDone, before }: QuizProps) {
   const { t } = useTranslation();
-  const { t: lt } = useTranslation(ns);
   const [index, setIndex] = useState(0);
   const [answer, setAnswer] = useState<string | null>(null);
   const [confidence, setConfidence] = useState<Confidence | null>(null);
   const [checked, setChecked] = useState(false);
-  const [score, setScore] = useState(0);
+  const [answers, setAnswers] = useState<QuestionResult[]>([]);
   const [sureButWrong, setSureButWrong] = useState(0);
   const [finished, setFinished] = useState(false);
 
-  const q = questions[index];
+  const item = items[index];
+  const q = item.question;
+  const lt = (key: string) => t(key, { ns: item.ns });
   const picked = q.options.find((o) => o.id === answer);
+  const score = answers.filter((a) => a.correct).length;
 
   const check = () => {
     if (!picked || !confidence) return;
     setChecked(true);
-    if (picked.correct) setScore((s) => s + 1);
-    else if (confidence !== 'unsure') setSureButWrong((n) => n + 1);
+    setAnswers((prev) => [...prev, { lessonId: item.lessonId, questionId: q.id, correct: picked.correct }]);
+    if (!picked.correct && confidence !== 'unsure') setSureButWrong((n) => n + 1);
   };
 
   const next = () => {
-    if (index + 1 < questions.length) {
+    if (index + 1 < items.length) {
       setIndex(index + 1);
       setAnswer(null);
       setConfidence(null);
@@ -54,12 +71,13 @@ export function Quiz({ questions, ns, onDone }: QuizProps) {
   };
 
   if (finished) {
+    const afterCorrect = before ? answers.filter((a) => before.ids.includes(a.questionId) && a.correct).length : 0;
     return (
       <section className="quiz-results" aria-live="polite">
         <div className="result-card">
           <div className="result-copy">
             <span className="result-label">{t('quiz.resultsTitle')}</span>
-            <span className="result-score">{score} / {questions.length}</span>
+            <span className="result-score">{score} / {items.length}</span>
             <span className="result-sub">{t('results.correct')}</span>
           </div>
           <svg width="110" height="100" viewBox="0 0 110 100" aria-hidden="true">
@@ -70,11 +88,18 @@ export function Quiz({ questions, ns, onDone }: QuizProps) {
             </g>
           </svg>
         </div>
+        {before && (
+          <div className="before-after">
+            <div><span className="ba-label">{t('beforeAfter.before')}</span><span className="ba-value">{before.correct} / {before.ids.length}</span></div>
+            <Icon name="arrow" size={20} />
+            <div><span className="ba-label">{t('beforeAfter.after')}</span><span className="ba-value">{afterCorrect} / {before.ids.length}</span></div>
+          </div>
+        )}
         <p className={`sure-note ${sureButWrong ? 'is-warn' : 'is-good'}`}>
           <Icon name={sureButWrong ? 'alert' : 'check'} size={18} strokeWidth={2.2} />
           {t('quiz.sureButWrong', { count: sureButWrong })}
         </p>
-        <button type="button" className="btn btn-primary btn-block" onClick={() => onDone({ score, total: questions.length, sureButWrong })}>
+        <button type="button" className="btn btn-primary btn-block" onClick={() => onDone({ score, total: items.length, sureButWrong, answers })}>
           {t('lesson.next')}
         </button>
       </section>
@@ -83,14 +108,14 @@ export function Quiz({ questions, ns, onDone }: QuizProps) {
 
   return (
     <section className="quiz">
-      <p className="muted">{t('quiz.question', { current: index + 1, total: questions.length })}</p>
+      <p className="muted">{t('quiz.question', { current: index + 1, total: items.length })}</p>
       <fieldset disabled={checked}>
         <legend><RichText text={lt(q.prompt)} textKey={q.prompt} /></legend>
         {q.options.map((o) => {
           const state = checked ? (o.correct ? 'is-correct' : o.id === answer ? 'is-wrong' : '') : '';
           return (
             <label key={o.id} className={`option ${state}`}>
-              <input type="radio" name={`q-${q.id}`} value={o.id} checked={answer === o.id} onChange={() => setAnswer(o.id)} />
+              <input type="radio" name={`q-${item.lessonId}-${q.id}`} value={o.id} checked={answer === o.id} onChange={() => setAnswer(o.id)} />
               <RichText text={lt(`${q.id}.${o.id}`)} textKey={`${q.id}.${o.id}`} />
             </label>
           );
@@ -102,7 +127,7 @@ export function Quiz({ questions, ns, onDone }: QuizProps) {
         <div className="segmented">
           {CONFIDENCE.map((c) => (
             <label key={c} className={confidence === c ? 'selected' : ''}>
-              <input type="radio" name={`conf-${q.id}`} value={c} checked={confidence === c} onChange={() => setConfidence(c)} />
+              <input type="radio" name={`conf-${item.lessonId}-${q.id}`} value={c} checked={confidence === c} onChange={() => setConfidence(c)} />
               {t(`quiz.confidence.${c}`)}
             </label>
           ))}
@@ -129,7 +154,7 @@ export function Quiz({ questions, ns, onDone }: QuizProps) {
           )}
           <RichText as="p" text={lt(q.explanation)} textKey={q.explanation} />
           <button type="button" className="btn btn-primary" onClick={next}>
-            {index + 1 < questions.length ? t('quiz.next') : t('lesson.next')}
+            {index + 1 < items.length ? t('quiz.next') : t('lesson.next')}
           </button>
         </div>
       )}

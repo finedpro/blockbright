@@ -6,6 +6,7 @@ import {
   type ExplainLevel,
   type LessonProgress,
   type StoredState,
+  updateReview,
 } from './storage';
 
 interface AppStateValue {
@@ -13,6 +14,8 @@ interface AppStateValue {
   setLanguage(code: string): void;
   setExplainLevel(level: ExplainLevel): void;
   recordLesson(id: string, progress: LessonProgress): void;
+  recordAnswers(answers: { lessonId: string; questionId: string; correct: boolean }[]): void;
+  recordFinalTest(score: number, total: number): void;
   resetProgress(): void;
 }
 
@@ -35,6 +38,12 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
       setLanguage: (code) => update((s) => ({ ...s, language: code })),
       setExplainLevel: (level) => update((s) => ({ ...s, explainLevel: level })),
       recordLesson: (id, progress) => update((s) => ({ ...s, lessons: { ...s.lessons, [id]: progress } })),
+      recordAnswers: (answers) => update((s) => ({ ...s, review: updateReview(s.review, answers, Date.now()) })),
+      recordFinalTest: (score, total) =>
+        update((s) => ({
+          ...s,
+          finalTest: !s.finalTest || score >= s.finalTest.score ? { score, total, completedAt: new Date().toISOString() } : s.finalTest,
+        })),
       resetProgress: () => {
         const keepLanguage = state.language;
         const fresh = clearState();

@@ -45,13 +45,17 @@
       "learn": "Opi",
       "try": "Kokeile",
       "check": "Tarkista",
-      "remember": "Muista"
+      "remember": "Muista",
+      "before": "Lämmittely",
+      "story": "Tosi tarina",
+      "advice": "Löydä virhe"
     },
     "stepOf": "Vaihe {current}/{total}",
     "next": "Seuraava",
     "back": "Takaisin",
     "finish": "Valmis",
-    "backToLessons": "Takaisin oppitunteihin"
+    "backToLessons": "Takaisin oppitunteihin",
+    "analogy": "Ajattele sitä näin"
   },
   "sim": {
     "why": "Miksi?",
@@ -192,5 +196,90 @@
     "complete": "Moduuli {number} valmis",
     "correct": "oikeaa vastausta",
     "rememberTitle": "Kolme muistettavaa asiaa"
+  },
+  "walkthrough": {
+    "tag": "Vaihe vaiheelta",
+    "step": "Vaihe {current}/{total}",
+    "next": "Seuraava vaihe",
+    "prev": "Edellinen vaihe"
+  },
+  "story": {
+    "tag": "Tämä tapahtui oikeasti",
+    "reveal": "Näytä vastaus",
+    "sources": "Lähteet"
+  },
+  "advice": {
+    "tag": "Löydä huono neuvo",
+    "hint": "Napauta jokaista riviä, joka on mielestäsi huono tai vaarallinen neuvo, ja tarkista sitten.",
+    "check": "Tarkista valinnat",
+    "isBad": "Huono neuvo.",
+    "isOk": "Hyvä neuvo.",
+    "score": "Arvioit oikein {right}/{total} riviä."
+  },
+  "beforeAfter": {
+    "title": "Nopea lämmittely",
+    "intro": "Vastaa sen mukaan, mitä tiedät nyt. Pisteitä ei vielä ole: lopussa näet, kuinka paljon opit.",
+    "start": "Aloita oppitunti",
+    "before": "Ennen",
+    "after": "Jälkeen"
+  },
+  "talk": {
+    "title": "Juttele kotona",
+    "intro": "Kysy joltakulta kotona. Vääriä vastauksia ei ole."
+  },
+  "review": {
+    "title": "Nopea kertaus",
+    "intro": "Muutama kysymys aiemmista tunneista. Kun näet ne myöhemmin uudelleen, ne jäävät paremmin mieleen.",
+    "done": "Valmis! Nämä palaavat myöhemmin, jotta ne jäävät mieleen.",
+    "nothing": "Nyt ei ole kerrattavaa. Tule takaisin muutaman päivän päästä.",
+    "cardTitle": "Nopea kertaus",
+    "cardText": "{count, plural, one {# kysymys on taas valmiina} other {# kysymystä on taas valmiina}}"
+  },
+  "final": {
+    "title": "Lopputesti",
+    "intro": "{count, plural, one {# kysymys} other {# kysymystä}} kaikista tunneista. Saa 80 %, niin ansaitset kultaisten sääntöjen kortin.",
+    "notAllDone": "Olet suorittanut {done}/{total} tuntia. Voit silti kokeilla.",
+    "start": "Aloita testi",
+    "passed": "Hienoa! Osaat kultaiset säännöt. Pidä kortti paikassa, jossa näet sen.",
+    "retry": "Melkein. Tarvitset {need} oikein. Katso tunnit uudelleen ja yritä taas.",
+    "again": "Tee testi uudelleen",
+    "ready": "Kaikki tunnit tehty. Valmis, kun sinä olet.",
+    "anyTime": "Kokeile milloin vain"
+  },
+  "rules": {
+    "title": "Kultaiset säännöt",
+    "subtitle": "Seitsemän sääntöä, jotka pitävät kolikkosi turvassa",
+    "cardText": "Seitsemän sääntöä tulostettavaksi tai talteen",
+    "footer": "Blockbright · Vain harjoittelua, ei sijoitusneuvontaa",
+    "print": "Tulosta tai tallenna PDF:nä",
+    "printHint": "Valitse tulostusikkunassa ”Tallenna PDF-muodossa”, niin saat kortin ladattua.",
+    "r1": {
+      "title": "Palautuslause on vain sinun.",
+      "text": "Älä koskaan kirjoita sitä verkkosivulle, chattiin tai lomakkeeseen äläkä näytä sitä kenellekään, et edes ”tuelle”."
+    },
+    "r2": {
+      "title": "Ilmainen raha on ansa.",
+      "text": "Kukaan ei tuplaa kolikoitasi. Arvonnat, jotka pyytävät ensin lähettämään tai yhdistämään, ovat huijauksia."
+    },
+    "r3": {
+      "title": "Hidasta, kun sinua painostetaan.",
+      "text": "Painostus, salailu ja lähtölaskennat ovat varoitusmerkkejä. Oikea tilaisuus ei katoa kymmenessä minuutissa."
+    },
+    "r4": {
+      "title": "Tarkista osoite ja sitten uudelleen.",
+      "text": "Vertaa ensimmäisiä ja viimeisiä merkkejä ja lähetä ensin pieni testisumma. Lähetetty siirto on lopullinen."
+    },
+    "r5": {
+      "title": "Käytä vain sitä, minkä voit menettää.",
+      "text": "Hinnat voivat pudota nopeasti. Älä koskaan lainaa rahaa kryptojen ostamiseen."
+    },
+    "r6": {
+      "title": "Mene itse lähteelle.",
+      "text": "Kirjoita sivun osoite itse tai avaa virallinen sovellus. Älä luota viestien linkkeihin."
+    },
+    "r7": {
+      "title": "Puhu jonkun luotettavan kanssa.",
+      "text": "Ennen ensimmäistä oikeaa askelta tai kun jokin tuntuu väärältä, kysy vanhemmalta tai muulta luotettavalta aikuiselta."
+    }
   }
 }

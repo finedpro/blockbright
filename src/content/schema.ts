@@ -40,13 +40,40 @@ export const quizQuestionSchema = z.object({
   explanation: key,
 });
 
+/** A learn card: plain text, an everyday analogy, or a step-through walkthrough. */
+export const cardSchema = z.union([
+  key,
+  z.object({ kind: z.literal('analogy'), key }),
+  z.object({ kind: z.literal('walkthrough'), title: key, frames: z.array(key).min(2) }),
+]);
+
+export const storySchema = z.object({
+  title: key,
+  body: key,
+  question: key,
+  answer: key,
+  sources: z.array(z.object({ title: z.string(), url: z.url() })).min(1),
+});
+
+export const badAdviceSchema = z.object({
+  intro: key,
+  author: z.string(),
+  lines: z.array(z.object({ id: z.string(), bad: z.boolean() })).min(3),
+});
+
 export const lessonSchema = z
   .object({
     id: z.string(),
     module: z.number().int().min(1).max(7),
     title: key,
     hook: key,
-    cards: z.array(key).min(1),
+    /** Quiz question ids asked once before the lesson and again in the quiz (before/after). */
+    before: z.array(z.string()).optional(),
+    cards: z.array(cardSchema).min(1),
+    story: storySchema.optional(),
+    badAdvice: badAdviceSchema.optional(),
+    /** Questions to talk through at home. */
+    talk: z.array(key).optional(),
     simulation: z.object({
       start: z.string(),
       nodes: z.record(z.string(), simNodeSchema),
@@ -65,6 +92,9 @@ export const lessonSchema = z
         }
       }
     }
+    for (const id of lesson.before ?? []) {
+      if (!lesson.quiz.some((q) => q.id === id)) ctx.addIssue({ code: 'custom', message: `before: unknown quiz question "${id}"` });
+    }
     for (const q of lesson.quiz) {
       if (q.options.filter((o) => o.correct).length !== 1) {
         ctx.addIssue({ code: 'custom', message: `Quiz question ${q.id} must have exactly one correct option` });
@@ -78,12 +108,21 @@ export const lessonSchema = z
   });
 
 export type Lesson = z.infer<typeof lessonSchema>;
+export type LessonCard = z.infer<typeof cardSchema>;
+
+/** Text keys of one learn card, in reading order. */
+export function cardKeys(card: LessonCard): string[] {
+  if (typeof card === 'string') return [card];
+  if (card.kind === 'analogy') return [card.key];
+  return [card.title, ...card.frames];
+}
 export type SimChoice = z.infer<typeof choiceSchema>;
 export type QuizQuestion = z.infer<typeof quizQuestionSchema>;
 
 /** Every text key a lesson needs, in reading order. Used by the content check and the term rule. */
 export function lessonTextKeys(lesson: Lesson): string[] {
-  const keys = [lesson.title, lesson.hook, ...lesson.cards];
+  const keys = [lesson.title, lesson.hook, ...lesson.cards.flatMap(cardKeys)];
+  if (lesson.story) keys.push(lesson.story.title, lesson.story.body, lesson.story.question, lesson.story.answer);
   const seen = new Set<string>();
   const walk = (nodeId: string) => {
     if (seen.has(nodeId)) return;
@@ -96,10 +135,14 @@ export function lessonTextKeys(lesson: Lesson): string[] {
     }
   };
   walk(lesson.simulation.start);
+  if (lesson.badAdvice) {
+    keys.push(lesson.badAdvice.intro);
+    for (const l of lesson.badAdvice.lines) keys.push(`advice.${l.id}.text`, `advice.${l.id}.why`);
+  }
   for (const q of lesson.quiz) {
     keys.push(q.prompt, ...q.options.map((o) => `${q.id}.${o.id}`), q.explanation);
     for (const o of q.options) if (o.misconception) keys.push(o.misconception);
   }
-  keys.push(...lesson.takeaways);
+  keys.push(...lesson.takeaways, ...(lesson.talk ?? []));
   return keys;
 }

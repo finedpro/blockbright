@@ -45,13 +45,17 @@
       "learn": "Õpi",
       "try": "Proovi",
       "check": "Kontrolli",
-      "remember": "Pea meeles"
+      "remember": "Pea meeles",
+      "before": "Soojendus",
+      "story": "Tõestisündinud lugu",
+      "advice": "Leia viga"
     },
     "stepOf": "Samm {current}/{total}",
     "next": "Edasi",
     "back": "Tagasi",
     "finish": "Lõpeta",
-    "backToLessons": "Tagasi õppetundide juurde"
+    "backToLessons": "Tagasi õppetundide juurde",
+    "analogy": "Mõtle sellele nii"
   },
   "sim": {
     "why": "Miks?",
@@ -192,5 +196,90 @@
     "complete": "Moodul {number} tehtud",
     "correct": "õiget vastust",
     "rememberTitle": "Kolm asja, mida meeles pidada"
+  },
+  "walkthrough": {
+    "tag": "Samm-sammult",
+    "step": "Samm {current}/{total}",
+    "next": "Järgmine samm",
+    "prev": "Eelmine samm"
+  },
+  "story": {
+    "tag": "See juhtus päriselt",
+    "reveal": "Näita vastust",
+    "sources": "Allikad"
+  },
+  "advice": {
+    "tag": "Leia halb nõuanne",
+    "hint": "Puuduta iga rida, mis sinu arvates on halb või ohtlik nõuanne, ja siis kontrolli.",
+    "check": "Kontrolli valikuid",
+    "isBad": "Halb nõuanne.",
+    "isOk": "Hea nõuanne.",
+    "score": "Hindasid õigesti {right} rida {total}-st."
+  },
+  "beforeAfter": {
+    "title": "Kiire soojendus",
+    "intro": "Vasta selle järgi, mida praegu tead. Punkte veel ei ole: lõpus näed, kui palju juurde õppisid.",
+    "start": "Alusta õppetundi",
+    "before": "Enne",
+    "after": "Pärast"
+  },
+  "talk": {
+    "title": "Räägi kodus",
+    "intro": "Küsi kelleltki kodus. Valesid vastuseid pole."
+  },
+  "review": {
+    "title": "Kiire kordamine",
+    "intro": "Mõned küsimused varasematest tundidest. Hiljem uuesti nägemine aitab meelde jätta.",
+    "done": "Valmis! Need tulevad hiljem tagasi, et paremini meelde jääks.",
+    "nothing": "Praegu pole midagi korrata. Tule mõne päeva pärast tagasi.",
+    "cardTitle": "Kiire kordamine",
+    "cardText": "{count, plural, one {# küsimus on jälle valmis} other {# küsimust on jälle valmis}}"
+  },
+  "final": {
+    "title": "Lõputest",
+    "intro": "{count, plural, one {# küsimus} other {# küsimust}} kõigist tundidest. Saa 80%, et teenida kuldsete reeglite kaart.",
+    "notAllDone": "Oled läbinud {done} tundi {total}-st. Võid ikka proovida.",
+    "start": "Alusta testi",
+    "passed": "Tubli! Sa tead kuldseid reegleid. Hoia kaarti kohas, kus seda näed.",
+    "retry": "Peaaegu. Vaja on {need} õiget. Vaata tunnid üle ja proovi uuesti.",
+    "again": "Tee test uuesti",
+    "ready": "Kõik tunnid tehtud. Valmis, kui sina oled.",
+    "anyTime": "Proovi millal tahes"
+  },
+  "rules": {
+    "title": "Kuldsed reeglid",
+    "subtitle": "Seitse reeglit, mis hoiavad su münte",
+    "cardText": "Seitse reeglit printimiseks või hoidmiseks",
+    "footer": "Blockbright · Ainult harjutamiseks, mitte finantsnõuanne",
+    "print": "Prindi või salvesta PDF-ina",
+    "printHint": "Vali printimisaknas „Salvesta PDF-ina“, et kaart alla laadida.",
+    "r1": {
+      "title": "Taastefraas on ainult sinu.",
+      "text": "Ära kunagi sisesta seda veebilehele, vestlusse ega vormi ja ära näita seda kellelegi, ka mitte „klienditoele“."
+    },
+    "r2": {
+      "title": "Tasuta raha on lõks.",
+      "text": "Keegi ei kahekorrista su münte. Loosimised, mis paluvad enne midagi saata või ühendada, on pettused."
+    },
+    "r3": {
+      "title": "Võta hoog maha, kui sind tõugatakse.",
+      "text": "Surve, saladus ja pöördloendus on ohumärgid. Päris võimalus ei kao kümne minutiga."
+    },
+    "r4": {
+      "title": "Kontrolli aadressi ja siis veel kord.",
+      "text": "Võrdle esimesi ja viimaseid märke ning saada enne väike proovisumma. Saadetud tehing on lõplik."
+    },
+    "r5": {
+      "title": "Kasuta ainult seda, mille kaotust kannatad.",
+      "text": "Hinnad võivad kiiresti langeda. Ära kunagi laena raha krüpto ostmiseks."
+    },
+    "r6": {
+      "title": "Mine ise allika juurde.",
+      "text": "Kirjuta lehe aadress ise või ava ametlik äpp. Ära usalda sõnumites olevaid linke."
+    },
+    "r7": {
+      "title": "Räägi kellegagi, keda usaldad.",
+      "text": "Enne esimest päris sammu või kui miski tundub vale, küsi vanemalt või mõnelt teiselt usaldusväärselt täiskasvanult."
+    }
   }
 }

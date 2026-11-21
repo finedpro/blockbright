@@ -4,12 +4,19 @@ import { Icon } from '../components/Icon';
 import { MODULES, lessonNamespace, lessonsInModule } from '../content/lessons';
 import { plainText } from '../content/richText';
 import { useAppState } from '../state/AppState';
+import { dueReviews } from '../state/storage';
+
+function openModulesDone(progress: Record<string, { completed: boolean }>): boolean {
+  return MODULES.flatMap((m) => lessonsInModule(m)).every((l) => progress[l.id]?.completed);
+}
 
 const MODULE_ICONS = ['coin', 'blocks', 'key', 'send', 'eye', 'trend', 'scale'];
 
-export function HomePage({ onOpenLesson }: { onOpenLesson(id: string): void }) {
+export function HomePage({ onOpenLesson, onNavigate }: { onOpenLesson(id: string): void; onNavigate(path: string): void }) {
   const { t } = useTranslation();
   const { state } = useAppState();
+  const due = dueReviews(state.review, Date.now()).length;
+  const allDone = openModulesDone(state.lessons);
   const openModules = MODULES.filter((m) => lessonsInModule(m).length > 0);
   const next = openModules.flatMap((m) => lessonsInModule(m)).find((l) => !state.lessons[l.id]?.completed) ?? lessonsInModule(openModules[0] ?? 4)[0];
 
@@ -27,6 +34,17 @@ export function HomePage({ onOpenLesson }: { onOpenLesson(id: string): void }) {
             </button>
           </div>
         </div>
+      )}
+
+      {due > 0 && (
+        <button type="button" className="review-card" onClick={() => onNavigate('/review')}>
+          <span className="review-icon"><Icon name="cards" size={22} /></span>
+          <span className="review-copy">
+            <span className="next-label">{t('review.cardTitle')}</span>
+            <span>{t('review.cardText', { count: due })}</span>
+          </span>
+          <Icon name="arrow" size={18} />
+        </button>
       )}
 
       <div className="learn-head">
@@ -65,6 +83,23 @@ export function HomePage({ onOpenLesson }: { onOpenLesson(id: string): void }) {
           );
         })}
       </ol>
+
+      <div className="finish-row">
+        <button type="button" className={`finish-card ${allDone ? 'is-ready' : ''}`} onClick={() => onNavigate('/final')}>
+          <Icon name="shield" size={24} />
+          <span className="review-copy">
+            <span className="path-title">{t('final.title')}</span>
+            <span className="muted">{state.finalTest ? t('home.done', { score: state.finalTest.score, total: state.finalTest.total }) : allDone ? t('final.ready') : t('final.anyTime')}</span>
+          </span>
+        </button>
+        <button type="button" className="finish-card" onClick={() => onNavigate('/rules')}>
+          <Icon name="lock" size={24} />
+          <span className="review-copy">
+            <span className="path-title">{t('rules.title')}</span>
+            <span className="muted">{t('rules.cardText')}</span>
+          </span>
+        </button>
+      </div>
     </section>
   );
 }

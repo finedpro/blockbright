@@ -45,13 +45,17 @@
       "learn": "Learn",
       "try": "Try it",
       "check": "Check",
-      "remember": "Remember"
+      "remember": "Remember",
+      "before": "Warm-up",
+      "story": "True story",
+      "advice": "Spot it"
     },
     "stepOf": "Step {current} of {total}",
     "next": "Next",
     "back": "Back",
     "finish": "Finish",
-    "backToLessons": "Back to lessons"
+    "backToLessons": "Back to lessons",
+    "analogy": "Think of it like this"
   },
   "sim": {
     "why": "Why?",
@@ -192,5 +196,90 @@
     "complete": "Module {number} complete",
     "correct": "correct answers",
     "rememberTitle": "Three things to remember"
+  },
+  "walkthrough": {
+    "tag": "Step by step",
+    "step": "Step {current} of {total}",
+    "next": "Next step",
+    "prev": "Previous step"
+  },
+  "story": {
+    "tag": "This really happened",
+    "reveal": "Show the answer",
+    "sources": "Sources"
+  },
+  "advice": {
+    "tag": "Spot the bad advice",
+    "hint": "Tap every line you think is bad or dangerous advice, then check.",
+    "check": "Check my picks",
+    "isBad": "Bad advice.",
+    "isOk": "Good advice.",
+    "score": "You judged {right} of {total} lines right."
+  },
+  "beforeAfter": {
+    "title": "Quick warm-up",
+    "intro": "Answer from what you know now. No score yet: you will see how much you learned at the end.",
+    "start": "Start the lesson",
+    "before": "Before",
+    "after": "After"
+  },
+  "talk": {
+    "title": "Talk at home",
+    "intro": "Ask someone at home. There are no wrong answers."
+  },
+  "review": {
+    "title": "Quick review",
+    "intro": "A few questions from earlier lessons. Seeing them again later helps you remember.",
+    "done": "Done! These come back later so they stick.",
+    "nothing": "Nothing to review right now. Come back in a few days.",
+    "cardTitle": "Quick review",
+    "cardText": "{count, plural, one {# question is ready again} other {# questions are ready again}}"
+  },
+  "final": {
+    "title": "Final test",
+    "intro": "{count, plural, one {# question} other {# questions}} from all lessons. Get 80% to earn your golden rules card.",
+    "notAllDone": "You have finished {done} of {total} lessons. You can still try.",
+    "start": "Start the test",
+    "passed": "Well done! You know the golden rules. Keep the card somewhere you will see it.",
+    "retry": "Almost. You need {need} right. Look back at the lessons and try again.",
+    "again": "Take the test again",
+    "ready": "All lessons done. Ready when you are.",
+    "anyTime": "Try it any time"
+  },
+  "rules": {
+    "title": "Golden rules",
+    "subtitle": "Seven rules that keep your coins safe",
+    "cardText": "Seven rules to print or keep",
+    "footer": "Blockbright · Practice only, not financial advice",
+    "print": "Print or save as PDF",
+    "printHint": "In the print window, choose \"Save as PDF\" to download the card.",
+    "r1": {
+      "title": "Your seed phrase is yours alone.",
+      "text": "Never type it into a website, chat or form, and never show it to anyone, not even \"support\"."
+    },
+    "r2": {
+      "title": "Free money is a trap.",
+      "text": "No one doubles your coins. Giveaways that ask you to send or connect first are scams."
+    },
+    "r3": {
+      "title": "Slow down when you feel pushed.",
+      "text": "Pressure, secrecy and countdowns are red flags. A real chance does not vanish in ten minutes."
+    },
+    "r4": {
+      "title": "Check the address, then check again.",
+      "text": "Compare the first and last characters and send a small test first. A sent transaction is final."
+    },
+    "r5": {
+      "title": "Only use what you can afford to lose.",
+      "text": "Prices can fall fast. Never borrow money to buy crypto."
+    },
+    "r6": {
+      "title": "Go to the source yourself.",
+      "text": "Type the address of the site or open the official app. Do not trust links in messages."
+    },
+    "r7": {
+      "title": "Talk to someone you trust.",
+      "text": "Before your first real step, or when something feels wrong, ask a parent or another adult you trust."
+    }
   }
 }

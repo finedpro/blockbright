@@ -1,0 +1,121 @@
+{
+  "title": "Tunne pettus ära",
+  "hook": "Ekraanile hüppab sõnum: „Palju õnne! Võitsid 500 münti [[airdrop|tasuta jagamisest]]. Ühenda oma [[wallet|rahakott]] järgmise 10 minuti jooksul, et need kätte saada.“ Süda lööb kiiremini. Tasuta mündid!",
+  "card1": "Peaaegu iga krüptopettus tahab üht kahest: sinu [[seed-phrase|taastefraasi]] või seda, et sa ise münte saadaksid. Kui nad saavad kumbagi, on mündid läinud, sest [[transaction|tehing]] on [[irreversible|tagasipöördumatu]].",
+  "analogy1": "Taastefraas on nagu su kodu peavõti, mis avab ka kõik lukud seal sees. Päris lukksepp, pank ega sõber ei palu sul kunagi neile koopiat saata. Kes seda küsib, tahab sisse astuda ja kõik ära viia.",
+  "card2": "Pane tähele ohumärke: kiirustamine („ainult 10 minutit jäänud“), saladus („ära kellelegi räägi“), liiga hea tasu („kahekordista oma mündid“) ja iga palve enne midagi saata või oma rahakotti „kinnitada“.",
+  "card3": "Levinud nipid: võltsklienditugi, kes kirjutab sulle esimesena, ootamatud tasuta jagamised, mis paluvad rahakotti ühendada, ja „kuulsuste“ loosimised, kes lubavad topelt tagasi saata.",
+  "walk": {
+    "title": "Kuidas [[phishing|õngitsus]] käib",
+    "f1": "Saad sõnumi: „Sinu rahakott on lukus. Paranda see siin.“ Link näeb välja tavaline.",
+    "f2": "Leht näeb täpselt välja nagu su rahakoti päris leht. Ainult aadressiribal on üks täht teine.",
+    "f3": "See palub sisestada taastefraasi, et rahakott „lukust lahti teha“. Päris rahakotid ei küsi seda kunagi veebilehel.",
+    "f4": "Petisel on nüüd su võtmed. Mõne minutiga viiakse kõik mündid minema ja keegi ei saa seda tagasi pöörata."
+  },
+  "story": {
+    "title": "Kui kuulsad kontod küsisid bitcoini",
+    "body": "15. juulil 2020 said ründajad enda kätte 130 Twitteri kontot, nende seas Barack Obama, Joe Bideni, Bill Gatesi ja Elon Muski kontod. 45 kontolt postitasid nad sama pakkumise: saada sellele aadressile bitcoini ja saad topelt tagasi. Mõne tunniga saatsid inimesed umbes 110 000 USA dollari väärtuses. Sajad inimesed kaotasid oma mündid ja need ei tulnud kunagi tagasi. Hiljem esitati kuriteos süüdistus kolmele noorele mehele.",
+    "question": "Mis oleks kaitsnud neid, kes münte saatsid?",
+    "answer": "Üks reegel: keegi ei kahekorrista su raha. Mitte kuulsus, mitte firma, mitte sõber. Kuulsad nimed tegid selle usutavaks, aga pakkumine ise oli ohumärk. Päris loosimine ei palu sul kunagi enne midagi saata."
+  },
+  "sim": {
+    "dm": {
+      "prompt": "Küsisid grupivestluses oma rahakoti kohta. Mõne sekundi pärast saadab „WalletSupport_Help“ sulle privaatsõnumi: „Saan su mure lahendada. Palun jaga oma 12-sõnalist taastefraasi, et saaksin su rahakotti kontrollida.“",
+      "share": {
+        "label": "Jaga taastefraasi, et nad saaksid aidata",
+        "before": "Saadad oma 12 sõna sellele inimesele.",
+        "what": "Minuti jooksul viidi kõik su harjutusmündid tundmatule aadressile. „Klienditugi“ lõpetas vastamise.",
+        "why": "Kellel on su [[seed-phrase|taastefraas]], see juhib su rahakotti. Ta saab selle oma telefonis taastada ja kõik ära viia.",
+        "how": "Taastefraasist saab uuesti luua iga su rahakoti [[private-key|privaatvõtme]]. Võrk ei oska sind eristada kellestki, kellel on koopia.",
+        "realLife": "Päris klienditugi ei küsi kunagi su taastefraasi. Igaüks, kes küsib, on petis, ükskõik kui abivalmis ta ka ei tunduks.",
+        "more": "Taastefraas pole parool, mida saab pärast lekkimist muuta. Ainus lahendus on uus rahakott ja petis tühjendab vana tavaliselt mõne minutiga."
+      },
+      "proof": {
+        "label": "Palu tõestada, et nad töötavad rahakotifirmas",
+        "before": "Küsid enne otsustamist nime, töötõendit või linki.",
+        "what": "Nad saatsid „töötaja ID“ ja lingi ametliku välimusega lehele. Midagi pole veel kadunud, aga räägid ikka petisega.",
+        "why": "Märke, ekraanipilte ja veebilehti on lihtne võltsida. Tõendi küsimine hoiab vestlust käimas ja just seda petis tahabki.",
+        "how": "Petised kopeerivad päris firmade logosid ja nimesid. Profiil nimega „Support“ ei maksa midagi.",
+        "realLife": "Ära proovi inimest kontrollida. Lahku vestlusest ja võta ise klienditoega ühendust ametliku äpi või veebilehe kaudu."
+      },
+      "block": {
+        "label": "Ignoreeri, blokeeri ja teata kontost",
+        "before": "Lõpetad vastamise, blokeerid konto ja teatad sellest grupis.",
+        "what": "Petis kaotas ühe ohvri ja sinu teade hoiatab teisi grupis. Su mündid on turvaliselt alles.",
+        "why": "Päris klienditugi ei kirjuta sulle esimesena ega vaja kunagi su taastefraasi. Kohe lõpetades ei saa petis midagi.",
+        "how": "Enamik platvorme laseb kontodest teatada ja moderaatorid saavad need eemaldada enne, kui nad teisteni jõuavad.",
+        "realLife": "Kui vajad abi, ava ametlik äpp või kirjuta veebilehe aadress ise ja kasuta selle abilehte."
+      }
+    },
+    "giveaway": {
+      "prompt": "Hiljem näed postitust kontolt, mis paistab kinnitatud: „Loosimine! Saada sellele aadressile 1 münt ja saad 2 tagasi. Ainult 10 minutit jäänud!“",
+      "test": {
+        "label": "Saada proovimiseks 1 münt",
+        "before": "Saadad 1 harjutusmündi postituses olevale aadressile.",
+        "what": "Midagi ei tulnud tagasi ja su münt on läinud. Postituse all kirjutatakse „Töötab!“, aga need on võltskontod.",
+        "why": "„Väike proov“ on täpselt see, mida petis tahab. Iga talle saadetud münt on tema kasum ja [[transaction|tehingut]] ei saa tagasi võtta.",
+        "how": "Aadress kuulub petisele. Mitte miski [[blockchain|plokiahelas]] ei sunni teda midagi tagasi saatma.",
+        "realLife": "Ka vähe saates kaotad vähe. Päris loosimine ei palu sul kunagi enne midagi saata.",
+        "more": "Petised saadavad sageli teistest rahakottidest münte oma aadressile, et see paistaks aktiivne ja „tõestatud“. See ei tõesta midagi."
+      },
+      "verify": {
+        "label": "Kontrolli, kas konto on päriselt kinnitatud",
+        "before": "Vaatad konto märki ja jälgijate arvu.",
+        "what": "Märk paistab ehtne ja kontol on palju jälgijaid. See ei tee pakkumist ikkagi ohutuks.",
+        "why": "Päris kontosid häkitakse ja võltskontod ostavad märke ja jälgijaid. Probleem on pakkumises, mitte ainult kontos.",
+        "how": "2020. aasta Twitteri rünnakus postitasid täpselt sellist pakkumist kuulsate inimeste päris kontod.",
+        "realLife": "Hinda pakkumist, mitte nime. „Saada 1, saad 2“ on alati pettus, ükskõik kes selle postitab."
+      },
+      "ignore": {
+        "label": "Ignoreeri ja keri edasi",
+        "before": "Sa ei saada midagi ja liigud edasi.",
+        "what": "Su mündid jäid alles. Pöördloendus lõppes ja midagi ei juhtunud, sest päris pakkumist polnudki.",
+        "why": "Keegi ei kahekorrista münte. Taimer oli seal selleks, et sind kiirustada enne, kui jõuad mõelda.",
+        "how": "Petised kasutavad survet, sest need, kes võtavad hoo maha ja kontrollivad, nipi otsa ei lähe.",
+        "realLife": "Kui tunned, et sind kiirustatakse, võta hoog maha. See tunne ise on ohumärk."
+      }
+    }
+  },
+  "adviceIntro": "See postitus liigub ringi. Milliseid ridu sa ei järgiks?",
+  "advice": {
+    "l1": { "text": "See münt kasvab reedeks 100 korda. Osta kohe, enne kui on hilja!", "why": "Keegi ei saa hindu lubada. Tähtaeg pluss tohutu lubadus on klassikaline surve." },
+    "l2": { "text": "Kirjuta taastefraas paberile ja hoia seda turvalises kohas, internetist eemal.", "why": "Internetist eemal hoitud paberit ei saa häkkida. Ära kunagi hoia seda pildina ega vestluses." },
+    "l3": { "text": "Saada mulle oma taastefraas ja ma lisan su oma VIP-gruppi.", "why": "Ära kunagi jaga oma taastefraasi. Kellel see on, sellele kuulub su rahakott." },
+    "l4": { "text": "Kontrolli alati veebilehe aadressi, enne kui rahakoti ühendad.", "why": "[[phishing|Õngitsuse]] jaoks tehtud lehed kopeerivad päris lehti ja muudavad aadressis ühe tähe." },
+    "l5": { "text": "Lülita viirusetõrje välja, et boonusäpp saaks paigalduda.", "why": "Päris äpid seda ei vaja. Nii saab kahjulik tarkvara varastada, mis su seadmes on." }
+  },
+  "q1": {
+    "prompt": "Keegi „klienditoest“ kirjutab sulle esimesena ja küsib probleemi lahendamiseks su taastefraasi. Mida teed?",
+    "a": "Annan selle, sest klienditugi vajab seda aitamiseks",
+    "b": "Ei jaga. Blokeerin ta ja võtan ise klienditoega ühendust ametliku äpi kaudu",
+    "c": "Jagan ainult siis, kui tema profiilil on kinnitatud märk",
+    "explanation": "Taastefraas juhib su rahakotti. Päris klienditugi ei küsi seda kunagi ega kirjuta sulle esimesena. Kui vajad abi, mine ise ametlikku äppi või lehele."
+  },
+  "q2": {
+    "prompt": "Kuulsa inimese konto postitab: „Saada 1 münt, saad 2 tagasi!“ Mis on tõsi?",
+    "a": "Kuulsused annavad mõnikord päriselt topelt tagasi",
+    "b": "Tasub väikselt proovida, sest kui see on võlts, saab mündi tagasi",
+    "c": "See on pettus, ükskõik kes selle postitab",
+    "explanation": "„Saada enne, saad topelt tagasi“ on alati pettus. 2020. aastal postitasid häkkerid seda kuulsate inimeste päris kontodelt ja saadetud mündid ei tulnud kunagi tagasi."
+  },
+  "q3": {
+    "prompt": "Sõnum ütleb, et võitsid tasuta jagamise, aga pead rahakoti ühendama 10 minuti jooksul. Mis on suurim ohumärk?",
+    "a": "Kiirustamine: lühike tähtaeg, et sa tegutseksid mõtlemata",
+    "b": "Mitte midagi, auhindadel ongi lühikesed tähtajad",
+    "c": "Mitte midagi, kui ma ainult klõpsan ega kirjuta midagi",
+    "explanation": "Kiirustamine, saladus ja liiga hea tasu on kolm suurt ohumärki. Kui näed üht neist, peatu ja kontrolli allikat ise."
+  },
+  "misc": {
+    "supportCheck": "„Klienditugi vajab mu taastefraasi, et rahakotti kontrollida.“ Päris klienditugi ei vaja seda kunagi. Seda küsivad ainult petised.",
+    "verifiedBadge": "„Kinnitatud märk tähendab, et kõik on ohutu.“ Märke saab võltsida või osta ja päris kontosid häkitakse. Keegi ei vaja su taastefraasi.",
+    "doubleBack": "„Kuulsused annavad mõnikord topelt tagasi.“ Keegi ei anna. Isegi kui see tuleb päris kontolt, on see konto häkitud.",
+    "refund": "„Kui see on võlts, saan mündid tagasi.“ Krüptotehing on lõplik. Pole panka, kes saaks selle tagasi pöörata.",
+    "urgency": "„Päris auhindadel on ka lühikesed tähtajad.“ Surve on petise lemmiktööriist. Päris võimalus annab sulle aega kontrollida.",
+    "justClick": "„Klõpsamine või ühendamine on ohutu.“ Kui ühendad rahakoti võltslehega, võib see küsida luba su müntide liigutamiseks."
+  },
+  "t1": "Ära kunagi jaga oma [[seed-phrase|taastefraasi]]: mitte klienditoe, sõprade ega kellegi teisega.",
+  "t2": "Keegi ei kahekorrista su münte. „Saada enne, saad rohkem tagasi“ on alati pettus.",
+  "t3": "Kiirustamine, saladus ja liiga hea tasu on ohumärgid. Võta hoog maha ja mine ise allika juurde.",
+  "talk1": "Kas keegi kodus on kunagi saanud petusõnumi SMS-i, e-kirja või mänguvestluse kaudu? Mis selle reetis?",
+  "talk2": "Kellelt küsiksid esimesena, kui rahaga seotud sõnum tundub kiire või kummaline?"
+}
