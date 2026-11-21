@@ -13,6 +13,7 @@ import { FinalTestPage } from './pages/FinalTestPage';
 import { ReviewPage } from './pages/ReviewPage';
 import { RulesPage } from './pages/RulesPage';
 import { SettingsPage } from './pages/SettingsPage';
+import { WalletPage } from './pages/WalletPage';
 import { useAppState } from './state/AppState';
 
 type Route =
@@ -22,6 +23,7 @@ type Route =
   | { page: 'review' }
   | { page: 'final' }
   | { page: 'rules' }
+  | { page: 'wallet' }
   | { page: 'glossary' }
   | { page: 'settings' }
   | { page: 'about' };
@@ -39,6 +41,8 @@ function parseHash(hash: string): Route {
       return { page: 'final' };
     case 'rules':
       return { page: 'rules' };
+    case 'wallet':
+      return { page: 'wallet' };
     case 'glossary':
       return { page: 'glossary' };
     case 'settings':
@@ -82,6 +86,7 @@ export default function App() {
   const inApp = route.page !== 'landing';
   const navItems = [
     { path: '/learn', icon: 'book', label: t('nav.home'), active: ['learn', 'lesson', 'review', 'final', 'rules'].includes(route.page) },
+    { path: '/wallet', icon: 'coin', label: t('nav.wallet'), active: route.page === 'wallet' },
     { path: '/glossary', icon: 'cards', label: t('nav.glossary'), active: route.page === 'glossary' },
     { path: '/settings', icon: 'settings', label: t('nav.settings'), active: route.page === 'settings' },
     { path: '/about', icon: 'info', label: t('nav.about'), active: route.page === 'about' },
@@ -131,6 +136,7 @@ export default function App() {
             {route.page === 'learn' && <HomePage onOpenLesson={(id) => navigate(`/lesson/${id}`)} onNavigate={navigate} />}
             {route.page === 'review' && <ReviewPage onExit={() => navigate('/learn')} />}
             {route.page === 'final' && <FinalTestPage onExit={() => navigate('/learn')} />}
+            {route.page === 'wallet' && <WalletPage />}
             {route.page === 'rules' && <RulesPage onExit={() => navigate('/learn')} />}
             {route.page === 'lesson' && <LessonPage key={route.id} id={route.id} onExit={() => navigate('/learn')} />}
             {route.page === 'glossary' && <GlossaryPage />}

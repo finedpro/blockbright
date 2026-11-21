@@ -26,6 +26,8 @@ export interface ReviewItem {
   interval: number;
 }
 
+import type { Wallet } from './wallet';
+
 export interface StoredState {
   version: 1;
   language?: string;
@@ -34,6 +36,8 @@ export interface StoredState {
   review?: Record<string, ReviewItem>;
   /** Best score in the final test, if taken. */
   finalTest?: { score: number; total: number; completedAt: string };
+  /** Practice wallet: created on first use. */
+  wallet?: Wallet;
 }
 
 export const EMPTY_STATE: StoredState = { version: 1, explainLevel: 'simple', lessons: {}, review: {} };

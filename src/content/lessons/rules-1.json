@@ -34,7 +34,8 @@
             "label": "sim.account.noCheck.label",
             "before": "sim.account.noCheck.before",
             "explain": "sim.account.noCheck",
-            "tone": "warn"
+            "tone": "warn",
+            "coins": -20
           },
           {
             "id": "talk",

@@ -27,14 +27,16 @@
             "label": "sim.setup.screenshot.label",
             "before": "sim.setup.screenshot.before",
             "explain": "sim.setup.screenshot",
-            "tone": "bad"
+            "tone": "bad",
+            "coins": "all"
           },
           {
             "id": "later",
             "label": "sim.setup.later.label",
             "before": "sim.setup.later.before",
             "explain": "sim.setup.later",
-            "tone": "warn"
+            "tone": "warn",
+            "coins": "all"
           },
           {
             "id": "paper",

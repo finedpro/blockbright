@@ -14,7 +14,8 @@
     "settings": "Seaded",
     "about": "Info",
     "start": "Alusta õppimist",
-    "language": "Keel"
+    "language": "Keel",
+    "wallet": "Rahakott"
   },
   "home": {
     "title": "Sinu rada",
@@ -281,5 +282,60 @@
       "title": "Räägi kellegagi, keda usaldad.",
       "text": "Enne esimest päris sammu või kui miski tundub vale, küsi vanemalt või mõnelt teiselt usaldusväärselt täiskasvanult."
     }
+  },
+  "wallet": {
+    "title": "Harjutusrahakott",
+    "intro": "Sinu oma mängurahakott. Harjutusmüntidel pole väärtust ja need ei lahku kunagi sellest seadmest.",
+    "balanceShort": "{count, plural, one {Saldo: # münt} other {Saldo: # münti}}",
+    "balanceLabel": "Saldo harjutusmüntides",
+    "lost": "{count, plural, one {# harjutusmünt kadus} other {# harjutusmünti kadus}}",
+    "safe": "Münte ei kadunud",
+    "address": "Sinu aadress",
+    "copy": "Kopeeri aadress",
+    "copied": "Kopeeritud",
+    "tab": {
+      "send": "Saada",
+      "receive": "Võta vastu",
+      "seed": "Taastefraas",
+      "history": "Ajalugu"
+    },
+    "pickFriend": "Vali sõber või kleebi aadress, mille said.",
+    "addressField": "Aadress",
+    "amount": "Summa",
+    "fee": "Võrgutasu",
+    "total": "Kokku",
+    "feeNote": "{count, plural, one {Iga saatmine maksab # mündi võrgutasu.} other {Iga saatmine maksab # münti võrgutasu.}}",
+    "review": "Vaata üle",
+    "reviewTitle": "Kontrolli enne saatmist",
+    "to": "Kellele",
+    "unknownAddress": "Pole sinu sõber",
+    "edit": "Muuda",
+    "confirm": "Saada kohe",
+    "irreversible": "Saadetud münte ei saa tagasi võtta. Võrdle esimesi ja viimaseid märke aadressiga, mille said.",
+    "typoTip": "Nipp: muuda Mia aadressis üks märk ja proovi saata. Vaata, mis juhtub.",
+    "err": {
+      "address": "See ei näe välja nagu harjutusaadress. Need algavad bb1-ga ja on 30 märki pikad.",
+      "typo": "Selles aadressis on trükiviga: kontrollmärk ei klapi. Paljud päris rahakotid märkavad sellist viga, aga mitte kõik, nii et kontrolli alati ka ise.",
+      "self": "See on sinu enda aadress.",
+      "amount": "Sisesta täisarv münte, vähemalt 1.",
+      "funds": "Münte pole piisavalt. Pea meeles võrgutasu."
+    },
+    "receiveText": "Raha saamiseks anna teisele oma aadress. Igaüks saab sellele münte saata, aga välja liigutada saavad neid ainult sinu võtmed.",
+    "ask": "Küsi {name}lt 10 münti",
+    "seedWarn": "See on harjutuse taastefraas. Päriselus: ära näita seda kunagi kellelegi, ära sisesta seda veebilehele ja hoia seda paberil, internetist eemal.",
+    "show": "Näita mu harjutuse taastefraasi",
+    "hide": "Peida uuesti",
+    "pending": "Ootab võrgu kinnitust…",
+    "kind": {
+      "start": "Algmündid",
+      "reset": "Uus algus",
+      "lesson": "Kadus tunnis: {title}",
+      "receive": "Saatja: {name}",
+      "send": "Saadetud: {name}"
+    },
+    "reset": "Alusta uuesti 100 mündiga",
+    "resetConfirm": "Alustada uuesti? Su saldo läheb tagasi 100 harjutusmündile.",
+    "resetYes": "Jah, alusta uuesti",
+    "cancel": "Tühista"
   }
 }

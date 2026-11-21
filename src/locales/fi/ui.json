@@ -14,7 +14,8 @@
     "settings": "Asetukset",
     "about": "Tietoa",
     "start": "Aloita oppiminen",
-    "language": "Kieli"
+    "language": "Kieli",
+    "wallet": "Lompakko"
   },
   "home": {
     "title": "Polkusi",
@@ -281,5 +282,60 @@
       "title": "Puhu jonkun luotettavan kanssa.",
       "text": "Ennen ensimmäistä oikeaa askelta tai kun jokin tuntuu väärältä, kysy vanhemmalta tai muulta luotettavalta aikuiselta."
     }
+  },
+  "wallet": {
+    "title": "Harjoituslompakko",
+    "intro": "Oma leikkilompakkosi. Harjoituskolikoilla ei ole arvoa, eivätkä ne koskaan lähde tästä laitteesta.",
+    "balanceShort": "{count, plural, one {Saldo: # kolikko} other {Saldo: # kolikkoa}}",
+    "balanceLabel": "Saldo harjoituskolikkoina",
+    "lost": "{count, plural, one {# harjoituskolikko menetetty} other {# harjoituskolikkoa menetetty}}",
+    "safe": "Kolikoita ei menetetty",
+    "address": "Osoitteesi",
+    "copy": "Kopioi osoite",
+    "copied": "Kopioitu",
+    "tab": {
+      "send": "Lähetä",
+      "receive": "Vastaanota",
+      "seed": "Palautuslause",
+      "history": "Historia"
+    },
+    "pickFriend": "Valitse kaveri tai liitä osoite, jonka sait.",
+    "addressField": "Osoite",
+    "amount": "Määrä",
+    "fee": "Verkkomaksu",
+    "total": "Yhteensä",
+    "feeNote": "{count, plural, one {Jokainen lähetys maksaa # kolikon verkkomaksun.} other {Jokainen lähetys maksaa # kolikon verkkomaksun.}}",
+    "review": "Tarkista",
+    "reviewTitle": "Tarkista ennen lähettämistä",
+    "to": "Vastaanottaja",
+    "unknownAddress": "Ei kavereitasi",
+    "edit": "Muuta",
+    "confirm": "Lähetä nyt",
+    "irreversible": "Lähetettyjä kolikoita ei saa takaisin. Vertaa ensimmäisiä ja viimeisiä merkkejä osoitteeseen, jonka sait.",
+    "typoTip": "Vinkki: muuta yksi merkki Mian osoitteesta ja yritä lähettää. Katso, mitä tapahtuu.",
+    "err": {
+      "address": "Tämä ei näytä harjoitusosoitteelta. Ne alkavat bb1 ja ovat 30 merkkiä pitkiä.",
+      "typo": "Tässä osoitteessa on kirjoitusvirhe: tarkistusmerkki ei täsmää. Monet oikeat lompakot huomaavat tällaisen virheen, mutta eivät kaikki, joten tarkista aina myös itse.",
+      "self": "Tämä on oma osoitteesi.",
+      "amount": "Anna kokonainen määrä kolikoita, vähintään 1.",
+      "funds": "Kolikoita ei ole tarpeeksi. Muista verkkomaksu."
+    },
+    "receiveText": "Kun haluat maksun, anna toiselle osoitteesi. Kuka tahansa voi lähettää siihen kolikoita, mutta vain sinun avaimesi voivat siirtää ne pois.",
+    "ask": "Pyydä 10 kolikkoa: {name}",
+    "seedWarn": "Tämä on harjoituspalautuslause. Oikeassa elämässä: älä koskaan näytä sitä kenellekään, älä kirjoita sitä verkkosivulle ja säilytä se paperilla, poissa netistä.",
+    "show": "Näytä harjoituspalautuslauseeni",
+    "hide": "Piilota taas",
+    "pending": "Odottaa verkon vahvistusta…",
+    "kind": {
+      "start": "Aloituskolikot",
+      "reset": "Uusi alku",
+      "lesson": "Menetetty tunnilla: {title}",
+      "receive": "Lähettäjä: {name}",
+      "send": "Lähetetty: {name}"
+    },
+    "reset": "Aloita alusta 100 kolikolla",
+    "resetConfirm": "Aloitetaanko alusta? Saldosi palaa 100 harjoituskolikkoon.",
+    "resetYes": "Kyllä, aloita alusta",
+    "cancel": "Peruuta"
   }
 }

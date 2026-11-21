@@ -3,13 +3,29 @@
   "module": 5,
   "title": "title",
   "hook": "hook",
-  "before": ["q1", "q2", "q3"],
+  "before": [
+    "q1",
+    "q2",
+    "q3"
+  ],
   "cards": [
     "card1",
-    { "kind": "analogy", "key": "analogy1" },
+    {
+      "kind": "analogy",
+      "key": "analogy1"
+    },
     "card2",
     "card3",
-    { "kind": "walkthrough", "title": "walk.title", "frames": ["walk.f1", "walk.f2", "walk.f3", "walk.f4"] }
+    {
+      "kind": "walkthrough",
+      "title": "walk.title",
+      "frames": [
+        "walk.f1",
+        "walk.f2",
+        "walk.f3",
+        "walk.f4"
+      ]
+    }
   ],
   "story": {
     "title": "story.title",
@@ -17,8 +33,14 @@
     "question": "story.question",
     "answer": "story.answer",
     "sources": [
-      { "title": "U.S. Department of Justice (2020)", "url": "https://www.justice.gov/usao-ndca/pr/three-individuals-charged-alleged-roles-twitter-hack" },
-      { "title": "Wikipedia: 2020 Twitter account hijacking", "url": "https://en.wikipedia.org/wiki/2020_Twitter_bitcoin_scam" }
+      {
+        "title": "U.S. Department of Justice (2020)",
+        "url": "https://www.justice.gov/usao-ndca/pr/three-individuals-charged-alleged-roles-twitter-hack"
+      },
+      {
+        "title": "Wikipedia: 2020 Twitter account hijacking",
+        "url": "https://en.wikipedia.org/wiki/2020_Twitter_bitcoin_scam"
+      }
     ]
   },
   "simulation": {
@@ -27,17 +49,58 @@
       "dm": {
         "prompt": "sim.dm.prompt",
         "choices": [
-          { "id": "share", "label": "sim.dm.share.label", "before": "sim.dm.share.before", "explain": "sim.dm.share", "tone": "bad", "next": "giveaway" },
-          { "id": "proof", "label": "sim.dm.proof.label", "before": "sim.dm.proof.before", "explain": "sim.dm.proof", "tone": "warn", "next": "giveaway" },
-          { "id": "block", "label": "sim.dm.block.label", "before": "sim.dm.block.before", "explain": "sim.dm.block", "tone": "good", "next": "giveaway" }
+          {
+            "id": "share",
+            "label": "sim.dm.share.label",
+            "before": "sim.dm.share.before",
+            "explain": "sim.dm.share",
+            "tone": "bad",
+            "next": "giveaway",
+            "coins": "all"
+          },
+          {
+            "id": "proof",
+            "label": "sim.dm.proof.label",
+            "before": "sim.dm.proof.before",
+            "explain": "sim.dm.proof",
+            "tone": "warn",
+            "next": "giveaway"
+          },
+          {
+            "id": "block",
+            "label": "sim.dm.block.label",
+            "before": "sim.dm.block.before",
+            "explain": "sim.dm.block",
+            "tone": "good",
+            "next": "giveaway"
+          }
         ]
       },
       "giveaway": {
         "prompt": "sim.giveaway.prompt",
         "choices": [
-          { "id": "test", "label": "sim.giveaway.test.label", "before": "sim.giveaway.test.before", "explain": "sim.giveaway.test", "tone": "bad" },
-          { "id": "verify", "label": "sim.giveaway.verify.label", "before": "sim.giveaway.verify.before", "explain": "sim.giveaway.verify", "tone": "warn" },
-          { "id": "ignore", "label": "sim.giveaway.ignore.label", "before": "sim.giveaway.ignore.before", "explain": "sim.giveaway.ignore", "tone": "good" }
+          {
+            "id": "test",
+            "label": "sim.giveaway.test.label",
+            "before": "sim.giveaway.test.before",
+            "explain": "sim.giveaway.test",
+            "tone": "bad",
+            "coins": -1
+          },
+          {
+            "id": "verify",
+            "label": "sim.giveaway.verify.label",
+            "before": "sim.giveaway.verify.before",
+            "explain": "sim.giveaway.verify",
+            "tone": "warn"
+          },
+          {
+            "id": "ignore",
+            "label": "sim.giveaway.ignore.label",
+            "before": "sim.giveaway.ignore.before",
+            "explain": "sim.giveaway.ignore",
+            "tone": "good"
+          }
         ]
       }
     }
@@ -46,11 +109,26 @@
     "intro": "adviceIntro",
     "author": "@CryptoKingTips",
     "lines": [
-      { "id": "l1", "bad": true },
-      { "id": "l2", "bad": false },
-      { "id": "l3", "bad": true },
-      { "id": "l4", "bad": false },
-      { "id": "l5", "bad": true }
+      {
+        "id": "l1",
+        "bad": true
+      },
+      {
+        "id": "l2",
+        "bad": false
+      },
+      {
+        "id": "l3",
+        "bad": true
+      },
+      {
+        "id": "l4",
+        "bad": false
+      },
+      {
+        "id": "l5",
+        "bad": true
+      }
     ]
   },
   "quiz": [
@@ -58,9 +136,20 @@
       "id": "q1",
       "prompt": "q1.prompt",
       "options": [
-        { "id": "a", "correct": false, "misconception": "misc.supportCheck" },
-        { "id": "b", "correct": true },
-        { "id": "c", "correct": false, "misconception": "misc.verifiedBadge" }
+        {
+          "id": "a",
+          "correct": false,
+          "misconception": "misc.supportCheck"
+        },
+        {
+          "id": "b",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "correct": false,
+          "misconception": "misc.verifiedBadge"
+        }
       ],
       "explanation": "q1.explanation"
     },
@@ -68,9 +157,20 @@
       "id": "q2",
       "prompt": "q2.prompt",
       "options": [
-        { "id": "a", "correct": false, "misconception": "misc.doubleBack" },
-        { "id": "b", "correct": false, "misconception": "misc.refund" },
-        { "id": "c", "correct": true }
+        {
+          "id": "a",
+          "correct": false,
+          "misconception": "misc.doubleBack"
+        },
+        {
+          "id": "b",
+          "correct": false,
+          "misconception": "misc.refund"
+        },
+        {
+          "id": "c",
+          "correct": true
+        }
       ],
       "explanation": "q2.explanation"
     },
@@ -78,13 +178,31 @@
       "id": "q3",
       "prompt": "q3.prompt",
       "options": [
-        { "id": "a", "correct": true },
-        { "id": "b", "correct": false, "misconception": "misc.urgency" },
-        { "id": "c", "correct": false, "misconception": "misc.justClick" }
+        {
+          "id": "a",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "correct": false,
+          "misconception": "misc.urgency"
+        },
+        {
+          "id": "c",
+          "correct": false,
+          "misconception": "misc.justClick"
+        }
       ],
       "explanation": "q3.explanation"
     }
   ],
-  "takeaways": ["t1", "t2", "t3"],
-  "talk": ["talk1", "talk2"]
+  "takeaways": [
+    "t1",
+    "t2",
+    "t3"
+  ],
+  "talk": [
+    "talk1",
+    "talk2"
+  ]
 }

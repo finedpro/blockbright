@@ -21,7 +21,9 @@ interface SimulationProps {
 export function Simulation({ lesson, ns, onDone }: SimulationProps) {
   const { t } = useTranslation();
   const { t: lt, i18n } = useTranslation(ns);
-  const { state } = useAppState();
+  const { state, wallet, loseCoins, undoLesson } = useAppState();
+  const [lossTx, setLossTx] = useState<string | null>(null);
+  const [balanceBefore, setBalanceBefore] = useState(wallet.balance);
   const [nodeId, setNodeId] = useState(lesson.simulation.start);
   const [chosen, setChosen] = useState<SimChoice | null>(null);
   const [whyOpen, setWhyOpen] = useState<string | null>(null);
@@ -38,12 +40,16 @@ export function Simulation({ lesson, ns, onDone }: SimulationProps) {
 
   const choose = (choice: SimChoice) => {
     setChosen(choice);
+    setBalanceBefore(wallet.balance);
+    setLossTx(choice.coins ? loseCoins(choice.coins, lesson.id) : null);
     setWhyOpen(null);
     setShowWhatIf(false);
     setMoreOpen(detailed);
   };
 
   const rewind = () => {
+    if (lossTx) undoLesson(lossTx);
+    setLossTx(null);
     setChosen(null);
     setShowWhatIf(false);
   };
@@ -62,7 +68,12 @@ export function Simulation({ lesson, ns, onDone }: SimulationProps) {
 
   return (
     <div className="sim">
-      {!chosen && <p className="practice-badge"><Icon name="coin" size={14} />{t('lesson.practiceCoins')}</p>}
+      {!chosen && (
+        <p className="practice-badge">
+          <Icon name="coin" size={14} />
+          {t('lesson.practiceCoins')} · {t('wallet.balanceShort', { count: wallet.balance })}
+        </p>
+      )}
       {!chosen && <RichText as="p" className="sim-prompt" text={lt(node.prompt)} textKey={node.prompt} />}
 
       {!chosen && (
@@ -100,6 +111,16 @@ export function Simulation({ lesson, ns, onDone }: SimulationProps) {
             </p>
             <p className="you-chose">{t('sim.youChose', { choice: plainText(lt(chosen.label)) })}</p>
           </div>
+          {(() => {
+            const lost = balanceBefore - wallet.balance;
+            return (
+              <p className={`coin-change ${lost > 0 ? 'is-loss' : 'is-safe'}`}>
+                <Icon name="coin" size={16} />
+                <strong>{lost > 0 ? t('wallet.lost', { count: lost }) : t('wallet.safe')}</strong>
+                <span>{t('wallet.balanceShort', { count: wallet.balance })}</span>
+              </p>
+            );
+          })()}
           <CoinPath tone={chosen.tone} from={t('sim.you')} to={chosen.tone === 'bad' ? t('sim.unknown') : t('sim.friend')} />
           <dl className="explain">
             <dt>{t('sim.whatHappened')}</dt>

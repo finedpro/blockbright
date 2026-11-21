@@ -17,6 +17,8 @@ export const choiceSchema = z.object({
   /** Consequence card key prefix: <explain>.what / .why / .how / .realLife, optional .more */
   explain: key,
   tone: z.enum(['good', 'warn', 'bad']),
+  /** Practice coins lost with this choice: a negative number, or "all". */
+  coins: z.union([z.number().int().max(-1), z.literal('all')]).optional(),
   /** Next simulation node, if the story continues. */
   next: z.string().optional(),
 });

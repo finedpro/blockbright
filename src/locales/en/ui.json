@@ -14,7 +14,8 @@
     "settings": "Settings",
     "about": "About",
     "start": "Start learning",
-    "language": "Language"
+    "language": "Language",
+    "wallet": "Wallet"
   },
   "home": {
     "title": "Your path",
@@ -281,5 +282,60 @@
       "title": "Talk to someone you trust.",
       "text": "Before your first real step, or when something feels wrong, ask a parent or another adult you trust."
     }
+  },
+  "wallet": {
+    "title": "Practice wallet",
+    "intro": "Your own pretend wallet. Practice coins have no value and never leave this device.",
+    "balanceShort": "{count, plural, one {Balance: # coin} other {Balance: # coins}}",
+    "balanceLabel": "Balance in practice coins",
+    "lost": "{count, plural, one {# practice coin lost} other {# practice coins lost}}",
+    "safe": "No coins lost",
+    "address": "Your address",
+    "copy": "Copy address",
+    "copied": "Copied",
+    "tab": {
+      "send": "Send",
+      "receive": "Receive",
+      "seed": "Seed phrase",
+      "history": "History"
+    },
+    "pickFriend": "Pick a friend, or paste an address you were given.",
+    "addressField": "Address",
+    "amount": "Amount",
+    "fee": "Network fee",
+    "total": "Total",
+    "feeNote": "{count, plural, one {Every send costs a network fee of # coin.} other {Every send costs a network fee of # coins.}}",
+    "review": "Review",
+    "reviewTitle": "Check before you send",
+    "to": "To",
+    "unknownAddress": "Not one of your friends",
+    "edit": "Change",
+    "confirm": "Send now",
+    "irreversible": "Sent coins cannot be taken back. Compare the first and last characters with the address you were given.",
+    "typoTip": "Tip: change one character of Mia's address and try to send. See what happens.",
+    "err": {
+      "address": "This doesn't look like a practice address. They start with bb1 and are 30 characters long.",
+      "typo": "This address has a typo: its check character doesn't match. Many real wallets catch typos like this, but not all of them, so always check yourself too.",
+      "self": "That is your own address.",
+      "amount": "Enter a whole number of coins, at least 1.",
+      "funds": "Not enough coins. Remember the network fee."
+    },
+    "receiveText": "To get paid, give the other person your address. Anyone can send coins to it, but only your keys can move them out.",
+    "ask": "Ask {name} for 10 coins",
+    "seedWarn": "This is a practice seed phrase. In real life: never show it to anyone, never type it into a website, and keep it on paper, offline.",
+    "show": "Show my practice seed phrase",
+    "hide": "Hide it again",
+    "pending": "Waiting for the network to confirm…",
+    "kind": {
+      "start": "Starting coins",
+      "reset": "Fresh start",
+      "lesson": "Lost in a lesson: {title}",
+      "receive": "From {name}",
+      "send": "Sent to {name}"
+    },
+    "reset": "Start over with 100 coins",
+    "resetConfirm": "Start over? Your balance goes back to 100 practice coins.",
+    "resetYes": "Yes, start over",
+    "cancel": "Cancel"
   }
 }
