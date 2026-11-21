@@ -36,6 +36,8 @@ export interface StoredState {
   review?: Record<string, ReviewItem>;
   /** Best score in the final test, if taken. */
   finalTest?: { score: number; total: number; completedAt: string };
+  /** Best score in the scam spotter. */
+  spotBest?: { score: number; total: number };
   /** Practice wallet: created on first use. */
   wallet?: Wallet;
 }

@@ -29,6 +29,7 @@ interface AppStateValue {
   sendCoins(to: string, amount: number): void;
   receiveCoins(from: W.Contact, amount: number): void;
   resetWallet(): void;
+  recordSpot(score: number, total: number): void;
 }
 
 const AppStateContext = createContext<AppStateValue | null>(null);
@@ -70,6 +71,8 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
       undoLesson: (txId) => update((s) => ({ ...s, wallet: W.undoTx(s.wallet!, txId) })),
       sendCoins: (to, amount) => update((s) => ({ ...s, wallet: W.send(s.wallet!, to, amount, Date.now()) })),
       receiveCoins: (from, amount) => update((s) => ({ ...s, wallet: W.receive(s.wallet!, from, amount, Date.now()) })),
+      recordSpot: (score, total) =>
+        update((s) => (!s.spotBest || score > s.spotBest.score ? { ...s, spotBest: { score, total } } : s)),
       resetWallet: () => update((s) => ({ ...s, wallet: W.resetWallet(s.wallet!, Date.now()) })),
       resetProgress: () => {
         const keepLanguage = state.language;

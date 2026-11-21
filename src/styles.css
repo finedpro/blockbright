@@ -540,3 +540,23 @@ legend { font-family: var(--font-head); font-weight: 700; font-size: 1.25rem; li
 .tx-amount.is-in { color: var(--good-ink); }
 .reset-confirm { display: grid; gap: 0.5rem; }
 .tab-bar a span { white-space: nowrap; }
+
+/* ---------- Scam spotter ---------- */
+.spot-page { display: grid; gap: 0.8rem; }
+.spot-page h1 { margin: 0; font-size: 1.4rem; }
+.spot-intro, .spot-round, .spot-done { display: grid; gap: 0.8rem; justify-items: stretch; }
+.spot-intro p { margin: 0; }
+.spot-intro .btn { justify-self: start; }
+.spot-count { margin: 0; font-size: 0.8rem; font-weight: 700; }
+.phone-msg { padding: 0.9rem 1rem; border-radius: 22px 22px 22px 6px; background: var(--card); border: 2px solid var(--strong); box-shadow: 4px 4px 0 var(--line); }
+.phone-msg-head { display: flex; align-items: center; gap: 0.5rem; margin-block-end: 0.5rem; }
+.phone-msg-icon { display: grid; place-items: center; inline-size: 1.9rem; block-size: 1.9rem; border-radius: 50%; background: var(--chip); }
+.phone-msg-from { font-weight: 800; font-size: 0.95rem; }
+.phone-msg-channel { margin-inline-start: auto; font-size: 0.72rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.phone-msg-text { margin: 0; font-size: 1rem; line-height: 1.5; overflow-wrap: anywhere; }
+.spot-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+.spot-buttons .btn { min-block-size: 3.2rem; border: 2px solid var(--ink); }
+.spot-scam { background: var(--bad-bg); color: var(--bad-ink); }
+.spot-safe { background: var(--good-bg); color: var(--good-ink); }
+.finish-row { grid-template-columns: 1fr; }
+@media (min-width: 700px) { .finish-row { grid-template-columns: 1fr 1fr 1fr; } }

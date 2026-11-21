@@ -85,6 +85,13 @@ export function HomePage({ onOpenLesson, onNavigate }: { onOpenLesson(id: string
       </ol>
 
       <div className="finish-row">
+        <button type="button" className="finish-card spot-card" onClick={() => onNavigate('/spot')}>
+          <Icon name="alert" size={24} />
+          <span className="review-copy">
+            <span className="path-title">{t('title', { ns: 'spot' })}</span>
+            <span className="muted">{state.spotBest ? t('best', { ns: 'spot', score: state.spotBest.score, total: state.spotBest.total }) : t('cardText', { ns: 'spot' })}</span>
+          </span>
+        </button>
         <button type="button" className={`finish-card ${allDone ? 'is-ready' : ''}`} onClick={() => onNavigate('/final')}>
           <Icon name="shield" size={24} />
           <span className="review-copy">

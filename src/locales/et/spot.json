@@ -1,0 +1,86 @@
+{
+  "title": "Pettuse püüdja",
+  "intro": "Ehtsa välimusega sõnumid, ükshaaval. Kas see on pettus või ohutu?",
+  "start": "Alusta",
+  "scam": "Pettus",
+  "safe": "Tundub ohutu",
+  "right": "Õige!",
+  "wrong": "Seekord mitte.",
+  "itWasScam": "See oli pettus.",
+  "itWasSafe": "See oli ohutu.",
+  "next": "Järgmine sõnum",
+  "count": "Sõnum {current}/{total}",
+  "done": "Tundsid õigesti ära {score} sõnumit {total}-st.",
+  "again": "Mängi uuesti",
+  "best": "Parim: {score}/{total}",
+  "cardText": "Pettus või ohutu? Pane silm proovile",
+  "channel": {
+    "sms": "SMS",
+    "email": "E-kiri",
+    "game": "Mänguvestlus",
+    "dm": "Privaatsõnum",
+    "social": "Grupipostitus"
+  },
+  "m": {
+    "parcel": {
+      "from": "Pakiteenus",
+      "text": "Sinu pakk ootab. Maksa 24 tunni jooksul 1,99 € tollitasu siin: parcel-delivery-help.info",
+      "why": "Ootamatu tasu, tähtaeg ja kummaline link. Päris pakifirmad räägivad tasudest oma äpis või veebilehel."
+    },
+    "skins": {
+      "from": "FreeSkinsBot",
+      "text": "Saa ainult täna 5000 tasuta münti! Logi oma mängukontoga sisse lehel free-skins-gift.net",
+      "why": "Tasuta kraam pluss sisselogimine teisel lehel on viis, kuidas kontosid varastatakse. Logi sisse ainult mängus või selle ametlikul lehel."
+    },
+    "library": {
+      "from": "Emma (klassiõde)",
+      "text": "Kas me ikka saame kell 4 raamatukogus kokku?",
+      "why": "Tavaline sõnum tuttavalt, ilma lingi, raha ja kiirustamiseta."
+    },
+    "update": {
+      "from": "Sinu rahakotiäpp",
+      "text": "Avaldasime uuenduse. Palun uuenda äppi oma telefoni ametlikust äpipoest.",
+      "why": "Linki pole, midagi ei pea sisestama ja see saadab sind ise ametlikku poodi. Mine sinna siiski ise, mitte lingi kaudu."
+    },
+    "mentor": {
+      "from": "Crypto_Mentor",
+      "text": "Tegin nädalaga 100 eurost 5000 eurot. Saada mulle 50 € ja ma näitan, kuidas.",
+      "why": "Võõras lubab tohutut kasumit ja palub enne maksta. Klassika."
+    },
+    "mum": {
+      "from": "Ema (uus number)",
+      "text": "Tere, mu telefon läks katki, see on mu uus number. Kas saad mulle kiiresti 50 € saata? Ära helista, ma ei saa praegu rääkida.",
+      "why": "„Uus number“, kiire raha ja „ära helista“. Helista enne midagi tegemist päris numbrile, mis sul juba on."
+    },
+    "sportsDay": {
+      "from": "Klassi grupp",
+      "text": "Meeldetuletus: spordipäev on reedel. Võtke kaasa veepudel ja head jalanõud!",
+      "why": "Ainult info. Linki, raha ega sisselogimist pole."
+    },
+    "verify": {
+      "from": "Wallet Support",
+      "text": "Tuvastasime ebatavalise sisselogimise. Kinnita oma rahakott, sisestades 24 tunni jooksul oma 12-sõnalise taastefraasi, muidu see lukustatakse.",
+      "why": "Ükski päris teenus ei küsi kunagi su taastefraasi. Tähtaeg on seal sind hirmutamiseks."
+    },
+    "gg": {
+      "from": "Tiimikaaslane",
+      "text": "gg! mängime veel ühe ringi?",
+      "why": "Lihtsalt sõbralik mängusõnum. Sinult ei küsita midagi."
+    },
+    "giveaway": {
+      "from": "Mega Giveaways",
+      "text": "Palju õnne, võitsid uue telefoni! Maksa ainult 5 € saatekulu, et see kätte saada.",
+      "why": "Sa ei saa võita loosimist, milles sa ei osalenud. „Maksa väike tasu, et auhind kätte saada“ on pettus."
+    },
+    "card": {
+      "from": "Sinu pank",
+      "text": "Kaardimakse 12,50 € kohvikus kinnitati. Kui see polnud sina, helista kaardi tagaküljel olevale numbrile.",
+      "why": "Linki pole ja koode ei küsita. See käsib kasutada numbrit, mis on juba su kaardil."
+    },
+    "job": {
+      "from": "Easy Job",
+      "text": "Lihtne raha! Võta oma pangakontole makseid vastu, saada need edasi ja jäta endale 10%.",
+      "why": "Nii liigutavad kurjategijad varastatud raha noorte kontode kaudu. See on ebaseaduslik ja su konto võidakse sulgeda."
+    }
+  }
+}

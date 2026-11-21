@@ -13,6 +13,7 @@ import { FinalTestPage } from './pages/FinalTestPage';
 import { ReviewPage } from './pages/ReviewPage';
 import { RulesPage } from './pages/RulesPage';
 import { SettingsPage } from './pages/SettingsPage';
+import { SpotPage } from './pages/SpotPage';
 import { WalletPage } from './pages/WalletPage';
 import { useAppState } from './state/AppState';
 
@@ -24,6 +25,7 @@ type Route =
   | { page: 'final' }
   | { page: 'rules' }
   | { page: 'wallet' }
+  | { page: 'spot' }
   | { page: 'glossary' }
   | { page: 'settings' }
   | { page: 'about' };
@@ -43,6 +45,8 @@ function parseHash(hash: string): Route {
       return { page: 'rules' };
     case 'wallet':
       return { page: 'wallet' };
+    case 'spot':
+      return { page: 'spot' };
     case 'glossary':
       return { page: 'glossary' };
     case 'settings':
@@ -85,7 +89,7 @@ export default function App() {
   const language = getLanguage(i18n.language);
   const inApp = route.page !== 'landing';
   const navItems = [
-    { path: '/learn', icon: 'book', label: t('nav.home'), active: ['learn', 'lesson', 'review', 'final', 'rules'].includes(route.page) },
+    { path: '/learn', icon: 'book', label: t('nav.home'), active: ['learn', 'lesson', 'review', 'final', 'rules', 'spot'].includes(route.page) },
     { path: '/wallet', icon: 'coin', label: t('nav.wallet'), active: route.page === 'wallet' },
     { path: '/glossary', icon: 'cards', label: t('nav.glossary'), active: route.page === 'glossary' },
     { path: '/settings', icon: 'settings', label: t('nav.settings'), active: route.page === 'settings' },
@@ -93,7 +97,7 @@ export default function App() {
   ];
 
   return (
-    <div className={`app ${inApp ? 'in-app' : 'on-landing'} ${['lesson', 'review', 'final'].includes(route.page) ? 'is-focus' : ''}`}>
+    <div className={`app ${inApp ? 'in-app' : 'on-landing'} ${['lesson', 'review', 'final', 'spot'].includes(route.page) ? 'is-focus' : ''}`}>
       <a className="skip-link" href="#main">{t('app.skipToContent')}</a>
       <header className="site-header">
         <div className="wrap header-inner">
@@ -137,6 +141,7 @@ export default function App() {
             {route.page === 'review' && <ReviewPage onExit={() => navigate('/learn')} />}
             {route.page === 'final' && <FinalTestPage onExit={() => navigate('/learn')} />}
             {route.page === 'wallet' && <WalletPage />}
+            {route.page === 'spot' && <SpotPage onExit={() => navigate('/learn')} />}
             {route.page === 'rules' && <RulesPage onExit={() => navigate('/learn')} />}
             {route.page === 'lesson' && <LessonPage key={route.id} id={route.id} onExit={() => navigate('/learn')} />}
             {route.page === 'glossary' && <GlossaryPage />}
@@ -153,7 +158,7 @@ export default function App() {
         </div>
       </footer>
 
-      {inApp && !['lesson', 'review', 'final'].includes(route.page) && (
+      {inApp && !['lesson', 'review', 'final', 'spot'].includes(route.page) && (
         <nav aria-label="App" className="tab-bar">
           {navItems.map((item) => (
             <a key={item.path} href={`#${item.path}`} aria-current={item.active ? 'page' : undefined}>

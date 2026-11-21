@@ -1,0 +1,86 @@
+{
+  "title": "Huijausten tunnistaja",
+  "intro": "Aidon näköisiä viestejä, yksi kerrallaan. Onko se huijaus vai turvallinen?",
+  "start": "Aloita",
+  "scam": "Huijaus",
+  "safe": "Näyttää turvalliselta",
+  "right": "Oikein!",
+  "wrong": "Ei tällä kertaa.",
+  "itWasScam": "Tämä oli huijaus.",
+  "itWasSafe": "Tämä oli turvallinen.",
+  "next": "Seuraava viesti",
+  "count": "Viesti {current}/{total}",
+  "done": "Tunnistit oikein {score}/{total} viestiä.",
+  "again": "Pelaa uudelleen",
+  "best": "Paras: {score}/{total}",
+  "cardText": "Huijaus vai turvallinen? Testaa silmäsi",
+  "channel": {
+    "sms": "Tekstiviesti",
+    "email": "Sähköposti",
+    "game": "Pelichat",
+    "dm": "Yksityisviesti",
+    "social": "Ryhmäviesti"
+  },
+  "m": {
+    "parcel": {
+      "from": "Pakettipalvelu",
+      "text": "Pakettisi odottaa. Maksa 1,99 € tullimaksu 24 tunnin sisällä täällä: parcel-delivery-help.info",
+      "why": "Yllättävä maksu, määräaika ja outo linkki. Oikeat kuljetusyhtiöt kertovat maksuista omassa sovelluksessaan tai sivustollaan."
+    },
+    "skins": {
+      "from": "FreeSkinsBot",
+      "text": "Lunasta 5000 ilmaista kolikkoa vain tänään! Kirjaudu pelitililläsi sivulla free-skins-gift.net",
+      "why": "Ilmaista tavaraa ja kirjautuminen toisella sivulla: näin tilejä varastetaan. Kirjaudu vain pelissä tai sen virallisella sivulla."
+    },
+    "library": {
+      "from": "Emma (luokkakaveri)",
+      "text": "Nähdäänkö edelleen neljältä kirjastossa?",
+      "why": "Tavallinen viesti tutulta, ilman linkkiä, rahaa tai kiirettä."
+    },
+    "update": {
+      "from": "Lompakkosovelluksesi",
+      "text": "Julkaisimme päivityksen. Päivitä sovellus puhelimesi virallisesta sovelluskaupasta.",
+      "why": "Ei linkkiä, ei mitään kirjoitettavaa, ja se ohjaa sinut itse viralliseen kauppaan. Mene sinne silti itse, älä minkään linkin kautta."
+    },
+    "mentor": {
+      "from": "Crypto_Mentor",
+      "text": "Tein viikossa 100 eurosta 5000 euroa. Lähetä minulle 50 €, niin näytän miten.",
+      "why": "Tuntematon lupaa valtavia voittoja ja pyytää maksamaan ensin. Klassikko."
+    },
+    "mum": {
+      "from": "Äiti (uusi numero)",
+      "text": "Moi, puhelimeni hajosi, tämä on uusi numeroni. Voitko lähettää minulle nopeasti 50 €? Älä soita, en voi puhua nyt.",
+      "why": "”Uusi numero”, rahaa kiireellä ja ”älä soita”. Soita oikeaan numeroon, joka sinulla jo on, ennen kuin teet mitään."
+    },
+    "sportsDay": {
+      "from": "Luokan ryhmä",
+      "text": "Muistutus: urheilupäivä on perjantaina. Ottakaa mukaan vesipullo ja hyvät kengät!",
+      "why": "Pelkkää tietoa. Ei linkkiä, rahaa eikä kirjautumista."
+    },
+    "verify": {
+      "from": "Wallet Support",
+      "text": "Havaitsimme epätavallisen kirjautumisen. Vahvista lompakkosi kirjoittamalla 12 sanan palautuslauseesi 24 tunnin kuluessa, tai se lukitaan.",
+      "why": "Mikään oikea palvelu ei koskaan pyydä palautuslausettasi. Määräaika on siellä pelottelemassa."
+    },
+    "gg": {
+      "from": "Joukkuekaveri",
+      "text": "gg! pelataanko vielä yksi kierros?",
+      "why": "Ihan tavallinen ystävällinen peliviesti. Sinulta ei pyydetä mitään."
+    },
+    "giveaway": {
+      "from": "Mega Giveaways",
+      "text": "Onnea, voitit uuden puhelimen! Maksa vain 5 € toimitusmaksu, niin saat sen.",
+      "why": "Et voi voittaa arvontaa, johon et osallistunut. ”Maksa pieni maksu saadaksesi palkinnon” on huijaus."
+    },
+    "card": {
+      "from": "Pankkisi",
+      "text": "12,50 € korttimaksu kahvilassa hyväksyttiin. Jos se et ollut sinä, soita kortin takana olevaan numeroon.",
+      "why": "Ei linkkiä eikä koodien kyselyä. Se neuvoo käyttämään numeroa, joka on jo kortissasi."
+    },
+    "job": {
+      "from": "Easy Job",
+      "text": "Helppoa rahaa! Ota vastaan maksuja pankkitilillesi, lähetä ne eteenpäin ja pidä 10 %.",
+      "why": "Näin rikolliset siirtävät varastettua rahaa nuorten tilien kautta. Se on laitonta, ja tilisi voidaan sulkea."
+    }
+  }
+}

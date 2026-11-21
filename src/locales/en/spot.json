@@ -1,0 +1,86 @@
+{
+  "title": "Scam spotter",
+  "intro": "Real-looking messages, one at a time. Is it a scam, or is it safe?",
+  "start": "Start",
+  "scam": "Scam",
+  "safe": "Looks safe",
+  "right": "Right!",
+  "wrong": "Not this time.",
+  "itWasScam": "This was a scam.",
+  "itWasSafe": "This was safe.",
+  "next": "Next message",
+  "count": "Message {current} of {total}",
+  "done": "You spotted {score} of {total} correctly.",
+  "again": "Play again",
+  "best": "Best: {score} of {total}",
+  "cardText": "Scam or safe? Test your eye",
+  "channel": {
+    "sms": "Text message",
+    "email": "Email",
+    "game": "Game chat",
+    "dm": "Private message",
+    "social": "Group post"
+  },
+  "m": {
+    "parcel": {
+      "from": "Parcel service",
+      "text": "Your parcel is waiting. Pay a 1.99 € customs fee here within 24 h: parcel-delivery-help.info",
+      "why": "A surprise fee, a deadline and a strange link. Real delivery companies tell you about fees in their own app or website."
+    },
+    "skins": {
+      "from": "FreeSkinsBot",
+      "text": "Claim 5000 free coins today only! Log in with your game account at free-skins-gift.net",
+      "why": "Free stuff plus a login on another site is how accounts get stolen. Only log in inside the game or its official site."
+    },
+    "library": {
+      "from": "Emma (classmate)",
+      "text": "Are we still meeting at 4 at the library?",
+      "why": "A normal message from someone you know, with no link, no money and no rush."
+    },
+    "update": {
+      "from": "Your wallet app",
+      "text": "We have released an update. Please update the app from your phone's official app store.",
+      "why": "No link, nothing to type in, and it sends you to the official store yourself. Still, go there on your own rather than through any link."
+    },
+    "mentor": {
+      "from": "Crypto_Mentor",
+      "text": "I turned 100 € into 5000 € in one week. Send me 50 € and I'll show you how.",
+      "why": "A stranger promising huge profits and asking you to pay first. Classic."
+    },
+    "mum": {
+      "from": "Mum (new number)",
+      "text": "Hi, my phone broke, this is my new number. Can you send me 50 € quickly? Don't call, I can't talk now.",
+      "why": "A \"new number\", money in a hurry and \"don't call\". Call the real number you already have before doing anything."
+    },
+    "sportsDay": {
+      "from": "Class group",
+      "text": "Reminder: sports day is on Friday. Bring a water bottle and good shoes!",
+      "why": "Information only. No link, no money, nothing to log in to."
+    },
+    "verify": {
+      "from": "Wallet Support",
+      "text": "Unusual login detected. Verify your wallet by entering your 12-word recovery phrase within 24 hours or it will be locked.",
+      "why": "No real service ever asks for your seed phrase. The deadline is there to scare you."
+    },
+    "gg": {
+      "from": "Teammate",
+      "text": "gg! want to play another round?",
+      "why": "Just a friendly game message. Nothing asked from you."
+    },
+    "giveaway": {
+      "from": "Mega Giveaways",
+      "text": "Congrats, you won a new phone! Just pay the 5 € shipping fee to receive it.",
+      "why": "You can't win a contest you didn't enter. \"Pay a small fee to get your prize\" is a scam."
+    },
+    "card": {
+      "from": "Your bank",
+      "text": "A card payment of 12.50 € at a café was approved. If this wasn't you, call the number on the back of your card.",
+      "why": "No link and no request for codes. It tells you to use the number you already have on your card."
+    },
+    "job": {
+      "from": "Easy Job",
+      "text": "Easy money! Receive payments to your bank account, send them on and keep 10%.",
+      "why": "This is how criminals move stolen money through young people's accounts. It is illegal and can get your account closed."
+    }
+  }
+}
