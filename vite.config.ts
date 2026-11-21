@@ -3,6 +3,10 @@ import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
+  build: {
+    // Fonts stay separate files: the CSP (netlify.toml) does not allow data: fonts.
+    assetsInlineLimit: (file: string) => (/\.woff2?$/.test(file) ? false : undefined),
+  },
   plugins: [
     react(),
     VitePWA({
